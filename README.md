@@ -13,15 +13,15 @@ and change domain.ltd to your URL. These URL's are already configured for the de
 Import sql schemas located in /driver/ folders to your database. (At the moment, only caldav is supported at this time.)
 
 Add "calendar" to to $config['plugins'] in your Roundcube main config file and you are set.
--------
+
 ***IMPORTANT***
 
 Your login and password must be the same for Nextcloud and Roundcube to work best.
--------
-Known Issues:
 
+Known Issues:
+-------
 * Will not create new calendar.
 * Recurring events marked as "All Day Events" will be a day early the following years.
 * Enabling Database driver hangs calendar.
--------
+
 If anyone would like to help out with this, I would appreciate it.
