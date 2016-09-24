@@ -15,6 +15,7 @@ Import sql schemas located in /driver/ folders to your database. (At the moment,
 Add "calendar" to to $config['plugins'] in your Roundcube main config file and you are set.
 -------
 ***IMPORTANT***
+
 Your login and password must be the same for Nextcloud and Roundcube to work best.
 -------
 Known Issues:
