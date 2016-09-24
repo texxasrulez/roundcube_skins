@@ -1,0 +1,8 @@
+{
+    "require": {
+        "sabre/dav": "^3.1",
+        "fkooman/oauth-client": "dev-master"
+    },
+
+    "minimum-stability": "dev"
+}
