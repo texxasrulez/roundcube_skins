@@ -18,6 +18,7 @@ Add "calendar" to plugin array in Roundcubes main config.inc.php file and you ar
 Your login and password must be the same for Nextcloud and Roundcube to work best.
 
 Known Issues:
+
 Will not create new calendar.
 Recurring events marked as "All Day Events" will be a day early the following years.
 Enabling Database driver hangs calendar.
