@@ -20,6 +20,6 @@ Known Issues:
 -------
 * Will not create new calendar.
 * Recurring events marked as "All Day Events" will be a day early the following years.
-* Enabling Database driver hangs calendar.
+* Enabling Database driver hangs calendar. (Birthdays from Contacts causes this)
 
 If anyone would like to help out with this, I would appreciate it.
