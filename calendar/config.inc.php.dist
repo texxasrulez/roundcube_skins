@@ -101,10 +101,11 @@ $config['calendar_event_coloring'] = 0;
 
 // event categories
 $config['calendar_categories'] = array(
-  'Personal' => 'c0c0c0',
+    'Family' => '191970',
+   'Friends' => '4b4ba6',
+   'Holiday' => 'ffff00',
+  'Personal' => '00ff7f',
       'Work' => 'ff0000',
-    'Family' => '00ff00',
-   'Holiday' => 'ff6600',
 );
 
 // enable users to invite/edit attendees for shared events organized by others
@@ -195,10 +196,18 @@ $config['calendar_ical_debug'] = false;
  $config['calendar_preinstalled_calendars'] = array(
     'Personal' => array(
                     'driver'      => 'caldav',
-					'name'      => 'Personal',
+		    'name'        => 'Personal',
                     'caldav_user' => '%u',
                     'caldav_pass' => '%p',
                     'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/personal',
                     'color'       => '#0000FF',
+                    'showAlarms'  => 1),
+    'Contact_Birthdays' => array(
+                    'driver'      => 'caldav',
+		    'name'        => 'Contact Birthdays',
+                    'caldav_user' => '%u',
+                    'caldav_pass' => '%p',
+                    'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/contact_birthdays',
+                    'color'       => '40E0D0',
                     'showAlarms'  => 1));
 ?>
