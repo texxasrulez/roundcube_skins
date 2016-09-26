@@ -25,7 +25,7 @@
  +-------------------------------------------------------------------------+
 */
 
-// backend type (caldav only at this timel)
+// backend type (database, kolab, caldav, ical)
 $config['calendar_driver'] = array("caldav");
 $config['calendar_driver_default'] = "caldav";
 
