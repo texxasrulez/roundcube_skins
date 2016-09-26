@@ -201,13 +201,5 @@ $config['calendar_ical_debug'] = false;
                     'caldav_pass' => '%p',
                     'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/personal',
                     'color'       => '#0000FF',
-                    'showAlarms'  => 1),
-    'Contact_Birthdays' => array(
-                    'driver'      => 'caldav',
-		    'name'        => 'Contact Birthdays',
-                    'caldav_user' => '%u',
-                    'caldav_pass' => '%p',
-                    'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/contact_birthdays',
-                    'color'       => '40E0D0',
                     'showAlarms'  => 1));
 ?>
