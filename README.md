@@ -12,7 +12,7 @@ Installation is pretty straight forward.
 
 Copy calendar and libcalendaring folders to Roundcube Plugin folder, copy config.inc.php.dist to config.inc.php and change domain.ltd to your URL. These URL's are already configured for the default calendar url for Nextcloud.
 
-Import sql schemas located in /driver/ folders to your database. (At the moment, only caldav is supported at this time.)
+Import sql schemas located in /driver/ folders to your database.
 
 Add "calendar" to $config['plugins'] in your Roundcube main config file and you are set.
 
@@ -24,6 +24,5 @@ Known Issues:
 -------
 * Will not create new calendar.
 * Recurring events marked as "All Day Events" will be a day early the following years.
-* Enabling Database driver hangs calendar. (Birthdays from Contacts causes this)
 
 If anyone would like to help out to make oauth work and other features, I would appreciate it.
