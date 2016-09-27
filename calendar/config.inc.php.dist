@@ -159,7 +159,7 @@ $config['calendar_itip_smtp_pass'] = '123456';
 $config['calendar_caldav_url'] = 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/%n';
 
 // Crypt key to encrypt passwords for added iCAL/CalDAV calendars
-$config['calendar_crypt_key'] = "f4f6e5b091ce495110946146";
+$config['calendar_crypt_key'] = "use pwgen -s 32 to get random string for here";
 
 // Driver to provide a resource directory ('ldap' is the only implementation yet).
 // Leave empty or commented to disable resources support.

@@ -24,5 +24,6 @@ Known Issues:
 -------
 * Will not create new calendar.
 * Recurring events marked as "All Day Events" will be a day early the following years.
+* Database driver does not work. Birthdays are the issue.
 
 If anyone would like to help out to make oauth work and other features, I would appreciate it.
