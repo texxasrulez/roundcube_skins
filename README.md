@@ -10,7 +10,7 @@ This is also compatible with RCMCARDDAV as I use it to sync my contacts with Nex
 
 Installation is pretty straight forward.
 
-Copy calendar and libcalendaring folders to Roundcube Plugin folder, copy config.inc.php.dist to config.inc.php and change domain.ltd to your URL. These URL's are already configured for the default calendar url for Nextcloud.
+Copy calendar and libcalendaring folders to Roundcube Plugin folder, copy config.inc.php.dist to config.inc.php and change domain.ltd to your URL. 'These URL's are already configured for the default calendar url for Nextcloud.'
 
 Import sql schemas located in /driver/ folders to your database.
 
