@@ -35,6 +35,7 @@ $labels['afteraction'] = 'After an invitation or update message is processed';
 
 // calendar
 $labels['calendar'] = 'Calendar';
+$labels['calendar_database'] = 'Database Calendar';
 $labels['calendars'] = 'Calendars';
 $labels['category'] = 'Category';
 $labels['categories'] = 'Categories';
