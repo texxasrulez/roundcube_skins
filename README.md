@@ -1,4 +1,4 @@
-I made this as a working, out of the box, calendar for the latest version of Nextcloud.
+I made this as a working, out of the box, calendar for use with Nextcloud 11.
 
 I will update this when needed by deprecated purposes or when Nextcloud changes their sabre version.
 
