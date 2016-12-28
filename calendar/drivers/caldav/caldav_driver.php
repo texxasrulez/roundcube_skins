@@ -185,7 +185,7 @@ class caldav_driver extends calendar_driver
             foreach ($calendars as $calendar)
             {
                 // Skip already existent calendars
-                $result = $this->rc->db->query("SELECT * FROM ".$this->db_calendars." WHERE caldav_url LIKE ?", $calendar['href']);
+                $result = $this->rc->db->query("SELECT * FROM ".$this->db_calendars." WHERE caldav_url LIKE ?", str_replace('@', '%40', $calendar['href']));
                 if($this->rc->db->affected_rows($result)) continue;
 
                 $cal['caldav_url'] = self::_encode_url($calendar['href']);
@@ -1960,13 +1960,21 @@ class caldav_driver extends calendar_driver
             // directly return given url as it is a calendar
         }
         // probe further for principal url and user home set
-        $caldav_url = $base_uri . $response[$current_user_principal[0]];
+        if (is_array($response[$current_user_principal[0]])) {
+	        $caldav_url = $base_uri . $response[$current_user_principal[0]][0]['value'];
+	} else {
+	        $caldav_url = $base_uri . $response[$current_user_principal[0]];
+	}
         $response = $caldav->prop_find($caldav_url, $calendar_home_set, 0);
         if (!$response) {
             $this->_raise_error("Resource \"$caldav_url\" contains no calendars.");
             return false;
         }
-        $caldav_url = $base_uri . $response[$calendar_home_set[0]];
+        if (is_array($response[$calendar_home_set[0]])) {
+	        $caldav_url = $base_uri . $response[$calendar_home_set[0]][0]['value'];
+	} else {
+	        $caldav_url = $base_uri . $response[$calendar_home_set[0]];
+        }
         $response = $caldav->prop_find($caldav_url, $cal_attribs, 1);
         foreach($response as $collection => $attribs)
         {
@@ -1975,7 +1983,7 @@ class caldav_driver extends calendar_driver
             foreach($attribs as $key => $value)
             {
                 if ($key == '{DAV:}resourcetype' && is_object($value)) {
-                    if ($value instanceof Sabre\DAV\Property\ResourceType) {
+                    if ($value instanceof Sabre\DAV\Property\ResourceType || $value instanceof Sabre\DAV\Xml\Property\ResourceType) {
                         $values = $value->getValue();
                         if (in_array('{urn:ietf:params:xml:ns:caldav}calendar', $values))
                             $found = true;
