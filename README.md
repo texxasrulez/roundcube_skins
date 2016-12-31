@@ -4,11 +4,7 @@ I will update this when needed by deprecated purposes or when Nextcloud changes 
 
 This is a fork of Kolab and FasterIT calendars combining the best of both and using the sabre from Nextcloud to work with it's version of sabre. It will sync already existing calendars. If you want more than the default, you must add calendar within Nextcloud
 and then go back to Roundcube and it should be there. From Roundcube, you can add, edit and delete events and will be in sync
-<<<<<<< HEAD
-with Nextcloud.
-=======
 with Nextcloud. On annually recurring events, do not mark them all day or the following year will be a day ahead.
->>>>>>> origin/master
 
 This is also compatible with RCMCARDDAV 2.0.4 as I use it to sync my contacts with Nextcloud to Roundcube as well.
 
@@ -27,11 +23,8 @@ Your login and password must be the same for Nextcloud and Roundcube to work bes
 Known Issues:
 -------
 * Will not create new calendar.
-<<<<<<< HEAD
 * ~~Recurring events marked as "All Day Events" will be a day early the following years.~~ fixed!!!!
-=======
 * Recurring events marked as "All Day Events" will be a day early the following years.
->>>>>>> origin/master
 * Database driver does not work. Birthdays are the issue due to being all day.
 
 If anyone would like to help out to make oauth work and other features, I would appreciate it.
