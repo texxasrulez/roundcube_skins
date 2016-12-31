@@ -246,7 +246,7 @@ class MimeDir extends Parser {
 
                 $rawLine = fgets($this->input);
 
-                if ($eof || (feof($this->input) && $rawLine===false)) {
+                if ($eof || (feof($this->input) && $rawLine === false)) {
                     throw new EofException('End of document reached prematurely');
                 }
                 if ($rawLine === false) {
