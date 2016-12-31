@@ -192,12 +192,10 @@ $config['calendar_oauth_providers'] = array(
 
 // Pre-installed calendars, added at first access to calendar section
 // Caldav driver is supported only
-// Caldav driver is supported only
  $config['calendar_preinstalled_calendars'] = array(
     'Nextcloud' => array(
-    'NextCloud' => array(
                     'driver'      => 'caldav',
-					'name'        => 'Personal',
+		    'name'        => 'Personal',
                     'caldav_user' => '%u',
                     'caldav_pass' => '%p',
                     'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/',
