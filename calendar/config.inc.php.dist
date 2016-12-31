@@ -194,12 +194,12 @@ $config['calendar_ical_debug'] = false;
 // Pre-installed calendars, added at first access to calendar section
 // Caldav driver is supported only
  $config['calendar_preinstalled_calendars'] = array(
-    'Personal' => array(
+    'NextCloud' => array(
                     'driver'      => 'caldav',
 		    'name'        => 'Personal',
                     'caldav_user' => '%u',
                     'caldav_pass' => '%p',
-                    'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/personal',
+                    'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/',
                     'color'       => '#0000FF',
                     'showAlarms'  => 1));
 ?>
