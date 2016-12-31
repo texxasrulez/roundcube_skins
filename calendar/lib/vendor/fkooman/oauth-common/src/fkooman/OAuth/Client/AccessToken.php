@@ -1,92 +1,102 @@
 <?php
-
 /**
- *  This program is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU Lesser General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
+ * Copyright 2016 François Kooman <fkooman@tuxed.net>.
  *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU Lesser General Public License for more details.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 namespace fkooman\OAuth\Client;
 
-use fkooman\OAuth\Client\Exception\TokenException;
-
-class AccessToken extends Token
+/**
+ * AccessToken object containing the response from the OAuth 2.0 provider's
+ * token response.
+ */
+class AccessToken
 {
-    /** access_token VARCHAR(255) NOT NULL */
-    private $accessToken;
+    /** @var string */
+    private $token;
 
-    /** token_type VARCHAR(255) NOT NULL */
+    /** @var string */
     private $tokenType;
 
-    /** expires_in INTEGER DEFAULT NULL */
+    /** @var string */
+    private $scope;
+
+    /** @var int */
     private $expiresIn;
 
-    public function __construct(array $data)
+    public function __construct($token, $tokenType, $scope, $expiresIn)
     {
-        parent::__construct($data);
-
-        foreach (array('token_type', 'access_token') as $key) {
-            if (!array_key_exists($key, $data)) {
-                throw new TokenException(sprintf("missing field '%s'", $key));
-            }
-        }
-        $this->setAccessToken($data['access_token']);
-        $this->setTokenType($data['token_type']);
-        $expiresIn = array_key_exists('expires_in', $data) ? $data['expires_in'] : null;
-        $this->setExpiresIn($expiresIn);
-    }
-
-    public function setAccessToken($accessToken)
-    {
-        if (!is_string($accessToken) || 0 >= strlen($accessToken)) {
-            throw new TokenException('access_token needs to be a non-empty string');
-        }
-        $this->accessToken = $accessToken;
-    }
-
-    public function getAccessToken()
-    {
-        return $this->accessToken;
-    }
-
-    public function setTokenType($tokenType)
-    {
-        if (!is_string($tokenType) || 0 >= strlen($tokenType)) {
-            throw new TokenException('token_type needs to be a non-empty string');
-        }
-        // Google uses "Bearer" instead of "bearer", so we need to lowercase it...
-        if (!in_array(strtolower($tokenType), array('bearer'))) {
-            throw new TokenException(sprintf("unsupported token type '%s'", $tokenType));
-        }
+        $this->token = $token;
         $this->tokenType = $tokenType;
+        $this->scope = $scope;
+        $this->expiresIn = $expiresIn;
     }
 
+    /**
+     * Get the access token.
+     *
+     * @return string the access token
+     *
+     * @see https://tools.ietf.org/html/rfc6749#section-5.1
+     */
+    public function getToken()
+    {
+        return $this->token;
+    }
+
+    /**
+     * Get the token type.
+     *
+     * @return string the token type
+     *
+     * @see https://tools.ietf.org/html/rfc6749#section-7.1
+     */
     public function getTokenType()
     {
         return $this->tokenType;
     }
 
-    public function setExpiresIn($expiresIn)
+    /**
+     * Get the scope.
+     *
+     * @return string the scope
+     *
+     * @see https://tools.ietf.org/html/rfc6749#section-3.3
+     */
+    public function getScope()
     {
-        if (null !== $expiresIn) {
-            if (!is_numeric($expiresIn) || 0 >= $expiresIn) {
-                throw new TokenException('expires_in should be positive integer or null');
-            }
-            $expiresIn = (int) $expiresIn;
-        }
-        $this->expiresIn = $expiresIn;
+        return $this->scope;
     }
 
+    /**
+     * Get the expires in time.
+     *
+     * @return int the time in seconds in which the access token will expire
+     *
+     * @see https://tools.ietf.org/html/rfc6749#section-5.1
+     */
     public function getExpiresIn()
     {
         return $this->expiresIn;
+    }
+
+    /**
+     * Get the access token as string.
+     *
+     * @return string the access token
+     */
+    public function __toString()
+    {
+        return $this->getToken();
     }
 }

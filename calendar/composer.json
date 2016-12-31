@@ -1,26 +1,21 @@
 {
-    "name": "kolab/calendar",
+    "name": "texxasrulez/calendar",
     "type": "roundcube-plugin",
     "description": "Calendar plugin",
-    "homepage": "http://git.kolab.org/roundcubemail-plugins-kolab/",
+    "homepage": "https://github.com/texxasrulez/caldav_calendar",
     "license": "AGPLv3",
-    "version": "3.2.8",
+    "version": "0.1",
     "authors": [
         {
-            "name": "Thomas Bruederli",
-            "email": "bruederli@kolabsys.com",
+            "name": "Gene Hawkins",
+            "email": "gene@genesworld.net",
             "role": "Lead"
-        },
-        {
-            "name": "Alensader Machniak",
-            "email": "machniak@kolabsys.com",
-            "role": "Developer"
         }
     ],
     "repositories": [
         {
             "type": "composer",
-            "url": "http://plugins.roundcube.net"
+            "url": "https://plugins.roundcube.net"
         }
     ],
     "require": {

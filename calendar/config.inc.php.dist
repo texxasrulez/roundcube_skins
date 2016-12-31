@@ -69,7 +69,7 @@ $config['calendar_timeslots'] = 2;
 $config['calendar_agenda_range'] = 60;
 
 // first day of the week (0-6)
-$config['calendar_first_day'] = 0;
+$config['calendar_first_day'] = 1;
 
 // first hour of the calendar (0-23)
 $config['calendar_first_hour'] = 6;
@@ -101,15 +101,14 @@ $config['calendar_event_coloring'] = 0;
 
 // event categories
 $config['calendar_categories'] = array(
-    'Family' => '191970',
-   'Friends' => '4b4ba6',
-   'Holiday' => 'ffff00',
-  'Personal' => '00ff7f',
+  'Personal' => 'c0c0c0',
       'Work' => 'ff0000',
+    'Family' => '00ff00',
+   'Holiday' => 'ff6600',
 );
 
 // enable users to invite/edit attendees for shared events organized by others
-$config['calendar_allow_invite_shared'] = true;
+$config['calendar_allow_invite_shared'] = false;
 
 // allow users to accecpt iTip invitations who are no explicitly listed as attendee.
 // this can be the case if invitations are sent to mailing lists or alias email addresses.
@@ -159,7 +158,7 @@ $config['calendar_itip_smtp_pass'] = '123456';
 $config['calendar_caldav_url'] = 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/%n';
 
 // Crypt key to encrypt passwords for added iCAL/CalDAV calendars
-$config['calendar_crypt_key'] = "use pwgen -s 32 to get random string for here";
+$config['calendar_crypt_key'] = "put some random string here";
 
 // Driver to provide a resource directory ('ldap' is the only implementation yet).
 // Leave empty or commented to disable resources support.
@@ -173,12 +172,12 @@ $config['calendar_caldav_debug'] = false;
 $config['calendar_ical_debug'] = false;
 
 // OAuth2 provider for CalDAV auth
-//$config['calendar_oauth_providers'] = array(
+$config['calendar_oauth_providers'] = array(
 
 //    "key" => array(
 //        "name" => "Google OAuth2 Provider",
 //        "scope" => "https://www.googleapis.com/auth/calendar",
-//        "json" => "/lib/vendor/oauth2/gw_caldav.json"
+//        "json" => "/path/to/client_id.json"
 //    ),
 
 //    "key2" => array(
@@ -189,17 +188,18 @@ $config['calendar_ical_debug'] = false;
 //        "authorize_endpoint" => "",
 //        "token_endpoint" => "",
 //    )
-//);
+);
 
 // Pre-installed calendars, added at first access to calendar section
 // Caldav driver is supported only
+// Caldav driver is supported only
  $config['calendar_preinstalled_calendars'] = array(
-    'Personal' => array(
+    'Nextcloud' => array(
                     'driver'      => 'caldav',
-		    'name'        => 'Personal',
+					'name'        => 'Personal',
                     'caldav_user' => '%u',
                     'caldav_pass' => '%p',
-                    'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/personal',
-                    'color'       => '#0000FF',
+                    'caldav_url'  => 'https://www.domain.ltd/cloud/remote.php/dav/calendars/%u/',
+                    'color'       => '',
                     'showAlarms'  => 1));
 ?>

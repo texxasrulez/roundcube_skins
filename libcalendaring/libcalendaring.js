@@ -123,11 +123,6 @@ function rcube_libcalendaring(settings)
      */
     this.parseISO8601 = function(s)
     {
-        // already a Date object?
-        if (s && s.getMonth) {
-            return s;
-        }
-
         // force d to be on check's YMD, for daylight savings purposes
         var fixDate = function(d, check) {
             if (+d) { // prevent infinite looping on invalid dates
@@ -337,10 +332,9 @@ function rcube_libcalendaring(settings)
             $(this).parent().find('span.edit-alarm-values')[(this.selectedIndex>0?'show':'hide')]();
         });
         $(prefix+' select.edit-alarm-offset').change(function(){
-            var val = $(this).val(), parent = $(this).parent();
-            parent.find('.edit-alarm-date, .edit-alarm-time')[val == '@' ? 'show' : 'hide']();
-            parent.find('.edit-alarm-value').prop('disabled', val === '@' || val === '0');
-            parent.find('.edit-alarm-related')[val == '@' ? 'hide' : 'show']();
+            var mode = $(this).val() == '@' ? 'show' : 'hide';
+            $(this).parent().find('.edit-alarm-date, .edit-alarm-time')[mode]();
+            $(this).parent().find('.edit-alarm-value').prop('disabled', mode == 'show');
         });
 
         $(prefix+' .edit-alarm-date').removeClass('hasDatepicker').removeAttr('id').datepicker(datepicker_settings);
@@ -390,7 +384,6 @@ function rcube_libcalendaring(settings)
           }
 
           $('select.edit-alarm-type', domnode).val(alarm.action);
-          $('select.edit-alarm-related', domnode).val(/END/i.test(alarm.related) ? 'end' : 'start');
 
           if (String(alarm.trigger).match(/@(\d+)/)) {
               var ondate = this.fromunixtime(parseInt(RegExp.$1));
@@ -398,10 +391,6 @@ function rcube_libcalendaring(settings)
               $('input.edit-alarm-value', domnode).val('');
               $('input.edit-alarm-date', domnode).val(this.format_datetime(ondate, 1));
               $('input.edit-alarm-time', domnode).val(this.format_datetime(ondate, 2));
-          }
-          else if (String(alarm.trigger).match(/^[-+]*0[MHDS]$/)) {
-              $('input.edit-alarm-value', domnode).val('0');
-              $('select.edit-alarm-offset', domnode).val('0');
           }
           else if (String(alarm.trigger).match(/([-+])(\d+)([MHDS])/)) {
               val = RegExp.$2; offset = ''+RegExp.$1+RegExp.$3;
@@ -419,18 +408,11 @@ function rcube_libcalendaring(settings)
         var valarms = [];
 
         $(prefix + ' .edit-alarm-item').each(function(i, elem) {
-            var val, offset, alarm = {
-                    action: $('select.edit-alarm-type', elem).val(),
-                    related: $('select.edit-alarm-related', elem).val()
-                };
-
+            var val, offset, alarm = { action: $('select.edit-alarm-type', elem).val() };
             if (alarm.action) {
                 offset = $('select.edit-alarm-offset', elem).val();
                 if (offset == '@') {
                     alarm.trigger = '@' + me.date2unixtime(me.parse_datetime($('input.edit-alarm-time', elem).val(), $('input.edit-alarm-date', elem).val()));
-                }
-                else if (offset === '0') {
-                    alarm.trigger = '0S';
                 }
                 else if (!isNaN((val = parseInt($('input.edit-alarm-value', elem).val()))) && val >= 0) {
                     alarm.trigger = offset[0] + val + offset[1];
@@ -468,9 +450,9 @@ function rcube_libcalendaring(settings)
             html += '<div class="event-section">' + Q(alarm.location || '') + '</div>';
             html += '<div class="event-section">' + Q(this.event_date_text(alarm)) + '</div>';
 
-            adismiss = $('<a href="#" class="alarm-action-dismiss"></a>').html(rcmail.gettext('dismiss','libcalendaring')).click(function(e){
+            adismiss = $('<a href="#" class="alarm-action-dismiss"></a>').html(rcmail.gettext('dismiss','libcalendaring')).click(function(){
                 me.dismiss_link = $(this);
-                me.dismiss_alarm(me.dismiss_link.data('id'), 0, e);
+                me.dismiss_alarm(me.dismiss_link.data('id'), 0);
             });
             asnooze = $('<a href="#" class="alarm-action-snooze"></a>').html(rcmail.gettext('snooze','libcalendaring')).click(function(e){
                 me.snooze_dropdown($(this), e);
@@ -486,9 +468,9 @@ function rcube_libcalendaring(settings)
             $(this).dialog('close');
         };
 
-        buttons[rcmail.gettext('dismissall','libcalendaring')] = function(e) {
+        buttons[rcmail.gettext('dismissall','libcalendaring')] = function() {
             // submit dismissed event_ids to server
-            me.dismiss_alarm(me.alarm_ids.join(','), 0, e);
+            me.dismiss_alarm(me.alarm_ids.join(','), 0);
             $(this).dialog('close');
         };
 
@@ -534,14 +516,14 @@ function rcube_libcalendaring(settings)
             }
             $('#alarm-snooze-dropdown a').click(function(e){
                 var time = String(this.href).replace(/.+#/, '');
-                me.dismiss_alarm($('#alarm-snooze-dropdown').data('id'), time, e);
+                me.dismiss_alarm($('#alarm-snooze-dropdown').data('id'), time);
                 return false;
             });
         }
 
         // hide visible popup
         if (this.snooze_popup.is(':visible') && this.snooze_popup.data('id') == link.data('id')) {
-            rcmail.command('menu-close', 'alarm-snooze-dropdown', link.get(0), event);
+            rcmail.command('menu-close', 'alarm-snooze-dropdown');
             this.dismiss_link = null;
         }
         else {  // open popup below the clicked link
@@ -554,9 +536,9 @@ function rcube_libcalendaring(settings)
     /**
      * Dismiss or snooze alarms for the given event
      */
-    this.dismiss_alarm = function(id, snooze, event)
+    this.dismiss_alarm = function(id, snooze)
     {
-        rcmail.command('menu-close', 'alarm-snooze-dropdown', null, event);
+        rcmail.command('menu-close', 'alarm-snooze-dropdown');
         rcmail.http_post('utils/plugin.alarms', { action:'dismiss', data:{ id:id, snooze:snooze } });
 
         // remove dismissed alarm from list

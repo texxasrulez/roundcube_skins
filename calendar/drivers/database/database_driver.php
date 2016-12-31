@@ -45,7 +45,7 @@ class database_driver extends calendar_driver
   private $free_busy_map = array('free' => 0, 'busy' => 1, 'out-of-office' => 2, 'outofoffice' => 2, 'tentative' => 3);
   private $sensitivity_map = array('public' => 0, 'private' => 1, 'confidential' => 2);
   private $server_timezone;
-
+  
   private $db_events = 'events';
   private $db_calendars = 'calendars';
   private $db_attachments = 'attachments';
@@ -59,13 +59,13 @@ class database_driver extends calendar_driver
     $this->cal = $cal;
     $this->rc = $cal->rc;
     $this->server_timezone = new DateTimeZone(date_default_timezone_get());
-
+    
     // read database config
     $db = $this->rc->get_dbh();
     $this->db_events = $this->rc->config->get('db_table_events', $db->table_name($this->db_events));
     $this->db_calendars = $this->rc->config->get('db_table_calendars', $db->table_name($this->db_calendars));
     $this->db_attachments = $this->rc->config->get('db_table_attachments', $db->table_name($this->db_attachments));
-
+    
     $this->_read_calendars();
   }
 
@@ -75,7 +75,7 @@ class database_driver extends calendar_driver
   private function _read_calendars()
   {
     $hidden = array_filter(explode(',', $this->rc->config->get('hidden_calendars', '')));
-
+    
     if (!empty($this->rc->user->ID)) {
       $calendar_ids = array();
       $result = $this->rc->db->query(
@@ -170,10 +170,10 @@ class database_driver extends calendar_driver
        $prop['color'],
        $prop['showalarms']?1:0
     );
-
+    
     if ($result)
       return $this->rc->db->insert_id($this->db_calendars);
-
+    
     return false;
   }
 
@@ -206,7 +206,7 @@ class database_driver extends calendar_driver
       $prop['id'],
       $this->rc->user->ID
     );
-
+    
     return $this->rc->db->affected_rows($query);
   }
 
@@ -219,12 +219,12 @@ class database_driver extends calendar_driver
   public function subscribe_calendar($prop)
   {
     $hidden = array_flip(explode(',', $this->rc->config->get('hidden_calendars', '')));
-
+    
     if ($prop['active'])
       unset($hidden[$prop['id']]);
     else
       $hidden[$prop['id']] = 1;
-
+    
     return $this->rc->user->save_prefs(array('hidden_calendars' => join(',', array_keys($hidden))));
   }
 
@@ -247,17 +247,6 @@ class database_driver extends calendar_driver
     );
 
     return $this->rc->db->affected_rows($query);
-  }
-
-  /**
-   * Delete all the events in the given calendar
-   *
-   * @param array Hash array with calendar properties
-   *      id: Calendar Identifier
-   * @return boolean True on success, Fales on failure
-   */
-  public function delete_all_events($prop) {
-    return false;
   }
 
   /**
@@ -296,7 +285,7 @@ class database_driver extends calendar_driver
 
       return $event_id;
     }
-
+    
     return false;
   }
 
@@ -379,20 +368,20 @@ class database_driver extends calendar_driver
       // increment sequence number
       if (empty($event['sequence']) && $reschedule)
         $event['sequence'] = max($event['sequence'], $old['sequence']) + 1;
-
+      
       // modify a recurring event, check submitted savemode to do the right things
       if ($old['recurrence'] || $old['recurrence_id']) {
         $master = $old['recurrence_id'] ? $this->get_event(array('id' => $old['recurrence_id'])) : $old;
-
+        
         // keep saved exceptions (not submitted by the client)
         if ($old['recurrence']['EXDATE'])
           $event['recurrence']['EXDATE'] = $old['recurrence']['EXDATE'];
-
+        
         switch ($event['_savemode']) {
           case 'new':
             $event['uid'] = $this->cal->generate_uid();
             return $this->new_event($event);
-
+          
           case 'current':
             // save as exception
             $event['isexception'] = 1;
@@ -408,7 +397,7 @@ class database_driver extends calendar_driver
               return $event_id;
             }
             break;
-
+          
           case 'future':
             if ($master['id'] != $event['id']) {
               // set until-date on master event, then save this instance as new recurring event
@@ -416,7 +405,7 @@ class database_driver extends calendar_driver
               $master['recurrence']['UNTIL']->sub(new DateInterval('P1D'));
               unset($master['recurrence']['COUNT']);
               $update_master = true;
-
+              
               // if recurrence COUNT, update value to the correct number of future occurences
               if ($event['recurrence']['COUNT']) {
                 $fromdate = clone $event['start'];
@@ -434,7 +423,7 @@ class database_driver extends calendar_driver
                 if ($count = $this->rc->db->num_rows($sqlresult))
                   $event['recurrence']['COUNT'] = $count;
               }
-
+            
               $update_recurring = true;
               $event['recurrence_id'] = 0;
               $event['isexception'] = 0;
@@ -442,23 +431,23 @@ class database_driver extends calendar_driver
               break;
             }
             // else: 'future' == 'all' if modifying the master event
-
+          
           default:  // 'all' is default
             $event['id'] = $master['id'];
             $event['recurrence_id'] = 0;
-
+            
             // use start date from master but try to be smart on time or duration changes
             $old_start_date = $old['start']->format('Y-m-d');
             $old_start_time = $old['allday'] ? '' : $old['start']->format('H:i');
             $old_duration = $old['end']->format('U') - $old['start']->format('U');
-
+            
             $new_start_date = $event['start']->format('Y-m-d');
             $new_start_time = $event['allday'] ? '' : $event['start']->format('H:i');
             $new_duration = $event['end']->format('U') - $event['start']->format('U');
-
+            
             $diff = $old_start_date != $new_start_date || $old_start_time != $new_start_time || $old_duration != $new_duration;
             $date_shift = $old['start']->diff($event['start']);
-
+            
             // shifted or resized
             if ($diff && ($old_start_date == $new_start_date || $old_duration == $new_duration)) {
               $event['start'] = $master['start']->add($old['start']->diff($event['start']));
@@ -470,7 +459,7 @@ class database_driver extends calendar_driver
               $event['start'] = $master['start'];
               $event['end'] = $master['end'];
             }
-
+            
             // adjust recurrence-id when start changed and therefore the entire recurrence chain changes
             if (is_array($event['recurrence']) && ($old_start_date != $new_start_date || $old_start_time != $new_start_time)
                 && ($exceptions = $this->_load_exceptions($old))) {
@@ -484,20 +473,20 @@ class database_driver extends calendar_driver
                 }
               }
             }
-
+            
             $ret = $event['id'];  // return master ID
             break;
         }
       }
-
+      
       $success = $this->_update_event($event, $update_recurring);
-
+      
       if ($success && $update_master)
         $this->_update_event($master, true);
-
+      
       return $success ? $ret : false;
     }
-
+    
     return false;
   }
 
@@ -628,7 +617,7 @@ class database_driver extends calendar_driver
       $event['end'] = clone $event['end'];
       $event['end']->setTimezone($this->server_timezone);
     }
-
+    
     // compose vcalendar-style recurrencue rule from structured data
     $rrule = $event['recurrence'] ? libcalendaring::to_rrule($event['recurrence']) : '';
     $event['_recurrence'] = rtrim($rrule, ';');
@@ -658,7 +647,7 @@ class database_driver extends calendar_driver
 
     return $event;
   }
-
+  
   /**
    * Compute absolute time to notify the user
    */
@@ -693,16 +682,16 @@ class database_driver extends calendar_driver
       else if (array_key_exists($col, $event))
         $sql_set[] = $this->rc->db->quote_identifier($col) . '=' . $this->rc->db->quote($event[$col]);
     }
-
+    
     if ($event['_recurrence'])
       $sql_set[] = $this->rc->db->quote_identifier('recurrence') . '=' . $this->rc->db->quote($event['_recurrence']);
-
+    
     if ($event['_instance'])
       $sql_set[] = $this->rc->db->quote_identifier('instance') . '=' . $this->rc->db->quote($event['_instance']);
-
+    
     if ($event['_fromcalendar'] && $event['_fromcalendar'] != $event['calendar'])
         $sql_set[] = 'calendar_id=' . $this->rc->db->quote($event['calendar']);
-
+    
     $query = $this->rc->db->query(sprintf(
       "UPDATE " . $this->db_events . "
        SET   changed=%s %s
@@ -771,7 +760,7 @@ class database_driver extends calendar_driver
     if (!empty($event['recurrence'])) {
       // include library class
       require_once($this->cal->home . '/lib/calendar_recurrence.php');
-
+      
       $recurrence = new calendar_recurrence($this->cal, $event);
 
       $count = 0;
@@ -810,15 +799,15 @@ class database_driver extends calendar_driver
           $notify_at,
           $event['id']
         );
-
+        
         if (!$this->rc->db->affected_rows($query))
           break;
-
+        
         // stop adding events for inifinite recurrence after 20 years
         if (++$count > 999 || (!$recurrence->recurEnd && !$recurrence->recurCount && $next_start->format('Y') > date('Y') + 20))
           break;
       }
-
+      
       // remove all exceptions after recurrence end
       if ($next_end && !empty($exceptions)) {
           $this->rc->db->query(
@@ -833,7 +822,7 @@ class database_driver extends calendar_driver
       }
     }
   }
-
+  
   /**
    *
    */
@@ -917,7 +906,7 @@ class database_driver extends calendar_driver
           // add exception to master event
           $master['recurrence']['EXDATE'][] = $event['start'];
           $update_master = true;
-
+          
           // just delete this single occurence
           $query = $this->rc->db->query(
             "DELETE FROM " . $this->db_events . "
@@ -934,7 +923,7 @@ class database_driver extends calendar_driver
             $master['recurrence']['UNTIL']->sub(new DateInterval('P1D'));
             unset($master['recurrence']['COUNT']);
             $update_master = true;
-
+            
             // delete this and all future instances
             $fromdate = clone $event['start'];
             $fromdate->setTimezone($this->server_timezone);
@@ -968,7 +957,7 @@ class database_driver extends calendar_driver
 
       return $success ? $ret : false;
     }
-
+    
     return false;
   }
 
@@ -1012,7 +1001,7 @@ class database_driver extends calendar_driver
     }
 
     $result = $this->rc->db->query(sprintf(
-      "SELECT e.*, (SELECT COUNT(attachment_id) FROM " . $this->db_attachments . "
+      "SELECT e.*, (SELECT COUNT(attachment_id) FROM " . $this->db_attachments . " 
          WHERE event_id = e.event_id OR event_id = e.recurrence_id) AS _attachments
        FROM " . $this->db_events . " AS e
        WHERE e.calendar_id IN (%s)
@@ -1049,10 +1038,10 @@ class database_driver extends calendar_driver
       $calendars = array_keys($this->calendars);
     else if (!is_array($calendars))
       $calendars = explode(',', strval($calendars));
-
+      
     // only allow to select from calendars of this use
     $calendar_ids = array_map(array($this->rc->db, 'quote'), array_intersect($calendars, array_keys($this->calendars)));
-
+    
     // compose (slow) SQL query for searching
     // FIXME: improve searching using a dedicated col and normalized values
     if ($query) {
@@ -1060,13 +1049,13 @@ class database_driver extends calendar_driver
         $sql_query[] = $this->rc->db->ilike($col, '%'.$query.'%');
       $sql_add = 'AND (' . join(' OR ', $sql_query) . ')';
     }
-
+    
     if (!$virtual)
       $sql_add .= ' AND e.recurrence_id = 0';
-
+    
     if ($modifiedsince)
       $sql_add .= ' AND e.changed >= ' . $this->rc->db->quote(date('Y-m-d H:i:s', $modifiedsince));
-
+    
     $events = array();
     if (!empty($calendar_ids)) {
       $result = $this->rc->db->query(sprintf(
@@ -1136,7 +1125,7 @@ class database_driver extends calendar_driver
   {
     $free_busy_map = array_flip($this->free_busy_map);
     $sensitivity_map = array_flip($this->sensitivity_map);
-
+    
     $event['id'] = $event['event_id'];
     $event['start'] = new DateTime($event['start']);
     $event['end'] = new DateTime($event['end']);
@@ -1148,7 +1137,7 @@ class database_driver extends calendar_driver
     $event['calendar'] = $event['calendar_id'];
     $event['recurrence_id'] = intval($event['recurrence_id']);
     $event['isexception'] = intval($event['isexception']);
-
+    
     // parse recurrence rule
     if ($event['recurrence'] && preg_match_all('/([A-Z]+)=([^;]+);?/', $event['recurrence'], $m, PREG_SET_ORDER)) {
       $event['recurrence'] = array();
@@ -1164,11 +1153,11 @@ class database_driver extends calendar_driver
         $event['recurrence'][$rr[1]] = $rr[2];
       }
     }
-
+    
     if ($event['recurrence_id']) {
       libcalendaring::identify_recurrence_instance($event);
     }
-
+    
     if (strlen($event['instance'])) {
       $event['_instance'] = $event['instance'];
 
@@ -1176,11 +1165,11 @@ class database_driver extends calendar_driver
         $event['recurrence_date'] = rcube_utils::anytodatetime($event['_instance'], $event['start']->getTimezone());
       }
     }
-
+    
     if ($event['_attachments'] > 0) {
       $event['attachments'] = (array)$this->list_attachments($event);
     }
-
+    
     // decode serialized event attendees
     if (strlen($event['attendees'])) {
       $event['attendees'] = $this->unserialize_attendees($event['attendees']);
@@ -1188,12 +1177,12 @@ class database_driver extends calendar_driver
     else {
       $event['attendees'] = array();
     }
-
+    
     // decode serialized alarms
     if ($event['alarms']) {
       $event['valarms'] = $this->unserialize_alarms($event['alarms']);
     }
-
+    
     unset($event['event_id'], $event['calendar_id'], $event['notifyat'], $event['all_day'], $event['instance'], $event['_attachments']);
     return $event;
   }
@@ -1209,7 +1198,7 @@ class database_driver extends calendar_driver
       $calendars = array_keys($this->calendars);
     else if (is_string($calendars))
       $calendars = explode(',', $calendars);
-
+    
     // only allow to select from calendars with activated alarms
     $calendar_ids = array();
     foreach ($calendars as $cid) {
@@ -1217,7 +1206,7 @@ class database_driver extends calendar_driver
         $calendar_ids[] = $cid;
     }
     $calendar_ids = array_map(array($this->rc->db, 'quote'), $calendar_ids);
-
+    
     $alarms = array();
     if (!empty($calendar_ids)) {
       $result = $this->rc->db->query(sprintf(
@@ -1246,7 +1235,7 @@ class database_driver extends calendar_driver
   {
     // set new notifyat time or unset if not snoozed
     $notify_at = $snooze > 0 ? date(self::DB_DATE_FORMAT, time() + $snooze) : null;
-
+    
     $query = $this->rc->db->query(sprintf(
       "UPDATE " . $this->db_events . "
        SET   changed=%s, notifyat=?
@@ -1256,7 +1245,7 @@ class database_driver extends calendar_driver
       $notify_at,
       $event_id
     );
-
+    
     return $this->rc->db->affected_rows($query);
   }
 
@@ -1266,7 +1255,7 @@ class database_driver extends calendar_driver
   private function add_attachment($attachment, $event_id)
   {
     $data = $attachment['data'] ? $attachment['data'] : file_get_contents($attachment['path']);
-
+    
     $query = $this->rc->db->query(
       "INSERT INTO " . $this->db_attachments .
       " (event_id, filename, mimetype, size, data)" .
@@ -1383,7 +1372,7 @@ class database_driver extends calendar_driver
        AND   calendar_id IN (" . $this->calendar_ids . ")",
       $name
     );
-
+    
     return $this->rc->db->affected_rows($query);
   }
 
@@ -1400,7 +1389,7 @@ class database_driver extends calendar_driver
       $name,
       $oldname
     );
-
+    
     return $this->rc->db->affected_rows($query);
   }
 
@@ -1461,7 +1450,7 @@ class database_driver extends calendar_driver
     }
     // decode the old serialization format
     else {
-      foreach (explode("\n", $s_attendees) as $line) {
+      foreach (explode("\n", $event['attendees']) as $line) {
         $att = array();
         foreach (rcube_utils::explode_quoted_string(';', $line) as $prop) {
           list($key, $value) = explode("=", $prop);
