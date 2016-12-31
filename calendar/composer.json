@@ -4,7 +4,7 @@
     "description": "Calendar plugin",
     "homepage": "https://github.com/texxasrulez/caldav_calendar",
     "license": "AGPLv3",
-    "version": "0.1",
+    "version": "0.2",
     "authors": [
         {
             "name": "Gene Hawkins",
