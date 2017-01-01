@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `caldav_calendars` (
   `caldav_user` varchar(255) DEFAULT NULL,
   `caldav_pass` varchar(1024) DEFAULT NULL,
   `caldav_oauth_provider` varchar(255) DEFAULT NULL,
-  `readonly` tinyint(1) NOT NULL DEFAULT '0',
+  `readonly` tinyint(1) DEFAULT NULL,
   `caldav_last_change` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
   PRIMARY KEY(`calendar_id`),
