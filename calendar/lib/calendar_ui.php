@@ -367,7 +367,7 @@ class calendar_ui
     $select = new html_select($attrib);
 
     foreach ((array)$this->cal->get_calendars() as $id => $prop) {
-      if ($prop['editable'] || strpos($prop['rights'], 'i') !== false)
+      if ($prop['editable'] && strpos($prop['rights'], 'i') !== false)
         $select->add($prop['name'], $id);
     }
 

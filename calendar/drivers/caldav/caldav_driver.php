@@ -51,6 +51,7 @@ class caldav_driver extends calendar_driver
     private $db_events = 'caldav_events';
     private $db_calendars = 'caldav_calendars';
     private $db_attachments = 'caldav_attachments';
+    private $db_ical_calendars = 'ical_calendars';
 
     // Crypt key for CalDAV auth
     private $crypt_key;
@@ -126,7 +127,7 @@ class caldav_driver extends calendar_driver
                 $arr['name'] = html::quote($arr['name']);
                 $arr['listname'] = html::quote($arr['name']);
                 $arr['rights'] = 'lrswikxteav';
-                $arr['editable'] = true;
+                $arr['editable'] = !$arr['readonly'];
                 $arr['caldav_pass'] = $this->_decrypt_pass($arr['caldav_pass']);
                 $arr['caldav_oauth_provider'] = html::quote($arr['caldav_oauth_provider']);
                 $this->calendars[$arr['calendar_id']] = $arr;
@@ -184,11 +185,36 @@ class caldav_driver extends calendar_driver
             $result = true;
             foreach ($calendars as $calendar)
             {
+                // Subscriptions need to be pulled via the iCal backend
+                if ($calendar['subscription']) {
+                    // Check if the iCal backend is enabled
+                    if (!in_array('ical', $this->rc->config->get("calendar_driver"))) continue;
+                    
+                    // Skip already existent calendars
+                    $result = $this->rc->db->query("SELECT * FROM ".$this->db_ical_calendars." WHERE ical_url LIKE ?", str_replace('@', '%40', $calendar['href']));
+                    if($this->rc->db->affected_rows($result)) continue;
+                    
+                    // Add the calendar
+                    $result = $this->rc->db->query(
+                        "INSERT INTO " . $this->db_ical_calendars . "
+                   (user_id, name, color, showalarms, ical_url, ical_user)
+                   VALUES (?, ?, ?, ?, ?, ?)",
+                        $this->rc->user->ID,
+                        $calendar['name'],
+                        $cal['color'],
+                        $calendar['showalarms'] ? 1 : 0,
+                        self::_encode_url($calendar["href"])
+                    );
+                    
+                    continue;
+                }
+                
                 // Skip already existent calendars
                 $result = $this->rc->db->query("SELECT * FROM ".$this->db_calendars." WHERE caldav_url LIKE ?", str_replace('@', '%40', $calendar['href']));
                 if($this->rc->db->affected_rows($result)) continue;
 
                 $cal['caldav_url'] = self::_encode_url($calendar['href']);
+                $cal['readonly'] = $calendar['readonly'];
 
                 // Respect $props['name'] if only a single calendar was found e.g. no auto-discovery.
                 if(sizeof($calendars) > 1 || !isset($cal['name'])  || $cal['name'] == "")
@@ -234,8 +260,8 @@ class caldav_driver extends calendar_driver
         $prop = $this->_expand_pass($prop);
         $result = $this->rc->db->query(
             "INSERT INTO " . $this->db_calendars . "
-       (user_id, name, color, showalarms, caldav_url, caldav_tag, caldav_user, caldav_pass, caldav_oauth_provider)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+       (user_id, name, color, showalarms, caldav_url, caldav_tag, caldav_user, caldav_pass, caldav_oauth_provider, readonly)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             $this->rc->user->ID,
             $prop['name'],
             $prop['color'],
@@ -244,7 +270,8 @@ class caldav_driver extends calendar_driver
             isset($prop["caldav_tag"]) ? $prop["caldav_tag"] : null,
             isset($prop["caldav_user"]) ? $prop["caldav_user"] : null,
             isset($prop["caldav_pass"]) ? $this->_encrypt_pass($prop["caldav_pass"]) : null,
-            isset($prop["caldav_oauth_provider"]) ? $prop["caldav_oauth_provider"] : null
+            isset($prop["caldav_oauth_provider"]) ? $prop["caldav_oauth_provider"] : null,
+            isset($prop["readonly"]) ? $prop["readonly"] : false
         );
 
         if ($result)
@@ -1953,13 +1980,14 @@ class caldav_driver extends calendar_driver
      * @return False on error or an array with the following calendar props:
      *    name: Calendar display name
      *    href: Absolute calendar URL
+     *    readonly: Whether this is a read-only calendar subscription
      */
     private function _autodiscover_calendars($props)
     {
         $calendars = array();
         $current_user_principal = array('{DAV:}current-user-principal');
         $calendar_home_set = array('{urn:ietf:params:xml:ns:caldav}calendar-home-set');
-        $cal_attribs = array('{DAV:}resourcetype', '{DAV:}displayname');
+        $cal_attribs = array('{DAV:}resourcetype', '{DAV:}displayname', '{http://calendarserver.org/ns/}source');
 
         require_once ($this->cal->home.'/lib/caldav-client.php');
         $caldav = new caldav_client($props["caldav_url"], $props["caldav_user"], $props["caldav_pass"]);
@@ -2009,6 +2037,8 @@ class caldav_driver extends calendar_driver
         foreach($response as $collection => $attribs)
         {
             $found = false;
+            $subscription = false;
+            $readonly = false;
             $name = '';
             foreach($attribs as $key => $value)
             {
@@ -2017,16 +2047,30 @@ class caldav_driver extends calendar_driver
                         $values = $value->getValue();
                         if (in_array('{urn:ietf:params:xml:ns:caldav}calendar', $values))
                             $found = true;
+                        if (in_array('{http://calendarserver.org/ns/}subscribed', $values)) {
+                            $subscription = true;
+                            $readonly = true;
+                            $found = true;
+                        }
                     }
                 }
                 else if ($key == '{DAV:}displayname') {
                     $name = $value;
                 }
+                else if ($key == '{http://calendarserver.org/ns/}source') {
+                    $source = $value[0]['value'];
+                }
+            }
+            if (strpos($collection, '/contact_birthdays', strlen($collection) - strlen('/contact_birthdays')) !== false || 
+                strpos($collection, '/contact_birthdays/', strlen($collection) - strlen('/contact_birthdays/')) !== false) {
+                $readonly = true;
             }
             if ($found) {
                 array_push($calendars, array(
                     'name' => $name,
-                    'href' => $base_uri.$collection,
+                    'href' => $subscription ? $source : $base_uri.$collection,
+                    'readonly' => $readonly,
+                    'subscription' => $subscription,
                 ));
             }
         }

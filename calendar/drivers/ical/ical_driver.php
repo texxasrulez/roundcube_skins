@@ -133,7 +133,7 @@ class ical_driver extends calendar_driver
                 $arr['name'] = html::quote($arr['name']);
                 $arr['listname'] = html::quote($arr['name']);
                 $arr['rights'] = 'lrswikxteav';
-                $arr['editable'] = true;
+                $arr['editable'] = false;
                 $arr['ical_pass']   = $this->_decrypt_pass($arr['ical_pass']);
                 $this->calendars[$arr['calendar_id']] = $arr;
                 $calendar_ids[] = $this->rc->db->quote($arr['calendar_id']);
