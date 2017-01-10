@@ -33,3 +33,5 @@ TODO:
 * Ability to add new calendar to Nextcloud from Roundcube Calendar GUI.
 * Oauth support. (In progress)
 * Assign random colors to autodiscover calendars.
+* Remove mcrypt and replace with openssl
+* Get code ready for PHP7
