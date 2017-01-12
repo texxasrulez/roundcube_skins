@@ -214,7 +214,7 @@ class caldav_driver extends calendar_driver
                 if($this->rc->db->affected_rows($result)) continue;
 
                 $cal['caldav_url'] = self::_encode_url($calendar['href']);
-                $cal['readonly'] = $calendar['readonly'];
+		$cal['editable'] = $calendar['editable'];
 
                 // Respect $props['name'] if only a single calendar was found e.g. no auto-discovery.
                 if(sizeof($calendars) > 1 || !isset($cal['name'])  || $cal['name'] == "")
