@@ -3056,7 +3056,7 @@ class calendar extends rcube_plugin
     }
 
     // successfully parsed events?
-    if ($event = $this->lib->mail_get_itip_object('event')) {
+    if ($event = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event')) {
       // forward iTip request to delegatee
       if ($delegate) {
         $rsvpme = intval(rcube_utils::get_input_value('_rsvp', rcube_utils::INPUT_POST));
