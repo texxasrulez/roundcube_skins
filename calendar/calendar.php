@@ -1512,7 +1512,7 @@ class calendar extends rcube_plugin
     list($uid, $mime_id) = explode('#', $msg);
     $events = array();
 
-    if ($event = $this->lib->mail_get_itip_object('event')) {
+    if ($event = $this->lib->mail_get_itip_object($uid, $mime_id, 'event')) {
       $partstat = 'NEEDS-ACTION';
 /*
       $user_emails = $this->lib->get_user_emails();
@@ -3345,7 +3345,7 @@ class calendar extends rcube_plugin
     $mbox    = rcube_utils::get_input_value('_mbox', rcube_utils::INPUT_POST);
     $mime_id = rcube_utils::get_input_value('_part', rcube_utils::INPUT_POST);
 
-    if (($event = $this->lib->mail_get_itip_object('event')) && $event['_method'] == 'REPLY') {
+    if (($event = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event')) && $event['_method'] == 'REPLY') {
       $event['comment'] = rcube_utils::get_input_value('_comment', rcube_utils::INPUT_POST);
 
       foreach ($event['attendees'] as $_attendee) {
