@@ -1512,7 +1512,7 @@ class calendar extends rcube_plugin
     list($uid, $mime_id) = explode('#', $msg);
     $events = array();
 
-    if ($event = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event')) {
+    if ($event = $this->lib->mail_get_itip_object('event')) {
       $partstat = 'NEEDS-ACTION';
 /*
       $user_emails = $this->lib->get_user_emails();
@@ -3056,7 +3056,7 @@ class calendar extends rcube_plugin
     }
 
     // successfully parsed events?
-    if ($event = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event')) {
+    if ($event = $this->lib->mail_get_itip_object('event')) {
       // forward iTip request to delegatee
       if ($delegate) {
         $rsvpme = intval(rcube_utils::get_input_value('_rsvp', rcube_utils::INPUT_POST));
@@ -3261,7 +3261,7 @@ class calendar extends rcube_plugin
           // if the RSVP reply only refers to a single instance:
           // store unmodified master event with current instance as exception
           if (!empty($instance) && !empty($savemode) && $savemode != 'all') {
-            $master = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event');
+            $master = $this->lib->mail_get_itip_object('event');
             if ($master['recurrence'] && !$master['_instance']) {
               // compute recurring events until this instance's date
               if ($recurrence_date = rcube_utils::anytodatetime($instance, $master['start']->getTimezone())) {
@@ -3345,7 +3345,7 @@ class calendar extends rcube_plugin
     $mbox    = rcube_utils::get_input_value('_mbox', rcube_utils::INPUT_POST);
     $mime_id = rcube_utils::get_input_value('_part', rcube_utils::INPUT_POST);
 
-    if (($event = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event')) && $event['_method'] == 'REPLY') {
+    if (($event = $this->lib->mail_get_itip_object('event')) && $event['_method'] == 'REPLY') {
       $event['comment'] = rcube_utils::get_input_value('_comment', rcube_utils::INPUT_POST);
 
       foreach ($event['attendees'] as $_attendee) {
@@ -3553,7 +3553,7 @@ class calendar extends rcube_plugin
   public function get_url($param = array())
   {
     // PAMELA - Nouvelle URL
-    $url = $_SERVER["REQUEST_URI"];
+     $url = $_SERVER["REQUEST_URI"];
      $delm = '?';
  
      foreach ($param as $key => $val) {
