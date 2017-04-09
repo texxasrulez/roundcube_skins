@@ -1509,10 +1509,10 @@ class calendar extends rcube_plugin
     $path = explode('/', $msgref);
     $msg = array_pop($path);
     $mbox = join('/', $path);
-    list($uid, $mime_id) = explode('#', $msg);
+    list($mbox, $uid, $mime_id) = explode('#', $msg);
     $events = array();
 
-    if ($event = $this->lib->mail_get_itip_object($uid, $mime_id, 'event')) {
+    if ($event = $this->lib->mail_get_itip_object($mbox, $uid, $mime_id, 'event')) {
       $partstat = 'NEEDS-ACTION';
 /*
       $user_emails = $this->lib->get_user_emails();
