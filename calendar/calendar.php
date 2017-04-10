@@ -1293,7 +1293,7 @@ class calendar extends rcube_plugin
             if ($change['date']) {
               $dt = $lib->adjust_timezone($change['date']);
               if ($dt instanceof DateTime)
-                $change['date'] = $this->rc->format_date($dt, $dtformat, false);
+                $change['date'] = rcmail::get_instance()->format_date($dt, $dtformat, false);
             }
           });
           $this->rc->output->command('plugin.render_event_changelog', $data);
@@ -2910,8 +2910,8 @@ class calendar extends rcube_plugin
   private function mail_agenda_event_row($event, $class = '')
   {
     $time = $event['allday'] ? $this->gettext('all-day') :
-      $this->rc->format_date($event['start'], $this->rc->config->get('time_format')) . ' - ' .
-        $this->rc->format_date($event['end'], $this->rc->config->get('time_format'));
+      rcmail::get_instance()->format_date($event['start'], $this->rc->config->get('time_format')) . ' - ' .
+        rcmail::get_instance()->format_date($event['end'], $this->rc->config->get('time_format'));
 
     return html::div(rtrim('event-row ' . $class),
       html::span('event-date', $time) .
@@ -2977,7 +2977,7 @@ class calendar extends rcube_plugin
         if ($ical_objects->method == 'REQUEST') {
           $append = html::div('calendar-agenda-preview',
             html::tag('h3', 'preview-title', $this->gettext('agenda') . ' ' .
-              html::span('date', $this->rc->format_date($event['start'], $this->rc->config->get('date_format')))
+              html::span('date', rcmail::get_instance()->format_date($event['start'], $this->rc->config->get('date_format')))
             ) . '%before%' . $this->mail_agenda_event_row($event, 'current') . '%after%');
         }
 
