@@ -734,14 +734,14 @@ class libcalendaring_itip
     {
         $table = new html_table(array('cols' => 2, 'border' => 0, 'class' => 'calendar-eventdetails'));
         $table->add('ititle', $title);
-        $table->add('title',rcube_utils::rep_specialchars_output($event['title']));
+        $table->add('title', rcube_utils::rep_specialchars_output($event['title']));
         if ($event['start'] && $event['end']) {
             $table->add('label', $this->gettext('date'));
-            $table->add('date',rcube_utils::rep_specialchars_output($this->lib->event_date_text($event)));
+            $table->add('date', rcube_utils::rep_specialchars_output($this->lib->event_date_text($event)));
         }
         else if ($event['due'] && $event['_type'] == 'task') {
             $table->add('label', $this->gettext('date'));
-            $table->add('date',rcube_utils::rep_specialchars_output($this->lib->event_date_text($event)));
+            $table->add('date', rcube_utils::rep_specialchars_output($this->lib->event_date_text($event)));
         }
         if (!empty($event['recurrence_date'])) {
             $table->add('label', '');
@@ -753,7 +753,7 @@ class libcalendaring_itip
         }
         if ($event['location']) {
             $table->add('label', $this->gettext('location'));
-            $table->add('location',rcube_utils::rep_specialchars_output($event['location']));
+            $table->add('location', rcube_utils::rep_specialchars_output($event['location']));
         }
         if ($event['sensitivity'] && $event['sensitivity'] != 'public') {
             $table->add('label', $this->gettext('sensitivity'));
@@ -765,7 +765,7 @@ class libcalendaring_itip
         }
         if ($event['comment']) {
             $table->add('label', $this->gettext('comment'));
-            $table->add('location',rcube_utils::rep_specialchars_output($event['comment']));
+            $table->add('location', rcube_utils::rep_specialchars_output($event['comment']));
         }
 
         return $table->show();
