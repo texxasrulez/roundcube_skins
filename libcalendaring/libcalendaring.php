@@ -274,7 +274,7 @@ class libcalendaring extends rcube_plugin
         // handle task objects
         if ($event['_type'] == 'task' && is_object($event['due'])) {
             $date_format = $event['due']->_dateonly ? self::to_php_date_format($this->rc->config->get('calendar_date_format', $this->defaults['calendar_date_format'])) : null;
-            $fromto = $this->rc->format_date($event['due'], $date_format, false);
+            $fromto = rcmail::get_instance()->format_date($event['due'], $date_format, false);
 
             // add timezone information
             if ($fromto && $tzinfo && ($tzname = $this->timezone->getName())) {
@@ -296,17 +296,17 @@ class libcalendaring extends rcube_plugin
         $time_format = self::to_php_date_format($this->rc->config->get('calendar_time_format', $this->defaults['calendar_time_format']));
 
         if ($event['allday']) {
-            $fromto = format_date($event['start'], $date_format);
-            if (($todate = format_date($event['end'], $date_format)) != $fromto)
+            $fromto = rcmail::get_instance()->format_date($event['start'], $date_format);
+            if (($todate = rcmail::get_instance()->format_date($event['end'], $date_format)) != $fromto)
                 $fromto .= ' - ' . $todate;
         }
         else if ($duration < 86400 && $event['start']->format('d') == $event['end']->format('d')) {
-            $fromto = format_date($event['start'], $date_format) . ' ' . format_date($event['start'], $time_format) .
-                ' - ' . format_date($event['end'], $time_format);
+            $fromto = rcmail::get_instance()->format_date($event['start'], $date_format) . ' ' . rcmail::get_instance()->format_date($event['start'], $time_format) .
+                ' - ' . rcmail::get_instance()->format_date($event['end'], $time_format);
         }
         else {
-            $fromto = format_date($event['start'], $date_format) . ' ' . format_date($event['start'], $time_format) .
-                ' - ' . format_date($event['end'], $date_format) . ' ' . format_date($event['end'], $time_format);
+            $fromto = rcmail::get_instance()->format_date($event['start'], $date_format) . ' ' . rcmail::get_instance()->format_date($event['start'], $time_format) .
+                ' - ' . rcmail::get_instance()->format_date($event['end'], $date_format) . ' ' . rcmail::get_instance()->format_date($event['end'], $time_format);
         }
 
         // add timezone information
@@ -546,13 +546,13 @@ class libcalendaring extends rcube_plugin
         if ($trigger instanceof DateTime) {
             $text .= ' ' . $rcube->gettext(array(
                 'name' => 'libcalendaring.alarmat',
-                'vars' => array('datetime' => $rcube->format_date($trigger))
+                'vars' => array('datetime' => rcmail::get_instance()->format_date($trigger))
             ));
         }
         else if (preg_match('/@(\d+)/', $trigger, $m)) {
             $text .= ' ' . $rcube->gettext(array(
                 'name' => 'libcalendaring.alarmat',
-                'vars' => array('datetime' => $rcube->format_date($m[1]))
+                'vars' => array('datetime' => rcmail::get_instance()->format_date($m[1]))
             ));
         }
         else if ($val = self::parse_alarm_value($trigger)) {
@@ -798,7 +798,7 @@ class libcalendaring extends rcube_plugin
             $until =  $this->gettext(array('name' => 'forntimes', 'vars' => array('nr' => $rrule['COUNT'])));
         }
         else if ($rrule['UNTIL']) {
-            $until = $this->gettext('recurrencend') . ' ' . format_date($rrule['UNTIL'], self::to_php_date_format($this->rc->config->get('calendar_date_format', $this->defaults['calendar_date_format'])));
+            $until = $this->gettext('recurrencend') . ' ' . rcmail::get_instance()->format_date($rrule['UNTIL'], self::to_php_date_format($this->rc->config->get('calendar_date_format', $this->defaults['calendar_date_format'])));
         }
         else {
             $until = $this->gettext('forever');
@@ -808,7 +808,7 @@ class libcalendaring extends rcube_plugin
         if (is_array($rrule['EXDATE']) && !empty($rrule['EXDATE'])) {
           $format = self::to_php_date_format($this->rc->config->get('calendar_date_format', $this->defaults['calendar_date_format']));
           $exdates = array_map(
-            function($dt) use ($format) { return format_date($dt, $format); },
+            function($dt) use ($format) { return rcmail::get_instance()->format_date($dt, $format); },
             array_slice($rrule['EXDATE'], 0, 10)
           );
           $except = '; ' . $this->gettext('except') . ' ' . join(', ', $exdates);
