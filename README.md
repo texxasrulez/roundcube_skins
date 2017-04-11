@@ -38,4 +38,4 @@ TODO:
 * Oauth support. (In progress)
 * Assign random colors to autodiscover calendars.
 * Remove mcrypt and replace with openssl
-* Get code ready for PHP7
+* Get code ready for PHP7 - 95% Done ... Almost there
