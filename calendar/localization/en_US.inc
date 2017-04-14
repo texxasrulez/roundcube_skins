@@ -144,6 +144,7 @@ $labels['futureevents'] = 'Future';
 $labels['showalarms'] = 'Show reminders';
 $labels['defaultalarmtype'] = 'Default reminder setting';
 $labels['defaultalarmoffset'] = 'Default reminder time';
+$labels['alarmdisplayoption'] = 'Default Reminder';
 
 // attendees
 $labels['attendee'] = 'Participant';
