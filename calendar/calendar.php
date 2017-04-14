@@ -315,7 +315,7 @@ class calendar extends rcube_plugin
     $driver_name = null;
     foreach(array("_driver", "driver") as $input_name)
     {
-      $driver_name = rcube_utils::get_input_value($input_name, RCUBE_INPUT_GPC);
+      $driver_name = rcube_utils::get_input_value($input_name, rcube_utils::INPUT_GPC);
       if($driver_name != null) break;
     }
 
