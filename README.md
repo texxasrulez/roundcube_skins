@@ -8,6 +8,8 @@ with Nextcloud.
 
 This is also compatible with RCMCARDDAV 2.0.4 as I use it to sync my contacts with Nextcloud to Roundcube as well.
 
+This was tested using Roundcube 1.3 and PHP 7.0.17.
+
 Installation is pretty straight forward.
 
 Copy calendar and libcalendaring folders to Roundcube Plugin folder, copy config.inc.php.dist to config.inc.php and change domain.ltd to your URL. 'These URL's are already configured for the default calendar url for Nextcloud.'
@@ -38,4 +40,3 @@ TODO:
 * Oauth support. (In progress)
 * Assign random colors to autodiscover calendars.
 * Remove mcrypt and replace with openssl
-* Get code ready for PHP7 - 95% Done ... Almost there
