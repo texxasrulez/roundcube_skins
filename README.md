@@ -25,6 +25,7 @@ Your login and password must be the same for Nextcloud and Roundcube to work pro
 Known Issues:
 -------
 * Will not create new calendar.
+* Itip does not send reply to event organizer using RC1.3. Works in RC1.2.4.
 * ~~Recurring events marked as "All Day Events" will be a day early the following years.~~ Fixed!!!!
 * ~~Database driver does not work. Birthdays are the issue due to being all day.~~ Fixed!!!
 
