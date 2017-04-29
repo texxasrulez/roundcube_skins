@@ -500,7 +500,7 @@ class calendar extends rcube_plugin
     $this->rc->output->set_env('timezone', $this->timezone->getName());
     $this->rc->output->set_env('calendar_driver', $this->rc->config->get('calendar_driver'), false);
     $this->rc->output->set_env('calendar_resources', (bool)$this->rc->config->get('calendar_resources_driver'));
-//    $this->rc->output->set_env('mscolors', jqueryui::get_color_values());
+//  $this->rc->output->set_env('mscolors', jqueryui::get_color_values());
     $this->rc->output->set_env('identities-selector', $this->ui->identity_select(array('id' => 'edit-identities-list', 'aria-label' => $this->gettext('roleorganizer'))));
 
     $view = rcube_utils::get_input_value('view', rcube_utils::INPUT_GPC);
@@ -562,7 +562,7 @@ class calendar extends rcube_plugin
       $select->add($this->gettext('month'), "month");
       $select->add($this->gettext('agenda'), "table");
       $p['blocks']['view']['options']['default_view'] = array(
-        'title' => html::label($field_id, rcube_utils::rep_specialchars_output($this->gettext('default_view'))),
+        'title' => html::label($field_id, rcube::Q($this->gettext('default_view'))),
         'content' => $select->show($this->rc->config->get('calendar_default_view', $this->defaults['calendar_default_view'])),
       );
     }
@@ -591,15 +591,15 @@ class calendar extends rcube_plugin
 
       $field_id = 'rcmfd_firstday';
       $select = new html_select(array('name' => '_first_day', 'id' => $field_id));
-      $select->add(rcmail::get_instance()->gettext('sunday'), '0');
-      $select->add(rcmail::get_instance()->gettext('monday'), '1');
-      $select->add(rcmail::get_instance()->gettext('tuesday'), '2');
-      $select->add(rcmail::get_instance()->gettext('wednesday'), '3');
-      $select->add(rcmail::get_instance()->gettext('thursday'), '4');
-      $select->add(rcmail::get_instance()->gettext('friday'), '5');
-      $select->add(rcmail::get_instance()->gettext('saturday'), '6');
+      $select->add($this->rc->gettext('sunday'), '0');
+      $select->add($this->rc->gettext('monday'), '1');
+      $select->add($this->rc->gettext('tuesday'), '2');
+      $select->add($this->rc->gettext('wednesday'), '3');
+      $select->add($this->rc->gettext('thursday'), '4');
+      $select->add($this->rc->gettext('friday'), '5');
+      $select->add($this->rc->gettext('saturday'), '6');
       $p['blocks']['view']['options']['first_day'] = array(
-        'title' => html::label($field_id, rcube_utils::rep_specialchars_output($this->gettext('first_day'))),
+        'title' => html::label($field_id, rcube::Q($this->gettext('first_day'))),
         'content' => $select->show(strval($this->rc->config->get('calendar_first_day', $this->defaults['calendar_first_day']))),
       );
     }
@@ -630,7 +630,7 @@ class calendar extends rcube_plugin
 
       $field_id = 'rcmfd_workstart';
       $p['blocks']['view']['options']['workinghours'] = array(
-        'title' => html::label($field_id, rcube_utils::rep_specialchars_output($this->gettext('workinghours'))),
+        'title' => html::label($field_id, rcube::Q($this->gettext('workinghours'))),
         'content' => $select_hours->show($this->rc->config->get('calendar_work_start', $this->defaults['calendar_work_start']), array('name' => '_work_start', 'id' => $field_id)) .
         ' &mdash; ' . $select_hours->show($this->rc->config->get('calendar_work_end', $this->defaults['calendar_work_end']), array('name' => '_work_end', 'id' => $field_id)),
       );
@@ -674,7 +674,7 @@ class calendar extends rcube_plugin
         $select_type->add($this->gettext(strtolower("alarm{$type}option"), 'libcalendaring'), $type);
       }
       $p['blocks']['view']['options']['alarmtype'] = array(
-        'title' => html::label($field_id, rcube_utils::rep_specialchars_output($this->gettext('defaultalarmtype'))),
+        'title' => html::label($field_id, rcube::Q($this->gettext('defaultalarmtype'))),
         'content' => $select_type->show($this->rc->config->get('calendar_default_alarm_type', '')),
       );
     }
@@ -689,7 +689,7 @@ class calendar extends rcube_plugin
       $input_value = new html_inputfield(array('name' => '_alarm_value', 'id' => $field_id . 'value', 'size' => 3));
       $select_offset = new html_select(array('name' => '_alarm_offset', 'id' => $field_id . 'offset'));
       foreach (array('-M','-H','-D','+M','+H','+D') as $trigger)
-        $select_offset->add(rcmail::get_instance()->gettext('trigger' . $trigger, 'libcalendaring'), $trigger);
+        $select_offset->add($this->rc->gettext('trigger' . $trigger, 'libcalendaring'), $trigger);
 
       $preset = libcalendaring::parse_alarm_value($this->rc->config->get('calendar_default_alarm_offset', '-15M'));
       $p['blocks']['view']['options']['alarmoffset'] = array(
@@ -714,7 +714,7 @@ class calendar extends rcube_plugin
         }
       }
       $p['blocks']['view']['options']['defaultcalendar'] = array(
-        'title' => html::label($field_id . 'value', rcube_utils::rep_specialchars_output($this->gettext('defaultcalendar'))),
+        'title' => html::label($field_id . 'value', rcube::Q($this->gettext('defaultcalendar'))),
         'content' => $select_cal->show($this->rc->config->get('calendar_default_calendar', $default_calendar)),
       );
     }
@@ -754,7 +754,7 @@ class calendar extends rcube_plugin
       ));
 
       $p['blocks']['itip']['options']['after_action'] = array(
-        'title'   => html::label($field_id, rcube_utils::rep_specialchars_output($this->gettext('afteraction'))),
+        'title'   => html::label($field_id, rcube::Q($this->gettext('afteraction'))),
         'content' => $select->show($val) . $folders->show($folder),
       );
     }
@@ -803,7 +803,7 @@ class calendar extends rcube_plugin
             $("#rcmfd_new_category").val("");
           }
         }');
-
+            
         $this->rc->output->add_script('$("#rcmfd_new_category").keypress(function(event){
           if (event.which == 13) {
             rcube_calendar_add_category();
@@ -816,7 +816,30 @@ class calendar extends rcube_plugin
         jqueryui::miniColors();
       }
     }
-
+    
+    /*
+	$table = new html_table(array('cols' => 2, 'cellpadding' => 0, 'cellspacing' => 0, 'class' => 'account-details'));
+    $table = new html_table(array('class' => 'account-details', 'cols' => 2, 'cellpadding' => 0, 'cellspacing' => 0));
+if(count($cals) > 0){
+      $i ++;
+      $table->add('title', html::tag('h4', null, '&nbsp;' . $this->gettext('calendars') . ':&nbsp;&sup' . $i . ';'));
+      $table->add('', '');
+      ksort($cals);
+      $repl = $rcmail->config->get('caldav_url_replace', false);
+      foreach($cals as $key => $cal){
+        $temp = explode('?', $cal['caldav_url'], 2);
+        $url = slashify($temp[0]) . ($temp[1] ? ('?' . $temp[1]) : '');
+         if(is_array($repl)){
+          foreach($repl as $key1 => $val){
+            $url = str_replace($key1, $val, $url);
+          }
+        }
+        $table->add('title','&nbsp;&#9679; ' . $key);
+        $table->add('', html::tag('input', array('value' => $url, 'onclick' => 'select_all(this)', 'name' => $key,  'type' => 'text', 'size' => $url_box_length)));
+      }
+  }
+   out = $table->show();
+  */
 	/*
     // virtual birthdays calendar TODO
     if (!isset($no_override['calendar_contact_birthdays'])) {
@@ -844,11 +867,11 @@ class calendar extends rcube_plugin
       $checkbox = new html_checkbox(array('name' => '_birthday_adressbooks[]') + $input_attrib);
       foreach ($this->rc->get_address_sources(false, true) as $source) {
         $active = in_array($source['id'], (array)$this->rc->config->get('calendar_birthday_adressbooks', array())) ? $source['id'] : '';
-        $sources[] = html::label(null, $checkbox->show($active, array('value' => $source['id'])) . '&nbsp;' . rcube_utils::rep_specialchars_output($source['realname'] ?: $source['name']));
+        $sources[] = html::label(null, $checkbox->show($active, array('value' => $source['id'])) . '&nbsp;' . rcube::Q($source['realname'] ?: $source['name']));
       }
 
       $p['blocks']['birthdays']['options']['birthday_adressbooks'] = array(
-        'title'   => rcube_utils::rep_specialchars_output($this->gettext('birthdayscalendarsources')),
+        'title'   => rcube::Q($this->gettext('birthdayscalendarsources')),
         'content' => join(html::br(), $sources),
       );
 
@@ -856,17 +879,17 @@ class calendar extends rcube_plugin
       $select_type = new html_select(array('name' => '_birthdays_alarm_type', 'id' => $field_id) + $input_attrib);
       $select_type->add($this->gettext('none'), '');
       foreach ($this->get_default_driver()->alarm_types as $type) { // TODO: Replace with dedicated birthday calendar as soon as it is available
-        $select_type->add(rcmail::get_instance()->gettext(strtolower("alarm{$type}option"), 'libcalendaring'), $type);
+        $select_type->add($this->rc->gettext(strtolower("alarm{$type}option"), 'libcalendaring'), $type);
       }
 
       $input_value = new html_inputfield(array('name' => '_birthdays_alarm_value', 'id' => $field_id . 'value', 'size' => 3) + $input_attrib);
       $select_offset = new html_select(array('name' => '_birthdays_alarm_offset', 'id' => $field_id . 'offset') + $input_attrib);
       foreach (array('-M','-H','-D') as $trigger)
-        $select_offset->add(rcmail::get_instance()->gettext('trigger' . $trigger, 'libcalendaring'), $trigger);
+        $select_offset->add($this->rc->gettext('trigger' . $trigger, 'libcalendaring'), $trigger);
 
       $preset = libcalendaring::parse_alarm_value($this->rc->config->get('calendar_birthdays_alarm_offset', '-1D'));
       $p['blocks']['birthdays']['options']['birthdays_alarmoffset'] = array(
-        'title' => html::label($field_id . 'value', rcube_utils::rep_specialchars_output($this->gettext('showalarms'))),
+        'title' => html::label($field_id . 'value', rcube::Q($this->gettext('showalarms'))),
         'content' => $select_type->show($this->rc->config->get('calendar_birthdays_alarm_type', '')) . ' ' . $input_value->show($preset[0]) . '&nbsp;' . $select_offset->show($preset[1]),
       );
     }
@@ -2915,7 +2938,7 @@ class calendar extends rcube_plugin
 
     return html::div(rtrim('event-row ' . $class),
       html::span('event-date', $time) .
-      html::span('event-title', rcube_utils::rep_specialchars_output($event['title']))
+      html::span('event-title', rcube::Q($event['title']))
     );
   }
   
