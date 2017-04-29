@@ -133,7 +133,7 @@ class ical_driver extends calendar_driver
                 $arr['name'] = html::quote($arr['name']);
                 $arr['listname'] = html::quote($arr['name']);
                 $arr['rights'] = 'lrswikxteav';
-                $arr['editable'] = false;
+                $arr['editable'] = true;
                 $arr['ical_pass']   = $this->_decrypt_pass($arr['ical_pass']);
                 $this->calendars[$arr['calendar_id']] = $arr;
                 $calendar_ids[] = $this->rc->db->quote($arr['calendar_id']);
@@ -1716,7 +1716,7 @@ class ical_driver extends calendar_driver
             {
                 $table = new html_table(array('cols' => 2));
                 foreach ($form['content'] as $col => $colprop) {
-                    $label = !empty($colprop['label']) ? $colprop['label'] : rcube_label($col);
+                    $label = !empty($colprop['label']) ? $colprop['label'] : $this->rc->gettext($col);
 
                     $table->add('title', html::label($colprop['id'], Q($label)));
                     $table->add(null, $colprop['value']);
@@ -1726,7 +1726,7 @@ class ical_driver extends calendar_driver
             else
             {
                 foreach ( $form['content'] as $col => $colprop ) {
-                    $label = ! empty( $colprop['label'] ) ? $colprop['label'] : rcube_label( $col );
+                    $label = ! empty( $colprop['label'] ) ? $colprop['label'] : $this->rc->gettext($col);
                     $content .=
                         html::div("calendar-input",
                             html::label( $colprop['id'], Q( $label ) ) .
