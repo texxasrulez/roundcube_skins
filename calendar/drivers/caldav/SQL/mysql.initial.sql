@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `caldav_calendars` (
   `name` varchar(255) NOT NULL,
   `color` varchar(8) NOT NULL,
   `showalarms` tinyint(1) NOT NULL DEFAULT '1',
-
   `caldav_url` varchar(255) NOT NULL,
   `caldav_tag` varchar(255) DEFAULT NULL,
   `caldav_user` varchar(255) DEFAULT NULL,
@@ -34,7 +33,6 @@ CREATE TABLE IF NOT EXISTS `caldav_calendars` (
   `caldav_oauth_provider` varchar(255) DEFAULT NULL,
   `readonly` tinyint(1) NOT NULL DEFAULT '0',
   `caldav_last_change` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-
   PRIMARY KEY(`calendar_id`),
   INDEX `caldav_user_name_idx` (`user_id`, `name`),
   CONSTRAINT `fk_caldav_calendars_user_id` FOREIGN KEY (`user_id`)
@@ -67,11 +65,9 @@ CREATE TABLE IF NOT EXISTS `caldav_events` (
   `alarms` text NULL DEFAULT NULL,
   `attendees` text DEFAULT NULL,
   `notifyat` datetime DEFAULT NULL,
-
   `caldav_url` varchar(255) NOT NULL,
   `caldav_tag` varchar(255) DEFAULT NULL,
   `caldav_last_change` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-
   PRIMARY KEY(`event_id`),
   INDEX `caldav_uid_idx` (`uid`),
   INDEX `caldav_recurrence_idx` (`recurrence_id`),
