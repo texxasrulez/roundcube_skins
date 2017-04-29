@@ -313,7 +313,7 @@ class calendar_ui
     if (!$activeonly || $prop['active']) {
       $label_id = 'cl:' . $id;
       $content = html::div(join(' ', $classes),
-        html::span(array('class' => 'calname', 'id' => $label_id, 'title' => $title), $prop['editname'] ? rcube_utils::rep_specialchars_output($prop['editname']) : $prop['listname']) .
+        html::span(array('class' => 'calname', 'id' => $label_id, 'title' => $title), $prop['editname'] ? rcube::Q($prop['editname']) : $prop['listname']) .
         ($prop['virtual'] ? '' :
           html::tag('input', array('type' => 'checkbox', 'name' => '_cal[]', 'value' => $id, 'checked' => $prop['active'], 'aria-labelledby' => $label_id), '') .
           html::span('actions',
@@ -367,7 +367,7 @@ class calendar_ui
     $select = new html_select($attrib);
 
     foreach ((array)$this->cal->get_calendars() as $id => $prop) {
-      if ($prop['editable'] && strpos($prop['rights'], 'i') !== false)
+      if ($prop['editable'] || strpos($prop['rights'], 'i') !== false)
         $select->add($prop['name'], $id);
     }
 
@@ -521,7 +521,7 @@ class calendar_ui
       $attrib['id'] = 'rcmImportForm';
 
     // Get max filesize, enable upload progress bar
-    $max_filesize = rcmail::get_instance()->upload_init();
+    $max_filesize = $this->rc->upload_init();
 
     $accept = '.ics, text/calendar, text/x-vcalendar, application/ics';
     if (class_exists('ZipArchive', false)) {
@@ -545,7 +545,7 @@ class calendar_ui
 
     $html = html::div('form-section',
       html::div(null, $input->show()) .
-      html::div('hint', rcmail::get_instance()->gettext(array('name' => 'maxuploadsize', 'vars' => array('size' => $max_filesize))))
+      html::div('hint', $this->rc->gettext(array('name' => 'maxuploadsize', 'vars' => array('size' => $max_filesize))))
     );
 
     $html .= html::div('form-section',
@@ -624,7 +624,7 @@ class calendar_ui
       $attrib['id'] = 'rcmUploadForm';
 
     // Get max filesize, enable upload progress bar
-    $max_filesize = rcmail::get_instance()->upload_init();
+    $max_filesize = $this->rc->upload_init();
 
     $button = new html_inputfield(array('type' => 'button'));
     $input = new html_inputfield(array(
@@ -633,9 +633,9 @@ class calendar_ui
 
     return html::div($attrib,
       html::div(null, $input->show()) .
-      html::div('formbuttons', $button->show(rcmail::get_instance()->gettext('upload'), array('class' => 'button mainaction',
+      html::div('formbuttons', $button->show($this->rc->gettext('upload'), array('class' => 'button mainaction',
         'onclick' => JS_OBJECT_NAME . ".upload_file(this.form)"))) .
-      html::div('hint', rcmail::get_instance()->gettext(array('name' => 'maxuploadsize', 'vars' => array('size' => $max_filesize))))
+      html::div('hint', $this->rc->gettext(array('name' => 'maxuploadsize', 'vars' => array('size' => $max_filesize))))
     );
   }
 
