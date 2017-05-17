@@ -1081,7 +1081,7 @@ class libcalendaring extends rcube_plugin
                       ));
                   }
                   else {
-                      $button = Q($this->rc->gettext('delete'));
+                      $button = rcube_utils::rep_specialchars_output($this->rc->gettext('delete'));
                   }
 
                   $content = html::a(array(
