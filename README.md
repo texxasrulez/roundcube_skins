@@ -41,3 +41,7 @@ TODO:
 * Oauth support. (In progress)
 * Assign random colors to autodiscover calendars.
 * Remove mcrypt and replace with openssl
+
+Random Color Quickie:
+-------
+* Multiple Calendars saved with same color. (Import into database `UPDATE caldav_calendars SET color = substring(MD5(RAND()), -6);` to assign radmon colors after initial sync of calendars)
