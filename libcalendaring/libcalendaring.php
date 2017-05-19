@@ -677,7 +677,7 @@ class libcalendaring extends rcube_plugin
      */
     public function alarms_action()
     {
-//        $action = rcube_utils::get_input_value('action', rcube_utils::INPUT_GPC);
+        $action = rcube_utils::get_input_value('action', rcube_utils::INPUT_GPC);
         $data  = rcube_utils::get_input_value('data', rcube_utils::INPUT_POST, true);
 
         $data['ids'] = explode(',', $data['id']);
@@ -1081,7 +1081,7 @@ class libcalendaring extends rcube_plugin
                       ));
                   }
                   else {
-                      $button = rcube_utils::rep_specialchars_output($this->rc->gettext('delete'));
+                      $button = rcube::Q($this->rc->gettext('delete'));
                   }
 
                   $content = html::a(array(
@@ -1092,7 +1092,7 @@ class libcalendaring extends rcube_plugin
                       'aria-label' => $this->rc->gettext('delete') . ' ' . $attachment['name'],
                   ), $button);
 
-                  $content .= Q($attachment['name']);
+                  $content .= rcube::Q($attachment['name']);
 
                   $this->rc->output->command('add2attachment_list', "rcmfile$id", array(
                       'html' => $content,
@@ -1256,21 +1256,21 @@ class libcalendaring extends rcube_plugin
         $table = new html_table(array('cols' => $dl_link ? 3 : 2));
 
         if (!empty($this->attachment['name'])) {
-            $table->add('title', Q($this->rc->gettext('filename')));
-            $table->add('header', Q($this->attachment['name']));
+            $table->add('title', rcube::Q($this->rc->gettext('filename')));
+            $table->add('header', rcube::Q($this->attachment['name']));
             if ($dl_link) {
-                $table->add('download-link', html::a($dl_url, Q($this->rc->gettext('download'))));
+                $table->add('download-link', html::a($dl_url, rcube::Q($this->rc->gettext('download'))));
             }
         }
 
         if (!empty($this->attachment['mimetype'])) {
-            $table->add('title', Q($this->rc->gettext('type')));
-            $table->add('header', Q($this->attachment['mimetype']));
+            $table->add('title', rcube::Q($this->rc->gettext('type')));
+            $table->add('header', rcube::Q($this->attachment['mimetype']));
         }
 
         if (!empty($this->attachment['size'])) {
-            $table->add('title', Q($this->rc->gettext('filesize')));
-            $table->add('header', Q(show_bytes($this->attachment['size'])));
+            $table->add('title', rcube::Q($this->rc->gettext('filesize')));
+            $table->add('header', rcube::Q(show_bytes($this->attachment['size'])));
         }
 
         $this->rc->output->set_env('attachment_download_url', $dl_url);
