@@ -1104,7 +1104,7 @@ class libcalendaring extends rcube_plugin
               else {  // upload failed
                   if ($err == UPLOAD_ERR_INI_SIZE || $err == UPLOAD_ERR_FORM_SIZE) {
                     $msg = $this->rc->gettext(array('name' => 'filesizeerror', 'vars' => array(
-                        'size' => show_bytes(parse_bytes(ini_get('upload_max_filesize'))))));
+                        'size' => rcmail::get_instance()->show_bytes(parse_bytes(ini_get('upload_max_filesize'))))));
                   }
                   else if ($attachment['error']) {
                       $msg = $attachment['error'];
@@ -1123,7 +1123,7 @@ class libcalendaring extends rcube_plugin
             // show filesizeerror instead of fileuploaderror
             if ($maxsize = ini_get('post_max_size'))
                 $msg = $this->rc->gettext(array('name' => 'filesizeerror', 'vars' => array(
-                    'size' => show_bytes(parse_bytes($maxsize)))));
+                    'size' => rcmail::get_instance()->show_bytes(parse_bytes($maxsize)))));
             else
                 $msg = $this->rc->gettext('fileuploaderror');
 
@@ -1270,7 +1270,7 @@ class libcalendaring extends rcube_plugin
 
         if (!empty($this->attachment['size'])) {
             $table->add('title', rcube::Q($this->rc->gettext('filesize')));
-            $table->add('header', rcube::Q(show_bytes($this->attachment['size'])));
+            $table->add('header', rcube::Q(rcmail::get_instance()->show_bytes($this->attachment['size'])));
         }
 
         $this->rc->output->set_env('attachment_download_url', $dl_url);
