@@ -10,7 +10,7 @@ Installation is easy. Upload plugins and skins folders to your roundcube install
 
 Enjoy!
 
-Screenshots
+Thumbnail Preview
 -----------
 
 ![Alt text](/skins/autumn-larry/thumbnail.png?raw=true "Autumn Larry")
