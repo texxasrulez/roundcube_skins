@@ -219,7 +219,7 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	color: #fff;
+	color: #000;
 }
 
 .quickview-active #calendars .treelist div input,
