@@ -82,6 +82,7 @@ html>/**/body #messagelist {
 }
 
 #messagelistfooter {
+	color: #fff;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -617,11 +618,6 @@ h3.subject {
 	text-overflow: ellipsis;
 }
 
-.headers-table td {
-	color: #fff;
-	padding: 1px 8px;
-}
-
 .headers-table td.header,
 .ui-dialog-content.popup span.adr {
 	font-weight: bold;
@@ -633,7 +629,7 @@ h3.subject {
 
 .headers-table td.header a,
 .ui-dialog-content.popup span.adr a {
-	color: #666;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -675,6 +671,7 @@ h3.subject {
 
 #preview-allheaders td.header-title,
 #preview-shortheaders td.header-title {
+	color: #fff;
 	padding-left: 0;
 }
 
@@ -950,6 +947,7 @@ div.message-partheaders .headers-table {
 }
 
 div.message-partheaders .headers-table td.header-title {
+	color: #fff;
 	width: 1%;
 	padding-left: 0;
 	vertical-align: top;
@@ -1053,6 +1051,7 @@ div.message-partheaders .headers-table td.header {
 /*** message composition ***/
 
 #composeview-left {
+	color: #fff;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1061,6 +1060,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composeview-right {
+	color: #fff;
 	position: absolute;
 	top: 0;
 	left: 212px;
@@ -1222,10 +1222,12 @@ div.message-partheaders .headers-table td.header {
 }
 
 .compose-headers td.editfield a.iconlink {
+	color: #fff;
 	margin-left: 0.5em;
 }
 
 .compose-headers td.formlinks {
+	color: #fff;
 	padding: 0 4px;
 }
 
@@ -1245,6 +1247,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composeoptions {
+	color: #fff;
 	display: none;
 	padding: 2px 0 0 8px;
 	white-space: normal;
@@ -1253,7 +1256,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #666;
+	color: #fff;
 	padding-right: 22px;
 	white-space: nowrap;
 }
@@ -1523,7 +1526,7 @@ div.message-partheaders .headers-table td.header {
 	right: 2px;
 	top: 3px;
 	position: absolute;
-	color: #666;
+	color: #000;
 }
 
 .widescreen .messagelist td.subject span.fromto {
@@ -1532,7 +1535,7 @@ div.message-partheaders .headers-table td.header {
 	margin-right: 10em;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #666;
+	color: #000;
 }
 
 .widescreen .messagelist tr.flagged td.subject span.date,

@@ -1538,20 +1538,20 @@ table.records-table {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .records-table.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #49b3d2;
+	border-left: 2px solid #a3511f;
 }
 
 .records-table tr.selected td {
 	color: #fff !important;
-	background-color: #4db0d2 !important;
+	background-color: #bd5e24 !important;
 }
 
 .records-table.focus tr.selected td {
 	background: #019bc6;
-	background: -moz-linear-gradient(top, #019bc6 0%, #017cb4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#019bc6), color-stop(100%,#017cb4));
-	background: -ms-linear-gradient(top, #019bc6 0%, #017cb4 100%);
-	background: linear-gradient(to bottom, #019bc6 0%, #017cb4 100%);
+	background: -moz-linear-gradient(top, #000000 0%, #a45322 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#a45322));
+	background: -ms-linear-gradient(top, #000000 0%, #a45322 100%);
+	background: linear-gradient(to bottom, #000000 0%, #a45322 100%);
 }
 
 .records-table tr.selected td a,

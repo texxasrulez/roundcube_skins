@@ -82,6 +82,7 @@ html>/**/body #messagelist {
 }
 
 #messagelistfooter {
+	color: #fff;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -633,7 +634,7 @@ h3.subject {
 
 .headers-table td.header a,
 .ui-dialog-content.popup span.adr a {
-	color: #666;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -1227,6 +1228,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .compose-headers td.formlinks {
+	color: #fff;
 	padding: 0 4px;
 }
 
@@ -1254,7 +1256,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #666;
+	color: #fff;
 	padding-right: 22px;
 	white-space: nowrap;
 }
@@ -1533,7 +1535,7 @@ div.message-partheaders .headers-table td.header {
 	margin-right: 10em;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #666;
+	color: #000;
 }
 
 .widescreen .messagelist tr.flagged td.subject span.date,

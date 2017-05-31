@@ -82,6 +82,7 @@ html>/**/body #messagelist {
 }
 
 #messagelistfooter {
+	color: #fff;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -633,7 +634,7 @@ h3.subject {
 
 .headers-table td.header a,
 .ui-dialog-content.popup span.adr a {
-	color: #666;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -1221,6 +1222,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .compose-headers td.editfield a.iconlink {
+	color: #fff;
 	margin-left: 0.5em;
 }
 
@@ -1252,7 +1254,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #666;
+	color: #000;
 	padding-right: 22px;
 	white-space: nowrap;
 }

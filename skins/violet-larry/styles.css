@@ -1038,7 +1038,7 @@ a.iconlink.upload {
 }
 
 .uibox {
-	border: 1px solid #a3a3a3;
+	border: 1px solid #caa3d2;
 	border-radius: 4px;
 	overflow: hidden;
 	box-shadow: 0 0 2px #999;
@@ -1125,7 +1125,7 @@ a.iconlink.upload {
 .listing li {
 	display: block;
 	border-top: 1px solid #fff;
-	border-bottom: 1px solid #bbd3da;
+	border-bottom: 1px solid #caa3d2;
 	cursor: default;
 	font-weight: normal;
 }
@@ -1204,7 +1204,7 @@ ul.listing li {
 }
 
 ul.listing li ul {
-	border-top: 1px solid #bbd3da;
+	border-top: 1px solid #caa3d2;
 }
 
 ul.listing li.droptarget,
@@ -1468,7 +1468,7 @@ table.records-table {
 	width: 100%;
 	table-layout: fixed;
 	border-spacing: 0;
-	border: 1px solid #bbd3da;
+	border: 1px solid #caa3d2;
 }
 
 .boxlistcontent .records-table {
@@ -1485,7 +1485,7 @@ table.records-table {
 	background: -webkit-gradient(linear, left top, right top, color-stop(0,#e3f2f6), color-stop(8%,#d6eaf3), color-stop(100%,#d6eaf3));
 	background: -ms-linear-gradient(left, #e3f2f6 0, #d6eaf3 14px ,#d6eaf3 100%);
 	background: linear-gradient(left, #e3f2f6 0, #d6eaf3 14px, #d6eaf3 100%);
-	border-left: 1px solid #bbd3da;
+	border-left: 1px solid #caa3d2;
 	padding: 8px 7px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1519,7 +1519,7 @@ table.records-table {
 .records-table tbody td {
 	padding: 2px 7px;
 	border-bottom: 1px solid #ddd;
-	border-left: 1px dotted #bbd3da;
+	border-left: 1px dotted #caa3d2;
 	white-space: nowrap;
 	cursor: default;
 	overflow: hidden;
@@ -1538,20 +1538,20 @@ table.records-table {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .records-table.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #49b3d2;
+	border-left: 2px solid #ddbbe4;
 }
 
 .records-table tr.selected td {
 	color: #fff !important;
-	background-color: #4db0d2 !important;
+	background-color: #ddbbe4 !important;
 }
 
 .records-table.focus tr.selected td {
 	background: #019bc6;
-	background: -moz-linear-gradient(top, #019bc6 0%, #017cb4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#019bc6), color-stop(100%,#017cb4));
-	background: -ms-linear-gradient(top, #019bc6 0%, #017cb4 100%);
-	background: linear-gradient(to bottom, #019bc6 0%, #017cb4 100%);
+	background: -moz-linear-gradient(top, #9044e1 0%, #3f1968 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9044e1), color-stop(100%,#3f1968));
+	background: -ms-linear-gradient(top, #9044e1 0%, #3f1968 100%);
+	background: linear-gradient(to bottom, #9044e1 0%, #3f1968 100%);
 }
 
 .records-table tr.selected td a,
@@ -2772,7 +2772,7 @@ ul.toolbarmenu li span.copy {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid #bbd3da;
+	border-top: 1px solid #caa3d2;
 }
 
 .folderlist li.mailbox ul li a {
