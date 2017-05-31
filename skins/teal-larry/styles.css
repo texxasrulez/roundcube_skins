@@ -1053,6 +1053,10 @@ a.iconlink.upload {
 	overflow: auto;
 }
 
+.scrollbar {
+	background: #000;
+}
+
 .watermark {
 	background-image: url(images/watermark.jpg?v=e784.5000);
 	background-position: center;

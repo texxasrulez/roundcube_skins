@@ -634,7 +634,7 @@ h3.subject {
 
 .headers-table td.header a,
 .ui-dialog-content.popup span.adr a {
-	color: #666;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -692,11 +692,11 @@ h3.subject {
 	width: 18px;
 	padding: 0;
 	outline: none;
-	background: #f2f2f2;
-	background: -moz-linear-gradient(left, #fbfbfb 0, #e9e9e9 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0,#fbfbfb), color-stop(100%,#e9e9e9));
-	background: -ms-linear-gradient(left, #fbfbfb 0, #e9e9e9 100%);
-	background: linear-gradient(left, #fbfbfb 0, #e9e9e9 100%);
+	background: #3f1a67;
+	background: -moz-linear-gradient(left, #3f1a67 0, #9145e2 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0,#3f1a67), color-stop(100%,#9145e2));
+	background: -ms-linear-gradient(left, #3f1a67 0, #9145e2 100%);
+	background: linear-gradient(left, #3f1a67 0, #9145e2 100%);
 	border-right: 1px solid #dfdfdf;
 	border-radius: 3px 0 0 0; /* for Opera */
 }
@@ -1227,6 +1227,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .compose-headers td.formlinks {
+	color: #fff;
 	padding: 0 4px;
 }
 
@@ -1254,7 +1255,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #666;
+	color: #fff;
 	padding-right: 22px;
 	white-space: nowrap;
 }
@@ -1533,7 +1534,7 @@ div.message-partheaders .headers-table td.header {
 	margin-right: 10em;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #666;
+	color: #000;
 }
 
 .widescreen .messagelist tr.flagged td.subject span.date,

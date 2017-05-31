@@ -581,10 +581,10 @@ table.messagelist.fixedcopy {
 	position: relative;
 	padding: 3px 0;
 	background: #f9f9f9;
-	background: -moz-linear-gradient(top, #484854 0%, #f0f0f0 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484854), color-stop(100%,#f0f0f0));
-	background: -ms-linear-gradient(top, #484854 0%, #f0f0f0 100%);
-	background: linear-gradient(to bottom, #484854 0%, #f0f0f0 100%);
+	background: -moz-linear-gradient(top, #000 0%, #494955 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#494955));
+	background: -ms-linear-gradient(top, #000 0%, #494955 100%);
+	background: linear-gradient(to bottom, #000 0%, #494955 100%);
 	border-bottom: 1px solid #dfdfdf;
 }
 
@@ -692,11 +692,11 @@ h3.subject {
 	width: 18px;
 	padding: 0;
 	outline: none;
-	background: #f2f2f2;
-	background: -moz-linear-gradient(left, #fbfbfb 0, #e9e9e9 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0,#fbfbfb), color-stop(100%,#e9e9e9));
-	background: -ms-linear-gradient(left, #fbfbfb 0, #e9e9e9 100%);
-	background: linear-gradient(left, #fbfbfb 0, #e9e9e9 100%);
+	background: #474752;
+	background: -moz-linear-gradient(left, #000 0, #474752 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0,#000), color-stop(100%,#474752));
+	background: -ms-linear-gradient(left, #000 0, #474752 100%);
+	background: linear-gradient(left, #000 0, #474752 100%);
 	border-right: 1px solid #dfdfdf;
 	border-radius: 3px 0 0 0; /* for Opera */
 }
@@ -773,6 +773,7 @@ div.hide-headers {
 }
 
 #messageheader.previewheader {
+	color: #fff;
 	position: relative;
 	height: auto;
 	min-height: 52px;
