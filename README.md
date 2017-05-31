@@ -3,7 +3,7 @@ I have taken Larry skin and modified it so there are more theme colors to choose
 
 I have also included skins for many popular plugins (or the ones I use) so you shouldn't have to make your own. If you need help with a plugin not available with this, please message me and ask. I just might can help you out ... 
 
-The Larry Skin from Roundcube 1.3 was used, so you must be running RC 1.3 or higher.
+The Larry Skin from Roundcube 1.3 Beta was used, so you must be running RC 1.3 or higher. With that said, I will be fixing minor CSS changes but will not upload fixes until RC 1.3 comes out of Beta and I can test these more.
 
 Installation is easy. Upload plugins and skins folders to your roundcube installation root and it should copy to all appropriate file locations ... 
 
