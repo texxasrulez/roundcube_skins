@@ -1110,7 +1110,7 @@ div.message-partheaders .headers-table td.header {
 
 #contacts-table td span.email {
 	display: inline;
-	color: #f9fcfd;
+	color: #0e4f55;
 	font-style: italic;
 	margin-left: 0.5em;
 }
@@ -1385,7 +1385,7 @@ div.message-partheaders .headers-table td.header {
 
 #composebodycontainer .mce-panel {
 	border-color: #ccc !important;
-	background: #f0f0f0;
+	background: #acf3e8;
 }
 
 #composebody_toolbargroup {
