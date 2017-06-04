@@ -1685,7 +1685,7 @@ a.dropdown-link:after {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #ccc;
+	background: #eaeaea;
 }
 
 .calendarmain.quickview-active .fc-content {

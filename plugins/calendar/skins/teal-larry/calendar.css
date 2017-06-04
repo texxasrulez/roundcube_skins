@@ -397,10 +397,12 @@ pre {
 }
 
 #calendars .treelist li.selected > div.calendar {
+	color: #fff !important;
 	background-color: #0e4f55;
 }
 
 #calendars .treelist li.selected > span.calname {
+	color: #fff !important;
 	font-weight: bold;
 }
 
@@ -1685,7 +1687,7 @@ a.dropdown-link:after {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #cdf7f1;
+	background: #ebfbf9;
 }
 
 .calendarmain.quickview-active .fc-content {
@@ -2003,7 +2005,7 @@ div.fc-event-location {
 }
 
 .fc-sat, .fc-sun {
-	background-color: rgba(65,65,65, 0.08);
+	background-color: rgba(143,172,168, 0.08);
 }
 
 .calendarmain .fc-state-highlight {

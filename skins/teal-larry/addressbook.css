@@ -73,6 +73,7 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	color: #0e4f55;
 }
 
 #directorylist li.addressbook a {
@@ -88,6 +89,7 @@
 }
 
 #directorylist li.addressbook.selected > a {
+	color: #e6edee;
 	background-position: 6px -791px;
 }
 
@@ -167,6 +169,7 @@
 }
 
 #contacts-table .contact.selected td.name {
+	color: #e6edee;
 	background-position: 4px -1627px;
 	font-weight: bold;
 }

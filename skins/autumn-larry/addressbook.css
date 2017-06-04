@@ -73,6 +73,7 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	color: inherit;
 }
 
 #directorylist li.addressbook a {
