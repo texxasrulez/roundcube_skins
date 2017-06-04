@@ -20,3 +20,8 @@ Thumbnail Preview
 ![Alt text](/skins/pink-larry/thumbnail.png?raw=true "Pink Larry")
 ![Alt text](/skins/teal-larry/thumbnail.png?raw=true "Teal Larry")
 ![Alt text](/skins/violet-larry/thumbnail.png?raw=true "Violet Larry")
+
+
+Original Author:
+Larry
+by FLINT / Büro für Gestaltung, Switzerland
