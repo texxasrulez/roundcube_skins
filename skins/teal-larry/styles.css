@@ -1196,6 +1196,7 @@ a.iconlink.upload {
 .listbox .listitem.selected > a,
 .listbox .tablink.selected > a,
 .listing tbody tr.selected td,
+.listing tbody tr.selected td a,
 .listing li.selected,
 .listing li.selected > a {
 	color: #fdf6f3;

@@ -1150,7 +1150,7 @@ a.iconlink.upload {
 .listing tbody td,
 .listing li a {
 	display: block;
-	color: #fdf6f3;
+	color: #6d1f49;
 	text-decoration: none;
 	cursor: default;
 	padding: 4px 8px;
@@ -1166,7 +1166,7 @@ a.iconlink.upload {
 }
 
 .listing tbody td a {
-	color: #fdf6f3;
+	color: #6d1f49;
 	text-decoration: none;
 }
 
@@ -1196,6 +1196,7 @@ a.iconlink.upload {
 .listbox .listitem.selected > a,
 .listbox .tablink.selected > a,
 .listing tbody tr.selected td,
+.listing tbody tr.selected td a,
 .listing li.selected,
 .listing li.selected > a {
 	color: #fdf6f3;
