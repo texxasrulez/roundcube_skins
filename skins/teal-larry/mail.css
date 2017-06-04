@@ -770,7 +770,7 @@ div.hide-headers {
 	padding: 3px 6px;
 	overflow: auto;
 	text-align: left;
-	color: #fdf6f3;
+	color: #0e4f55;
 }
 
 #messageheader.previewheader #all-headers {
@@ -1261,7 +1261,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #fdf6f3;
+	color: #000;
 	padding-right: 22px;
 	white-space: nowrap;
 }
@@ -1366,7 +1366,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments .hint {
-	color: #efe7e6;
+	color: #0e4f55;
 	margin: 0 0 8px;
 }
 
