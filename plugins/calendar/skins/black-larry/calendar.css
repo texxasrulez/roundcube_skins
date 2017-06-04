@@ -226,6 +226,11 @@ pre {
 	color: #efe7e6;
 }
 
+#calendars .treelist li.selected span.calname {
+	color: #fff;
+	font-weight: bold;
+}
+
 .quickview-active #calendars .treelist div input,
 .quickview-active #calendars .treelist div .calname {
 	opacity: 0.35;
