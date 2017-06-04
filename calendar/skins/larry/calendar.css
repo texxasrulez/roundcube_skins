@@ -223,6 +223,11 @@ pre {
 	color: #004458;
 }
 
+#calendars .treelist li.selected span.calname { /* added for colored larry skins */
+	color: #004458;
+	font-weight: bold;
+}
+
 .quickview-active #calendars .treelist div input,
 .quickview-active #calendars .treelist div .calname {
 	opacity: 0.35;
