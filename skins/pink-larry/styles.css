@@ -752,7 +752,7 @@ a.iconlink.upload {
 
 #topline a,
 #topnav a {
-	color: #eee;
+	color: #f1dee7;
 	text-decoration: none;
 }
 
@@ -1539,7 +1539,7 @@ table.records-table {
 	cursor: default;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	background-color: #6e204a;
+	background-color: #f1dee7;
 	outline: none;
 }
 
@@ -2371,7 +2371,7 @@ ul.toolbarmenu li input {
 }
 
 ul.toolbarmenu li a.icon {
-	color: #eee;
+	color: #f1dee7;
 	padding: 2px 6px;
 }
 
