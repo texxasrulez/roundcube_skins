@@ -1,4 +1,0 @@
-/vendor
-/phpunit.xml
-/example/*/vendor
-/example/*/composer.lock
