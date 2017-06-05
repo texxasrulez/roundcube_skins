@@ -226,6 +226,11 @@ pre {
 	color: #efe7e6;
 }
 
+#calendars .treelist li.selected span.calname {
+	color: #efe7e6;
+	font-weight: bold;
+}
+
 .quickview-active #calendars .treelist div input,
 .quickview-active #calendars .treelist div .calname {
 	opacity: 0.35;
@@ -648,7 +653,7 @@ a.miniColors-trigger {
 }
 
 #eventedit .droptarget {
-	background-image: url(../../../../skins/larry/images/filedrop.png) !important;
+	background-image: url(../../../../skins/autumn-larry/images/filedrop.png) !important;
 	background-position: center bottom !important;
 	background-repeat: no-repeat !important;
 }

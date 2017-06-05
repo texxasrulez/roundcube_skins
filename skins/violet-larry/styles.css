@@ -14,7 +14,7 @@ body {
 	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #3f1a67;
-	background: url(images/linen.jpg?v=0382.14157) repeat #d1d5d8;
+	background: url(images/linen.jpg?v=0382.14157) repeat #eeddf1;
 	margin: 0;
 }
 
@@ -208,7 +208,7 @@ a.button,
 	display: inline-block;
 	margin: 0 2px;
 	padding: 2px 5px;
-	color: #525252;
+	color: #ebe8ef;
 	border: 1px solid #caa3d2;
 	border-radius: 4px;
 	background: #9145e2;

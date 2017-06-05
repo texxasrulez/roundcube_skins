@@ -655,7 +655,7 @@ a.miniColors-trigger {
 }
 
 #eventedit .droptarget {
-	background-image: url(../../../../skins/larry/images/filedrop.png) !important;
+	background-image: url(../../../../skins/pink-larry/images/filedrop.png) !important;
 	background-position: center bottom !important;
 	background-repeat: no-repeat !important;
 }
@@ -2267,7 +2267,7 @@ div.calendar-invitebox .calendar-agenda-preview {
 div.calendar-invitebox .calendar-agenda-preview h3.preview-title {
 	margin: 0 0 0.5em 0;
 	font-size: 12px;
-	color: #efe7e6;
+	color: #6d1f49;
 }
 
 div.calendar-invitebox .calendar-agenda-preview .event-row {
