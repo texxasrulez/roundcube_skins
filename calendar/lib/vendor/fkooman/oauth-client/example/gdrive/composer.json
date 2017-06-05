@@ -1,0 +1,7 @@
+{
+    "name": "fkooman/php-drive-client",
+    "require": {
+        "fkooman/oauth-client": "dev-master",
+        "guzzle/guzzle": "~3.0"
+    }
+}

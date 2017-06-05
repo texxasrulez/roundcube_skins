@@ -1,0 +1,7 @@
+{
+    "name": "fkooman/php-oauth-client-example",
+    "require": {
+        "fkooman/oauth-client": "dev-master",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
