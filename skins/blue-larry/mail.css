@@ -273,6 +273,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
+	color: #152f40;
 	width: 60px;
 	text-align: right;
 }
@@ -286,10 +287,12 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
+	color: #152f40;
 	width: 200px;
 }
 
 .messagelist tr > .date {
+	color: #152f40;
 	width: 155px;
 }
 

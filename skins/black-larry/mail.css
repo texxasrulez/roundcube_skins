@@ -273,6 +273,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
+	color: #000;
 	width: 60px;
 	text-align: right;
 }
@@ -286,10 +287,12 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
+	color: #000;
 	width: 200px;
 }
 
 .messagelist tr > .date {
+	color: #000;
 	width: 155px;
 }
 
@@ -339,7 +342,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody td a {
-	color: #fdf6f3;
+	color: #000;
 	text-decoration: none;
 	white-space: nowrap;
 	cursor: default;
@@ -1528,6 +1531,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td.subject span {
+	color: #fff;
 	line-height: 20px;
 }
 
