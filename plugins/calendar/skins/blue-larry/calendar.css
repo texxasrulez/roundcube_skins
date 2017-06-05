@@ -226,7 +226,7 @@ pre {
 }
 
 #calendars .treelist li.selected span.calname {
-	color: #152f40;
+	color: #e7eaeb;
 	font-weight: bold;
 }
 
@@ -401,7 +401,7 @@ pre {
 }
 
 #calendars .treelist li.selected > div.calendar {
-	background-color: #c7e3ef;
+	background-color: #152f40;
 }
 
 #calendars .treelist li.selected > span.calname {

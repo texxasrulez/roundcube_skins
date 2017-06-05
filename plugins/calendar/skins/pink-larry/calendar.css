@@ -59,6 +59,7 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker .ui-datepicker td a {
+	text-shadow: none;
 	padding: 5px 4px;
 	font-size: 12px;
 }
@@ -223,7 +224,12 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	color: #efe7e6;
+	color: #6d1f49;
+}
+
+#calendars .treelist li.selected span.calname {
+	color: #f0e8ec;
+	font-weight: bold;
 }
 
 .quickview-active #calendars .treelist div input,

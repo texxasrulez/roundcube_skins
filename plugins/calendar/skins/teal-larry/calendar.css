@@ -54,16 +54,19 @@ body.calendarmain #mainscreen {
 #datepicker .ui-datepicker {
 	width: 100% !important;
 	box-shadow: none;
+	text-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 }
 
 #datepicker .ui-datepicker td a {
+	text-shadow: none;
 	padding: 5px 4px;
 	font-size: 12px;
 }
 
 #datepicker td.ui-datepicker-activerange {
+	text-shadow: none;
 	border-color: #f0fcfa;
 }
 
