@@ -58,7 +58,7 @@ textarea,
 select,
 button {
 	color: #0e4f55;
-	background: #fdf6f3;
+	background: #ebfbf9;
 	font-family: inherit;
 	font-size: inherit;
 	vertical-align: middle;
@@ -68,7 +68,7 @@ input[type="text"],
 input[type="password"],
 textarea {
 	color: #0e4f55;
-	background: #cdf7f1;
+	background: #ebfbf9;
 	margin: 0; /* Safari by default adds a margin */
 	padding: 4px;
 	border: 1px solid #f0fcfa;
@@ -92,7 +92,7 @@ input[type="password"]:required {
 
 input.placeholder,
 textarea.placeholder {
-	color: #aaa;
+	color: #9eb8bb;
 }
 
 .bold {

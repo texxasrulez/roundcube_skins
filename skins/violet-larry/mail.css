@@ -1091,7 +1091,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts #directorylist {
-	border-bottom: 4px solid #7854ba;
+	border-bottom: 4px solid #8b75a3;
 }
 
 #compose-contacts .scroller {
@@ -1505,7 +1505,7 @@ div.message-partheaders .headers-table td.header {
 
 .widescreen .messagelist td {
 	color: #fdf6f3;
-	background: #7854ba;
+	background: #8b75a3;
 	border-left: 0;
 	vertical-align: top;
 	padding: 3px 2px !important;

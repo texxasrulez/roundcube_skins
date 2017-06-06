@@ -44,6 +44,7 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker {
+	background: #8c471d;
 	position: absolute;
 	top: 40px;
 	left: 0;
