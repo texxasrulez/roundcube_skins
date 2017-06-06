@@ -54,6 +54,7 @@
 	display: block;
 	width: 100%;
 	cursor: pointer;
+	background: #fff;
 }
 
 #preferences-details fieldset.advanced .propform {

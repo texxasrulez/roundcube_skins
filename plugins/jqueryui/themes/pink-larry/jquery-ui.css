@@ -254,12 +254,12 @@
 .ui-menu .ui-menu-item .ui-state-active,
 .ui-menu .ui-state-focus,
 .ui-menu .ui-state-active {
-	background: #db0077;
-	background: -moz-linear-gradient(top, #db0077 0%, #ac005d 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db0077), color-stop(100%,#ac005d));
-	background: -o-linear-gradient(top, #db0077 0%, #ac005d 100%);
-	background: -ms-linear-gradient(top, #db0077 0%, #ac005d 100%);
-	background: linear-gradient(top, #db0077 0%, #ac005d 100%);
+	background: #6d1f49;
+	background: -moz-linear-gradient(top, #6d1f49 0%, #d3bbc8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1f49), color-stop(100%,#d3bbc8));
+	background: -o-linear-gradient(top, #6d1f49 0%, #d3bbc8 100%);
+	background: -ms-linear-gradient(top, #6d1f49 0%, #d3bbc8 100%);
+	background: linear-gradient(top, #6d1f49 0%, #d3bbc8 100%);
 }
 
 /* icon support */
@@ -959,7 +959,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
 	outline: none;
-	color: #f0e8ecy;
+	color: #360f24;
 	background: #cf81b1;
 	background: -moz-linear-gradient(top, #cf81b1 0%, #6d1f49 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#6d1f49));
