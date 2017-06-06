@@ -538,7 +538,7 @@ a.iconlink.upload {
 #message div.notice,
 #message div.confirmation,
 #message-objects div.notice {
-	color: #555;
+	color: #fff;
 	font-weight: bold;
 	padding: 6px 30px 6px 25px;
 	display: inline-block;
@@ -959,12 +959,8 @@ a.iconlink.upload {
 	background-position: 0 2px;
 }
 
-#taskbar a.button-mail:hover span.button-inner {	
-	background-position: 0 -168px;
-}
-
+#taskbar a.button-mail:hover span.button-inner,
 #taskbar a.button-mail.button-selected span.button-inner {
-	font-weight: bold;
 	background-position: 0 -22px;
 }
 
@@ -972,12 +968,8 @@ a.iconlink.upload {
 	background-position: 0 -48px;
 }
 
-#taskbar a.button-addressbook:hover span.button-inner {	
-	background-position: 0 -168px;
-}
-
+#taskbar a.button-addressbook:hover span.button-inner,
 #taskbar a.button-addressbook.button-selected span.button-inner {
-	font-weight: bold;
 	background-position: 0 -72px;
 }
 
@@ -985,12 +977,8 @@ a.iconlink.upload {
 	background-position: 0 -96px;
 }
 
-#taskbar a.button-settings:hover span.button-inner {	
-	background-position: 0 -168px;
-}
-
+#taskbar a.button-settings:hover span.button-inner,
 #taskbar a.button-settings.button-selected span.button-inner {
-	font-weight: bold;
 	background-position: 0 -120px;
 }
 
@@ -998,12 +986,8 @@ a.iconlink.upload {
 	background-position: 0 -144px;
 }
 
-#taskbar a.button-calendar:hover span.button-inner {	
-	background-position: 0 -168px;
-}
-
+#taskbar a.button-calendar:hover span.button-inner,
 #taskbar a.button-calendar.button-selected span.button-inner {
-	font-weight: bold;
 	background-position: 0 -168px;
 }
 
