@@ -945,7 +945,7 @@ button.ui-button::-moz-focus-inner {
 	text-decoration: none;
 	font-size: 12px;
 	color: #000;
-	background: #323232;
+	background: #e5e5e5;
 	border-right: 1px solid #666;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
@@ -976,7 +976,7 @@ button.ui-button::-moz-focus-inner {
 	border-width: 0;
 	padding: 0.5em 1em;
 	margin-top: 0.2em;
-	background: #efefef;
+	background: #fff;
 }
 .ui-tooltip {
 	padding: 8px;
@@ -1006,7 +1006,7 @@ body .ui-tooltip {
 }
 .ui-widget-content {
 	border: 1px solid #dddddd;
-	background: #f0e8ec;
+	background: #e5e5e5;
 	color: #000;
 }
 .ui-widget-content a {

@@ -1491,7 +1491,7 @@ a.dropdown-link:after {
 
 .ui-datepicker-calendar .ui-datepicker-week-col {
 	border: 0;
-	color: #ccc;
+	color: #000;
 	background: #ccc;
 	font-size: 90%;
 	text-align: right;
