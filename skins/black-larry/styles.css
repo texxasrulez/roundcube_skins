@@ -959,8 +959,12 @@ a.iconlink.upload {
 	background-position: 0 2px;
 }
 
-#taskbar a.button-mail:hover span.button-inner,
+#taskbar a.button-mail:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-mail.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -22px;
 }
 
@@ -968,8 +972,12 @@ a.iconlink.upload {
 	background-position: 0 -48px;
 }
 
-#taskbar a.button-addressbook:hover span.button-inner,
+#taskbar a.button-addressbook:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-addressbook.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -72px;
 }
 
@@ -977,8 +985,12 @@ a.iconlink.upload {
 	background-position: 0 -96px;
 }
 
-#taskbar a.button-settings:hover span.button-inner,
+#taskbar a.button-settings:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-settings.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -120px;
 }
 
@@ -986,8 +998,12 @@ a.iconlink.upload {
 	background-position: 0 -144px;
 }
 
-#taskbar a.button-calendar:hover span.button-inner,
+#taskbar a.button-calendar:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-calendar.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -168px;
 }
 
@@ -1342,6 +1358,10 @@ ul.treelist li.selected > div.expanded {
 	height: 42px;
 	border-top: 1px solid #5d5d5d;
 	background: #000;
+	background: -moz-linear-gradient(top, #484853 0%, #000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#000));
+	background: -ms-linear-gradient(top, #484853 0%, #000 100%);
+	background: linear-gradient(to bottom, #484853 0%, #000 100%);
 	box-shadow: inset 0 1px 0 0 #5d5d5d;
 	white-space: nowrap;
 	overflow: hidden;
@@ -1357,6 +1377,10 @@ ul.treelist li.selected > div.expanded {
 	width: 48px;
 	border-right: 1px solid #5d5d5d;
 	background: #000;
+	background: -moz-linear-gradient(top, #484853 0%, #000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#000));
+	background: -ms-linear-gradient(top, #484853 0%, #000 100%);
+	background: linear-gradient(to bottom, #484853 0%, #000 100%);
 	padding: 3px 0;
 	margin-top: 1px;
 }
@@ -1422,7 +1446,7 @@ ul.treelist li.selected > div.expanded {
 	display: inline-block;
 	position: relative;
 	top: 10px;
-	color: #69929e;
+	color: #fff;
 	padding: 3px 6px;
 }
 

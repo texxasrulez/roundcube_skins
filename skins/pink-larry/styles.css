@@ -959,8 +959,12 @@ a.iconlink.upload {
 	background-position: 0 2px;
 }
 
-#taskbar a.button-mail:hover span.button-inner,
+#taskbar a.button-mail:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-mail.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -22px;
 }
 
@@ -968,8 +972,12 @@ a.iconlink.upload {
 	background-position: 0 -48px;
 }
 
-#taskbar a.button-addressbook:hover span.button-inner,
+#taskbar a.button-addressbook:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-addressbook.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -72px;
 }
 
@@ -977,8 +985,12 @@ a.iconlink.upload {
 	background-position: 0 -96px;
 }
 
-#taskbar a.button-settings:hover span.button-inner,
+#taskbar a.button-settings:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-settings.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -120px;
 }
 
@@ -986,8 +998,12 @@ a.iconlink.upload {
 	background-position: 0 -144px;
 }
 
-#taskbar a.button-calendar:hover span.button-inner,
+#taskbar a.button-calendar:hover span.button-inner {	
+	background-position: 0 -168px;
+}
+
 #taskbar a.button-calendar.button-selected span.button-inner {
+	font-weight: bold;
 	background-position: 0 -168px;
 }
 
@@ -1341,7 +1357,11 @@ ul.treelist li.selected > div.expanded {
 	width: 100%;
 	height: 42px;
 	border-top: 1px solid #e6c5d6;
-	background: #6e204a;
+	background: #6d1f49;
+	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49));
+	background: -ms-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
+	background: linear-gradient(to bottom, #c3629e 0%, #6d1f49 100%);
 	box-shadow: inset 0 1px 0 0 #fdf6f3;
 	white-space: nowrap;
 	overflow: hidden;
@@ -1356,7 +1376,11 @@ ul.treelist li.selected > div.expanded {
 	text-decoration: none;
 	width: 48px;
 	border-right: 1px solid #e6c5d6;
-	background: #6e204a;
+	background: #6d1f49;
+	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49));
+	background: -ms-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
+	background: linear-gradient(to bottom, #c3629e 0%, #6d1f49 100%);
 	padding: 3px 0;
 	margin-top: 1px;
 }
@@ -1422,7 +1446,7 @@ ul.treelist li.selected > div.expanded {
 	display: inline-block;
 	position: relative;
 	top: 10px;
-	color: #fdf6f3;
+	color: #f0e8ec;
 	padding: 3px 6px;
 }
 
