@@ -283,7 +283,7 @@ input.button:active {
 
 .pagenav.dark a.button {
 	font-weight: bold;
-	border-color: #b5734b;
+	border-color: #e6c5d6;
 	background: #c3629e;
 	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49));
@@ -308,8 +308,8 @@ input.button:active {
 	background: -ms-linear-gradient(top, #6d1f49 0%, #c3629e 100%);
 	background: linear-gradient(to bottom, #6d1f49 0%, #c3629e 100%);
 	box-shadow: inset 0 1px 2px 0 #555;
-	border-right-color: #b5734b;
-	border-left-color: #b5734b;
+	border-right-color: #e6c5d6;
+	border-left-color: #e6c5d6;
 }
 
 .buttongroup a.button:focus,
