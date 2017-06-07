@@ -14,7 +14,7 @@ body {
 	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #651605;
-	background: url(images/linen.jpg?v=0382.14157) repeat #d1d5d8;
+	background: url(images/linen.jpg?v=0382.14157) repeat #a3511f;
 	margin: 0;
 }
 
@@ -1566,7 +1566,7 @@ table.records-table {
 }
 
 .records-table tr.selected td {
-	color: #8c471d !important;
+	color: #efe7e6 !important;
 	background-color: #651605 !important;
 }
 

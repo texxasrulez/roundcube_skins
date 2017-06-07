@@ -353,15 +353,16 @@ form #contacthead {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #666;
+	color: #354516;
 }
 
 .contactfieldgroup .contactfieldlabel select {
 	width: 100%;
-	color: #666;
+	color: #354516;
 }
 
 .contactfieldgroup .contactfieldcontent {
+	color: #354516;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;

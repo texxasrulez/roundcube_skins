@@ -362,6 +362,7 @@ form #contacthead {
 }
 
 .contactfieldgroup .contactfieldcontent {
+	color: #3f1a67;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;

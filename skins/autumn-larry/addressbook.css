@@ -73,7 +73,7 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: inherit;
+	color: efe7e6;
 }
 
 #directorylist li.addressbook a {
@@ -89,6 +89,7 @@
 }
 
 #directorylist li.addressbook.selected > a {
+	color: efe7e6; /*Needed for Darker Contrasts*/
 	background-position: 6px -791px;
 }
 
@@ -354,15 +355,16 @@ form #contacthead {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #651605;
+	color: #efe7e6;
 }
 
 .contactfieldgroup .contactfieldlabel select {
 	width: 100%;
-	color: #651605;
+	color: #efe7e6;
 }
 
 .contactfieldgroup .contactfieldcontent {
+	color: #efe7e6;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;

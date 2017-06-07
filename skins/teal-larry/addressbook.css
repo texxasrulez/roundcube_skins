@@ -89,7 +89,7 @@
 }
 
 #directorylist li.addressbook.selected > a {
-    color: #e6edee;
+    color: #e6edee; /*Needed for Darker Contrasts*/
     background-position: 6px -791px
 }
 
@@ -365,6 +365,7 @@ form #contacthead {
 }
 
 .contactfieldgroup .contactfieldcontent {
+	color: #0e4f55;
     padding-left: 120px;
     min-height: 1em;
     line-height: 1.3em

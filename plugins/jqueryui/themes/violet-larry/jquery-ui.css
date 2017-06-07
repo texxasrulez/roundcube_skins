@@ -652,7 +652,7 @@ button.ui-button::-moz-focus-inner {
 	box-shadow: none !important;
 }
 .ui-dialog .ui-dialog-titlebar-close.ui-state-focus {
-	outline: 2px solid #4fadd5;
+	outline: 2px solid #6830a5;
 }
 .ui-dialog .ui-dialog-titlebar-close .ui-icon-closethick {
 	top: 0;
@@ -1093,17 +1093,17 @@ a.ui-button:active,
 	border: 1px solid #003eff;
 	background: #3f1a67;
 	font-weight: normal;
-	color: #ffffff;
+	color: #fff;
 }
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
 	border: #003eff;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -1444,7 +1444,7 @@ a.ui-button:active,
 
 .ui-button.ui-state-focus {
 	color: #525252;
-	border-color: #4fadd5;
+	border-color: #6830a5;
 	-moz-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6);
 	-webkit-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6);
 	-o-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6);
@@ -1575,14 +1575,14 @@ a.ui-button:active,
 }
 .ui-datepicker .ui-datepicker-month:focus,
 .ui-datepicker .ui-datepicker-year:focus {
-	outline: 1px solid #4fadd5;
+	outline: 1px solid #6830a5;
 }
 .ui-datepicker table {
 	margin: 0;
 	border-spacing: 0;
 }
 .ui-datepicker table:focus {
-	outline: 2px solid #4fadd5;
+	outline: 2px solid #6830a5;
 	outline-offset: -2px;
 }
 .ui-datepicker td {

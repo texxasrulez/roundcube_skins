@@ -99,8 +99,8 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker td.ui-datepicker-week-col {
-	color: #651605;
-	background: #fbe4d7;
+	color: #efe7e6;
+	background: #a3511f;
 	cursor: pointer;
 }
 

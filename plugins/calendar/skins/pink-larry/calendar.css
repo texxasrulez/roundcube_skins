@@ -1534,10 +1534,6 @@ a.dropdown-link:after {
 	border-bottom-color: #e6c5d6;
 	border-radius: 0 0 4px 4px;
 	background: #ebebeb;
-	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49));
-	background: -ms-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
-	background: linear-gradient(to bottom, #c3629e 0%, #6d1f49 100%);
 }
 
 #agendaoptions label {
