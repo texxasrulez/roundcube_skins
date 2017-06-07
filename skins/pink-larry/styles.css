@@ -1571,11 +1571,11 @@ table.records-table {
 }
 
 .records-table.focus tr.selected td {
-	background: #019bc6;
-	background: -moz-linear-gradient(top, #6d1f49 0%, #331a0b 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1f49), color-stop(100%,#331a0b));
-	background: -ms-linear-gradient(top, #6d1f49 0%, #331a0b 100%);
-	background: linear-gradient(to bottom, #6d1f49 0%, #331a0b 100%);
+	background: #4c1533;
+	background: -moz-linear-gradient(top, #4c1533 0%, #8a4b6d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c1533), color-stop(100%,#8a4b6d));
+	background: -ms-linear-gradient(top, #4c15339 0%, #8a4b6d 100%);
+	background: linear-gradient(to bottom, #4c1533 0%, #8a4b6d 100%);
 }
 
 .records-table tr.selected td a,

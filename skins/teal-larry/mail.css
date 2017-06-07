@@ -169,11 +169,11 @@ html.mozilla #mailboxlist > li:first-child {
 	min-width: 1.8em;
 	line-height: 15px;
 	padding: 2px 4px;
-	background: #82acb5;
-	background: -moz-linear-gradient(top, #82acb5 0%, #6a939f 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82acb5), color-stop(100%,#6a939f));
-	background: -ms-linear-gradient(top, #82acb5 0%, #6a939f 100%);
-	background: linear-gradient(to bottom, #82acb5 0%, #6a939f 100%);
+	background: #0e4f55;
+	background: -moz-linear-gradient(top, #0e4f55 0%, #53b0a3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4f55), color-stop(100%,#53b0a3));
+	background: -ms-linear-gradient(top, #0e4f55 0%, #53b0a3 100%);
+	background: linear-gradient(to bottom, #0e4f55 0%, #53b0a3 100%);
 	box-shadow: inset 0 1px 1px 0 #536d72;
 	border-radius: 9px;
 	color: #fdf6f3;
@@ -183,11 +183,11 @@ html.mozilla #mailboxlist > li:first-child {
 }
 
 .folderlist li.mailbox.selected > a .unreadcount {
-	background: #019bc6;
-	background: -moz-linear-gradient(top, #331a0b 0%, #0e4f55 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#331a0b), color-stop(100%,#0e4f55));
-	background: -ms-linear-gradient(top, #331a0b 0%, #0e4f55 100%);
-	background: linear-gradient(to bottom, #331a0b 0%, #0e4f55 100%);
+	background: #53b0a3;
+	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#53b0a3), color-stop(100%,#0e4f55));
+	background: -ms-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
+	background: linear-gradient(to bottom, #53b0a3 0%, #0e4f55 100%);
 	box-shadow: inset 0 1px 1px 0 #003645;
 }
 
