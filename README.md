@@ -24,6 +24,19 @@ Thumbnail Preview
 ![Alt text](/skins/violet-larry/thumbnail.png?raw=true "Violet Larry")
 
 
+Screenshots
+-----------
+
+![Alt text](https://www.genesworld.net/images/autumn-mail.png?raw=true "Autumn Larry")
+![Alt text](https://www.genesworld.net/images/black-mail.png?raw=true "Black Larry")
+![Alt text](https://www.genesworld.net/images/blue-mail.png?raw=true "Blue Larry")
+![Alt text](https://www.genesworld.net/images/blue-cal.png?raw=true "Blue Larry Calendar")
+![Alt text](https://www.genesworld.net/images/green-mail.png?raw=true "Green Larry")
+![Alt text](https://www.genesworld.net/images/pink-mail.png?raw=true "Pink Larry")
+![Alt text](https://www.genesworld.net/images/teal-mail.png?raw=true "Teal Larry")
+![Alt text](https://www.genesworld.net/images/violet-mail.png?raw=true "Violet Larry")
+
+
 Original Author Credits:
 Larry
 by FLINT / Büro für Gestaltung, Switzerland
