@@ -1,4 +1,4 @@
-# Roundcube_Skins
+# Roundcube Skins
 I have taken Larry skin and modified it so there are more theme colors to choose from. Larry Skin has the best layout of all other themes in my opinion, so why reinvent the wheel when all I want is a wider color choice.
 
 I have also included skins for many popular plugins, and the ones I use, so you shouldn't have to make your own. If you need help with a plugin not available with this, please message me and ask. I just might can help you out ... 
@@ -22,6 +22,6 @@ Thumbnail Preview
 ![Alt text](/skins/violet-larry/thumbnail.png?raw=true "Violet Larry")
 
 
-Original Author:
+Original Author Credits:
 Larry
 by FLINT / Büro für Gestaltung, Switzerland
