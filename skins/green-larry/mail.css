@@ -1113,7 +1113,7 @@ div.message-partheaders .headers-table td.header {
 
 #contacts-table td span.email {
 	display: inline;
-	color: #f9fcfd;
+	color: inherit;
 	font-style: italic;
 	margin-left: 0.5em;
 }
