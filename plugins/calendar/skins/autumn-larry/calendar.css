@@ -292,12 +292,12 @@ pre {
 	border: 1px solid #b5734b;
 	border-radius: 4px;
 	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
+	background: -moz-linear-gradient(top, #913e0a 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#913e0a), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #913e0a 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #913e0a 0%, #913e0a 100%);
+	background: linear-gradient(top, #913e0a 0%, #913e0a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#913e0a', endColorstr='#913e0a', GradientType=0);
 }
 
 #calendars .treelist li a.subscribed {
@@ -1714,11 +1714,11 @@ a.dropdown-link:after {
 .calendarmain .fc-button.fc-state-default,
 .calendarmain .fc-button.fc-state-hover {
 	background-color: #f5f5f5;
-	background-image: -moz-linear-gradient(top, #fbe4d7, #e6e6e6);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbe4d7), to(#e6e6e6));
-	background-image: -webkit-linear-gradient(top, #fbe4d7, #e6e6e6);
-	background-image: -o-linear-gradient(top, #fbe4d7, #e6e6e6);
-	background-image: linear-gradient(to bottom, #fbe4d7, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #fbe4d7, #913e0a);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbe4d7), to(#913e0a));
+	background-image: -webkit-linear-gradient(top, #fbe4d7, #913e0a);
+	background-image: -o-linear-gradient(top, #fbe4d7, #913e0a);
+	background-image: linear-gradient(to bottom, #fbe4d7, #913e0a);
 	background-position: 0 0;
 }
 
@@ -1728,15 +1728,15 @@ a.dropdown-link:after {
 	margin: 0 0 0 0;
 	height: 20px;
 	line-height: 20px;
-	color: #505050;
+	color: #efe7e6;
 	text-shadow: none;
 	border: 1px solid #b5734b;
-	background: #d8d8d8;
-	background: -moz-linear-gradient(top, #d8d8d8 0%, #bababa 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d8d8), color-stop(100%,#bababa));
-	background: -o-linear-gradient(top, #d8d8d8 0%, #bababa 100%);
-	background: -ms-linear-gradient(top, #d8d8d8 0%, #bababa 100%);
-	background: linear-gradient(top, #d8d8d8 0%, #bababa 100%);
+	background: #651605;
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: linear-gradient(top, #651605 0%, #913e0a 100%);
 	box-shadow: 0 1px 1px 0 #999;
 	-o-box-shadow: 0 1px 1px 0 #999;
 	-webkit-box-shadow: 0 1px 1px 0 #999;
@@ -1745,21 +1745,21 @@ a.dropdown-link:after {
 }
 
 .calendarmain #calendar .fc-button.fc-state-disabled {
-	color: #651605;
-	background: #d8d8d8;
+	color: #913e0a;
+	background: #651605;
 }
 
 .calendarmain .fc-button.fc-state-active,
 .calendarmain .fc-button.fc-state-down,
 .calendarmain #calendar .fc-button.fc-state-active,
 .calendarmain #calendar .fc-button.fc-state-down {
-	color: #651605;
-	background: #bababa;
-	background: -moz-linear-gradient(top, #bababa 0%, #d8d8d8 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bababa), color-stop(100%,#d8d8d8));
-	background: -o-linear-gradient(top, #bababa 0%, #d8d8d8 100%);
-	background: -ms-linear-gradient(top, #bababa 0%, #d8d8d8 100%);
-	background: linear-gradient(top, #bababa 0%, #d8d8d8 100%);
+	color: #efe7e6;
+	background: #913e0a;
+	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#913e0a), color-stop(100%,#651605));
+	background: -o-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: -ms-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: linear-gradient(top, #913e0a 0%, #651605 100%);
 }
 
 .calendarmain #calendar .fc-header .fc-button {

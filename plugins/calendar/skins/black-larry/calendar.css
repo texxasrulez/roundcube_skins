@@ -99,7 +99,7 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker td.ui-datepicker-week-col {
-	color: #000000;
+	color: #000;
 	background: #ccc;
 	cursor: pointer;
 }
@@ -292,12 +292,12 @@ pre {
 	border: 1px solid #5d5d5d;
 	border-radius: 4px;
 	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
+	background: -moz-linear-gradient(top, #484853 0%, #999 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#999));
+	background: -o-linear-gradient(top, #484853 0%, #999 100%);
+	background: -ms-linear-gradient(top, #484853 0%, #999 100%);
+	background: linear-gradient(top, #484853 0%, #999 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#484853', endColorstr='#999', GradientType=0);
 }
 
 #calendars .treelist li a.subscribed {
@@ -631,7 +631,7 @@ a.miniColors-trigger {
 
 #edit-attachments ul li {
 	display: block;
-	color: #000000;
+	color: #000;
 	font-weight: bold;
 	padding: 4px 4px 3px 30px;
 	text-decoration: none;
@@ -669,7 +669,7 @@ a.miniColors-trigger {
 }
 
 #eventedit .droptarget.hover {
-	background-color: #000000;
+	background-color: #000;
 	box-shadow: 0 0 5px 2px rgba(50,50,50, 0.9);
 	-moz-box-shadow: 0 0 5px 2px rgba(50,50,50, 0.9);
 	-webkit-box-shadow: 0 0 5px 2px rgba(50,50,50, 0.9);
@@ -740,11 +740,11 @@ a.miniColors-trigger {
 	color: #efe7e6;
 	font-size: 11px;
 	font-weight: bold;
-	background: #000000;
-	background: -moz-linear-gradient(top, #000000 0%, #484853 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#484853));
-	background: -ms-linear-gradient(top, #000000 0%, #484853 100%);
-	background: linear-gradient(to bottom, #000000 0%, #484853 100%);
+	background: #000;
+	background: -moz-linear-gradient(top, #000 0%, #484853 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#484853));
+	background: -ms-linear-gradient(top, #000 0%, #484853 100%);
+	background: linear-gradient(to bottom, #000 0%, #484853 100%);
 	border: 0;
 	border-bottom: 1px solid #5d5d5d;
 	height: 18px;
@@ -763,7 +763,7 @@ a.miniColors-trigger {
 .calendarmain .eventdialog h5.label {
 	font-weight: normal;
 	font-size: 1em;
-	color: #000000;
+	color: #000;
 	margin: 0 0 0.2em 0;
 }
 
@@ -917,7 +917,7 @@ a.miniColors-trigger {
 
 #event-partstat .changersvp {
 	cursor: pointer;
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -1086,7 +1086,7 @@ td.topalign {
 }
 
 #event-rsvp .itip-reply-controls label {
-	color: #000000;
+	color: #000;
 }
 
 #event-rsvp .itip-reply-controls textarea {
@@ -1483,7 +1483,7 @@ a.dropdown-link:after {
 	position: relative;
 	top: 2px;
 	margin: 0 1em;
-	color: #000000;
+	color: #000;
 }
 
 #calendarsidebar .ui-datepicker-calendar {
@@ -1532,10 +1532,10 @@ a.dropdown-link:after {
 	border-bottom-color: #5d5d5d;
 	border-radius: 0 0 4px 4px;
 	background: #ebebeb;
-	background: -moz-linear-gradient(top, #484853 0%, #000000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#000000));
-	background: -ms-linear-gradient(top, #484853 0%, #000000 100%);
-	background: linear-gradient(to bottom, #484853 0%, #000000 100%);
+	background: -moz-linear-gradient(top, #484853 0%, #000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#000));
+	background: -ms-linear-gradient(top, #484853 0%, #000 100%);
+	background: linear-gradient(to bottom, #484853 0%, #000 100%);
 }
 
 #agendaoptions label {
@@ -1714,11 +1714,11 @@ a.dropdown-link:after {
 .calendarmain .fc-button.fc-state-default,
 .calendarmain .fc-button.fc-state-hover {
 	background-color: #f5f5f5;
-	background-image: -moz-linear-gradient(top, #ccc, #e6e6e6);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#e6e6e6));
-	background-image: -webkit-linear-gradient(top, #ccc, #e6e6e6);
-	background-image: -o-linear-gradient(top, #ccc, #e6e6e6);
-	background-image: linear-gradient(to bottom, #ccc, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #ccc, #999);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#999));
+	background-image: -webkit-linear-gradient(top, #ccc, #999);
+	background-image: -o-linear-gradient(top, #ccc, #999);
+	background-image: linear-gradient(to bottom, #ccc, #999);
 	background-position: 0 0;
 }
 
@@ -1728,15 +1728,15 @@ a.dropdown-link:after {
 	margin: 0 0 0 0;
 	height: 20px;
 	line-height: 20px;
-	color: #000000;
+	color: #fff;
 	text-shadow: none;
 	border: 1px solid #5d5d5d;
-	background: #ffffff;
-	background: -moz-linear-gradient(top, #ffffff 0%, #000000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#000000));
-	background: -o-linear-gradient(top, #ffffff 0%, #000000 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%, #000000 100%);
-	background: linear-gradient(top, #ffffff 0%, #000000 100%);
+	background: #484853;
+	background: -moz-linear-gradient(top, #484853 0%, #000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#000));
+	background: -o-linear-gradient(top, #484853 0%, #000 100%);
+	background: -ms-linear-gradient(top, #484853 0%, #000 100%);
+	background: linear-gradient(top, #484853 0%, #000 100%);
 	box-shadow: 0 1px 1px 0 #ccc;
 	-o-box-shadow: 0 1px 1px 0 #ccc;
 	-webkit-box-shadow: 0 1px 1px 0 #ccc;
@@ -1745,21 +1745,21 @@ a.dropdown-link:after {
 }
 
 .calendarmain #calendar .fc-button.fc-state-disabled {
-	color: #000000;
-	background: #ffffff;
+	color: #000;
+	background: #484853;
 }
 
 .calendarmain .fc-button.fc-state-active,
 .calendarmain .fc-button.fc-state-down,
 .calendarmain #calendar .fc-button.fc-state-active,
 .calendarmain #calendar .fc-button.fc-state-down {
-	color: #ffffff;
-	background: #000000;
-	background: -moz-linear-gradient(top, #000000 0%, #ffffff 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#ffffff));
-	background: -o-linear-gradient(top, #000000 0%, #ffffff 100%);
-	background: -ms-linear-gradient(top, #000000 0%, #ffffff 100%);
-	background: linear-gradient(top, #000000 0%, #ffffff 100%);
+	color: #ffff;
+	background: #000;
+	background: -moz-linear-gradient(top, #000 0%, #484853 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#484853));
+	background: -o-linear-gradient(top, #000 0%, #484853 100%);
+	background: -ms-linear-gradient(top, #000 0%, #484853 100%);
+	background: linear-gradient(top, #000 0%, #484853 100%);
 }
 
 .calendarmain #calendar .fc-header .fc-button {
@@ -1873,7 +1873,7 @@ a.dropdown-link:after {
 }
 
 .fc-event-row.fc-type-freebusy td {
-	color: #000000;
+	color: #000;
 }
 
 .fc-event-hori.fc-type-freebusy .fc-event-skin,
@@ -1951,7 +1951,7 @@ a.dropdown-link:after {
 #quickview-calendar .fc-view-table tr.fc-invitation-tentative td,
 #quickview-calendar .fc-view-table tr.fc-invitation-declined td,
 #quickview-calendar .fc-view-table tr.fc-invitation-needs-action td {
-	color: #000000;
+	color: #000;
 }
 
 .calendarmain .fc-event:focus {
@@ -1999,7 +1999,7 @@ div.fc-event-location {
 }
 
 .fc-more-link {
-	color: #000000;
+	color: #000;
 	padding-top: 1px;
 	cursor: pointer;
 }
@@ -2017,11 +2017,11 @@ div.fc-event-location {
 }
 
 .fc-widget-header {
-	background: #000000;
-	background: -moz-linear-gradient(top, #000000 0%, #484853 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#484853));
-	background: -ms-linear-gradient(top, #000000 0%, #484853 100%);
-	background: linear-gradient(to bottom, #000000 0%, #484853 100%);
+	background: #000;
+	background: -moz-linear-gradient(top, #000 0%, #484853 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#484853));
+	background: -ms-linear-gradient(top, #000 0%, #484853 100%);
+	background: linear-gradient(to bottom, #000 0%, #484853 100%);
 	color: #fff;
 	text-shadow: none;
 }
@@ -2117,7 +2117,7 @@ div.fc-event-location {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
 	font-size: 150%;
-	color: #000000;
+	color: #000;
 }
 
 .fc-listappend .formlinks a {
