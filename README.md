@@ -7,6 +7,8 @@ The Larry Skin from Roundcube 1.3 Beta was used, so you must be running RC 1.3 o
 
 Installation is easy. Upload plugins and skins folders to your roundcube installation root and it should copy to all appropriate file locations ... 
 
+Note: Current Commit should be a working version of my ongoing nitpicking of some small color changes and making transparent images when necessary. Download and use with confidence.
+
 
 Enjoy!
 
