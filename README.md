@@ -24,6 +24,19 @@ Thumbnail Preview
 ![Alt text](/skins/violet-larry/thumbnail.png?raw=true "Violet Larry")
 
 
+Screenshots
+-----------
+
+![Alt text](/do_not_upload/autumn-mail.png?raw=true "Autumn Larry")
+![Alt text](/do_not_upload/black-mail.png?raw=true "Black Larry")
+![Alt text](/do_not_upload/blue-mail.png?raw=true "Blue Larry")
+![Alt text](/do_not_upload/blue-cal.png?raw=true "Blue Larry Calendar")
+![Alt text](/do_not_upload/green-mail.png?raw=true "Green Larry")
+![Alt text](/do_not_upload/pink-mail.png?raw=true "Pink Larry")
+![Alt text](/do_not_upload/teal-mail.png?raw=true "Teal Larry")
+![Alt text](/do_not_upload/violet-mail.png?raw=true "Violet Larry")
+
+
 Original Author Credits:
 Larry
 by FLINT / Büro für Gestaltung, Switzerland
