@@ -1826,13 +1826,13 @@ ul.proplist li {
 }
 
 #login-form input.button {
-	color: #829947;
+	color: #eaece7;
 	border-color: #dbebb0;
-	background: #829947;
-	background: -moz-linear-gradient(top, #829947 0%, #e2e2e2 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#e2e2e2));
-	background: -ms-linear-gradient(top, #829947 0%, #e2e2e2 100%);
-	background: linear-gradient(to bottom, #829947 0%, #e2e2e2 100%);
+	background: #354516;
+	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
+	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
+	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
 	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
@@ -1842,11 +1842,11 @@ ul.proplist li {
 }
 
 #login-form input.button:active {
-	color: #354516;
-	background: -moz-linear-gradient(top, #dcdcdc 0%, #829947 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(100%,#829947));
-	background: -ms-linear-gradient(top, #dcdcdc 0%, #829947 100%);
-	background: linear-gradient(to bottom, #dcdcdc 0%, #829947 100%);
+	background: #354516;
+	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
+	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
+	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
 }
 
 #login-form form table {
@@ -1885,9 +1885,14 @@ ul.proplist li {
 }
 
 #bottomline {
+	color: #fff;
 	font-size: 90%;
 	text-align: center;
 	margin-top: 2em;
+}
+
+#bottomline a {
+	color: #fff;
 }
 
 

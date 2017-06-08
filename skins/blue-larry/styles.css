@@ -1791,7 +1791,7 @@ ul.proplist li {
 
 #login-form .box-inner {
 	width: 430px;
-	background: url(images/linen_login.jpg?v=0484.10363) top left no-repeat #5c5c5c;
+	background: url(images/linen_login.jpg?v=0484.10363) top left no-repeat #0a1720;
 	margin: 0 50px;
 	padding: 10px 24px 24px 24px;
 	border: 1px solid #5b6d79;
@@ -1825,13 +1825,13 @@ ul.proplist li {
 }
 
 #login-form input.button {
-	color: #265576;
+	color: #e7eaeb;
+	background: #152f40;
 	border-color: #5b6d79;
-	background: #265576;
-	background: -moz-linear-gradient(top, #265576 0%, #e2e2e2 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#e2e2e2));
-	background: -ms-linear-gradient(top, #265576 0%, #e2e2e2 100%);
-	background: linear-gradient(to bottom, #265576 0%, #e2e2e2 100%);
+	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576));
+	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%);
+	background: linear-gradient(to bottom, #152f40 0%, #265576 100%);
 	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
@@ -1841,11 +1841,12 @@ ul.proplist li {
 }
 
 #login-form input.button:active {
-	color: #152f40;
-	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576));
-	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%);
-	background: linear-gradient(to bottom, #152f40 0%, #265576 100%);
+	color: #265576;
+	background: #152f40;
+	background: -moz-linear-gradient(top, #265576 0%, #152f40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#152f40));
+	background: -ms-linear-gradient(top, #265576 0%, #152f40 100%);
+	background: linear-gradient(to bottom, #265576 0%, #152f40 100%);
 }
 
 #login-form form table {
@@ -1884,9 +1885,14 @@ ul.proplist li {
 }
 
 #bottomline {
+	color: #fff;
 	font-size: 90%;
 	text-align: center;
 	margin-top: 2em;
+}
+
+#bottomline a {
+	color: #fff;
 }
 
 

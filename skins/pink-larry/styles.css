@@ -1826,11 +1826,11 @@ ul.proplist li {
 #login-form input.button {
 	color: #efe7e6;
 	border-color: #e6c5d6;
-	background: #c3629e;
-	background: -moz-linear-gradient(top, #c3629e 0%, #e2e2e2 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#e2e2e2));
-	background: -ms-linear-gradient(top, #c3629e 0%, #e2e2e2 100%);
-	background: linear-gradient(to bottom, #c3629e 0%, #e2e2e2 100%);
+	background: #6d1f49;
+	background: -moz-linear-gradient(top, #6d1f49 0%, #c3629e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1f49), color-stop(100%,#c3629e));
+	background: -ms-linear-gradient(top, #6d1f49 0%, #c3629e 100%);
+	background: linear-gradient(to bottom, #6d1f49 0%, #c3629e 100%);
 	box-shadow: inset 0 1px 0 0 #fdf6f3;
 }
 
@@ -1883,9 +1883,14 @@ ul.proplist li {
 }
 
 #bottomline {
+	color: #fff;
 	font-size: 90%;
 	text-align: center;
 	margin-top: 2em;
+}
+
+#bottomline a {
+	color: #fff;
 }
 
 

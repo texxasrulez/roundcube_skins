@@ -619,7 +619,7 @@ button.ui-button::-moz-focus-inner {
 	background: #fff;
 	border-radius: 6px !important;
 	border: 0 !important;
-	box-shadow: 1px 1px 18px #666;
+	box-shadow: 1px 1px 18px #651605;
 }
 .ui-dialog .ui-dialog-titlebar {
 	padding: 15px 1em 8px 1em;
@@ -1398,8 +1398,8 @@ a.ui-button:active,
 	filter: Alpha(Opacity=30); /* support: IE8 */
 }
 .ui-widget-shadow {
-	-webkit-box-shadow: 0px 0px 5px #666666;
-	box-shadow: 0px 0px 5px #666666;
+	-webkit-box-shadow: 0px 0px 5px #651605;
+	box-shadow: 0px 0px 5px #651605;
 }
 
 /* Roundcube button styling */
@@ -1499,9 +1499,9 @@ a.ui-button:active,
 	display: none;
 	border: 0;
 	border-radius: 3px;
-	-webkit-box-shadow: #666 1px 1px 10px;
-	   -moz-box-shadow: 1px 1px 10px #666;
-	        box-shadow: 1px 1px 16px #666;
+	-webkit-box-shadow: #651605 1px 1px 10px;
+	   -moz-box-shadow: 1px 1px 10px #651605;
+	        box-shadow: 1px 1px 16px #651605;
 }
 .ui-datepicker .ui-datepicker-header {
 	padding: .3em 0;

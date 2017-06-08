@@ -1841,10 +1841,10 @@ ul.proplist li {
 
 #login-form input.button:active {
 	color: #efe7e6;
-	background: -moz-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
-	background: -ms-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
-	background: linear-gradient(to bottom, #9145e2 0%, #3f1a67 100%);
+	background: -moz-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2));
+	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
+	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%);
 }
 
 #login-form form table {
@@ -1883,12 +1883,15 @@ ul.proplist li {
 }
 
 #bottomline {
+	color: #fff;
 	font-size: 90%;
 	text-align: center;
 	margin-top: 2em;
 }
 
-
+#bottomline a {
+	color: #fff;
+}
 
 /*** quicksearch **/
 

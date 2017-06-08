@@ -1572,10 +1572,10 @@ table.records-table {
 
 .records-table.focus tr.selected td {
 	background: #019bc6;
-	background: -moz-linear-gradient(top, #000 0%, #484853 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#484853));
-	background: -ms-linear-gradient(top, #000 0%, #484853 100%);
-	background: linear-gradient(to bottom, #000 0%, #484853 100%);
+	background: -moz-linear-gradient(top, #000 40%, #484853 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,#000), color-stop(100%,#484853));
+	background: -ms-linear-gradient(top, #000 40%, #484853 100%);
+	background: linear-gradient(to bottom, #000 40%, #484853 100%);
 }
 
 .records-table tr.selected td a,
@@ -1883,9 +1883,14 @@ ul.proplist li {
 }
 
 #bottomline {
+	color: #fff;
 	font-size: 90%;
 	text-align: center;
 	margin-top: 2em;
+}
+
+#bottomline a {
+	color: #fff;
 }
 
 
