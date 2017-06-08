@@ -209,7 +209,7 @@ a.button,
 	margin: 0 2px;
 	padding: 2px 5px;
 	color: #efe7e6;
-	border: 1px solid #b5734b;
+	border: 1px solid #792807;
 	border-radius: 4px;
 	background: #913e0a;
 	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
@@ -624,11 +624,11 @@ a.iconlink.upload {
 	border: 1px solid #b5734b;
 	color: #ebebeb;
 	background: rgba(101,22,5,0.85);
-	background: -moz-linear-gradient(top, rgba(101,22,5,0.85) 0%, rgba(101,22,5,0.9) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(101,22,5,0.85)), color-stop(100%,rgba(101,22,5,0.9)));
-	background: -webkit-linear-gradient(top, rgba(101,22,5,0.85) 0%, rgba(101,22,5,0.85) 100%);
-	background: -ms-linear-gradient(top, rgba(101,22,5,0.85) 0%, rgba(101,22,5,0.85) 100%);
-	background: linear-gradient(to bottom, rgba(101,22,5,0.85) 0%, rgba(101,22,5,0.85) 100%);
+	background: -moz-linear-gradient(top, rgba(101,22,5,0.85) 0%, rgba(145,62,10,0.9) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(101,22,5,0.85)), color-stop(100%,rgba(145,62,10,0.9)));
+	background: -webkit-linear-gradient(top, rgba(101,22,5,0.85) 0%, rgba(1145,62,10,0.85) 100%);
+	background: -ms-linear-gradient(top, rgba(101,22,5,0.85) 0%, rgba(145,62,10,0.85) 100%);
+	background: linear-gradient(to bottom, rgba(101,22,5,0.85) 0%, rgba(145,62,10,0.85) 100%);
 
 	box-shadow: 0 1px 4px 0 rgba(101,22,5,0.8), inset 0px 1px 0 0px #888;
 }
@@ -2153,7 +2153,7 @@ ul.proplist li {
 
 a.menuselector {
 	display: inline-block;
-	border: 1px solid #651605;
+	border: 1px solid #792807;
 	border-radius: 4px;
 	background: #913e0a;
 	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
@@ -2215,7 +2215,7 @@ a.menuselector:focus,
 a.menuselector.focus,
 a.iconbutton:focus,
 .pagenav a.button:focus {
-	border-color: #b5734b;
+	border-color: #651605;
 	box-shadow: 0 0 4px 2px rgba(101,22,5, 0.8);
 	outline: none;
 }

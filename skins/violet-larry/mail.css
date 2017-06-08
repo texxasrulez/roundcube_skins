@@ -926,7 +926,7 @@ div.message-part div.pre {
 }
 
 div.message-part span.sig {
-	color: #ebe8ef;
+	color: inherit;
 }
 
 div.message-part blockquote {
@@ -1091,7 +1091,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts #directorylist {
-	border-bottom: 4px solid #8b75a3;
+	border-bottom: 4px solid #ddbbe4;
 }
 
 #compose-contacts .scroller {
@@ -1504,8 +1504,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td {
-	color: #fdf6f3;
-	background: #8b75a3;
+	color: #3f1a67 !important;
+	background: #ddbbe4;
 	border-left: 0;
 	vertical-align: top;
 	padding: 3px 2px !important;
@@ -1531,7 +1531,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td.subject span {
-	color: #ebe8ef;
+	color: #3f1a67;
 	line-height: 20px;
 }
 
@@ -1539,7 +1539,7 @@ div.message-partheaders .headers-table td.header {
 	right: 2px;
 	top: 3px;
 	position: absolute;
-	color: #ebe8ef;
+	color: inherit;
 }
 
 .widescreen .messagelist td.subject span.fromto {

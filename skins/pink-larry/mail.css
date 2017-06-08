@@ -61,7 +61,7 @@ html.ie #mailview-top {
 
 #mailboxcontainer,
 #messagelistcontainer {
-	color: #fdf6f3;
+	color: #6d1f49;
 	background: #f1dee7;
 	position: absolute;
 	top: 0;
@@ -72,7 +72,7 @@ html.ie #mailview-top {
 }
 
 #messagelistcontainer {
-	color: #fdf6f3;
+	color: #6d1f49;
 	background: #f1dee7;
 	top: 0;
 	bottom: 30px;
@@ -926,7 +926,7 @@ div.message-part div.pre {
 }
 
 div.message-part span.sig {
-	color: #666;
+	color: #6d1f49;
 }
 
 div.message-part blockquote {
@@ -1505,7 +1505,7 @@ div.message-partheaders .headers-table td.header {
 
 .widescreen .messagelist td {
 	color: #fdf6f3;
-	background: #b68fa4;
+	background: #dcadc5;
 	border-left: 0;
 	vertical-align: top;
 	padding: 3px 2px !important;
@@ -1531,7 +1531,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td.subject span {
-	color: #fdf6f3;
+	color: #6d1f49;
 	line-height: 20px;
 }
 
@@ -1539,7 +1539,7 @@ div.message-partheaders .headers-table td.header {
 	right: 2px;
 	top: 3px;
 	position: absolute;
-	color: #666;
+	color: #6d1f49;
 }
 
 .widescreen .messagelist td.subject span.fromto {
@@ -1548,17 +1548,17 @@ div.message-partheaders .headers-table td.header {
 	margin-right: 10em;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #fdf6f3;
+	color: #6d1f49;
 }
 
 .widescreen .messagelist tr.flagged td.subject span.date,
 .widescreen .messagelist tr.flagged td.subject span.fromto {
-	color: #ff5c33;
+	color: #6d1f49;
 }
 
 .widescreen .messagelist tr.deleted td.subject span.date,
 .widescreen .messagelist tr.deleted td.subject span.fromto {
-	color: #ccc;
+	color: #6d1f49;
 }
 
 .widescreen .messagelist td.subject span.subject {

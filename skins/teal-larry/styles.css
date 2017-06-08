@@ -209,7 +209,7 @@ a.button,
 	margin: 0 2px;
 	padding: 2px 5px;
 	color: #e6edee;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #2d7b78;
 	border-radius: 4px;
 	background: #53b0a3;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
@@ -2153,7 +2153,7 @@ ul.proplist li {
 
 a.menuselector {
 	display: inline-block;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #2d7b78;
 	border-radius: 4px;
 	background: #53b0a3;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
