@@ -119,14 +119,14 @@ input.button {
 	margin: 0 2px;
 	padding: 2px 5px;
 	color: #fdf6f3;
-	border: 1px solid #e6c5d6;
+	border: 1px solid #6d1f49;
 	border-radius: 4px;
-	background: #6d1f49;
-	background: -moz-linear-gradient(top, #6d1f49 0%, #c3629e 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1f49), color-stop(100%,#c3629e)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #6d1f49 0%, #c3629e 100%); 
-	background: linear-gradient(to bottom, #6d1f49 0%, #c3629e 100%);
-	box-shadow: 0 1px 1px 0 rgba(101,5,59, 0.3);
+	background: #c3629e;
+	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49)); /* Chrome,Safari4+ */
+	background: -ms-linear-gradient(top, #c3629e 0%, #6d1f49 100%); 
+	background: linear-gradient(to bottom, #c3629e 0%, #6d1f49 100%);
+	box-shadow: 0 1px 1px 0 #cf81b1;
 	text-decoration: none;
 	outline: none;
 }
@@ -283,13 +283,13 @@ input.button:active {
 
 .pagenav.dark a.button {
 	font-weight: bold;
-	border-color: #e6c5d6;
+	border-color: #6d1f49;
 	background: #c3629e;
 	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49));
 	background: -ms-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
 	background: linear-gradient(to bottom, #c3629e 0%, #6d1f49 100%);
-	box-shadow: 0 1px 1px 0 #999;
+	box-shadow: 0 1px 1px 0 #c3629e;
 }
 
 .pagenav.dark a.button.pressed {
@@ -731,7 +731,7 @@ a.iconlink.upload {
 
 #topline {
 	height: 18px;
-	background: url(images/linen_header.jpg?v=514a.580) repeat #666;
+	background: url(images/linen_header.jpg?v=514a.580) repeat #6d1f49;
 	border-bottom: 1px solid #e6c5d6;
 	padding: 2px 0 2px 10px;
 	color: #aaa;
@@ -2153,13 +2153,15 @@ ul.proplist li {
 
 a.menuselector {
 	display: inline-block;
-	border: 1px solid #974072;
+	border: 1px solid #6d1f49;
 	border-radius: 4px;
-	background: #c3629e;
+	border-color: #6d1f49;
+	background: #6d1f49;
 	background: -moz-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3629e), color-stop(100%,#6d1f49));
 	background: -ms-linear-gradient(top, #c3629e 0%, #6d1f49 100%);
 	background: linear-gradient(to bottom, #c3629e 0%, #6d1f49 100%);
+	box-shadow: 0 1px 1px 0 #c971a7;
 	text-decoration: none;
 	color: #f0e8ec;
 	cursor: pointer;
@@ -2176,6 +2178,7 @@ a.menuselector .handle {
 }
 
 a.menuselector:active {
+	border: #6d1f49;
 	background: #6d1f49;
 	background: -moz-linear-gradient(top, #6d1f49 0%, #c3629e 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1f49), color-stop(100%,#c3629e));
@@ -2200,8 +2203,8 @@ html.opera select.decorated {
 }
 
 select.decorated option {
-	color: #fdf6f3;
-	background: #dcadc5;
+	color: #6d1f49;
+	background: #fdf6f3;
 	border: 0;
 	border-top: 1px solid #e6c5d6;
 	border-bottom: 1px solid #e6c5d6;
@@ -2215,7 +2218,7 @@ a.menuselector:focus,
 a.menuselector.focus,
 a.iconbutton:focus,
 .pagenav a.button:focus {
-	border-color: #e6c5d6;
+	border-color: #6d1f49;
 	box-shadow: 0 0 4px 2px rgba(101,5,59, 0.8);
 	outline: none;
 }
@@ -2327,7 +2330,7 @@ select.decorated option:last-child {
 .googie_list td span,
 ul.toolbarmenu li a {
 	display: block;
-	color: #666;
+	color: #884669;
 	text-decoration: none;
 	min-height: 14px;
 	padding: 6px 16px 6px 10px;

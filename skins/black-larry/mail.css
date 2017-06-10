@@ -309,7 +309,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr.thread.expanded td {
-	background-color: #ededed;
+	background-color: #999;
 }
 
 .messagelist tr.unread {

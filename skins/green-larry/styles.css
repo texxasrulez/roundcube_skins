@@ -209,14 +209,14 @@ a.button,
 	margin: 0 2px;
 	padding: 2px 5px;
 	color: #eaece7;
-	border: 1px solid #5b6e2e;
+	border: 1px solid #354516;
 	border-radius: 4px;
-	background: #f7f7f7;
+	background: #829947;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
 	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
-	box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.3);
+	box-shadow: 0 1px 1px 0 #9bad6b;
 	text-decoration: none;
 }
 
@@ -283,13 +283,13 @@ input.button:active {
 
 .pagenav.dark a.button {
 	font-weight: bold;
-	border-color: #dbebb0;
+	border-color: #354516;
 	background: #829947;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
 	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
-	box-shadow: 0 1px 1px 0 #999;
+	box-shadow: 0 1px 1px 0 #829947;
 }
 
 .pagenav.dark a.button.pressed {
@@ -1548,8 +1548,8 @@ table.records-table {
 	cursor: default;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #eaece7;
-	background-color: #536c22;
+	color: #354516 !important;
+	background-color: #c3de7c;
 	outline: none;
 }
 
@@ -2154,13 +2154,15 @@ ul.proplist li {
 
 a.menuselector {
 	display: inline-block;
-	border: 1px solid #5b6e2e;
+	border: 1px solid #354516;
 	border-radius: 4px;
+	border-color: #354516;
 	background: #829947;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
 	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
+	box-shadow: 0 1px 1px 0 #8ea359;
 	text-decoration: none;
 	color: #eaece7;
 	cursor: pointer;
@@ -2177,6 +2179,7 @@ a.menuselector .handle {
 }
 
 a.menuselector:active {
+	border: #354516;
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
@@ -2204,8 +2207,8 @@ select.decorated option {
 	color: #a7bd6b;
 	background: #354516;
 	border: 0;
-	border-top: 1px solid #dbebb0;
-	border-bottom: 1px solid #dbebb0;
+	border-top: 1px solid #354516;
+	border-bottom: 1px solid #354516;
 	padding: 4px 6px;
 	outline: none;
 	cursor: default;
@@ -2216,7 +2219,7 @@ a.menuselector:focus,
 a.menuselector.focus,
 a.iconbutton:focus,
 .pagenav a.button:focus {
-	border-color: #dbebb0;
+	border-color: #354516;
 	box-shadow: 0 0 4px 2px rgba(53,69,22, 0.8);
 	outline: none;
 }

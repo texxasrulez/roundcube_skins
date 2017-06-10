@@ -309,7 +309,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr.thread.expanded td {
-	background-color: #ededed;
+	background-color: #d5e7a3;
 }
 
 .messagelist tr.unread {
@@ -534,6 +534,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #354516;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }

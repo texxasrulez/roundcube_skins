@@ -273,7 +273,6 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
-	color: #651605;
 	width: 60px;
 	text-align: right;
 }
@@ -287,12 +286,10 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
-	color: #651605;
 	width: 200px;
 }
 
 .messagelist tr > .date {
-	color: #651605;
 	width: 155px;
 }
 
@@ -309,7 +306,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr.thread.expanded td {
-	background-color: #ededed;
+	background-color: #fdf6f3;
 }
 
 .messagelist tr.unread {
@@ -651,7 +648,7 @@ h3.subject {
 }
 
 .headers-table td.subject {
-	color: #fdf6f3;
+	color: #651605;
 	font-weight: bold;
 }
 
@@ -864,7 +861,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #fbe4d7;
+	background: #fdf6f3;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -876,7 +873,7 @@ div.hide-headers {
 
 #messagebody {
 	color: #651605;
-	background: #fbe4d7;
+	background: #fdf6f3;
 	position: relative;
 	margin: 8px;
 }
@@ -926,7 +923,7 @@ div.message-part div.pre {
 }
 
 div.message-part span.sig {
-	color: #fdf6f3;
+	color: #666;
 }
 
 div.message-part blockquote {
@@ -1113,7 +1110,7 @@ div.message-partheaders .headers-table td.header {
 
 #contacts-table td span.email {
 	display: inline;
-	color: inherit;
+	color: #f9fcfd;
 	font-style: italic;
 	margin-left: 0.5em;
 }
@@ -1456,15 +1453,20 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistheader .listmenu {
-	margin-right: 10px;
+	margin-right: 8px;
 	vertical-align: middle;
-	line-height: 22px;
-	width: 26px;
+	line-height: 24px;
+	width: 28px;
 	padding: 0;
 	text-indent: -5000px;
 	overflow: hidden;
 	display: inline-block;
-	background: url(images/listicons.png?v=e9f1.12614) 0 -975px no-repeat;
+	background: url(images/listicons.png) 0 -2328px no-repeat;
+}
+
+.widescreen #messagelistheader .listmenu:focus {
+ 	background-color: rgba(101,22,5,0.55);
+ 	outline: none;
 }
 
 .widescreen #countcontrols {
@@ -1499,13 +1501,13 @@ div.message-partheaders .headers-table td.header {
 .widescreen a.listmenu:focus,
 .widescreen .pagenav a.button:focus {
 	border-color: #4fadd5;
-	box-shadow: 0 0 4px 2px rgba(101,22,5, 0.8);
+	box-shadow: 0 0 4px 2px rgba(71,135,177, 0.8);
 	outline: none;
 }
 
 .widescreen .messagelist td {
-	color: #fdf6f3;
-	background: #b7612c;
+	color: #651605;
+	background: #b5734b;
 	border-left: 0;
 	vertical-align: top;
 	padding: 3px 2px !important;
@@ -1539,7 +1541,7 @@ div.message-partheaders .headers-table td.header {
 	right: 2px;
 	top: 3px;
 	position: absolute;
-	color: #fdf6f3;
+	color: #efe7e6;
 }
 
 .widescreen .messagelist td.subject span.fromto {
@@ -1548,7 +1550,7 @@ div.message-partheaders .headers-table td.header {
 	margin-right: 10em;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #fdf6f3;
+	color: #efe7e6;
 }
 
 .widescreen .messagelist tr.flagged td.subject span.date,
