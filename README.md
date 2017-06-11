@@ -3,7 +3,7 @@ I have taken Larry skin and modified it so there are more theme colors to choose
 
 I have also included skins for many popular plugins, and the ones I use, so you shouldn't have to make your own. If you need help with a plugin not available with this, please message me and ask. I just might can help you out ... 
 
-The Larry Skin from Roundcube 1.3 Beta was used, so you must be running RC 1.3 or higher.
+The Larry Skin from Roundcube 1.3 was used, so you must be running RC 1.3 or higher.
 
 Installation is easy. Upload plugins and skins folders to your roundcube installation root and it should copy to all appropriate file locations ... 
 
@@ -32,7 +32,7 @@ Screenshots
 ![Alt text](/skins/autumn-larry/images/autumn-mail.png?raw=true "Autumn Larry")
 ![Alt text](/skins/black-larry/images/black-mail.png?raw=true "Black Larry")
 ![Alt text](/skins/blue-larry/images/blue-mail.png?raw=true "Blue Larry")
-![Alt text](/skins/black-larry/images/blue-cal.png?raw=true "Blue Larry Calendar")
+![Alt text](/skins/blue-larry/images/blue-cal.png?raw=true "Blue Larry Calendar")
 ![Alt text](/skins/green-larry/images/green-mail.png?raw=true "Green Larry")
 ![Alt text](/skins/pink-larry/images/pink-mail.png?raw=true "Pink Larry")
 ![Alt text](/skins/teal-larry/images/teal-mail.png?raw=true "Teal Larry")
