@@ -325,7 +325,6 @@ table.messagelist.fixedcopy {
 
 .messagelist thead tr th.sortedASC a,
 .messagelist thead tr th.sortedDESC a {
-	color: #152f40;
 	text-decoration: underline;
 	background-image: url(images/listicons.png?v=e9f1.12614);
 	background-repeat: no-repeat;
