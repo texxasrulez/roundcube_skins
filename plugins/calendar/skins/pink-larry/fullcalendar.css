@@ -117,7 +117,7 @@ html .fc,
 
 .fc-widget-header,    /* <th>, usually */
 .fc-widget-content {  /* <td>, usually */
-	border: 1px solid #6d1f49;
+	border: 1px solid #e6c5d6;
 	}
 	
 .fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
@@ -233,7 +233,7 @@ html .fc,
 
 .fc-state-down,
 .fc-state-active {
-	background-color: #ccc;
+	background-color: #f000ff;
 	background-image: none;
 	outline: 0;
 	box-shadow: inset 0 2px 4px rgba(246,0,255, 0.15), 0 1px 2px rgba(246,0,255, 0.05);

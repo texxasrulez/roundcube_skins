@@ -286,10 +286,12 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
+	color: #651605;
 	width: 200px;
 }
 
 .messagelist tr > .date {
+	color: #651605;
 	width: 155px;
 }
 
@@ -317,7 +319,7 @@ table.messagelist.fixedcopy {
 .messagelist tr.flagged th,
 .messagelist tr.flagged td,
 .messagelist tr.flagged td a {
-	color: #fdf6f3;
+	color: #651605;
 }
 
 .messagelist thead tr th.sortedASC a,

@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #152f40;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -286,10 +287,12 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
+	color: #152f40;
 	width: 200px;
 }
 
 .messagelist tr > .date {
+	color: #152f40;
 	width: 155px;
 }
 
@@ -317,12 +320,12 @@ table.messagelist.fixedcopy {
 .messagelist tr.flagged th,
 .messagelist tr.flagged td,
 .messagelist tr.flagged td a {
-	color: #f6fbfc;
+	color: #152f40;
 }
 
 .messagelist thead tr th.sortedASC a,
 .messagelist thead tr th.sortedDESC a {
-	color: #f6fbfc;
+	color: #152f40;
 	text-decoration: underline;
 	background-image: url(images/listicons.png?v=e9f1.12614);
 	background-repeat: no-repeat;

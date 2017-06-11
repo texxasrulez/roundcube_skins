@@ -320,7 +320,7 @@ table.messagelist.fixedcopy {
 .messagelist tr.flagged th,
 .messagelist tr.flagged td,
 .messagelist tr.flagged td a {
-	color: #fdf6f3;
+	color: #0e4f55;
 }
 
 .messagelist thead tr th.sortedASC a,

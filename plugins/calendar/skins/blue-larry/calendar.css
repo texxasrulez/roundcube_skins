@@ -44,7 +44,6 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker {
-	background: #152f40;
 	position: absolute;
 	top: 40px;
 	left: 0;
@@ -226,11 +225,6 @@ pre {
 	color: #152f40;
 }
 
-#calendars .treelist li.selected span.calname {
-	color: #e7eaeb;
-	font-weight: bold;
-}
-
 .quickview-active #calendars .treelist div input,
 .quickview-active #calendars .treelist div .calname {
 	opacity: 0.35;
@@ -290,13 +284,13 @@ pre {
 	right: 21px;
 	border: 1px solid #5b6d79;
 	border-radius: 4px;
-	background: #265576;
-	background: -moz-linear-gradient(top, #265576 0%, #d9ecf4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#d9ecf4));
-	background: -o-linear-gradient(top, #265576 0%, #d9ecf4 100%);
-	background: -ms-linear-gradient(top, #265576 0%, #d9ecf4 100%);
-	background: linear-gradient(top, #265576 0%, #d9ecf4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#265576', endColorstr='#d9ecf4', GradientType=0);
+	background: #f7f7f7;
+	background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6));
+	background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+	background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+	background: linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
 }
 
 #calendars .treelist li a.subscribed {
@@ -402,7 +396,7 @@ pre {
 }
 
 #calendars .treelist li.selected > div.calendar {
-	background-color: #152f40;
+	background-color: #c7e3ef;
 }
 
 #calendars .treelist li.selected > span.calname {
@@ -653,7 +647,7 @@ a.miniColors-trigger {
 }
 
 #eventedit .droptarget {
-	background-image: url(../../../../skins/blue-larry/images/filedrop.png) !important;
+	background-image: url(../../../../skins/larry/images/filedrop.png) !important;
 	background-position: center bottom !important;
 	background-repeat: no-repeat !important;
 }
@@ -1491,7 +1485,7 @@ a.dropdown-link:after {
 
 .ui-datepicker-calendar .ui-datepicker-week-col {
 	border: 0;
-	color: #152f40;
+	color: #5b6d79;
 	background: #deeff5;
 	font-size: 90%;
 	text-align: right;
@@ -1712,11 +1706,11 @@ a.dropdown-link:after {
 .calendarmain .fc-button.fc-state-default,
 .calendarmain .fc-button.fc-state-hover {
 	background-color: #f5f5f5;
-	background-image: -moz-linear-gradient(top, #deeff5, #008fc7);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#deeff5), to(#008fc7));
-	background-image: -webkit-linear-gradient(top, #deeff5, #008fc7);
-	background-image: -o-linear-gradient(top, #deeff5, #008fc7);
-	background-image: linear-gradient(to bottom, #deeff5, #008fc7);
+	background-image: -moz-linear-gradient(top, #deeff5, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#deeff5), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #deeff5, #e6e6e6);
+	background-image: -o-linear-gradient(top, #deeff5, #e6e6e6);
+	background-image: linear-gradient(to bottom, #deeff5, #e6e6e6);
 	background-position: 0 0;
 }
 
@@ -1726,14 +1720,14 @@ a.dropdown-link:after {
 	margin: 0 0 0 0;
 	height: 20px;
 	line-height: 20px;
-	color: #e7eaeb;
+	color: #505050;
 	border: 1px solid #5b6d79;
-	background: #152f40;
-	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576));
-	background: -o-linear-gradient(top, #152f40 0%, #265576 100%);
-	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%);
-	background: linear-gradient(top, #152f40 0%, #265576 100%);
+	background: #d8d8d8;
+	background: -moz-linear-gradient(top, #d8d8d8 0%, #bababa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d8d8), color-stop(100%,#bababa));
+	background: -o-linear-gradient(top, #d8d8d8 0%, #bababa 100%);
+	background: -ms-linear-gradient(top, #d8d8d8 0%, #bababa 100%);
+	background: linear-gradient(top, #d8d8d8 0%, #bababa 100%);
 	box-shadow: 0 1px 1px 0 #999;
 	-o-box-shadow: 0 1px 1px 0 #999;
 	-webkit-box-shadow: 0 1px 1px 0 #999;
@@ -1750,13 +1744,13 @@ a.dropdown-link:after {
 .calendarmain .fc-button.fc-state-down,
 .calendarmain #calendar .fc-button.fc-state-active,
 .calendarmain #calendar .fc-button.fc-state-down {
-	color: #e7eaeb;
-	background: #152f40;
-	background: -moz-linear-gradient(top, #152f40 0%, #d9ecf4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#d9ecf4));
-	background: -o-linear-gradient(top, #152f40 0%, #d9ecf4 100%);
-	background: -ms-linear-gradient(top, #152f40 0%, #d9ecf4 100%);
-	background: linear-gradient(top, #152f40 0%, #d9ecf4 100%);
+	color: #152f40;
+	background: #bababa;
+	background: -moz-linear-gradient(top, #bababa 0%, #d8d8d8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bababa), color-stop(100%,#d8d8d8));
+	background: -o-linear-gradient(top, #bababa 0%, #d8d8d8 100%);
+	background: -ms-linear-gradient(top, #bababa 0%, #d8d8d8 100%);
+	background: linear-gradient(top, #bababa 0%, #d8d8d8 100%);
 }
 
 .calendarmain #calendar .fc-header .fc-button {

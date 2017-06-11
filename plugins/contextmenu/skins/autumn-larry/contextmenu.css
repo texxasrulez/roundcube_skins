@@ -1,10 +1,10 @@
 /**
- * Autumn-Larry ContextMenu plugin styles
+ * ContextMenu plugin styles
  */
 
 .records-table tbody tr.contextRow td
 {
-  background-color: #742d1d;
+  background-color: #F2F2F2;
 }
 
 #mailboxlist li.contextRow,

@@ -19,7 +19,9 @@ Thumbnail Preview
 ![Alt text](/skins/black-larry/thumbnail.png?raw=true "Black Larry")
 ![Alt text](/skins/blue-larry/thumbnail.png?raw=true "Blue Larry")
 ![Alt text](/skins/green-larry/thumbnail.png?raw=true "Green Larry")
+![Alt text](/skins/grey-larry/thumbnail.png?raw=true "Grey Larry")
 ![Alt text](/skins/pink-larry/thumbnail.png?raw=true "Pink Larry")
+![Alt text](/skins/summer-larry/thumbnail.png?raw=true "Summer Larry")
 ![Alt text](/skins/teal-larry/thumbnail.png?raw=true "Teal Larry")
 ![Alt text](/skins/violet-larry/thumbnail.png?raw=true "Violet Larry")
 
@@ -27,14 +29,14 @@ Thumbnail Preview
 Screenshots
 -----------
 
-![Alt text](/do_not_upload/autumn-mail.png?raw=true "Autumn Larry")
-![Alt text](/do_not_upload/black-mail.png?raw=true "Black Larry")
-![Alt text](/do_not_upload/blue-mail.png?raw=true "Blue Larry")
-![Alt text](/do_not_upload/blue-cal.png?raw=true "Blue Larry Calendar")
-![Alt text](/do_not_upload/green-mail.png?raw=true "Green Larry")
-![Alt text](/do_not_upload/pink-mail.png?raw=true "Pink Larry")
-![Alt text](/do_not_upload/teal-mail.png?raw=true "Teal Larry")
-![Alt text](/do_not_upload/violet-mail.png?raw=true "Violet Larry")
+![Alt text](/skins/autumn-larry/images/autumn-mail.png?raw=true "Autumn Larry")
+![Alt text](/skins/black-larry/images/black-mail.png?raw=true "Black Larry")
+![Alt text](/skins/blue-larry/images/blue-mail.png?raw=true "Blue Larry")
+![Alt text](/skins/black-larry/images/blue-cal.png?raw=true "Blue Larry Calendar")
+![Alt text](/skins/green-larry/images/green-mail.png?raw=true "Green Larry")
+![Alt text](/skins/pink-larry/images/pink-mail.png?raw=true "Pink Larry")
+![Alt text](/skins/teal-larry/images/teal-mail.png?raw=true "Teal Larry")
+![Alt text](/skins/violet-larry/images/violet-mail.png?raw=true "Violet Larry")
 
 
 Original Author Credits:
