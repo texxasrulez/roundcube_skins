@@ -1566,7 +1566,7 @@ table.records-table {
 }
 
 .records-table tr.selected td {
-	color: #dcadc5 !important;
+	color: #f0e8ec !important;
 	background-color: #6d1f49 !important;
 }
 
