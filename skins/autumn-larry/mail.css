@@ -960,13 +960,19 @@ div.message-partheaders .headers-table {
 	width: 100%;
 }
 
+div.message-partheaders .headers-table td.header a {
+	color: #651605;
+}
+
 div.message-partheaders .headers-table td.header-title {
+	color: #651605;
 	width: 1%;
 	padding-left: 0;
 	vertical-align: top;
 }
 
 div.message-partheaders .headers-table td.header {
+	color: #651605;
 	width: 99%;
 }
 

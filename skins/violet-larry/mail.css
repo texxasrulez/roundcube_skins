@@ -961,13 +961,19 @@ div.message-partheaders .headers-table {
 	width: 100%;
 }
 
+div.message-partheaders .headers-table td.header a {
+	color: #3f1a67;
+}
+
 div.message-partheaders .headers-table td.header-title {
+	color: #3f1a67;
 	width: 1%;
 	padding-left: 0;
 	vertical-align: top;
 }
 
 div.message-partheaders .headers-table td.header {
+	color: #3f1a67;
 	width: 99%;
 }
 

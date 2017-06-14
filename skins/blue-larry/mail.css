@@ -287,7 +287,6 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
-	color: #152f40;
 	width: 200px;
 }
 
@@ -650,7 +649,6 @@ h3.subject {
 }
 
 .headers-table td.subject {
-	color: #152f40;
 	font-weight: bold;
 }
 
@@ -908,6 +906,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #152f40 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -952,21 +951,29 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #152f40;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #152f40;
 	width: 100%;
 }
 
+div.message-partheaders .headers-table td.header a {
+	color: #152f40;
+}
+
 div.message-partheaders .headers-table td.header-title {
+	color: #152f40;
 	width: 1%;
 	padding-left: 0;
 	vertical-align: top;
 }
 
 div.message-partheaders .headers-table td.header {
+	color: #152f40;
 	width: 99%;
 }
 

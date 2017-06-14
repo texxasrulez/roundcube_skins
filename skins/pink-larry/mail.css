@@ -962,12 +962,14 @@ div.message-partheaders .headers-table {
 }
 
 div.message-partheaders .headers-table td.header-title {
+	color: #6d1f49;
 	width: 1%;
 	padding-left: 0;
 	vertical-align: top;
 }
 
 div.message-partheaders .headers-table td.header {
+	color: #6d1f49;
 	width: 99%;
 }
 
