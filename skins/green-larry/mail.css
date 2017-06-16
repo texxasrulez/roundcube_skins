@@ -593,6 +593,7 @@ table.messagelist.fixedcopy {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
+	border-top: 1px solid #dbebb0;
 	border-bottom: 1px solid #dbebb0;
 }
 

@@ -592,6 +592,7 @@ table.messagelist.fixedcopy {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1f49), color-stop(100%,#c3629e));
 	background: -ms-linear-gradient(top, #6d1f49 0%, #c3629e 100%);
 	background: linear-gradient(to bottom, #6d1f49 0%, #c3629e 100%);
+	border-top: 1px solid #e6c5d6;
 	border-bottom: 1px solid #e6c5d6;
 }
 
@@ -959,6 +960,10 @@ div.message-partheaders {
 
 div.message-partheaders .headers-table {
 	width: 100%;
+}
+
+div.message-partheaders .headers-table td.header a {
+	color: #6d1f49;
 }
 
 div.message-partheaders .headers-table td.header-title {
