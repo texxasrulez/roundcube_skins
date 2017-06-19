@@ -1,5 +1,5 @@
 /**
- * Roundcube webmail styles for the Grey-Larry Settings section
+ * Roundcube webmail styles for the Plata-Larry Settings section
  *
  * Copyright (c) 2012, The Roundcube Dev Team
  * Screendesign by FLINT / Büro für Gestaltung, bueroflint.com
@@ -11,7 +11,7 @@
  */
 
 #settings-sections {
-	color: #434343;
+	color: #515151;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -309,7 +309,7 @@
 img.skinthumbnail {
 	width: 64px;
 	height: 64px;
-	border: 1px solid #ccc;
+	border: 1px solid #828282;
 	background: #e5e5e5;
 	border-radius: 4px;
 }
