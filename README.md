@@ -21,6 +21,7 @@ Thumbnail Preview
 ![Alt text](/skins/green-larry/thumbnail.png?raw=true "Green Larry")
 ![Alt text](/skins/grey-larry/thumbnail.png?raw=true "Grey Larry")
 ![Alt text](/skins/pink-larry/thumbnail.png?raw=true "Pink Larry")
+![Alt text](/skins/plata-larry/thumbnail.png?raw=true "Plata Larry")
 ![Alt text](/skins/summer-larry/thumbnail.png?raw=true "Summer Larry")
 ![Alt text](/skins/teal-larry/thumbnail.png?raw=true "Teal Larry")
 ![Alt text](/skins/violet-larry/thumbnail.png?raw=true "Violet Larry")
