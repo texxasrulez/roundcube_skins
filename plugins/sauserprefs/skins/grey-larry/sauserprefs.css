@@ -1,5 +1,5 @@
 /**
- * SAUserPrefs plugin styles
+ * Grey Larry SAUserPrefs plugin styles
  */
 
 #address-rules-cont,
@@ -29,7 +29,7 @@ table.address-rules-table thead th,
 table.spam-langs-table thead th
 {
   background: none;
-  background-color: #152f40;
+  background-color: #434343;
   font-weight: bold;
   color: #e7eaeb;
 }
@@ -44,7 +44,7 @@ table.spam-langs-table thead th a
 table.address-rules-table thead th a:focus,
 table.spam-langs-table thead th a:focus
 {
-  color: #152f40;
+  color: #434343;
   font-weight: normal;
   background-color: transparent;
   text-shadow: none;
@@ -192,7 +192,7 @@ table.addressprefstable td
 {
   width: 80%;
   padding: 4px 10px;
-  background: #deeff5;
+  background: #d4d4d4;
   border-bottom: 2px solid #fff;
 }
 

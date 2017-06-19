@@ -20,3 +20,9 @@
 	background-image: url(badge.png);
 	background-position: 10px 5px;
 }
+
+#sections-table tbody #rcmrowauthres_status.selected td.section {
+	background-image: url(badge2.png);
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+}
