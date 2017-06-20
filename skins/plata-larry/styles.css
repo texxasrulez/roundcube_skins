@@ -2681,12 +2681,12 @@ ul.toolbarmenu li span.copy {
 }
 
 .folderlist li.mailbox.drafts > a {
-	background-position: 6px -238px;
+	background-position: 6px -262px;
 }
 
 .folderlist li.mailbox.drafts > a:focus,
 .folderlist li.mailbox.drafts.selected > a {
-	background-position: 6px -262px;
+	background-position: 6px -238px;
 }
 
 .folderlist li.mailbox.sent > a {
