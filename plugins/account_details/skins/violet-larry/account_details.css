@@ -174,13 +174,13 @@ textarea.placeholder.account_details {
 #settings-sections .account_details a {
 	background-image: url(images/account_details.png);
 	background-repeat: no-repeat;
-	background-position: 7px 1px;
+	background-position: 7px -23px;
 }
 
 #settings-sections .account_details.selected a {
 	background-image: url(images/account_details.png);
 	background-repeat: no-repeat;
-	background-position: 7px -23px;
+	background-position: 7px 1px;
 }
 
 

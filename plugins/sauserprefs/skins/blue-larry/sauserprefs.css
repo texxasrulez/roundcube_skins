@@ -69,14 +69,14 @@ table.address-rules-table thead th.sortedASC a,
 table.spam-langs-table thead th.sortedASC a
 {
   text-decoration: underline;
-  background: url(images/listicons.png) no-repeat right -298px;
+  background: url(images/listicons.png) no-repeat right -330px;
 }
 
 table.address-rules-table thead th.sortedDESC a,
 table.spam-langs-table thead th.sortedDESC a
 {
   text-decoration: underline;
-  background: url(images/listicons.png) no-repeat right -330px;
+  background: url(images/listicons.png) no-repeat right -298px;
 }
 
 table.address-rules-table thead th.rule
@@ -240,59 +240,59 @@ table.addressprefstable tr > .scroller
 #sections-table #rcmrowtests td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -199px;
+  background-position: 5px -225px;
 }
 
 #sections-table #rcmrowtests.selected td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -225px;
+  background-position: 5px -199px;
 }
 
 #sections-table #rcmrowbayes td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -248px;
+  background-position: 5px -270px;
 }
 
 #sections-table #rcmrowbayes.selected td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -270px;
+  background-position: 5px -248px;
 }
 
 #sections-table #rcmrowheaders td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -99px;
+  background-position: 5px -124px;
 }
 
 #sections-table #rcmrowheaders.selected td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -124px;
+  background-position: 5px -99px;
 }
 
 #sections-table #rcmrowreport td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -150px;
+  background-position: 5px -174px;
 }
 
 #sections-table #rcmrowreport.selected td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 5px -174px;
+  background-position: 5px -150px;
 }
 
 #sections-table #rcmrowaddresses td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 4px -50px;
+  background-position: 4px -74px;
 }
 
 #sections-table #rcmrowaddresses.selected td.section
 {
   background-image: url(images/listicons.png);
-  background-position: 4px -74px;
+  background-position: 4px -50px;
 }

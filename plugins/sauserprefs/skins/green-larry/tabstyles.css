@@ -5,11 +5,11 @@
 #settings-sections #settingstabpluginsauserprefs a
 {
   background-image: url(images/listicons.png);
-  background-position: 3px -3px;
+  background-position: 3px -27px;
 }
 
 #settings-sections #settingstabpluginsauserprefs.selected a
 {
   background-image: url(images/listicons.png);
-  background-position: 3px -27px;
+  background-position: 3px -3px;
 }

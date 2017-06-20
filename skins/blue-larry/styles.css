@@ -2665,117 +2665,121 @@ ul.toolbarmenu li span.copy {
 	padding-right: 36px;
 }
 
+.folderlist li.mailbox > a {
+	background-position: 6px -21px;
+}	
+
 .folderlist li.mailbox > a:focus,
 .folderlist li.mailbox.selected > a {
-	background-position: 6px -21px;
+	background-position: 6px 1px;
 }
 
 .folderlist li.mailbox.inbox > a {
-	background-position: 6px -189px;
+	background-position: 6px -213px;
 }
 
 .folderlist li.mailbox.inbox > a:focus,
 .folderlist li.mailbox.inbox.selected > a {
-	background-position: 6px -213px;
+	background-position: 6px -189px;
 }
 
 .folderlist li.mailbox.drafts > a {
-	background-position: 6px -238px;
+	background-position: 6px -262px;
 }
 
 .folderlist li.mailbox.drafts > a:focus,
 .folderlist li.mailbox.drafts.selected > a {
-	background-position: 6px -262px;
+	background-position: 6px -238px;
 }
 
 .folderlist li.mailbox.sent > a {
-	background-position: 6px -286px;
+	background-position: 6px -310px;
 }
 
 .folderlist li.mailbox.sent > a:focus,
 .folderlist li.mailbox.sent.selected > a {
-	background-position: 6px -310px;
+	background-position: 6px -286px;
 }
 
 .folderlist li.mailbox.junk > a {
-	background-position: 6px -334px;
+	background-position: 6px -358px;
 }
 
 .folderlist li.mailbox.junk > a:focus,
 .folderlist li.mailbox.junk.selected > a {
-	background-position: 6px -358px;
+	background-position: 6px -334px;
 }
 
 .folderlist li.mailbox.trash > a {
-	background-position: 6px -382px;
+	background-position: 6px -406px;
 }
 
 .folderlist li.mailbox.trash > a:focus,
 .folderlist li.mailbox.trash.selected > a {
-	background-position: 6px -406px;
+	background-position: 6px -382px;
 }
 
 .folderlist li.mailbox.trash.empty > a {
-	background-position: 6px -1924px;
+	background-position: 6px -1948px;
 }
 
 .folderlist li.mailbox.trash.empty > a:focus,
 .folderlist li.mailbox.trash.empty.selected > a {
-	background-position: 6px -1948px;
+	background-position: 6px -1924px;
 }
 
 .folderlist li.mailbox.archive > a {
-	background-position: 6px -1699px;
+	background-position: 6px -1723px;
 }
 
 .folderlist li.mailbox.archive > a:focus,
 .folderlist li.mailbox.archive.selected > a {
-	background-position: 6px -1723px;
+	background-position: 6px -1699px;
 }
 
 .folderlist li.mailbox ul li.drafts > a {
-	background-position: 23px -238px;
+	background-position: 23px -262px;
 }
 
 .folderlist li.mailbox ul li.drafts > a:focus,
 .folderlist li.mailbox ul li.drafts.selected > a {
-	background-position: 23px -262px;
+	background-position: 23px -238px;
 }
 
 .folderlist li.mailbox ul li.sent > a {
-	background-position: 23px -286px;
+	background-position: 23px -310px;
 }
 
 .folderlist li.mailbox ul li.sent > a:focus,
 .folderlist li.mailbox ul li.sent.selected > a {
-	background-position: 23px -310px;
+	background-position: 23px -286px;
 }
 
 .folderlist li.mailbox ul li.junk > a {
-	background-position: 23px -334px;
+	background-position: 23px -358px;
 }
 
 .folderlist li.mailbox ul li.junk > a:focus,
 .folderlist li.mailbox ul li.junk.selected > a {
-	background-position: 23px -358px;
+	background-position: 23px -334px;
 }
 
 .folderlist li.mailbox ul li.trash > a {
-	background-position: 23px -382px;
+	background-position: 23px -406px;
 }
 
 .folderlist li.mailbox ul li.trash > a:focus,
 .folderlist li.mailbox ul li.trash.selected > a {
-	background-position: 23px -406px;
+	background-position: 23px -382px;
 }
 
 .folderlist li.mailbox ul li.trash.empty > a {
-	background-position: 23px -1924px;
+	background-position: 23px -1948px;
 }
 
 .folderlist li.mailbox ul li.trash.empty > a:focus,
 .folderlist li.mailbox ul li.trash.empty.selected > a {
-	background-position: 23px -1948px;
+	background-position: 23px -1924px;
 }
 
 .folderlist li.mailbox ul li.archive > a {
