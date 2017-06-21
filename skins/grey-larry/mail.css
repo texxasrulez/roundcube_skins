@@ -580,8 +580,7 @@ table.messagelist.fixedcopy {
 	-webkit-overflow-scrolling: touch;
 }
 
-#messageheader,
-#composeheaders {
+#messageheader {
 	position: relative;
 	padding: 3px 0;
 	background: #f9f9f9;
@@ -590,6 +589,17 @@ table.messagelist.fixedcopy {
 	background: -ms-linear-gradient(top, #434343 0%, #c2c2c2 100%);
 	background: linear-gradient(to bottom, #434343 0%, #c2c2c2 100%);
 	border-top: 1px solid #878787;
+	border-bottom: 1px solid #878787;
+}
+
+#composeheaders {
+	position: relative;
+	padding: 3px 0;
+	background: #f9f9f9;
+	background: -moz-linear-gradient(top, #434343 0%, #c2c2c2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#434343), color-stop(100%,#c2c2c2));
+	background: -ms-linear-gradient(top, #434343 0%, #c2c2c2 100%);
+	background: linear-gradient(to bottom, #434343 0%, #c2c2c2 100%);
 	border-bottom: 1px solid #878787;
 }
 
@@ -1265,7 +1275,6 @@ div.message-partheaders .headers-table td.header {
 	padding: 2px 0 0 8px;
 	white-space: normal;
 	border-top: 1px solid #878787;
-	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
 .composeoption {
