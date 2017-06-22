@@ -37,7 +37,10 @@ Screenshots
 ![Alt text](/skins/blue-larry/images/blue-mail.png?raw=true "Blue Larry")
 ![Alt text](/skins/blue-larry/images/blue-cal.png?raw=true "Blue Larry Calendar")
 ![Alt text](/skins/green-larry/images/green-mail.png?raw=true "Green Larry")
+![Alt text](/skins/grey-larry/images/grey-mail.png?raw=true "Grey Larry")
 ![Alt text](/skins/pink-larry/images/pink-mail.png?raw=true "Pink Larry")
+![Alt text](/skins/plata-larry/images/plata-mail.png?raw=true "Plata Larry")
+![Alt text](/skins/summer-larry/images/summer-mail.png?raw=true "Summer Larry")
 ![Alt text](/skins/teal-larry/images/teal-mail.png?raw=true "Teal Larry")
 ![Alt text](/skins/violet-larry/images/violet-mail.png?raw=true "Violet Larry")
 
