@@ -948,7 +948,7 @@ a.iconlink.upload {
 
 #taskbar a.button-selected {
 	color: #f6fbfc;
-	background-color: #515151;
+	background-color: #828282;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#828282), color-stop(100%,#bdbdbd));
 	background: -ms-linear-gradient(top, #828282 0%, #bdbdbd 100%);
@@ -1201,7 +1201,7 @@ a.iconlink.upload {
 .listing li.selected > a {
 	color: #f6f6f6;
 	font-weight: bold;
-	background-color: #515151;
+	background-color: #828282;
 }
 
 ul.listing {
@@ -1567,15 +1567,15 @@ table.records-table {
 
 .records-table tr.selected td {
 	color: #e5e5e5 !important;
-	background-color: #515151 !important;
+	background-color: #828282 !important;
 }
 
 .records-table.focus tr.selected td {
 	background: #323232;
-	background: -moz-linear-gradient(top, #323232 0%, #d5d5d5 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#323232), color-stop(100%,#d5d5d5));
-	background: -ms-linear-gradient(top, #323232 0%, #d5d5d5 100%);
-	background: linear-gradient(to bottom, #323232 0%, #d5d5d5 100%);
+	background: -moz-linear-gradient(top, #848484 0%, #adadad 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#848484), color-stop(100%,#adadad));
+	background: -ms-linear-gradient(top, #848484 0%, #adadad 100%);
+	background: linear-gradient(to bottom, #848484 0%, #adadad 100%);
 }
 
 .records-table tr.selected td a,
@@ -1598,7 +1598,7 @@ table.records-table {
 }
 
 body.iframe {
-	background: #f6fbfc;
+	background: #e3e3e3;
 	margin: 38px 0 10px 0;
 }
 

@@ -71,7 +71,7 @@ textarea {
 	background: #ebfbf9;
 	margin: 0; /* Safari by default adds a margin */
 	padding: 4px;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	border-radius: 4px;
 	box-shadow: inset 0 0 2px 1px rgba(5,100,101, 0.1);
 }
@@ -80,14 +80,14 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input.button:focus,
 textarea:focus {
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	box-shadow: 0 0 5px 2px rgba(5,100,101, 0.9);
 	outline: none;
 }
 
 input[type="text"]:required,
 input[type="password"]:required {
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 }
 
 input.placeholder,
@@ -119,7 +119,7 @@ input.button {
 	margin: 0 2px;
 	padding: 2px 8px;
 	color: #fdf6f3;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	border-radius: 4px;
 	background: #0e4f55;
 	background: -moz-linear-gradient(top, #0e4f55 0%, #53b0a3 100%);
@@ -135,7 +135,7 @@ input.button {
 	color: #fdf6f3;
 	font-size: 110%;
 	padding: 4px 12px;
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	border-radius: 5px;
 	background: #0e4f55;
 	background: -moz-linear-gradient(top, #0e4f55 0%, #53b0a3 100%); /* FF3.6+ */
@@ -150,7 +150,7 @@ input.button {
 input.button.mainaction:hover,
 input.button.mainaction:focus {
 	color: #f2f2f2;
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	box-shadow: 0 0 5px 2px rgba(5,100,101, 0.6), inset 0 1px 0 0 #888;
 }
 
@@ -165,7 +165,7 @@ input.button.mainaction:focus {
 
 input.button.mainaction {
 	color: #fdf6f3;
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	background: #0e4f55;
 	background: -moz-linear-gradient(top, #0e4f55 0%, #53b0a3 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4f55), color-stop(100%,#53b0a3)); /* Chrome,Safari4+ */
@@ -227,7 +227,7 @@ a.button,
 
 a.button:focus,
 input.button:focus {
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	box-shadow: 0 0 2px 1px rgba(5,100,101, 0.6);
 	outline: none;
 }
@@ -243,7 +243,7 @@ input.button[disabled],
 a.button.disabled:hover,
 input.button.disabled:hover,
 input.button[disabled]:hover {
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	box-shadow: 0 1px 1px 0 rgba(5,100,101, 0.4);
 }
 
@@ -308,8 +308,8 @@ input.button:active {
 	background: -ms-linear-gradient(top, #0e4f55 0%, #53b0a3 100%);
 	background: linear-gradient(to bottom, #0e4f55 0%, #53b0a3 100%);
 	box-shadow: inset 0 1px 2px 0 #555;
-	border-right-color: #f0fcfa;
-	border-left-color: #f0fcfa;
+	border-right-color: #d5f9f3;
+	border-left-color: #d5f9f3;
 }
 
 .buttongroup a.button:focus,
@@ -585,7 +585,7 @@ a.iconlink.upload {
 	right: 0;
 	height: 27px;
 	padding-left: 8px;
-	border-top: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
 	border-radius: 0 0 4px 4px;
 	background: #53b0a3;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
@@ -621,7 +621,7 @@ a.iconlink.upload {
 	font-size: 12px;
 	font-weight: bold;
 	border-radius: 4px;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	color: #ebebeb;
 	background: rgba(5,100,101,0.85);
 	background: -moz-linear-gradient(top, rgba(5,100,101,0.85) 0%, rgba(5,100,101,0.9) 100%);
@@ -732,7 +732,7 @@ a.iconlink.upload {
 #topline {
 	height: 18px;
 	background: url(images/linen_header.jpg?v=514a.580) repeat #666;
-	border-bottom: 1px solid #f0fcfa;
+	border-bottom: 1px solid #d5f9f3;
 	padding: 2px 0 2px 10px;
 	color: #aaa;
 	text-align: center;
@@ -892,7 +892,7 @@ a.iconlink.upload {
 	color: #efe7e6;
 	font-weight: bold;
 	white-space: nowrap;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	box-shadow: 0 1px 5px 0 #0e4f55;
 	z-index: 200;
 	white-space: nowrap;
@@ -905,7 +905,7 @@ a.iconlink.upload {
 	right: 15px;
 	border-style: solid;
 	border-width: 0 4px 4px;
-	border-color: #f0fcfa transparent;
+	border-color: #d5f9f3 transparent;
 	/* reduce the damage in FF3.0 */
 	display: block;
 	width: 0;
@@ -1048,7 +1048,7 @@ a.iconlink.upload {
 }
 
 .uibox {
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	border-radius: 4px;
 	overflow: hidden;
 	box-shadow: 0 0 2px #999;
@@ -1111,7 +1111,7 @@ a.iconlink.upload {
 	padding: 7px 8px 6px 8px;
 	line-height: 20px;
 	margin: 0;
-	border-bottom: 1px solid #f0fcfa;
+	border-bottom: 1px solid #d5f9f3;
 	white-space: nowrap;
 }
 
@@ -1138,8 +1138,8 @@ a.iconlink.upload {
 .listing tbody td,
 .listing li {
 	display: block;
-	border-top: 1px solid #f0fcfa;
-	border-bottom: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
+	border-bottom: 1px solid #d5f9f3;
 	cursor: default;
 	font-weight: normal;
 }
@@ -1188,7 +1188,7 @@ a.iconlink.upload {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .listing.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #f0fcfa;
+	border-left: 2px solid #d5f9f3;
 }
 
 .listbox .listitem.selected,
@@ -1219,7 +1219,7 @@ ul.listing li {
 }
 
 ul.listing li ul {
-	border-top: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
 }
 
 ul.listing li.droptarget,
@@ -1340,7 +1340,7 @@ ul.treelist li.selected > div.expanded {
 	left: 0;
 	width: 100%;
 	height: 42px;
-	border-top: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
 	background: #0e4f55;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#53b0a3), color-stop(100%,#0e4f55));
@@ -1359,7 +1359,7 @@ ul.treelist li.selected > div.expanded {
 	display: inline-block;
 	text-decoration: none;
 	width: 48px;
-	border-right: 1px solid #f0fcfa;
+	border-right: 1px solid #d5f9f3;
 	background: #0e4f55;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#53b0a3), color-stop(100%,#0e4f55));
@@ -1491,7 +1491,7 @@ table.records-table {
 	width: 100%;
 	table-layout: fixed;
 	border-spacing: 0;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 }
 
 .boxlistcontent .records-table {
@@ -1508,8 +1508,8 @@ table.records-table {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4f55), color-stop(100%,#53b0a3)); /* Chrome,Safari4+ */
 	background: -ms-linear-gradient(top, #0e4f55 0%, #53b0a3 100%); 
 	background: linear-gradient(to bottom, #0e4f55 0%, #53b0a3 100%);
-	border-left: 1px solid #f0fcfa;
-	border-bottom: 1px solid #f0fcfa;
+	border-left: 1px solid #d5f9f3;
+	border-bottom: 1px solid #d5f9f3;
 	padding: 8px 7px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1542,8 +1542,8 @@ table.records-table {
 
 .records-table tbody td {
 	padding: 2px 7px;
-	border-bottom: 1px solid #f0fcfa;
-	border-left: 1px dotted #f0fcfa;
+	border-bottom: 1px solid #d5f9f3;
+	border-left: 1px dotted #d5f9f3;
 	white-space: nowrap;
 	cursor: default;
 	overflow: hidden;
@@ -1562,7 +1562,7 @@ table.records-table {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .records-table.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #f0fcfa;
+	border-left: 2px solid #d5f9f3;
 }
 
 .records-table tr.selected td {
@@ -1598,7 +1598,7 @@ table.records-table {
 }
 
 body.iframe {
-	background: #fdf6f3;
+	background: #cdf7f1;
 	margin: 38px 0 10px 0;
 }
 
@@ -1622,7 +1622,7 @@ body.iframe .boxtitle {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4f55), color-stop(100%,#53b0a3));
 	background: -ms-linear-gradient(top, #0e4f55 0%, #53b0a3 100%);
 	background: linear-gradient(to bottom, #0e4f55 0%, #53b0a3 100%);
-	border-bottom: 1px solid #f0fcfa;
+	border-bottom: 1px solid #d5f9f3;
 }
 
 body.iframe .boxtitle {
@@ -1664,7 +1664,7 @@ body.iframe .footerleft.floating:before,
 	margin: 0 0 10px;
 	display: block;
 	color: #960;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	background: url(images/messages.png?v=6ff4.1430) #fef893 5px -85px no-repeat;
 	padding: 6px 12px 6px 30px;
 }
@@ -1793,7 +1793,7 @@ ul.proplist li {
 	background: url(images/linen_login.jpg?v=0484.10363) top left no-repeat #5c5c5c;
 	margin: 0 50px;
 	padding: 10px 24px 24px 24px;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	border-radius: 5px;
 	box-shadow: inset 0 0 1px #ccc;
 }
@@ -1820,12 +1820,12 @@ ul.proplist li {
 #login-form input[type="text"],
 #login-form input[type="password"] {
 	width: 100%;
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 }
 
 #login-form input.button {
 	color: #efe7e6;
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	background: #0e4f55;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#53b0a3), color-stop(100%,#0e4f55));
@@ -1916,7 +1916,7 @@ ul.proplist li {
 	height: 18px;
 	color: #0e4f55;
 	background: #cdf7f1;
-	border-color: #f0fcfa;
+	border-color: #d5f9f3;
 	font-weight: bold;
 	font-size: 11px;
 }
@@ -2206,8 +2206,8 @@ select.decorated option {
 	color: #0e4f55;
 	background: #acf3e8;
 	border: 0;
-	border-top: 1px solid #f0fcfa;
-	border-bottom: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
+	border-bottom: 1px solid #d5f9f3;
 	padding: 4px 6px;
 	outline: none;
 	cursor: default;
@@ -2250,7 +2250,7 @@ table.quota-info {
 table.quota-info td,
 table.quota-info th {
 	color: white;
-	border: 1px solid f0fcfa;
+	border: 1px solid d5f9f3;
 	padding: 2px 3px;
 	text-align: center;
 	min-width: 80px;
@@ -2278,7 +2278,7 @@ table.quota-info td.root {
 	overflow-y: auto;
 	color: #efe7e6;
 	background: #0e4f55;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	z-index: 240;
 	border-radius: 4px;
 	box-shadow: 0 2px 6px 0 #0e4f55;
@@ -2290,7 +2290,7 @@ table.quota-info td.root {
 }
 
 .popupmenu > .buttons {
-	border-top: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
 	height: 25px;
 	padding-top: 5px;
 	text-align: center;
@@ -2311,8 +2311,8 @@ ul.toolbarmenu li,
 	white-space: nowrap;
 	min-width: 130px;
 	margin: 0;
-	border-top: 1px solid #f0fcfa;
-	border-bottom: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
+	border-bottom: 1px solid #d5f9f3;
 }
 
 .googie_list tr:first-child td,
@@ -2574,7 +2574,7 @@ ul.toolbarmenu li span.copy {
 	width: 260px;
 	padding: 6px 8px;
 	background: #444;
-	border: 1px solid #f0fcfa;
+	border: 1px solid #d5f9f3;
 	border-radius: 4px;
 	box-shadow: 0 2px 6px 0 #0e4f55;
 	z-index: 250;
@@ -2590,7 +2590,7 @@ ul.toolbarmenu li span.copy {
 	left: -6px;
 	border-style: solid;
 	border-width: 6px 6px 6px 0;
-	border-color: transparent #f0fcfa;
+	border-color: transparent #d5f9f3;
 	/* reduce the damage in FF3.0 */
 	display: block; 
 	width: 0;
@@ -2806,7 +2806,7 @@ ul.toolbarmenu li span.copy {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid #f0fcfa;
+	border-top: 1px solid #d5f9f3;
 }
 
 .folderlist li.mailbox ul li a {
