@@ -355,7 +355,7 @@ form #contacthead {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #efe7e6;
+	color: #651605;
 }
 
 .contactfieldgroup .contactfieldlabel select {
@@ -365,7 +365,7 @@ form #contacthead {
 }
 
 .contactfieldgroup .contactfieldcontent {
-	color: #efe7e6;
+	color: #651605;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;

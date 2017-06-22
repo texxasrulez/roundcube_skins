@@ -62,7 +62,7 @@ html.ie #mailview-top {
 #mailboxcontainer,
 #messagelistcontainer {
 	color: #fdf6f3;
-	background: #999;
+	background: #ccc;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -73,7 +73,7 @@ html.ie #mailview-top {
 
 #messagelistcontainer {
 	color: #fdf6f3;
-	background: #999;
+	background: #ccc;
 	top: 0;
 	bottom: 30px;
 	overflow: auto;
@@ -875,7 +875,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #999;
+	background: #ccc;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -1004,7 +1004,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #999;
+	color: #ccc;
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1444,7 +1444,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistcontainer {
-	background: #999;
+	background: #ccc;
 	top: 34px;
 	overflow-x: hidden;
 }

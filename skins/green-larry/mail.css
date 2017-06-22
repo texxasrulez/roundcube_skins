@@ -62,7 +62,7 @@ html.ie #mailview-top {
 #mailboxcontainer,
 #messagelistcontainer {
 	color: #354516;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -73,7 +73,7 @@ html.ie #mailview-top {
 
 #messagelistcontainer {
 	color: #354516;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	top: 0;
 	bottom: 30px;
 	overflow: auto;
@@ -309,7 +309,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr.thread.expanded td {
-	background-color: #d5e7a3;
+	background-color: #eaf3d1;
 }
 
 .messagelist tr.unread {
@@ -876,7 +876,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -888,7 +888,7 @@ div.hide-headers {
 
 #messagebody {
 	color: #354516;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	position: relative;
 	margin: 8px;
 }
@@ -1445,7 +1445,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistcontainer {
-	background: #d5e7a3;
+	background: #eaf3d1;
 	top: 34px;
 	overflow-x: hidden;
 }

@@ -42,7 +42,7 @@ img {
 
 .voice {
 	color: #354516;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	position: absolute;
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -493,7 +493,7 @@ a.iconbutton.upload {
 
 a.iconlink {
 	display: inline-block;
-	color: #f6fbfc;
+	color: #354516;
 	text-decoration: none;
 	white-space: nowrap;
 	padding: 2px 8px 2px 20px;
@@ -1599,7 +1599,7 @@ table.records-table {
 }
 
 body.iframe {
-	background: #d5e7a3;
+	background: #eaf3d1;
 	margin: 38px 0 10px 0;
 }
 
@@ -1746,7 +1746,7 @@ ul.proplist li,
 table.propform td {
 	width: 80%;
 	padding: 4px 10px;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	border-bottom: 2px solid #f6fbfc;
 }
 
@@ -1916,7 +1916,7 @@ ul.proplist li {
 	padding: 3px 30px 3px 34px;
 	height: 18px;
 	color: #354516;
-	background: #d5e7a3;
+	background: #eaf3d1;
 	border-color: #dbebb0;
 	font-weight: bold;
 	font-size: 11px;
