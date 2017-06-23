@@ -1286,6 +1286,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composeoptions .composeoption {
+	color: #e6edee;
 	display: inline-block;
 	padding: 4px 22px 4px 0;
 }
