@@ -402,7 +402,7 @@ pre {
 }
 
 #calendars .treelist li.selected > div.calendar {
-	background-color: #434343;
+	background-color: #828282;
 }
 
 #calendars .treelist li.selected > span.calname {

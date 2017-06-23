@@ -223,7 +223,12 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	color: #efe7e6;
+	color: #3f1a67;
+}
+
+#calendars .treelist li.selected span.calname {
+	color: #ebe8ef;
+	font-weight: bold;
 }
 
 .quickview-active #calendars .treelist div input,
@@ -397,7 +402,7 @@ pre {
 }
 
 #calendars .treelist li.selected > div.calendar {
-	background-color: #7854ba;
+	background-color: #3f1a67;
 }
 
 #calendars .treelist li.selected > span.calname {
