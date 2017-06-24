@@ -341,6 +341,7 @@ form #contacthead {
 }
 
 .contactfieldgroup .row {
+	color: #828282;
 	position: relative;
 	margin: 0.2em 0;
 }

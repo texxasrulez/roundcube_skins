@@ -76,27 +76,27 @@
 }
 
 #directorylist li.addressbook a {
-	background-position: 6px -766px;
-}
-
-#directorylist ul li.addressbook a {
-	background-position: 32px -766px;
-}
-
-#directorylist ul ul li.addressbook a {
-	background-position: 58px -766px;
-}
-
-#directorylist li.addressbook.selected > a {
 	background-position: 6px -791px;
 }
 
-#directorylist ul li.addressbook.selected > a {
+#directorylist ul li.addressbook a {
 	background-position: 32px -791px;
 }
 
-#directorylist ul ul li.addressbook.selected > a {
+#directorylist ul ul li.addressbook a {
 	background-position: 58px -791px;
+}
+
+#directorylist li.addressbook.selected > a {
+	background-position: 6px -766px;
+}
+
+#directorylist ul li.addressbook.selected > a {
+	background-position: 32px -766px;
+}
+
+#directorylist ul ul li.addressbook.selected > a {
+	background-position: 58px -766px;
 }
 
 #directorylist li.contactgroup a {
@@ -341,6 +341,7 @@ form #contacthead {
 }
 
 .contactfieldgroup .row {
+	color: #000;
 	position: relative;
 	margin: 0.2em 0;
 }
