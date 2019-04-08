@@ -11,6 +11,8 @@ Installation is easy. Upload plugins and skins folders to your roundcube install
 
 Note: Current Commit should be a working version of my ongoing nitpicking of some small color changes and making transparent images when necessary. Download and use with confidence.
 
+Latest Update makes skins compatible with Roundcube 1.4 ...
+
 
 Enjoy!
 
