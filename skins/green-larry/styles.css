@@ -78,7 +78,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="password"]:focus,
-input.button:focus,
+button:focus,
 textarea:focus {
 	border-color: #dbebb0;
 	box-shadow: 0 0 5px 2px rgba(53,69,22, 0.9);
@@ -114,7 +114,7 @@ label input + span {
 
 /*** buttons ***/
 
-input.button {
+button {
 	display: inline-block;
 	margin: 0 2px;
 	padding: 2px 5px;
@@ -131,7 +131,7 @@ input.button {
 	outline: none;
 }
 
-.formbuttons input.button {
+.formbuttons button {
 	color: #f6fbfc;
 	font-size: 110%;
 	padding: 4px 12px;
@@ -145,16 +145,16 @@ input.button {
 	box-shadow: 0 1px 1px 0 #ccc, inset 0 1px 0 0 #888;
 }
 
-.formbuttons input.button:hover,
-.formbuttons input.button:focus,
-input.button.mainaction:hover,
-input.button.mainaction:focus {
+.formbuttons button:hover,
+.formbuttons button:focus,
+button.mainaction:hover,
+button.mainaction:focus {
 	color: #f2f2f2;
 	border-color: #dbebb0;
 	box-shadow: 0 0 5px 2px rgba(53,69,22, 0.6), inset 0 1px 0 0 #888;
 }
 
-.formbuttons input.button:active {
+.formbuttons button:active {
 	color: #f6fbfc;
 	background: #354516;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
@@ -163,7 +163,7 @@ input.button.mainaction:focus {
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
 }
 
-input.button.mainaction {
+button.mainaction {
 	color: #f6fbfc;
 	border-color: #dbebb0;
 	background: #354516;
@@ -174,7 +174,7 @@ input.button.mainaction {
 	box-shadow: inset 0 1px 0 0 #777;
 }
 
-input.button.mainaction:active {
+button.mainaction:active {
 	color: #f6fbfc;
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
@@ -183,9 +183,9 @@ input.button.mainaction:active {
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
 }
 
-input.button[disabled],
-input.button[disabled]:hover,
-input.button.mainaction[disabled] {
+button[disabled],
+button[disabled]:hover,
+button.mainaction[disabled] {
 	color: #aaa !important;
 }
 
@@ -226,7 +226,7 @@ a.button,
 }
 
 a.button:focus,
-input.button:focus {
+button:focus {
 	border-color: #dbebb0;
 	box-shadow: 0 0 2px 1px rgba(53,69,22, 0.6);
 	outline: none;
@@ -238,11 +238,11 @@ a.button.disabled {
 }
 
 a.button.disabled,
-input.button.disabled,
-input.button[disabled],
+button.disabled,
+button[disabled],
 a.button.disabled:hover,
-input.button.disabled:hover,
-input.button[disabled]:hover {
+button.disabled:hover,
+button[disabled]:hover {
 	border-color: #dbebb0;
 	box-shadow: 0 1px 1px 0 rgba(160, 160, 160, 0.4);
 }
@@ -273,7 +273,7 @@ a.button.disabled span.inner {
 
 a.button.pressed,
 a.button:active,
-input.button:active {
+button:active {
 	background: #829947;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
@@ -1825,7 +1825,7 @@ ul.proplist li {
 	border-color: #dbebb0;
 }
 
-#login-form input.button {
+#login-form button {
 	color: #eaece7;
 	border-color: #dbebb0;
 	background: #354516;
@@ -1836,12 +1836,12 @@ ul.proplist li {
 	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
-#login-form input.button:hover,
-#login-form input.button:focus {
+#login-form button:hover,
+#login-form button:focus {
 	box-shadow: 0 0 5px 2px rgba(53,69,22, 0.9), inset 0 1px 0 0 #f6fbfc;
 }
 
-#login-form input.button:active {
+#login-form button:active {
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
@@ -3189,13 +3189,13 @@ _:not(), _:-moz-handler-blocked, .mozilla .mce-btn-small i {
 	padding: 0.3em;
 }
 
-.pgpkeyimport div.key input.button.importkey {
+.pgpkeyimport div.key button.importkey {
 	position: absolute;
 	top: 0.8em;
 	right: 0.8em;
 	padding: 4px 6px;
 }
 
-.pgpkeyimport div.key input.button[disabled] {
+.pgpkeyimport div.key button[disabled] {
 	display: none;
 }
