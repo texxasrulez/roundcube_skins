@@ -35,9 +35,9 @@
 </form>
 
 <div class="footerleft formbuttons">
-	<roundcube:button command="save" type="input" class="button mainaction" label="save" />
-	<roundcube:button command="show" type="input" class="button" label="cancel" condition="env:action=='edit'" />
-	<roundcube:button name="cancel" type="input" class="button" label="cancel" onclick="history.back()" condition="env:action=='add'" />
+	<roundcube:button command="save" type="link" class="button mainaction" label="save" />
+	<roundcube:button command="show" type="link" class="button" label="cancel" condition="env:action=='edit'" />
+	<roundcube:button name="cancel" type="link" class="button" label="cancel" onclick="history.back()" condition="env:action=='add'" />
 </div>
 
 <roundcube:object name="photoUploadForm" id="upload-form" mode="smart" />
