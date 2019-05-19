@@ -56,8 +56,8 @@ p.enigmaattachment {
   -webkit-box-shadow: 0 0 2px #ccc;
 }
 
-p.enigmaattachment a {
-  display: block;
+p.enigmaattachment span {
+  display: inline-block;
   background: url(enigma_icons.png) 8px -78px no-repeat;
   padding: 1em 0.5em 1em 46px;
 }
@@ -75,18 +75,33 @@ p.enigmaattachment a {
   padding: 2px 5px;
 }
 
+#enigmamenu div.row {
+  display: table-row;
+}
+
+#enigmamenu div.row > label {
+  display: table-cell;
+  width: 99%;
+  padding: 3px;
+}
+
+#enigmamenu div.row > div {
+  display: table-cell;
+  width: 1%;
+  padding: 3px;
+}
 
 /***** Keys/Certs Management *****/
 
 #settings-sections .enigma.keys a {
   background-image: url(enigma_icons.png);
-  background-position: 7px -345px;
+  background-position: 7px -368px;
   background-repeat: no-repeat;
 }
 
 #settings-sections .enigma.keys.selected a {
   background-image: url(enigma_icons.png);
-  background-position: 7px -368px;
+  background-position: 7px -345px;
   background-repeat: no-repeat;
 }
 
@@ -153,6 +168,11 @@ p.enigmaattachment a {
   display: block;
 }
 
+#keycreateform ul.proplist li {
+  border: 0;
+  padding: 2px 0;
+}
+
 #keystoolbar
 {
   position: absolute;
@@ -163,15 +183,10 @@ p.enigmaattachment a {
   z-index: 10;
 }
 
-#keystoolbar a.button
-{
-  background: url(enigma_icons.png) 0 0 no-repeat transparent;
-}
-
 #keystoolbar a.import {
-  background-position: center 0;
+  background: url(enigma_icons.png) center 0 no-repeat transparent;
 }
 
 #keystoolbar a.export {
-  background-position: center -40px;
+  background: url(enigma_icons.png) center -40px no-repeat transparent;
 }
