@@ -231,7 +231,8 @@
 }
 
 #folderslist,
-#identitieslist {
+#identitieslist,
+#responseslist {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -239,7 +240,8 @@
 	bottom: 0;
 }
 
-#identities-table {
+#identities-table,
+#responses-table {
 	width: 100%;
 	table-layout: fixed;
 }
@@ -255,7 +257,8 @@
 }
 
 #folder-details,
-#identity-details {
+#identity-details,
+#response-details {
 	position: absolute;
 	top: 0;
 	left: 272px;

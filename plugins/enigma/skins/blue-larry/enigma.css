@@ -107,13 +107,13 @@ p.enigmaattachment span {
 
 #sections-table #rcmrowenigma .section {
   background-image: url(enigma_icons.png);
-  background-position: 5px -297px;
+  background-position: 5px -321px;
   background-repeat: no-repeat;
 }
 
 #sections-table #rcmrowenigma.selected .section {
   background-image: url(enigma_icons.png);
-  background-position: 5px -321px;
+  background-position: 5px -297px;
   background-repeat: no-repeat;
 }
 

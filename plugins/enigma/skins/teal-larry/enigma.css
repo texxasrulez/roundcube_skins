@@ -52,8 +52,6 @@ p.enigmaattachment {
   background: #f9f9f9;
   border: 1px solid #d3d3d3;
   border-radius: 4px;
-  box-shadow: 0 0 2px #ccc;
-  -webkit-box-shadow: 0 0 2px #ccc;
 }
 
 p.enigmaattachment span {
@@ -95,13 +93,13 @@ p.enigmaattachment span {
 
 #settings-sections .enigma.keys a {
   background-image: url(enigma_icons.png);
-  background-position: 7px -368px;
+  background-position: 7px -345px;
   background-repeat: no-repeat;
 }
 
 #settings-sections .enigma.keys.selected a {
   background-image: url(enigma_icons.png);
-  background-position: 7px -345px;
+  background-position: 7px -368px;
   background-repeat: no-repeat;
 }
 
