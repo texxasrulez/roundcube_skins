@@ -3,6 +3,32 @@ I have taken Larry skin and modified it so there are 10 themes to choose from so
 
 I have also included skins for many popular plugins, and the ones I use, so you shouldn't have to make your own. If you need help with a plugin not available with this, please message me and ask. I just might can help you out ... 
 
+Skins for Plugins included:
+account_details
+acl
+advanced_search
+archive
+authres_status
+calendar
+carddav
+chbox
+contextmenu
+converse
+enigma
+folder_info
+help
+hide_blockquote
+jqueryui
+keyboard_shortcuts
+managesieve
+markasjunk2
+message_highlight
+nextcloud
+sauserprefs
+tasklist
+vcard_attachments
+zipdownload
+
 The Larry Skin from Roundcube 1.3 was used, so you must be running RC 1.3 or higher.
 
 Keep coming back often as I have plans on at least 18 total skins.
