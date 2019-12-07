@@ -42,7 +42,7 @@
 				<roundcube:object name="plugin.calendar_list" id="calendarslist" class="treelist listing" />
 			</div>
 			<div class="boxfooter">
-				<roundcube:button name="calendarcreatelink" id="calendarcreatemenulink" type="link" title="create" class="listbutton add" onclick="UI.show_popup('calendarcreatemenu', undefined, { above:true });return false" innerClass="inner" content="&#9881;" /><roundcube:button name="calendaroptionslink" id="calendaroptionsmenulink" type="link" title="moreactions" class="listbutton groupactions" onclick="UI.show_popup('calendaroptionsmenu', undefined, { above:true });return false" innerClass="inner" content="&#9881;" />				
+				<roundcube:button command="calendar-create" type="link" title="calendar.createcalendar" class="listbutton add disabled" classAct="listbutton add" innerClass="inner" content="+" /><roundcube:button name="calendaroptionslink" id="calendaroptionsmenulink" type="link" title="moreactions" class="listbutton groupactions" onclick="return UI.toggle_popup('calendaroptionsmenu', event, { above:true })" innerClass="inner" label="calendar.calendaractions" aria-haspopup="true" aria-expanded="false" aria-owns="calendaroptionsmenu-menu" />
 			</div>
 		</div>
 	</div>
@@ -57,15 +57,10 @@
 
 	<h2 id="aria-label-calendarview" class="voice"><roundcube:label name="calendar.arialabelcalendarview" /></h2>
 	<div id="calendar" role="main" aria-labelledby="aria-label-calendarview">
-		<roundcube:object name="plugin.angenda_options" class="boxfooter" id="agendaoptions" />
+		<roundcube:object name="plugin.agenda_options" class="boxfooter" id="agendaoptions" />
 	</div>
 </div>
 
-<div id="calendarcreatemenu" class="popupmenu">
-	<ul class="toolbarmenu">
-		<roundcube:object name="plugin.calendar_create_menu" />
-	</ul>
-</div>
 <div id="timezonedisplay"><roundcube:var name="env:timezone" /></div>
 
 <roundcube:object name="message" id="messagestack" />
@@ -79,35 +74,38 @@
 		<li role="menuitem"><roundcube:button type="link" command="calendar-remove" label="calendar.removelist" classAct="active" /></li>
 		<roundcube:endif />
 		<li role="menuitem"><roundcube:button type="link" command="calendar-showurl" label="calendar.showurl" classAct="active" /></li>
+		<roundcube:if condition="!empty(env:calendar_settings['freebusy_url'])" />
+		<li role="menuitem"><roundcube:button type="link" command="calendar-showfburl" label="calendar.showfburl" classAct="active" /></li>
+		<roundcube:endif />
 		<roundcube:if condition="env:calendar_driver == 'kolab'" />
-		<li role="menuitem"><roundcube:button type="link" command="folders" task="settings" type="link" label="managefolders" classAct="active" /></li>
+		<li role="menuitem"><roundcube:button type="link" command="folders" task="settings" label="managefolders" classAct="active" /></li>
 		<roundcube:endif />
 	</ul>
 </div>
 
 <div id="eventshow" class="uidialog eventdialog" aria-hidden="true">
 	<h1 id="event-title">Event Title</h1>
+	<div id="event-status-badge"><span></span></div>
 	<div class="event-section" id="event-location">Location</div>
 	<div class="event-section" id="event-date">From-To</div>
 	<div class="event-section" id="event-description">
-		<h5 class="label"><roundcube:label name="calendar.description" /></h5>
-		<div class="event-text"></div>
-	</div>
-	<div class="event-section" id="event-url">
-		<h5 class="label"><roundcube:label name="calendar.url" /></h5>
-		<div class="event-text"></div>
-	</div>
-	<div class="event-section" id="event-repeat">
-		<h5 class="label"><roundcube:label name="calendar.repeat" /></h5>
-		<div class="event-text"></div>
-	</div>
-	<div class="event-section" id="event-alarm">
-		<h5 class="label"><roundcube:label name="calendar.alarms" /></h5>
 		<div class="event-text"></div>
 	</div>
 	<div class="event-section event-attendees" id="event-attendees">
-		<h5 class="label"><roundcube:label name="calendar.tabattendees" /></h5>
 		<div class="event-text"></div>
+	</div>
+	<div class="spacer">&nbsp;</div>
+	<div class="event-line" id="event-url">
+		<label><roundcube:label name="calendar.url" /></label>
+		<span class="event-text"></span>
+	</div>
+	<div class="event-line" id="event-repeat">
+		<label><roundcube:label name="calendar.repeat" /></label>
+		<span class="event-text"></span>
+	</div>
+	<div class="event-line" id="event-alarm">
+		<label><roundcube:label name="calendar.alarms" /></label>
+		<span class="event-text"></span>
 	</div>
 	<div class="event-line" id="event-partstat">
 		<label><roundcube:label name="calendar.mystatus" /></label>
@@ -136,19 +134,12 @@
 		<label><roundcube:label name="calendar.priority" /></label>
 		<span class="event-text"></span>
 	</div>
+	<!--
 	<div class="event-line" id="event-sensitivity">
 		<label><roundcube:label name="calendar.sensitivity" /></label>
 		<span class="event-text"></span>
 	</div>
-	<div class="event-section" id="event-links">
-		<label><roundcube:label name="calendar.links" /></label>
-		<span class="event-text"></span>
-		<br style="clear:left">
-	</div>
-	<div class="event-section" id="event-attachments">
-		<label><roundcube:label name="attachments" /></label>
-		<div class="event-text"></div>
-	</div>
+	-->
 	<div class="event-line" id="event-created-changed">
 		<label><roundcube:label name="calendar.created" /></label>
 		<span class="event-text event-created"></span>
@@ -159,8 +150,15 @@
 		<label><roundcube:label name="calendar.rsvpcomment" /></label>
 		<span class="event-text"></span>
 	</div>
+	<div class="event-section" id="event-links">
+		<label><roundcube:label name="calendar.links" /></label>
+		<span class="event-text"></span>
+	</div>
+	<div class="event-section" id="event-attachments">
+		<div class="event-text"></div>
+	</div>
 
-	<roundcube:object name="plugin.event_rsvp_buttons" id="event-rsvp" class="event-dialog-message" style="display:none" />
+	<roundcube:object name="plugin.event_rsvp_buttons" id="event-rsvp" class="dialog-message" style="display:none" />
 </div>
 
 <div id="eventoptionsmenu" class="popupmenu" aria-hidden="true">
@@ -168,8 +166,9 @@
 	<ul id="eventoptionsmenu-menu" class="toolbarmenu" role="menu" aria-labelledby="aria-label-eventoptions">
 		<li role="menuitem"><roundcube:button type="link" command="event-download" label="download" classAct="active" /></li>
 		<li role="menuitem"><roundcube:button type="link" command="event-sendbymail" label="send" classAct="active" /></li>
+		<li role="menuitem"><roundcube:button type="link" command="event-copy" label="copy" classAct="active" /></li>
 		<roundcube:if condition="env:calendar_driver == 'kolab' && config:kolab_bonnie_api" />
-		<li role="menuitem"><roundcube:button type="link" command="event-history" type="link" label="calendar.eventhistory" classAct="active" /></li>
+		<li role="menuitem"><roundcube:button type="link" command="event-history" label="calendar.eventhistory" classAct="active" /></li>
 		<roundcube:endif />
 	</ul>
 </div>
@@ -302,7 +301,7 @@
 	<div class="schedule-options">
 		&nbsp;
 		<div class="schedule-buttons">
-			<button id="shedule-freebusy-prev" title="<roundcube:label name='previouspage' />">&#9668;</button><button id="shedule-freebusy-next" title="<roundcube:label name='nextpage' />">&#9658;</button>
+			<button type="button" id="schedule-freebusy-prev" title="<roundcube:label name='previouspage' />">&#9668;</button><button type="button" id="schedule-freebusy-next" title="<roundcube:label name='nextpage' />">&#9658;</button>
 		</div>
 	</div>
 
@@ -320,8 +319,8 @@
 	</div>
 	<div style="float:left">
 		<div class="schedule-find-buttons">
-			<button id="shedule-find-prev">&#9668; <roundcube:label name="calendar.prevslot" /></button>
-			<button id="shedule-find-next"><roundcube:label name="calendar.nextslot" /> &#9658;</button>
+			<button type="button" id="schedule-find-prev">&#9668; <roundcube:label name="calendar.prevslot" /></button>
+			<button type="button" id="schedule-find-next"><roundcube:label name="calendar.nextslot" /> &#9658;</button>
 		</div>
 		<div class="schedule-options">
 			<label><input type="checkbox" id="schedule-freebusy-workinghours" value="1" /><roundcube:label name="calendar.onlyworkinghours" /></label>
@@ -340,8 +339,8 @@
 </div>
 
 <div id="eventhistory" class="uidialog" aria-hidden="true">
-    <roundcube:object name="plugin.object_changelog_table" id="event-changelog-table" class="records-table changelog-table" domain="calendar" />
-    <div class="compare-button"><input type="button" class="button" value="↳ <roundcube:label name='calendar.compare' />" /></div>
+    <roundcube:object name="plugin.object_changelog_table" id="event-changelog-table" class="records-table changelog-table" />
+    <div class="compare-button"><input type="button" class="button" value="↳ <roundcube:label name='libkolab.compare' />" /></div>
 </div>
 
 <div id="calendarform" class="uidialog" aria-hidden="true">
@@ -365,6 +364,11 @@
 	</div>
 </div>
 
+<div id="fburlbox" class="uidialog">
+	<p><roundcube:label name="calendar.fburldescription" /></p>
+	<textarea id="fburl" rows="2" readonly="readonly"></textarea>
+</div>
+
 <roundcube:object name="plugin.calendar_css" />
 
 <script type="text/javascript">
@@ -373,8 +377,6 @@
 var UI = new rcube_mail_ui();
 
 $(document).ready(function(e){
-	UI.init();
-
 	new calendarview_splitter({ id:'calsidebarsplitter', p1:'#calendarsidebar', p2:'#calendar',
 		orientation:'v', relative:true, start:280, min:260, size:12, offset:0 });
 

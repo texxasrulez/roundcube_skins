@@ -28,7 +28,7 @@ nextcloud\
 sauserprefs\
 tasklist\
 vcard_attachments\
-zipdownload\
+zipdownload
 
 The Larry Skin from Roundcube 1.3 was used, so you must be running RC 1.3 or higher.
 
