@@ -1724,9 +1724,9 @@ a.dropdown-link:after {
 .calendarmain #calendar .fc-button,
 .calendarmain #calendar .fc-button.fc-state-default,
 .calendarmain #calendar .fc-button.fc-state-hover {
-	margin: 0 0 0 0;
-	height: 20px;
-	line-height: 20px;
+	margin-top: -2px;
+	height: 26px;
+	line-height: 26px;
 	color: #f2eee6;
 	border: 1px solid #ccb159;
 	background: #81570d;

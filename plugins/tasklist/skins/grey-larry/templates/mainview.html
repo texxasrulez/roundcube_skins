@@ -17,15 +17,9 @@
 		<div id="taskstoolbar" class="toolbar" role="toolbar" aria-labelledby="aria-label-toolbar">
 			<roundcube:button command="newtask" type="link" class="button newtask disabled" classAct="button newtask" classSel="button newtask pressed" label="tasklist.newtask" title="tasklist.newtask" />
 			<roundcube:button command="print" type="link" class="button print disabled" classAct="button print" classSel="button print pressed" label="print" title="tasklist.printtitle" />
+			<roundcube:button command="import" type="link" class="button import disabled" classAct="button import" classSel="button import pressed" label="import" title="tasklist.importtasks" />
 			<roundcube:button command="export" type="link" class="button export disabled" classAct="button export" classSel="button export pressed" label="tasklist.export" title="tasklist.exporttitle" />
 			<roundcube:container name="toolbar" id="taskstoolbar" />
-		</div>
-
-		<div id="tagsbox" class="uibox listbox">
-			<h2 class="boxtitle" id="aria-label-tagsbox"><roundcube:label name="tasklist.tags" id="taglist" /></h2>
-			<div class="scroller">
-				<roundcube:object name="plugin.tagslist" id="tagslist" class="tagcloud" role="region" aria-labelledby="aria-label-tagsbox" aria-controls="thelist" />
-			</div>
 		</div>
 
 		<div id="tasklistsbox" class="uibox listbox" role="navigation" aria-labelledby="aria-label-tasklists">
@@ -38,31 +32,31 @@
 					<label for="tasklistsearch" class="voice"><roundcube:label name="tasklist.searchterms" /></label>
 					<input type="text" name="q" id="tasklistsearch" placeholder="<roundcube:label name='tasklist.findlists' />" />
 					<a class="iconbutton searchicon"></a>
-					<roundcube:button command="reset-listsearch" id="tasklistsearch-reset" class="iconbutton reset" title="resetsearch" label="resetsearch" />
+					<roundcube:button type="link" command="reset-listsearch" id="tasklistsearch-reset" class="iconbutton reset" title="resetsearch" label="resetsearch" />
 				</div>
 			</div>
 			<div class="scroller withfooter">
 			<roundcube:object name="plugin.tasklists" id="tasklists" class="treelist listing" />
 			</div>
 			<div class="boxfooter">
-				<roundcube:button command="list-create" type="link" title="tasklist.createlist" class="listbutton add disabled" classAct="listbutton add" innerClass="inner" label="tasklist.createlist" /><roundcube:button name="tasklistoptionslink" id="tasklistoptionsmenulink" type="link" title="tasklist.listactions" class="listbutton groupactions" onclick="return UI.toggle_popup('tasklistoptionsmenu', event, { above:true })" innerClass="inner" label="tasklist.listactions" aria-haspopup="true" aria-expanded="false" aria-owns="tasklistoptionsmenu-menu" />
+				<roundcube:button type="link" command="list-create" type="link" title="tasklist.createlist" class="listbutton add disabled" classAct="listbutton add" innerClass="inner" label="tasklist.createlist" /><roundcube:button name="tasklistoptionslink" id="tasklistoptionsmenulink" type="link" title="tasklist.listactions" class="listbutton groupactions" onclick="return UI.toggle_popup('tasklistoptionsmenu', event, { above:true })" innerClass="inner" label="tasklist.listactions" aria-haspopup="true" aria-expanded="false" aria-owns="tasklistoptionsmenu-menu" />
 			</div>
 		</div>
 
 		<div id="tasklistoptionsmenu" class="popupmenu" aria-hidden="true">
 			<h3 id="aria-label-tasklistoptions" class="voice"><roundcube:label name="tasklist.listactions" /></h3>
 			<ul class="toolbarmenu" id="tasklistoptionsmenu-menu" role="menu" aria-labelledby="aria-label-tasklistoptions">
-				<li role="menuitem"><roundcube:button command="list-edit" label="edit" classAct="active" /></li>
-				<li role="menuitem"><roundcube:button command="list-delete" label="delete" classAct="active" /></li>
+				<li role="menuitem"><roundcube:button type="link" command="list-edit" label="edit" classAct="active" /></li>
+				<li role="menuitem"><roundcube:button type="link" command="list-delete" label="delete" classAct="active" /></li>
 				<!--<li role="menuitem"><roundcube:button command="list-import" label="tasklist.import" classAct="active" /></li>-->
 				<roundcube:if condition="env:tasklist_driver == 'kolab'" />
-				<li role="menuitem"><roundcube:button command="list-remove" label="tasklist.removelist" classAct="active" /></li>
+				<li role="menuitem"><roundcube:button type="link" command="list-remove" label="tasklist.removelist" classAct="active" /></li>
 				<roundcube:endif />
 				<roundcube:if condition="config:calendar_caldav_url" />
-				<li role="menuitem"><roundcube:button command="list-showurl" label="tasklist.showcaldavurl" classAct="active" /></li>
+				<li role="menuitem"><roundcube:button type="link" command="list-showurl" label="tasklist.showcaldavurl" classAct="active" /></li>
 				<roundcube:endif />
 				<roundcube:if condition="env:tasklist_driver == 'kolab'" />
-				<li role="menuitem"><roundcube:button command="folders" task="settings" type="link" label="managefolders" classAct="active" /></li>
+				<li role="menuitem"><roundcube:button type="link" command="folders" task="settings" label="managefolders" classAct="active" /></li>
 				<roundcube:endif />
 			</ul>
 		</div>
@@ -80,7 +74,7 @@
 		<label for="quicksearchbox" class="voice"><roundcube:label name="tasklist.arialabelquicksearchbox" /></label>
 		<roundcube:object name="plugin.searchform" id="quicksearchbox" />
 		<a id="searchmenulink" class="iconbutton searchoptions" > </a>
-		<roundcube:button command="reset-search" id="searchreset" class="iconbutton reset" title="resetsearch" label="resetsearch" />
+		<roundcube:button type="link" command="reset-search" id="searchreset" class="iconbutton reset" title="resetsearch" label="resetsearch" />
 	</div>
 
 	<div id="tasksview" class="uibox">
@@ -130,8 +124,8 @@
 			<div id="taskviewactions" class="popupmenu" aria-hidden="true" data-align="right">
 				<h3 id="aria-label-taskviewactions" class="voice"><roundcube:label name="tasklist.viewactions" /></h3>
 				<ul class="toolbarmenu" id="taskviewactions-menu" role="menu" aria-labelledby="aria-label-taskviewactions">
-					<li role="menuitem"><roundcube:button command="expand-all" label="expand-all" class="icon" classAct="icon active" innerclass="icon expand" /></li>
-					<li role="menuitem"><roundcube:button command="collapse-all" label="collapse-all" class="icon" classAct="icon active" innerclass="icon collapse" /></li>
+					<li role="menuitem"><roundcube:button type="link" command="expand-all" label="expand-all" class="icon" classAct="icon active" innerclass="icon expand" /></li>
+					<li role="menuitem"><roundcube:button type="link" command="collapse-all" label="collapse-all" class="icon" classAct="icon active" innerclass="icon collapse" /></li>
 				</ul>
 			</div>
 		</div>
@@ -165,6 +159,7 @@
 
 <div id="taskshow" class="taskshow">
 	<div id="task-parent-title" class="form-section task-parent-title"></div>
+	<div id="event-status-badge"><span></span></div>
 	<div class="form-section">
 		<h2 id="task-title"></h2>
 	</div>
@@ -240,7 +235,7 @@
 		<span class="task-text"></span>
 	</div>
 
-	<roundcube:object name="plugin.task_rsvp_buttons" id="task-rsvp" class="task-dialog-message" style="display:none" />
+	<roundcube:object name="plugin.task_rsvp_buttons" id="task-rsvp" class="dialog-message" style="display:none" />
 </div>
 
 <roundcube:if condition="env:tasklist_driver == 'kolab' && config:kolab_bonnie_api" />
@@ -321,6 +316,10 @@
 	<roundcube:container name="tasklistform" id="tasklistform" />
 </div>
 
+<div id="tasksimport" class="uidialog">
+	<roundcube:object name="plugin.tasks_import_form" id="tasks-import-form" uploadFieldSize="30" />
+</div>
+
 <div id="tasksexport" class="uidialog">
 	<roundcube:object name="plugin.tasks_export_form" id="tasks-export-form" />
 </div>
@@ -331,8 +330,6 @@
 var UI = new rcube_mail_ui();
 
 $(document).ready(function(e){
-	UI.init();
-
 	rcmail.addEventListener('tasklist_editform_load', function(e){
 		if (rcmail.env.tasklist_driver == 'kolab')
 			UI.init_tabs($('#tasklistform > form').addClass('propform tabbed'));
@@ -340,8 +337,6 @@ $(document).ready(function(e){
 
 	new rcube_splitter({ id:'taskviewsplitter', p1:'#sidebar', p2:'#mainview-right',
 		orientation:'v', relative:true, start:240, min:180, size:12 }).init();
-	new rcube_splitter({ id:'taskviewsplitterv', p1:'#tagsbox', p2:'#tasklistsbox',
-		orientation:'h', relative:true, start:242, min:120, size:12, offset:4 }).init();
 
 	// animation to unfold list search box
 	$('#tasklistsbox .boxtitle a.search').click(function(e){
