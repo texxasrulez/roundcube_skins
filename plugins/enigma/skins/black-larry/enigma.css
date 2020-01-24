@@ -79,13 +79,11 @@ p.enigmaattachment span {
 
 #enigmamenu div.row > label {
   display: table-cell;
-  width: 99%;
   padding: 3px;
 }
 
 #enigmamenu div.row > div {
   display: table-cell;
-  width: 1%;
   padding: 3px;
 }
 
@@ -105,13 +103,13 @@ p.enigmaattachment span {
 
 #sections-table #rcmrowenigma .section {
   background-image: url(enigma_icons.png);
-  background-position: 5px -321px;
+  background-position: 5px -297px;
   background-repeat: no-repeat;
 }
 
 #sections-table #rcmrowenigma.selected .section {
   background-image: url(enigma_icons.png);
-  background-position: 5px -297px;
+  background-position: 5px -321px;
   background-repeat: no-repeat;
 }
 
