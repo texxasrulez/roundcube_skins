@@ -1,5 +1,5 @@
 # Roundcube Skins
-Latest RC Version: 1.4.1
+Latest RC Version: 1.4.2
 
 I have taken Larry skin and modified it so there are 10 themes to choose from so far. Larry Skin has the best layout of all other themes in my opinion, so why reinvent the wheel when all I want is a wider color choice.
 
@@ -24,7 +24,7 @@ hide_blockquote\
 jqueryui\
 keyboard_shortcuts\
 managesieve\
-markasjunk2\
+markasjunk\
 message_highlight\
 nextcloud\
 sauserprefs\
