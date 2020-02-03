@@ -1,4 +1,12 @@
 # Roundcube Skins
+
+:moneybag: **Donations** :moneybag:
+
+If you use this plugin and would like to show your appreciation by buying me a cup of coffee, I surely would appreciate it. A regular cup of Joe is sufficient, but a Starbucks Coffee would be better ... \
+Zelle (Zelle is integrated within many major banks Mobile Apps by default) - Just send to texxasrulez at yahoo dot com \
+No Zelle in your banks mobile app, no problem, just click [Paypal](https://paypal.me/texxasrulez?locale.x=en_US) and I can make a Starbucks run ...
+
+
 Latest RC Version: 1.4.2
 
 I have taken Larry skin and modified it so there are 10 themes to choose from so far. Larry Skin has the best layout of all other themes in my opinion, so why reinvent the wheel when all I want is a wider color choice.
