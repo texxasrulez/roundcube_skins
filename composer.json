@@ -1,6 +1,6 @@
 {
     "name": "texxasrulez/roundcube_skins",
-    "type": "roundcube-plugin",
+    "type": "roundcube-skin",
     "description": "Colorful skins based on Larry",
     "homepage": "https://github.com/texxasrulez/roundcube_skins",
     "keywords": ["skin"],
