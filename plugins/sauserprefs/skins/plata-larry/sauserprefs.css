@@ -296,3 +296,12 @@ table.addressprefstable tr > .scroller
   background-image: url(images/listicons.png);
   background-position: 4px -74px;
 }
+
+span.helpicon
+{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: right;
+  background-image: url(images/help.png);
+}
