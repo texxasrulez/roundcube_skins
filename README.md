@@ -1,11 +1,5 @@
 # Colorful Roundcube Skins based off Larry
 
-:moneybag: **Donations** :moneybag:
-
-If you use these Skins and would like to show your appreciation by buying me a cup of coffee, I surely would appreciate it. It took me almost 6 months to create these and evidently the time from then till now (end date not in sight) to refine it. It is all good. I love it and do it to repay the OSS Community, but it would make the world of difference if just a few user wanted to buy me a coffee. A regular cup of Joe is great, but a Starbucks Coffee would be better ... \
-Zelle (Zelle is integrated within many major banks Mobile Apps by default) - Just send to texxasrulez at yahoo dot com \
-No Zelle in your banks mobile app, no problem, just click [Paypal](https://paypal.me/texxasrulez?locale.x=en_US) and I can make a Starbucks run ...
-
 **Compatible with RC Version: 1.3.x and beyond**
 
 I have taken the Larry skin and modified it so there are 10 themes to choose from so far. Larry Skin has the best layout of all other themes in my opinion, so why reinvent the wheel when all I want is a wider color choice.
@@ -16,6 +10,7 @@ I have also included skins for many popular plugins and the ones I use. If you n
 -------
 account_details\
 acl\
+additional_imap\
 advanced_search\
 archive\
 authres_status\
@@ -38,6 +33,7 @@ message_highlight\
 nextcloud\
 primitivenotes\
 quota\
+roundrive\
 sauserprefs\
 tasklist\
 vcard_attachments\
@@ -85,6 +81,14 @@ Screenshots
 ![Alt text](/skins/summer-larry/images/summer-mail.png?raw=true "Summer Larry")
 ![Alt text](/skins/teal-larry/images/teal-mail.png?raw=true "Teal Larry")
 ![Alt text](/skins/violet-larry/images/violet-mail.png?raw=true "Violet Larry")
+
+
+
+:moneybag: **Donations** :moneybag:
+
+If you use these Skins and would like to show your appreciation by buying me a cup of coffee, I surely would appreciate it. It took me almost 6 months to create these and evidently the time from then till now (end date not in sight) to refine it. It is all good. I love it and do it to repay the OSS Community, but it would make the world of difference if just a few user wanted to buy me a coffee. A regular cup of Joe is great, but a Starbucks Coffee would be better ... \
+Zelle (Zelle is integrated within many major banks Mobile Apps by default) - Just send to texxasrulez at yahoo dot com \
+No Zelle in your banks mobile app, no problem, just click [Paypal](https://paypal.me/texxasrulez?locale.x=en_US) and I can make a Starbucks run ...
 
 
 Original Author Credits:
