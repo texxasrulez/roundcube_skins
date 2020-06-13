@@ -58,7 +58,7 @@ textarea,
 select,
 button {
 	color: #152f40;
-	background: #c5e3ed;
+	background: #f1f8fb;
 	font-family: inherit;
 	font-size: inherit;
 	vertical-align: middle;
@@ -1640,7 +1640,7 @@ body.iframe .footerleft.floating,
 	bottom: 0;
 	width: 100%;
 	z-index: 110;
-	background: #c5e3ed;
+	background: #f1f8fb;
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
