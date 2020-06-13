@@ -937,7 +937,7 @@ div.message-part div.pre {
 }
 
 div.message-part span.sig {
-	color: inherit;
+	color: #e3cae7;
 }
 
 div.message-part blockquote {
@@ -1521,7 +1521,7 @@ div.message-partheaders .headers-table td.header {
 
 .widescreen .messagelist td {
 	color: #3f1a67 !important;
-	background: #ddbbe4;
+	background: #e1cce5;
 	border-left: 0;
 	vertical-align: top;
 	padding: 3px 2px !important;

@@ -2044,6 +2044,7 @@ a.dropdown-link:after {
 
 .fc-widget-header,
 .fc-widget-content {
+	color: #6d1f49;
 	border-color: #c3c3c3 !important;
 }
 
@@ -2059,7 +2060,7 @@ a.dropdown-link:after {
 
 .fc-popover .fc-header .fc-title,
 .fc-list-heading .fc-widget-header {
-	color: #666;
+	color: #82305c;
 }
 
 .fc-view thead th.fc-widget-header {

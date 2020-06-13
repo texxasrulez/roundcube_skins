@@ -2052,6 +2052,7 @@ a.dropdown-link:after {
 
 .fc-widget-header,
 .fc-widget-content {
+	color: #152f40;
 	border-color: #c3c3c3 !important;
 }
 

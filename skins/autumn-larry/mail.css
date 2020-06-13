@@ -936,7 +936,7 @@ div.message-part div.pre {
 }
 
 div.message-part span.sig {
-	color: #666;
+	color: #742d1d;
 }
 
 div.message-part blockquote {
@@ -1525,7 +1525,7 @@ div.message-partheaders .headers-table td.header {
 
 .widescreen .messagelist td {
 	color: #651605;
-	background: #b5734b;
+	background: #f1d4c4;
 	border-left: 0;
 	vertical-align: top;
 	padding: 3px 2px !important;
@@ -1551,7 +1551,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td.subject span {
-	color: #efe7e6;
+	color: #742d1d;
 	line-height: 20px;
 }
 
@@ -1559,7 +1559,7 @@ div.message-partheaders .headers-table td.header {
 	right: 2px;
 	top: 3px;
 	position: absolute;
-	color: #efe7e6;
+	color: #742d1d;
 }
 
 .widescreen .messagelist td.subject span.fromto {

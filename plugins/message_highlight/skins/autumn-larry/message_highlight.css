@@ -7,7 +7,6 @@
   color: #fff !important;
 }
 
-
 /* settings */
 .mh_preferences_row {
   display: flex;
@@ -21,7 +20,6 @@
 .mh_preferences_row .ml-5 {
   margin-left: 15px;
 }
-
 
 /* icon */
 #sections-table #rcmrowmh_preferences td.section {
@@ -40,7 +38,6 @@
 #mColorPickerFooter {
   background-color: #ffffff !important;
 }
-
 
 #mColorPicker {
   height: 83px !important;

@@ -1429,13 +1429,13 @@ a.ui-button:active,
 	color: #ededed;
 	text-shadow: none;
 	border-color: #1f262c;
-	background: #505050;
-	background: -moz-linear-gradient(top, #505050 0%, #2a2e31 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505050), color-stop(100%,#2a2e31));
-	background: -o-linear-gradient(top, #505050 0%, #2a2e31 100%);
-	background: -ms-linear-gradient(top, #505050 0%, #2a2e31 100%);
-	background: linear-gradient(top, #505050 0%, #2a2e31 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#505050', endColorstr='#2a2e31', GradientType=0);
+	background: #152f40;
+	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576));
+	background: -o-linear-gradient(top, #152f40 0%, #265576 100%);
+	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%);
+	background: linear-gradient(top, #152f40 0%, #265576 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#152f40', endColorstr='#265576', GradientType=0);
 	-moz-box-shadow: inset 0 1px 0 0 #777;
 	-webkit-box-shadow: inset 0 1px 0 0 #777;
 	-o-box-shadow: inset 0 1px 0 0 #777;
@@ -1478,12 +1478,12 @@ a.ui-button:active,
 
 .ui-button.ui-state-active.mainaction {
 	color: #fff;
-	background: #515151;
-	background: -moz-linear-gradient(top, #2a2e31 0%, #505050 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a2e31), color-stop(100%,#505050));
-	background: -o-linear-gradient(top, #2a2e31 0%, #505050 100%);
-	background: -ms-linear-gradient(top, #2a2e31 0%, #505050 100%);
-	background: linear-gradient(top, #2a2e31 0%, #505050 100%);
+	background: #152f40;
+	background: -moz-linear-gradient(top, #265576 0%, #505050 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#505050));
+	background: -o-linear-gradient(top, #265576 0%, #505050 100%);
+	background: -ms-linear-gradient(top, #265576 0%, #505050 100%);
+	background: linear-gradient(top, #265576 0%, #505050 100%);
 }
 
 .ui-button[disabled],
