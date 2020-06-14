@@ -1052,7 +1052,7 @@ a.iconlink.upload {
 	border-radius: 4px;
 	overflow: hidden;
 	box-shadow: 0 0 2px #152f40;
-	background: #c5e3ed;
+	background: #eef6f9;
 }
 
 .minwidth {
@@ -3112,7 +3112,7 @@ ul.toolbarmenu li span.copy {
 }
 
 .ui-tabs .ui-tabs-nav li.tablink a {
-	background: #c5e3ed;
+	background: #eef6f9;
 }
 
 .ui-tabs fieldset.ui-tabs-panel {
