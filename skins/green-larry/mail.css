@@ -1484,6 +1484,11 @@ div.message-partheaders .headers-table td.header {
 	background: url(images/listicons.png?v=e9f1.12614) 0 -975px no-repeat;
 }
 
+.widescreen #messagelistheader .listmenu:focus {
+ 	background-color: rgba(21,47,64,0.55);
+ 	outline: none;
+}
+
 .widescreen #countcontrols {
 	line-height: 24px;
 	display: inline;
