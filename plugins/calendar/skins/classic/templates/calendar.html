@@ -11,7 +11,7 @@
 <roundcube:include file="/includes/taskbar.html" />
 <roundcube:include file="/includes/header.html" />
 
-<div id="main">
+<div id="mainscreen">
   <div id="calendarsidebar">
     <div id="calendartoolbar">
       <roundcube:button command="addevent" type="link" class="buttonPas addevent" classAct="button addevent" classSel="button addeventSel" title="calendar.new_event" content=" " />
@@ -21,8 +21,8 @@
       <roundcube:container name="toolbar" id="calendartoolbar" />
     </div>
 
-    <div id="datepicker"></div>
-    <div id="calendars" style="visibility:hidden">
+    <div id="datepicker" class="uibox" role="presentation"></div>
+    <div id="calendars" style="visibility:hidden" role="navigation">
       <div class="boxtitle"><roundcube:label name="calendar.calendars" /></div>
       <div class="listsearchbox">
         <div class="searchbox">

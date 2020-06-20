@@ -43,6 +43,7 @@ table.records-table thead th a:focus
 
 table.spam-langs-table tr > .lang
 {
+  color: #81570d;
   width: 90%;
 }
 

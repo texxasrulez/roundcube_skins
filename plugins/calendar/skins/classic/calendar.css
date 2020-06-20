@@ -1,4 +1,4 @@
-/*** Style for Calendar plugin ***/
+/*** Style for Calendar plugin "Classic Skin" ***/
 
 body.calendarmain {
 	overflow: hidden;
@@ -44,8 +44,8 @@ body.calendarmain {
 }
 
 #datepicker .ui-datepicker-activerange a {
-	border-color: #c33;
-	color: #a22;
+	border-color: #000;
+	color: #000;
 }
 
 #datepicker .ui-datepicker-activerange a.ui-state-active {
@@ -264,7 +264,7 @@ pre {
 
 #calendars .searchresults .boxtitle {
 	border-top: 1px solid #aaa;
-	margin-bottom: 0;
+	margin-top: 0;
 }
 
 #calfeedurl,
@@ -369,7 +369,7 @@ pre {
 }
 
 .calendarmain #quicksearchbar {
-	top: 80px;
+	top: 60px;
 	right: 4px;
 }
 

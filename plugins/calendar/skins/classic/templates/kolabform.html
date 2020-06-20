@@ -1,7 +1,9 @@
-<div id="calendar-kolabform">
-  <roundcube:object name="calendarform" />
+<div id="calendar-kolabform" class="propform tabbed">
+	<roundcube:object name="calendarform" />
 </div>
-<script type="text/javascript">rcube_init_tabs('calendar-kolabform');</script>
 <style type="text/css">
-#calendarpropform { min-width:680px }
+#calendarpropform { min-width:680px; margin-top:-12px; }
 </style>
+<script type="text/javascript">
+UI.init_tabs('#calendar-kolabform');
+</script>

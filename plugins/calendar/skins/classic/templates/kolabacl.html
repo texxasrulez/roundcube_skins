@@ -1,11 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<roundcube:object name="doctype" value="html5" />
+<html>
 <head>
 <title><roundcube:object name="pagetitle" /></title>
 <roundcube:include file="/includes/links.html" />
-<script type="text/javascript" src="/functions.js"></script>
+<style type="text/css" media="screen">
+
+body.aclform {
+	background: #efefef;
+	margin: 0;
+}
+
+body.aclform .hint {
+	margin: 1em;
+}
+
+</style>
 </head>
-<body class="iframe" style="background:#fff; margin:0">
+<body class="iframe aclform">
 
 <roundcube:object name="folderacl" />
 

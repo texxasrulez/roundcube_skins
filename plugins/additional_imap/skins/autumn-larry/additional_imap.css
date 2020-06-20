@@ -10,7 +10,7 @@ select.deco {
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	color:#deeff5;
-	background:#311708;
+	background:#331a0b;
 	border:1px solid #ababab;	
 	}
 	
@@ -32,7 +32,7 @@ select.deco {
 	border:1px solid #aff0fe;
 	background:#500f01;
 	text-align:center;
-	color:#aff0fe;
+	color:#ffff00;
 	font-weight: bold;
 	display:inline;
 	}
