@@ -1600,7 +1600,7 @@ table.records-table {
 }
 
 body.iframe {
-	background: #f2eee6;
+	background: #eadfbc;
 	margin: 38px 0 10px 0;
 }
 
@@ -1642,7 +1642,11 @@ body.iframe .footerleft.floating,
 	bottom: 0;
 	width: 100%;
 	z-index: 110;
-	background: #fdf6f3;
+	background: #81570d;
+	background: -moz-linear-gradient(top, #c59e29 0%, #81570d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c59e29), color-stop(100%,#81570d));
+	background: -ms-linear-gradient(top, #c59e29 0%, #81570d 100%);
+	background: linear-gradient(to bottom, #c59e29 0%, #81570d 100%);
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
@@ -1748,7 +1752,7 @@ table.propform td {
 	width: 80%;
 	padding: 4px 10px;
 	background: #eadfbc;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #dccfa4;
 }
 
 table.propform td.title {

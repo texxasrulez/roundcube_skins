@@ -69,7 +69,7 @@ body.calendarmain #mainscreen {
 
 #datepicker .ui-datepicker-activerange a {
 	color: #3f1a67;
-	background: #d9ecf4;
+	background: #f8f1f9;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddbbe4', endColorstr='#7854ba', GradientType=0);
 }
 
@@ -1556,7 +1556,7 @@ a.dropdown-link:after {
 }
 
 #agendaoptions label {
-	text-shadow: 1px 1px #fff;
+	text-shadow: none;
 	padding-right: 0.5em;
 }
 
@@ -1777,7 +1777,7 @@ a.dropdown-link:after {
 	white-space: nowrap;
 	margin: -7px 0 0 0;
 	padding: 28px 2px 0 2px;
-	text-shadow: 0px 1px 1px #eee;
+	text-shadow: none;
 	border: 0;
 	background: url(images/toolbar.png) center 100px no-repeat;
 	box-shadow: none;
@@ -2053,7 +2053,7 @@ a.dropdown-link:after {
 .fc-widget-header {
 	background-color: #3f1a67;
 	color: #eeddf1;
-	text-shadow: 0px 1px 1px #fff;
+	text-shadow: none;
 }
 
 .fc-popover .fc-header .fc-title,

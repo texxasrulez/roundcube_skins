@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #354516;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -921,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #354516 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -965,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #354516;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #354516;
 	width: 100%;
 }
 

@@ -1,0 +1,51 @@
+<roundcube:include file="includes/layout.html" />
+
+<h1 class="voice"><roundcube:object name="sectionname" /></h1>
+
+<div class="formcontent">
+    <roundcube:object name="userprefs" form="form" class="propform cols-sm-6-6" tbl_class="propform" input_error_class="is-invalid" />
+</div>
+
+<div class="formbuttons">
+    <roundcube:button command="plugin.sauserprefs.save" class="btn btn-primary submit" label="save" />
+    <roundcube:button command="plugin.sauserprefs.default" class="btn btn-secondary saupusedefault" label="sauserprefs.saupusedefault" data-hidden-small="1" />
+</div>
+
+<script>
+// Set the scrollable parent object for the table's fixed header
+rcube_list_widget.prototype.container = 'div.formcontent';
+
+// bootstrap display
+$('#spam-langs-table,#address-rules-table,#test-scores-table').addClass('table table-striped');
+$('table.propform tr.sauphelp.saupsubject td').first().addClass('d-none d-sm-flex');
+
+// add bootstrap styles for radio buttons
+$('[type=radio]', $('.propform', document)).addClass('form-check-input').parents('tr').addClass('form-check');
+
+// special display for small spam char input box
+$('#rcmfd_spamlevelchar').parents('tr').addClass('saup-spam-char-row');
+
+// relocate help icon at end of text
+$.each($('span.helpicon'), function() {
+    var a = $(this).parent();
+    var row = $(this).parents('tr');
+    a.appendTo(row.children('td').first().children('label'));
+});
+
+// create input group for adding addresses
+if ($('div.address-input').length == 1) {
+    $('div.address-input').addClass('input-group');
+    $('#rcmfd_spamaddressrule').wrap($('<span>').addClass('input-group-prepend'));
+    $('#rcmbtn_add_address').wrap($('<span>').addClass('input-group-append'));
+}
+
+// add headers to score tests table
+if ($('#test-scores-table').length == 1) {
+    $('#test-scores-table > thead > tr').addClass('row');
+    $('#test-scores-table > thead > tr > th').first().addClass('col-sm-4');
+    $('#test-scores-table > thead > tr > th').last().addClass('col-sm-8');
+}
+
+</script>
+
+<roundcube:include file="includes/footer.html" />

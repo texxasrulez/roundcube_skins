@@ -1,0 +1,41 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<roundcube:include file="/includes/links.html" />
+</head>
+<body class="iframe">
+
+<h1 class="boxtitle"><roundcube:object name="sectionname" /></h1>
+
+<div id="preferences-details" class="boxcontent">
+<roundcube:object name="userprefs" form="form" class="propform" tbl_class="propform" lang_list_buttons="1" />
+</div>
+
+<div class="footerleft formbuttons">
+<roundcube:button command="plugin.sauserprefs.save" type="input" class="button mainaction" label="save" />
+<roundcube:button command="plugin.sauserprefs.default" type="input" class="button" label="sauserprefs.saupusedefault" style="margin-right:0.5em" />
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+<script>
+var legend = $('#preferences-details fieldset.advanced legend'),
+  toggle = $('<a href="#toggle"></a>')
+    .text(rcmail.gettext('toggleadvancedoptions'))
+    .attr('title', rcmail.gettext('toggleadvancedoptions'))
+    .addClass('advanced-toggle');
+
+legend.on('click', function(e) {
+  toggle.html($(this).hasClass('collapsed') ? '&#9650;' : '&#9660;');
+
+  $(this).toggleClass('collapsed')
+    .closest('fieldset').children('.propform').toggle()
+}).append(toggle).addClass('collapsed')
+
+// this magically fixes incorrect position of toggle link created above in Firefox 3.6
+if (bw.mz)
+  legend.parents('form').css('display', 'inline');
+</script>
+
+</body>
+</html>

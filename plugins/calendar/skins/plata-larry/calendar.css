@@ -1559,7 +1559,7 @@ a.dropdown-link:after {
 }
 
 #agendaoptions label {
-	text-shadow: 1px 1px #fff;
+	text-shadow: none;
 	padding-right: 0.5em;
 }
 
@@ -1781,7 +1781,7 @@ a.dropdown-link:after {
 	white-space: nowrap;
 	margin: -7px 0 0 0;
 	padding: 28px 2px 0 2px;
-	text-shadow: 0px 1px 1px #eee;
+	text-shadow: none;
 	border: 0;
 	background: url(images/toolbar.png) center 100px no-repeat;
 	box-shadow: none;
@@ -1793,8 +1793,8 @@ a.dropdown-link:after {
 }
 
 .calendarmain #calendar .fc-left .fc-button:focus {
-	color: #deeff5;
-	text-shadow: 0px 1px 1px #666;
+	color: #d4d4d4;
+	text-shadow: none;
 	background-color: rgba(50,50,50, 0.5);
 	border-radius: 3px;
 }
@@ -2053,7 +2053,7 @@ a.dropdown-link:after {
 .fc-widget-header {
 	background-color: #434343;
 	color: #004458;
-	text-shadow: 0px 1px 1px #fff;
+	text-shadow: none;
 }
 
 .fc-popover .fc-header .fc-title,

@@ -1,4 +1,4 @@
-/*** Printing styles for Calendar plugin ***/
+/*** Printing styles for Calendar plugin "Blue-Larry" ***/
 
 body {
 	margin: 0 0 1em 0;
@@ -77,11 +77,6 @@ body, td, th, div, p, h3, select, input, textarea {
 	float: left;
 	padding-right: 3em;
 	padding-bottom: 1em;
-}
-
-#calendarlist li div a {
-	color: inherit;
-	text-decoration: none;
 }
 
 #calendarlist input,

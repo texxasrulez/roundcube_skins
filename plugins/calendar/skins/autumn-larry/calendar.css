@@ -513,6 +513,7 @@ pre {
 }
 
 #calendartoolbar a.button {
+	color: #fbe4d7;
 	background-image: url(images/toolbar.png);
 	padding-left: 0;
 	padding-right: 0;
@@ -1566,7 +1567,7 @@ a.dropdown-link:after {
 }
 
 #agendaoptions label {
-	text-shadow: 1px 1px #fff;
+	text-shadow: none;
 	padding-right: 0.5em;
 }
 
@@ -1699,7 +1700,7 @@ a.dropdown-link:after {
 
 .calendarmain .fc-body,
 .fc-scroller {
-	background: #fff;
+	background: #fbe4d7;
 }
 
 .calendarmain.quickview-active .fc-view .fc-scroller {
@@ -1780,7 +1781,7 @@ a.dropdown-link:after {
 
 .calendarmain #calendar .fc-left .fc-button {
 	font-size: 10px;
-	color: #555;
+	color: #fbe4d7;
 	min-width: 50px;
 	max-width: 75px;
 	height: 40px;
@@ -1802,8 +1803,8 @@ a.dropdown-link:after {
 }
 
 .calendarmain #calendar .fc-left .fc-button:focus {
-	color: #fff;
-	text-shadow: 0px 1px 1px #666;
+	color: #fbe4d7;
+	text-shadow: none;
 	background-color: rgba(30,150,192, 0.5);
 	border-radius: 3px;
 }
@@ -2056,7 +2057,8 @@ a.dropdown-link:after {
 .fc-widget-header,
 .fc-widget-content {
 	color: #651605;
-	border-color: #c3c3c3 !important;
+	border-radius: 4px;
+	border-color: #ad5c2a !important;
 }
 
 .fc-widget-header .fc-agenda-divider-inner {
@@ -2066,7 +2068,7 @@ a.dropdown-link:after {
 .fc-widget-header {
 	background-color: #651605;
 	color: #004458;
-	text-shadow: 0px 1px 1px #fff;
+	text-shadow: none;
 }
 
 .fc-popover .fc-header .fc-title,
@@ -2121,7 +2123,7 @@ a.dropdown-link:after {
 }
 
 .fc-list-table tr.fc-list-item td {
-	border-color: #c3c3c3;
+	border-color: #ad5c2a;
 	padding: 6px 8px;
 	white-space: nowrap;
 	overflow: hidden;

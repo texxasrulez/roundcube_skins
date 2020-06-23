@@ -1,5 +1,5 @@
 /**
- * Roundcube webmail styles for the Plata-Larry Email section
+ * Roundcube webmail styles for the Autumn-Larry Email section
  *
  * Copyright (c) 2012, The Roundcube Dev Team
  * Screendesign by FLINT / Büro für Gestaltung, bueroflint.com
@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #651605;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -273,6 +274,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
+	color: #651605;
 	width: 60px;
 	text-align: right;
 }
@@ -533,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #651605;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -919,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #651605 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -963,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #651605;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #651605;
 	width: 100%;
 }
 

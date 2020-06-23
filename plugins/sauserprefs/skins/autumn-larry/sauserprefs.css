@@ -82,6 +82,7 @@ table.address-rules-table thead th.control
 table.spam-langs-table tr > .lang,
 table.address-rules-table tr > .rule
 {
+  font-weight: bold;
   text-align: left;
   vertical-align: middle;
   border-left: 0;

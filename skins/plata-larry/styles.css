@@ -71,7 +71,7 @@ textarea {
 	background: #f1f1f1;
 	margin: 0; /* Safari by default adds a margin */
 	padding: 4px;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	border-radius: 4px;
 	box-shadow: inset 0 0 2px 1px rgba(67,67,67, 0.1);
 }
@@ -80,14 +80,14 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 button:focus,
 textarea:focus {
-	border-color: #696969;
+	border-color: #c7c7c7;
 	box-shadow: 0 0 5px 2px rgba(83,82,94, 0.9);
 	outline: none;
 }
 
 input[type="text"]:required,
 input[type="password"]:required {
-	border-color: #696969;
+	border-color: #c7c7c7;
 }
 
 input.placeholder,
@@ -119,7 +119,7 @@ button {
 	margin: 0 2px;
 	padding: 4px 8px;
 	color: #f6fbfc;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	border-radius: 4px;
 	background: #828282;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%);
@@ -135,7 +135,7 @@ button {
 	color: #f6fbfc;
 	font-size: 110%;
 	padding: 4px 12px;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	border-radius: 5px;
 	background: #828282;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%); /* FF3.6+ */
@@ -150,7 +150,7 @@ button {
 button.mainaction:hover,
 button.mainaction:focus {
 	color: #f2f2f2;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	box-shadow: 0 0 5px 2px rgba(83,82,94, 0.6), inset 0 1px 0 0 #828282;
 }
 
@@ -165,7 +165,7 @@ button.mainaction:focus {
 
 button.mainaction {
 	color: #f6fbfc;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	background: #828282;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#828282), color-stop(100%,#bdbdbd)); /* Chrome,Safari4+ */
@@ -209,7 +209,7 @@ a.button,
 	margin: 0 2px;
 	padding: 2px 5px;
 	color: #f6f6f6;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	border-radius: 4px;
 	background: #bdbdbd;
 	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
@@ -227,7 +227,7 @@ a.button,
 
 a.button:focus,
 button:focus {
-	border-color: #696969;
+	border-color: #c7c7c7;
 	box-shadow: 0 0 2px 1px rgba(83,82,94, 0.6);
 	outline: none;
 }
@@ -243,7 +243,7 @@ button[disabled],
 a.button.disabled:hover,
 button.disabled:hover,
 button[disabled]:hover {
-	border-color: #696969;
+	border-color: #c7c7c7;
 	box-shadow: 0 1px 1px 0 rgba(144,144,144,0.4);
 }
 
@@ -283,7 +283,7 @@ button:active {
 
 .pagenav.dark a.button {
 	font-weight: bold;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	background: #bdbdbd;
 	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
@@ -308,8 +308,8 @@ button:active {
 	background: -ms-linear-gradient(top, #828282 0%, #bdbdbd 100%);
 	background: linear-gradient(to bottom, #828282 0%, #bdbdbd 100%);
 	box-shadow: inset 0 1px 2px 0 #555;
-	border-right-color: #696969;
-	border-left-color: #696969;
+	border-right-color: #c7c7c7;
+	border-left-color: #c7c7c7;
 }
 
 .buttongroup a.button:focus,
@@ -586,7 +586,7 @@ a.iconlink.upload {
 	right: 0;
 	height: 27px;
 	padding-left: 8px;
-	border-top: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
 	border-radius: 0 0 4px 4px;
 	background: #828282;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%);
@@ -622,7 +622,7 @@ a.iconlink.upload {
 	font-size: 12px;
 	font-weight: bold;
 	border-radius: 4px;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	color: #ebebeb;
 	background: rgba(190,190,194.85);
 	background: -moz-linear-gradient(top, rgba(67,67,67,0.85) 0%, rgba(62,61,74,0.9) 100%);
@@ -732,7 +732,7 @@ a.iconlink.upload {
 #topline {
 	height: 18px;
 	background: url(images/linen_header.jpg?v=514a.580) repeat #666;
-	border-bottom: 1px solid #696969;
+	border-bottom: 1px solid #c7c7c7;
 	padding: 2px 0 2px 10px;
 	color: #aaa;
 	text-align: center;
@@ -748,7 +748,7 @@ a.iconlink.upload {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
 	background: -ms-linear-gradient(top, #bdbdbd 0%, #828282 100%);
 	background: linear-gradient(to bottom, #bdbdbd 0%, #828282 100%);
-	border-bottom: 1px solid #696969;
+	border-bottom: 1px solid #c7c7c7;
 }
 
 #topline a,
@@ -893,7 +893,7 @@ a.iconlink.upload {
 	color: #e3e3e3;
 	font-weight: bold;
 	white-space: nowrap;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	box-shadow: 0 1px 5px 0 #909090;
 	z-index: 200;
 	white-space: nowrap;
@@ -906,7 +906,7 @@ a.iconlink.upload {
 	right: 15px;
 	border-style: solid;
 	border-width: 0 4px 4px;
-	border-color: #696969 transparent;
+	border-color: #c7c7c7 transparent;
 	/* reduce the damage in FF3.0 */
 	display: block;
 	width: 0;
@@ -1049,7 +1049,7 @@ a.iconlink.upload {
 }
 
 .uibox {
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	border-radius: 4px;
 	overflow: hidden;
 	box-shadow: 0 0 2px #909090;
@@ -1112,7 +1112,7 @@ a.iconlink.upload {
 	padding: 7px 8px 6px 8px;
 	line-height: 20px;
 	margin: 0;
-	border-bottom: 1px solid #696969;
+	border-bottom: 1px solid #c7c7c7;
 	white-space: nowrap;
 }
 
@@ -1139,7 +1139,7 @@ a.iconlink.upload {
 .listing tbody td,
 .listing li {
 	display: block;
-	border-top: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
 	border-bottom: 1px solid #c7c7c7;
 	cursor: default;
 	font-weight: normal;
@@ -1189,7 +1189,7 @@ a.iconlink.upload {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .listing.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #696969;
+	border-left: 2px solid #c7c7c7;
 }
 
 .listbox .listitem.selected,
@@ -1220,7 +1220,7 @@ ul.listing li {
 }
 
 ul.listing li ul {
-	border-top: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
 }
 
 ul.listing li.droptarget,
@@ -1341,7 +1341,7 @@ ul.treelist li.selected > div.expanded {
 	left: 0;
 	width: 100%;
 	height: 42px;
-	border-top: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
 	background: #828282;
 	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
@@ -1360,7 +1360,7 @@ ul.treelist li.selected > div.expanded {
 	display: inline-block;
 	text-decoration: none;
 	width: 48px;
-	border-right: 1px solid #696969;
+	border-right: 1px solid #c7c7c7;
 	background: #828282;
 	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
@@ -1492,7 +1492,7 @@ table.records-table {
 	width: 100%;
 	table-layout: fixed;
 	border-spacing: 0;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 }
 
 .boxlistcontent .records-table {
@@ -1509,8 +1509,8 @@ table.records-table {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#828282), color-stop(100%,#bdbdbd)); /* Chrome,Safari4+ */
 	background: -ms-linear-gradient(top, #828282 0%, #bdbdbd 100%); 
 	background: linear-gradient(to bottom, #828282 0%, #bdbdbd 100%);
-	border-left: 1px solid #696969;
-	border-bottom: 1px solid #696969;
+	border-left: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
 	padding: 8px 7px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1543,8 +1543,8 @@ table.records-table {
 
 .records-table tbody td {
 	padding: 2px 7px;
-	border-bottom: 1px solid #696969;
-	border-left: 1px dotted #696969;
+	border-bottom: 1px solid #c7c7c7;
+	border-left: 1px dotted #c7c7c7;
 	white-space: nowrap;
 	cursor: default;
 	overflow: hidden;
@@ -1563,7 +1563,7 @@ table.records-table {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .records-table.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #696969;
+	border-left: 2px solid #c7c7c7;
 }
 
 .records-table tr.selected td {
@@ -1623,7 +1623,7 @@ body.iframe .boxtitle {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#828282), color-stop(100%,#bdbdbd));
 	background: -ms-linear-gradient(top, #828282 0%, #bdbdbd 100%);
 	background: linear-gradient(to bottom, #828282 0%, #bdbdbd 100%);
-	border-bottom: 1px solid #696969;
+	border-bottom: 1px solid #c7c7c7;
 }
 
 body.iframe .boxtitle {
@@ -1641,7 +1641,11 @@ body.iframe .footerleft.floating,
 	bottom: 0;
 	width: 100%;
 	z-index: 110;
-	background: #f6fbfc;
+	background: #828282;
+	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
+	background: -ms-linear-gradient(top, #bdbdbd 0%, #828282 100%);
+	background: linear-gradient(to bottom, #bdbdbd 0%, #828282 100%);
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
@@ -1665,7 +1669,7 @@ body.iframe .footerleft.floating:before,
 	margin: 0 0 10px;
 	display: block;
 	color: #960;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	background: url(images/messages.png?v=6ff4.1430) #fef893 5px -85px no-repeat;
 	padding: 6px 12px 6px 30px;
 }
@@ -1747,7 +1751,7 @@ table.propform td {
 	width: 80%;
 	padding: 4px 10px;
 	background: #e3e3e3;
-	border-bottom: 2px solid #f6fbfc;
+	border-bottom: 2px solid #d8d4d4;
 }
 
 table.propform td.title {
@@ -1794,7 +1798,7 @@ ul.proplist li {
 	background: url(images/linen_login.jpg?v=0484.10363) top left no-repeat #0a1720;
 	margin: 0 50px;
 	padding: 10px 24px 24px 24px;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	border-radius: 5px;
 	box-shadow: inset 0 0 1px #909090;
 }
@@ -1821,13 +1825,13 @@ ul.proplist li {
 #login-form input[type="text"],
 #login-form input[type="password"] {
 	width: 100%;
-	border-color: #696969;
+	border-color: #c7c7c7;
 }
 
 #login-form button {
 	color: #f6f6f6;
 	background: #828282;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#828282), color-stop(100%,#bdbdbd));
 	background: -ms-linear-gradient(top, #828282 0%, #bdbdbd 100%);
@@ -1918,7 +1922,7 @@ ul.proplist li {
 	height: 18px;
 	color: #515151;
 	background: #e3e3e3;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	font-weight: bold;
 	font-size: 11px;
 }
@@ -2157,7 +2161,7 @@ a.menuselector {
 	display: inline-block;
 	border: 1px solid #1e425a;
 	border-radius: 4px;
-	border-color: #696969;
+	border-color: #c7c7c7;
 	background: #bdbdbd;
 	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
@@ -2180,7 +2184,7 @@ a.menuselector .handle {
 }
 
 a.menuselector:active {
-	border: #696969;
+	border: #c7c7c7;
 	background: #828282;
 	background: -moz-linear-gradient(top, #828282 0%, #bdbdbd 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#828282), color-stop(100%,#bdbdbd));
@@ -2208,8 +2212,8 @@ select.decorated option {
 	color: #e5e5e5;
 	background: #828282;
 	border: 0;
-	border-top: 1px solid #696969;
-	border-bottom: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
 	padding: 4px 6px;
 	outline: none;
 	cursor: default;
@@ -2220,7 +2224,7 @@ a.menuselector:focus,
 a.menuselector.focus,
 a.iconbutton:focus,
 .pagenav a.button:focus {
-	border-color: #696969;
+	border-color: #c7c7c7;
 	box-shadow: 0 0 4px 2px rgba(83,82,94, 0.8);
 	outline: none;
 }
@@ -2252,7 +2256,7 @@ table.quota-info {
 table.quota-info td,
 table.quota-info th {
 	color: white;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	padding: 2px 3px;
 	text-align: center;
 	min-width: 80px;
@@ -2280,7 +2284,7 @@ table.quota-info td.root {
 	overflow-y: auto;
 	color: #e5e5e5;
 	background: #828282;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	z-index: 240;
 	border-radius: 4px;
 	box-shadow: 0 2px 6px 0 #909090;
@@ -2292,7 +2296,7 @@ table.quota-info td.root {
 }
 
 .popupmenu > .buttons {
-	border-top: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
 	height: 25px;
 	padding-top: 5px;
 	text-align: center;
@@ -2313,8 +2317,8 @@ ul.toolbarmenu li,
 	white-space: nowrap;
 	min-width: 130px;
 	margin: 0;
-	border-top: 1px solid #696969;
-	border-bottom: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
 }
 
 .googie_list tr:first-child td,
@@ -2587,7 +2591,7 @@ ul.toolbarmenu li span.copy {
 	width: 260px;
 	padding: 6px 8px;
 	background: #bdbdbd;
-	border: 1px solid #696969;
+	border: 1px solid #c7c7c7;
 	border-radius: 4px;
 	box-shadow: 0 2px 6px 0 #909090;
 	z-index: 250;
@@ -2819,7 +2823,7 @@ ul.toolbarmenu li span.copy {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid #696969;
+	border-top: 1px solid #c7c7c7;
 }
 
 .folderlist li.mailbox ul li a {
