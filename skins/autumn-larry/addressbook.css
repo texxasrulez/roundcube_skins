@@ -73,7 +73,6 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: efe7e6;
 }
 
 #directorylist li.addressbook a {
@@ -89,7 +88,7 @@
 }
 
 #directorylist li.addressbook.selected > a {
-	color: efe7e6; /*Needed for Darker Contrasts*/
+	color: #fcfaf9; /*Needed for Darker Contrasts*/
 	background-position: 6px -766px;
 }
 
@@ -193,7 +192,6 @@
 }
 
 #addresslist .boxtitle a.poplink {
-	color: #fdf6f3;
 	font-size: 14px;
 	line-height: 12px;
 	text-decoration: none;
@@ -234,7 +232,7 @@
 #contactpic {
 	width: 112px;
 	min-height: 112px;
-	background: white;
+	background: #f1d4c4;
 }
 
 #contactpic img {
@@ -249,7 +247,7 @@
 }
 
 #contactpic.droptarget.hover {
-	background-color: #fbe4d7;
+	background-color: #edbea1;
 	box-shadow: 0 0 5px 2px rgba(101,22,5, 0.9);
 }
 
@@ -313,14 +311,10 @@ form #contacthead {
 }
 
 .contactfieldgroup {
-	color: #fdf6f3;
+	color: #651605;
 	border: 0;
-	border-radius: 5px;
-	background: #8c471d;
-	background: -moz-linear-gradient(top, #c19276 0%, #fbe4d7 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c19276), color-stop(100%,#fbe4d7)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #c19276 0%, #fbe4d7 100%); 
-	background: linear-gradient(to bottom, #c19276 0%, #fbe4d7 100%);
+	border-radius: 4px !important;
+	background: #fbe4d7;
 	margin: 0 0 12px 0;
 	padding: 8px;
 }
@@ -329,21 +323,21 @@ form #contacthead {
 	display: block;
 	margin: 0 -8px;
 	width: 100%;
-	color: #fdf6f3;
+	color: #fcfaf9 !important;
 	font-weight: bold;
 	text-shadow: none;
 	padding: 6px 8px 3px 8px;
 	background: #651605;
-	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%); 
-	background: linear-gradient(to bottom, #651605 0%, #913e0a 100%);
-	border-bottom: 1px solid #cfcfcf;
-	border-radius: 5px 5px 0 0;
+	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#913e0a), color-stop(100%,#651605)); /* Chrome,Safari4+ */
+	background: -ms-linear-gradient(top, #913e0a 0%, #651605 100%); 
+	background: linear-gradient(to bottom, #913e0a 0%, #651605 100%);
+	border-bottom: 1px solid #ad5c2a;
+	border-radius: 0;
 }
 
 .contactfieldgroup .row {
-	color: #651605;
+	text-decoration: none;
 	position: relative;
 	margin: 0.2em 0;
 }
@@ -356,17 +350,14 @@ form #contacthead {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #651605;
 }
 
 .contactfieldgroup .contactfieldlabel select {
 	width: 100%;
-	color: #651605;
-	background-color: #efe7e6;
+	background-color: #fcfaf9;
 }
 
 .contactfieldgroup .contactfieldcontent {
-	color: #651605;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;
@@ -418,4 +409,42 @@ a.deletebutton {
 #import-box p,
 #import-box .propform {
   max-width: 50em;
+}
+
+ul.toolbarmenu li span.qrcode {
+	background-position: 0 -2408px;
+}
+
+ul.toolbarmenu li span.assigngroup {
+	background-position: 0 -2358px;
+}
+
+ul.toolbarmenu li span.removegroup {
+	background-position: 0 -2384px;
+}
+
+#addressbook-selector li a,
+#contactgroup-selector li a {
+	padding-left: 2px;
+}
+
+#addressbook-selector li a span,
+#contactgroup-selector li a span {
+	background: url(images/listicons.png?v=4f40.10460) 4px 20px no-repeat;
+	display: block;
+	height: 17px;
+	min-height: 14px;
+	padding: 4px 4px 1px 28px;
+	overflow: hidden;
+	max-width: 120px;
+	text-overflow: ellipsis;
+}
+
+#addressbook-selector li a.addressbook span {
+	background-position: 4px -2222px;
+}
+
+#addressbook-selector li a.contactgroup span,
+#contactgroup-selector li a.contactgroup span {
+	background-position: 4px -2245px;
 }

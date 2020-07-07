@@ -44,6 +44,7 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker {
+	background-color: #81570d;
 	position: absolute;
 	top: 40px;
 	left: 0;
@@ -68,27 +69,28 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker .ui-datepicker-activerange a {
-	color: #f2eee6;
-	background: #ab7619;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ab7619', endColorstr='#81570d', GradientType=0);
+	color: #523710;
+	font-weight: bold;
+	background: #d8ca98;
 }
 
 #datepicker .ui-datepicker-days-cell-over a.ui-state-default {
 	color: #deeff5;
-	border-color: #5b6d79;
+	border-color: #ccb159;
 	background: rgba(73,180,210,0.6);
+	text-shadow: none;
 	filter: none;
 }
 
 #datepicker .ui-datepicker-activerange a.ui-state-active {
 	color: #cec29a;
 	background: #00acd4;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00acd4', endColorstr='#008fc7', GradientType=0);
 }
 
 #datepicker td.ui-datepicker-week-col {
 	color: #f2eee6;
 	background: #ab7619;
+	font-size: 80%;
 	cursor: pointer;
 }
 
@@ -201,7 +203,8 @@ pre {
 	height: 22px;
 }
 
-#calendars .treelist li a.calname {
+#calendars .treelist li a.calname,
+#calendars .treelist li.selected a.calname {
 	display: block;
 	padding: 0px 18px 2px 2px;
 	position: absolute;
@@ -216,11 +219,6 @@ pre {
 	color: #f2eee6;
 }
 
-#calendars .treelist li.selected a.calname {
-	color: #f2eee6;
-	font-weight: bold;
-}
-
 .quickview-active #calendars .treelist div input,
 .quickview-active #calendars .treelist div .calname {
 	opacity: 0.35;
@@ -232,7 +230,7 @@ pre {
 }
 
 #calendars .treelist li div.virtual > a.calname {
-	color: #aaa;
+	color: #fdf6f3;
 	top: 4px;
 	left: 20px;
 }
@@ -250,14 +248,17 @@ pre {
 #calendars .treelist li span.handle {
 	display: inline-block;
 	position: absolute;
-	top: 8px;
+	top: 7px;
 	right: 6px;
 	padding: 0;
-	width: 10px;
-	height: 10px;
-	border-radius: 7px;
+	width: 11px;
+	height: 11px;
+	border-radius: 8px;
 	font-size: 0.8em;
-	border: 1px solid rgba(0, 0, 0, 0.4);
+	border: 1px solid #e5d8ac;
+	-webkit-box-shadow: inset 0px 0 1px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0px 0 1px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #calendars .treelist div span.actions {
@@ -277,13 +278,12 @@ pre {
 	right: 21px;
 	border: 1px solid #ccb159;
 	border-radius: 4px;
-	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #c59e29 0%, #c59e29 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c59e29), color-stop(100%,#c59e29));
-	background: -o-linear-gradient(top, #c59e29 0%, #c59e29 100%);
-	background: -ms-linear-gradient(top, #c59e29 0%, #c59e29 100%);
-	background: linear-gradient(top, #c59e29 0%, #c59e29 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c59e29', endColorstr='#c59e29', GradientType=0);
+	background: #81570d;
+	background: -moz-linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81570d), color-stop(100%,#c59e29));
+	background: -o-linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: -ms-linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: linear-gradient(top, #81570d 0%, #c59e29 100%);
 }
 
 #calendars .treelist li a.subscribed {
@@ -389,10 +389,11 @@ pre {
 }
 
 #calendars .treelist li.selected > div.calendar {
-	background-color: #81570d;
+	background: #81570d;
 }
 
-#calendars .treelist li.selected > a.calendar {
+#calendars .treelist li.selected > a.calname {
+	color: #fdf6f3;
 	font-weight: bold;
 }
 
@@ -642,7 +643,8 @@ a.miniColors-trigger {
 	border-top: 2px solid #ccb159;
 }
 
-#edit-attachments-form .buttons {
+#edit-attachments-form .button {
+	color: #fff !important;
 	margin: 0.5em 0;
 }
 
@@ -738,7 +740,6 @@ a.miniColors-trigger {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81570d), color-stop(100%,#c59e29));
 	background: -ms-linear-gradient(top, #81570d 0%, #c59e29 100%);
 	background: linear-gradient(to bottom, #81570d 0%, #c59e29 100%);
-	border: 0;
 	border-bottom: 1px solid #ccb159;
 	height: 18px;
 	line-height: 18px;
@@ -1207,9 +1208,20 @@ td.topalign {
 }
 
 .edit-attendees-table select.edit-attendee-role {
-	border: 0;
-	padding: 2px;
-	background: white;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	padding: 2px 5px;
+	border-radius: 2px;
+	color: #81570d;
+	border-color: #ccb159;
+	background: #cec29a;
+	background: -moz-linear-gradient(top, #deeff5 0%, #81570d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#deeff5), color-stop(100%,#81570d));
+	background: -o-linear-gradient(top, #deeff5 0%, #81570d 100%);
+	background: linear-gradient(top, #deeff5 0%, #81570d 100%);
+	box-shadow: inset 0 1px 0 0 #666;
+	text-decoration: none;
 	width: 100%;
 }
 
@@ -1444,7 +1456,6 @@ td.topalign {
 	opacity: 0.5;
 	border-radius: 4px;
 	cursor: move;
-	filter: alpha(opacity=40); /* IE8 */
 }
 
 #eventfreebusy .schedule-options {
@@ -1487,8 +1498,10 @@ td.topalign {
 }
 
 a.dropdown-link {
+	color: #81570d !important;
 	font-size: 11px;
 	text-decoration: none;
+	background-color: #fff !important;
 }
 
 a.dropdown-link:after {
@@ -1510,8 +1523,9 @@ a.dropdown-link:after {
 
 .ui-datepicker-calendar .ui-datepicker-week-col {
 	border: 0;
-	color: #81570d;
-	font-size: 90%;
+	color: #fff;
+	background: #81570d;
+	font-weight: bold;
 	text-align: right;
 	padding-right: 6px;
 	width: 20px;
@@ -1556,7 +1570,7 @@ a.dropdown-link:after {
 }
 
 #agendaoptions label {
-	text-shadow: 1px 1px #fff;
+	text-shadow: none;
 	padding-right: 0.5em;
 }
 
@@ -1684,8 +1698,6 @@ a.dropdown-link:after {
 	right: 1px;
 }
 
-
-
 /* fullcalendar style overrides */
 
 .calendarmain .fc-body,
@@ -1712,12 +1724,13 @@ a.dropdown-link:after {
 .calendarmain .fc-button,
 .calendarmain .fc-button.fc-state-default,
 .calendarmain .fc-button.fc-state-hover {
-	background-color: #f5f5f5;
-	background-image: -moz-linear-gradient(top, #cec29a, #c59e29);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cec29a), to(#c59e29));
-	background-image: -webkit-linear-gradient(top, #cec29a, #c59e29);
-	background-image: -o-linear-gradient(top, #cec29a, #c59e29);
-	background-image: linear-gradient(to bottom, #cec29a, #c59e29);
+	color: #fff;
+	background-color: #81570d;
+	background: -moz-linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81570d), color-stop(100%,#c59e29));
+	background: -o-linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: -ms-linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: linear-gradient(top, #81570d 0%, #c59e29 100%);
 	background-position: 0 0;
 }
 
@@ -1727,14 +1740,15 @@ a.dropdown-link:after {
 	margin-top: -2px;
 	height: 26px;
 	line-height: 26px;
-	color: #f2eee6;
+	text-decoration: none;
+	text-shadow: none;
 	border: 1px solid #ccb159;
 	background: #81570d;
-	background: -moz-linear-gradient(top, #81570d 0%, #c59e29 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81570d), color-stop(100%,#c59e29));
-	background: -o-linear-gradient(top, #81570d 0%, #c59e29 100%);
-	background: -ms-linear-gradient(top, #81570d 0%, #c59e29 100%);
-	background: linear-gradient(top, #81570d 0%, #c59e29 100%);
+	background: -moz-linear-gradient(top, #c59e29 0%, #81570d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c59e29), color-stop(100%,#81570d));
+	background: -o-linear-gradient(top, #c59e29 0%, #81570d 100%);
+	background: -ms-linear-gradient(top, #c59e29 0%, #81570d 100%);
+	background: linear-gradient(top, #c59e29 0%, #81570d 100%);
 	box-shadow: 0 1px 1px 0 #999;
 	-o-box-shadow: 0 1px 1px 0 #999;
 	-webkit-box-shadow: 0 1px 1px 0 #999;
@@ -1768,7 +1782,7 @@ a.dropdown-link:after {
 
 .calendarmain #calendar .fc-left .fc-button {
 	font-size: 10px;
-	color: #cec29a;
+	color: #fff;
 	min-width: 50px;
 	max-width: 75px;
 	height: 40px;
@@ -1778,7 +1792,7 @@ a.dropdown-link:after {
 	white-space: nowrap;
 	margin: -7px 0 0 0;
 	padding: 28px 2px 0 2px;
-	text-shadow: 0px 1px 1px #eee;
+	text-shadow: none;
 	border: 0;
 	background: url(images/toolbar.png) center 100px no-repeat;
 	box-shadow: none;
@@ -1789,16 +1803,20 @@ a.dropdown-link:after {
 	transition: none;
 }
 
-.calendarmain #calendar .fc-left .fc-button:focus {
+.calendarmain #calendar .fc-header-left .fc-button:focus {
 	color: #deeff5;
-	text-shadow: 0px 1px 1px #666;
+	text-shadow: none
 	background-color: rgba(129,87,13, 0.5);
 	border-radius: 3px;
 }
 
+.calendarmain #calendar .fc-left .fc-button::-moz-focus-inner {
+	border: 0;
+}
+
 .calendarmain #calendar .fc-header-left .fc-button.fc-state-active {
 	font-weight: bold;
-	color: #cec29a;
+	color: #fff;
 	text-shadow: none;
 	background-color: transparent;
 }
@@ -2037,20 +2055,21 @@ a.dropdown-link:after {
 	background-color: rgba(233,198,14, 0.12);
 }
 
-.fc-widget-header,
+.fc-widget-header {
+	color: #fff;
+	font-weight: bold;
+	background-color: #81570d;
+	text-shadow: none;
+	border: 1px solid #ccb159 !important;
+}
+
 .fc-widget-content {
-	color: #81570d;
-	border-color: #c3c3c3 !important;
+	color: #fff;
+	border-color: #ccb159 !important;
 }
 
 .fc-widget-header .fc-agenda-divider-inner {
 	background: #cad2d9 !important;
-}
-
-.fc-widget-header {
-	background-color: #81570d;
-	color: #8157od;
-	text-shadow: 0px 1px 1px #fff;
 }
 
 .fc-popover .fc-header .fc-title,
@@ -2060,11 +2079,14 @@ a.dropdown-link:after {
 
 .fc-view thead th.fc-widget-header {
 	padding: 8px 0;
-	color: #cec29a;
+	color: #fff;
+	font-size: 10px;
+	background-color: #81570d;
 }
 
 .fc-day-number {
-	color: #578da5;
+	color: #523710;
+	font-weight: bold;
 }
 
 .fc-icon-alarms,
@@ -2091,7 +2113,7 @@ a.dropdown-link:after {
 }
 
 .fc-list-table td.fc-list-header {
-	color: #cec29a;
+	color: #fff;
 	font-size: 12px;
 }
 
@@ -2141,7 +2163,7 @@ a.dropdown-link:after {
 	box-shadow: inset 0px 0 1px 1px rgba(129,87,13, 0.3);
 }
 
-.calendarmain .fc-view-table col.fc-event-location {
+.calendarmain .fc-list-table col.fc-event-location {
 	width: 25%;
 }
 
@@ -2166,9 +2188,15 @@ a.dropdown-link:after {
 
 .fc .fc-week-number {
 	text-align: center;
+	margin: 1em 0;
 }
 
 .fc-month-view .fc-week-number {
+	color: #fff;
+	font-size: 8px;
+	background-color: #ab7619;
+	border-top: 1px solid #ccb159 !important;
+	border-bottom: 1px solid #ab7619 !important; 
 	width: 20px !important;
 	padding: 2px 0;
 }

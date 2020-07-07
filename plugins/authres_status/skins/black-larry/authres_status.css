@@ -1,3 +1,4 @@
+/* Black-Larry */
 
 .webkit .messagelist tr > .authres_status
 {
@@ -25,4 +26,17 @@
 	background-image: url(badge2.png);
 	background-repeat: no-repeat;
 	background-position: 10px 5px;
+}
+
+.authres-status-img {
+    vertical-align: top;
+    height: 14px;
+    width: 14px;
+}
+
+.widescreen .authres-status-img {
+    position: relative;
+    top: -1px;
+    height: 12px;
+    width: 12px;
 }

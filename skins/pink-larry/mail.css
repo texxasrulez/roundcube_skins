@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #6d1f49;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -534,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #6d1f49;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -903,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #6d1f49 !important;
+	border: 1px solid #6d1f49;
+	background-color: #e6cad7 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -920,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #6d1f49 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -964,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #6d1f49;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #6d1f49;
 	width: 100%;
 }
 
@@ -1305,6 +1310,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #6d1f49;
+	background-color: #f1dee7;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1352,7 +1359,7 @@ div.message-partheaders .headers-table td.header {
 	color: #efe7e6;
 	position: absolute;
 	right: 0;
-	top: 1px;
+	top: 0;
 	bottom: 0;
 	width: 240px;
 	background: #dcadc5;
@@ -1472,15 +1479,20 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistheader .listmenu {
-	margin-right: 10px;
+	margin-right: 8px;
 	vertical-align: middle;
-	line-height: 22px;
-	width: 26px;
+	line-height: 24px;
+	width: 28px;
 	padding: 0;
 	text-indent: -5000px;
 	overflow: hidden;
 	display: inline-block;
 	background: url(images/listicons.png?v=e9f1.12614) 0 -975px no-repeat;
+}
+
+.widescreen #messagelistheader .listmenu:focus {
+ 	background-color: rgba(101,22,5,0.55);
+ 	outline: none;
 }
 
 .widescreen #countcontrols {

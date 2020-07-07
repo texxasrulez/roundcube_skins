@@ -905,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #152f40 !important;
+	border: 1px solid #152f40;
+	background-color: #c7e3ef !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;

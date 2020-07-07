@@ -88,6 +88,7 @@
 }
 
 #directorylist li.addressbook.selected > a {
+	color: #fff; /*Needed for Darker Contrasts*/
 	background-position: 6px -791px;
 }
 
@@ -191,7 +192,6 @@
 }
 
 #addresslist .boxtitle a.poplink {
-	color: #004458;
 	font-size: 14px;
 	line-height: 12px;
 	text-decoration: none;
@@ -232,7 +232,7 @@
 #contactpic {
 	width: 112px;
 	min-height: 112px;
-	background: white;
+	background-color: #fff;
 }
 
 #contactpic img {
@@ -313,12 +313,8 @@ form #contacthead {
 .contactfieldgroup {
 	color: #515151;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 4px !important;
 	background: #e5e5e5;
-	background: -moz-linear-gradient(top, #e5e5e5 0%, #e3e3e3 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #e5e5e5 0%, #e3e3e3 100%); 
-	background: linear-gradient(to bottom, #e5e5e5 0%, #e3e3e3 100%);
 	margin: 0 0 12px 0;
 	padding: 8px;
 }
@@ -327,7 +323,7 @@ form #contacthead {
 	display: block;
 	margin: 0 -8px;
 	width: 100%;
-	color: #f6fbfc;
+	color: #f6fbfc !important;
 	font-weight: bold;
 	text-shadow: none;
 	padding: 6px 8px 3px 8px;
@@ -341,7 +337,7 @@ form #contacthead {
 }
 
 .contactfieldgroup .row {
-	color: #828282;
+	text-decoration: none;
 	position: relative;
 	margin: 0.2em 0;
 }
@@ -354,16 +350,14 @@ form #contacthead {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #515151;
 }
 
 .contactfieldgroup .contactfieldlabel select {
 	width: 100%;
-	color: #515151;
+	background-color: #515151;
 }
 
 .contactfieldgroup .contactfieldcontent {
-	color: #515151;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;
@@ -415,4 +409,42 @@ a.deletebutton {
 #import-box p,
 #import-box .propform {
   max-width: 50em;
+}
+
+ul.toolbarmenu li span.qrcode {
+	background-position: 0 -2408px;
+}
+
+ul.toolbarmenu li span.assigngroup {
+	background-position: 0 -2358px;
+}
+
+ul.toolbarmenu li span.removegroup {
+	background-position: 0 -2384px;
+}
+
+#addressbook-selector li a,
+#contactgroup-selector li a {
+	padding-left: 2px;
+}
+
+#addressbook-selector li a span,
+#contactgroup-selector li a span {
+	background: url(images/listicons.png?v=4f40.10460) 4px 20px no-repeat;
+	display: block;
+	height: 17px;
+	min-height: 14px;
+	padding: 4px 4px 1px 28px;
+	overflow: hidden;
+	max-width: 120px;
+	text-overflow: ellipsis;
+}
+
+#addressbook-selector li a.addressbook span {
+	background-position: 4px -2222px;
+}
+
+#addressbook-selector li a.contactgroup span,
+#contactgroup-selector li a.contactgroup span {
+	background-position: 4px -2245px;
 }

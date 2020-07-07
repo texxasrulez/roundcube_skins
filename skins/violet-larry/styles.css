@@ -18,6 +18,81 @@ body {
 	margin: 0;
 }
 
+/* Scrollbar Style */
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Button */
+::-webkit-scrollbar-button:single-button {
+  background-color: #3f1a67;
+  display: block;
+  border-style: solid;
+	border-color: #3f1a67;
+  height: 25px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background:
+        linear-gradient(120deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(240deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(0deg, #3f1a67 30%, rgba(24.7, 10.2, 40.4, 0) 31%);
+    background-color: #eeddf1;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(60deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(180deg, #3f1a67 30%, rgba(24.7, 10.2, 40.4, 0) 31%);
+    background-color: #eeddf1;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(330deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(90deg, #3f1a67 30%, rgba(24.7, 10.2, 40.4, 0) 31%);
+    background-color: #eeddf1;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(150deg, #3f1a67 40%, rgba(24.7, 10.2, 40.4, 0) 41%),
+        linear-gradient(270deg, #3f1a67 30%, rgba(24.7, 10.2, 40.4, 0) 31%);
+    background-color: #eeddf1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #ddbbe4;
+	box-shadow: inset 0 0 2px #d4acdc; 
+	border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #3f1a67;
+	background: -moz-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
+	background: -ms-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
+	background: linear-gradient(to bottom, #9145e2 0%, #3f1a67 100%);
+	border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3f1a67;
+  	background: -moz-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2)); /* Chrome,Safari4+ */
+	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%); 
+	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%);
+    box-shadow: inset 0 0 1px #a76ae7; 
+}
+
 body.noscroll {
 	/* also avoids bounce effect in Chrome and Safari */
 	overflow: hidden;
@@ -29,11 +104,11 @@ body.noscroll {
 }
 
 a {
-	color: #0069a6;
+	color: none;
 }
 
 a:visited {
-	color: #0186ba;
+	color: none;
 }
 
 img {
@@ -58,7 +133,7 @@ textarea,
 select,
 button {
 	color: #3f1a67;
-	background: #fdf6f3;
+	background-color: #fdf6f3;
 	font-family: inherit;
 	font-size: inherit;
 	vertical-align: middle;
@@ -68,7 +143,7 @@ input[type="text"],
 input[type="password"],
 textarea {
 	color: #3f1a67;
-	background: #eeddf1;
+	background: #fdf6f3;
 	margin: 0; /* Safari by default adds a margin */
 	padding: 4px;
 	border: 1px solid #d4acdc;
@@ -142,7 +217,7 @@ button {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2)); /* Chrome,Safari4+ */
 	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%); /* W3C */
-	box-shadow: 0 1px 1px 0 #ccc, inset 0 1px 0 0 #888;
+	box-shadow: 0 1px 1px 0 #ccc, inset 0 1px 0 0 #d4acdc;
 }
 
 .formbuttons button:hover,
@@ -151,7 +226,7 @@ button.mainaction:hover,
 button.mainaction:focus {
 	color: #f2f2f2;
 	border-color: #d4acdc;
-	box-shadow: 0 0 5px 2px rgba(82,5,101, 0.6), inset 0 1px 0 0 #888;
+	box-shadow: 0 0 5px #eeddf1, inset 0 1px 0 0 #d4acdc;
 }
 
 .formbuttons button:active {
@@ -161,16 +236,17 @@ button.mainaction:focus {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
 	background: -ms-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
 	background: linear-gradient(to bottom, #9145e2 0%, #3f1a67 100%);
+	box-shadow: inset 0 1px 0 0 #eeddf1;
 }
 
 button.mainaction {
 	color: #fdf6f3;
 	border-color: #d4acdc;
 	background: #3f1a67;
-	background: -moz-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%); 
-	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%);
+	background: -moz-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
+	background: -ms-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
+	background: linear-gradient(to bottom, #9145e2 0%, #3f1a67 100%);
 	box-shadow: inset 0 1px 0 0 #777;
 }
 
@@ -181,6 +257,7 @@ button.mainaction:active {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2)); /* Chrome,Safari4+ */
 	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%); 
 	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%);
+	box-shadow: inset 0 1px 0 0 #eeddf1;
 }
 
 button[disabled],
@@ -218,6 +295,7 @@ a.button,
 	background: linear-gradient(to bottom, #9145e2 0%, #3f1a67 100%);
 	box-shadow: 0 1px 1px 0 #a76ae7;
 	text-decoration: none;
+	box-shadow: inset 0 1px 0 0 #eeddf1;
 }
 
 .buttongroup {
@@ -228,7 +306,7 @@ a.button,
 a.button:focus,
 button:focus {
 	border-color: #d4acdc;
-	box-shadow: 0 0 2px 1px rgba(82,5,101, 0.6);
+	box-shadow: none;
 	outline: none;
 }
 
@@ -490,7 +568,6 @@ a.iconbutton.upload {
 	background-position: -6px -438px;
 }
 
-
 a.iconlink {
 	display: inline-block;
 	color: #3f1a67;
@@ -544,7 +621,7 @@ a.iconlink.upload {
 	padding: 6px 30px 6px 25px;
 	display: inline-block;
 	white-space: nowrap;
-	background: url(images/messages.png?v=6ff4.1430) 0 5px no-repeat;
+	background: url(images/messages.png?v=6ff4.1430) 0 5px no-repeat !important;
 	cursor: default;
 }
 
@@ -630,7 +707,6 @@ a.iconlink.upload {
 	background: -webkit-linear-gradient(top, rgba(82,5,101,0.85) 0%, rgba(82,5,101,0.85) 100%);
 	background: -ms-linear-gradient(top, rgba(82,5,101,0.85) 0%, rgba(82,5,101,0.85) 100%);
 	background: linear-gradient(to bottom, rgba(82,5,101,0.85) 0%, rgba(82,5,101,0.85) 100%);
-
 	box-shadow: 0 1px 4px 0 rgba(82,5,101,0.8), inset 0px 1px 0 0px #888;
 }
 
@@ -732,7 +808,7 @@ a.iconlink.upload {
 
 #topline {
 	height: 18px;
-	background: url(images/linen_header.jpg?v=514a.580) repeat #666;
+	background: url(images/linen_header.jpg?v=514a.580) repeat #9145e2;
 	border-bottom: 1px solid #d4acdc;
 	padding: 2px 0 2px 10px;
 	color: #aaa;
@@ -808,7 +884,6 @@ a.iconlink.upload {
 #taskbar a.button-logout:hover span.button-inner {
 	background-position: -2px -1829px;
 }
-
 
 /*** minimal version of the page header ***/
 
@@ -1078,7 +1153,6 @@ a.iconlink.upload {
 	}
 }
 
-
 /*** lists ***/
 
 .listbox {
@@ -1125,12 +1199,12 @@ a.iconlink.upload {
 .uibox .boxtitle,
 .uibox .listing thead th,
 .uibox .listing thead td {
+	color: #fdf6f3;
 	background: #3f1a67;
 	background: -moz-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2));
 	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
 	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%);
-	color: #fdf6f3;
 	border-radius: 4px 4px 0 0;
 }
 
@@ -1360,7 +1434,6 @@ ul.treelist li.selected > div.expanded {
 	display: inline-block;
 	text-decoration: none;
 	width: 48px;
-	border-right: 1px solid #d4acdc;
 	background: #3f1a67;
 	background: -moz-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
@@ -1646,6 +1719,7 @@ body.iframe .footerleft.floating,
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
 	background: -ms-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
 	background: linear-gradient(to bottom, #9145e2 0%, #3f1a67 100%);
+	border-bottom: 1px solid #d4acdc;
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
@@ -1710,7 +1784,7 @@ body.iframe .footerleft.floating:before,
 }
 
 .propform fieldset fieldset legend {
-	color: #666;
+	color: #9145e2;
 	font-size: 12px;
 }
 
@@ -1830,8 +1904,8 @@ ul.proplist li {
 
 #login-form button {
 	color: #efe7e6;
-	border-color: #d4acdc;
 	background: #9145e2;
+	border-color: #d4acdc;
 	background: -moz-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9145e2), color-stop(100%,#3f1a67));
 	background: -ms-linear-gradient(top, #9145e2 0%, #3f1a67 100%);
@@ -1846,6 +1920,7 @@ ul.proplist li {
 
 #login-form button:active {
 	color: #efe7e6;
+	background: #9145e2;
 	background: -moz-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2));
 	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
@@ -2333,7 +2408,7 @@ select.decorated option:last-child {
 .googie_list td span,
 ul.toolbarmenu li a {
 	display: block;
-	color: #666;
+	color: #9145e2;
 	text-decoration: none;
 	min-height: 14px;
 	padding: 6px 16px 6px 10px;
@@ -2555,7 +2630,7 @@ ul.toolbarmenu li span.copy {
 
 .hint {
 	margin: 4px 0;
-	color: #999;
+	color: #9145e2;
 }
 
 .splitter {
@@ -2681,7 +2756,7 @@ ul.toolbarmenu li span.copy {
 
 .folderlist li.mailbox > a {
 	background-position: 6px -21px;
-}	
+}
 
 .folderlist li.mailbox > a:focus,
 .folderlist li.mailbox.selected > a {
@@ -3085,7 +3160,7 @@ ul.toolbarmenu li span.copy {
 
 .tabbed.ui-tabs {
 	padding: 0;
-	border: 0 !important;
+	border: 0;
 	background: none;
 }
 
@@ -3106,7 +3181,7 @@ ul.toolbarmenu li span.copy {
 }
 
 .tabsbar .tablink:last-child {
-	background: none;
+	background: transparent;
 }
 
 .tabsbar .tablink:last-child a {
@@ -3121,7 +3196,7 @@ ul.toolbarmenu li span.copy {
 	border: 0;
 	padding: 0;
 	margin-left: 0;
-	background: none;
+	background: transparent;
 }
 
 .ui-dialog .propform .ui-tabs-panel {

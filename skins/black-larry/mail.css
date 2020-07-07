@@ -93,7 +93,7 @@ html>/**/body #messagelist {
 	right: 0;
 	height: 22px;
 	padding: 5px 6px 3px;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid #52525b;
 	background: #ebebeb;
 	background: -moz-linear-gradient(top, #484853 0%, #000 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484853), color-stop(100%,#000));
@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #000;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -534,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #000;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -770,7 +772,7 @@ div.hide-headers {
 	height: 180px;
 	border: 1px solid #5d5d5d;
 	border-radius: 4px;
-	background: #fdfdfd;
+	background: #e5e5e5;
 	box-shadow: inset 0 0 1px 1px rgba(50,50,50, 0.1);
 }
 
@@ -811,7 +813,7 @@ div.hide-headers {
 	width: 32px;
 	height: 32px;
 	overflow: hidden;
-	background: url(images/contactpic_32px.png?v=6be9.274) center center no-repeat #fdf6f3;
+	background: url(images/contactpic_32px.png?v=6be9.274) center center no-repeat #fff;
 	border-radius: 3px;
 }
 
@@ -875,7 +877,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #ccc;
+	background-color: #ccc;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -903,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #000 !important;
+	border: 1px solid #000;
+	background-color: #c1b9b9 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -920,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #000 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #5d5d5d;
 }
@@ -964,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #000;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #000;
 	width: 100%;
 }
 
@@ -994,6 +999,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody fieldset.image-attachment {
+	color: #000 !important;
 	border: 0;
 	border-top: 1px solid #5d5d5d;
 	margin-top: 1em;
@@ -1004,7 +1010,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #ccc;
+	color: #000 !important;
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1305,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #000;
+	background-color: #fff;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1355,9 +1363,9 @@ div.message-partheaders .headers-table td.header {
 	top: 1px;
 	bottom: 0;
 	width: 240px;
-	background: #4c4c4c;
+	background: #e5e5e5;
 	border-style: solid;
-	border-color: #f0f0f0 #f0f0f0 #f0f0f0 #ddd;
+	border-color: #f0f0f0 #f0f0f0 #f0f0f0 #52525b;
 	border-width: 1px;
 	padding: 8px;
 	overflow: auto;
@@ -1371,21 +1379,21 @@ div.message-partheaders .headers-table td.header {
 
 #compose-attachments.droptarget.hover,
 #compose-attachments.droptarget.active {
-	border-color: #019bc6;
+	border-color: #000;
 	box-shadow: 0 0 3px 2px rgba(50,50,50, 0.5);
 }
 
 #compose-attachments.droptarget.hover {
-	background-color: #a3511f;
+	background-color: #ccc;
 	box-shadow: 0 0 5px 2px rgba(50,50,50, 0.9);
 }
 
 #compose-attachments .attachment-size {
-	color: #fff;
+	color: #000;
 }
 
 #compose-attachments .hint {
-	color: #efe7e6;
+	color: #000;
 	margin: 0 0 8px;
 }
 
@@ -1408,7 +1416,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebody_toolbargroup {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #52525b;
 }
 
 #uploadform a.iconlink {
@@ -1481,6 +1489,11 @@ div.message-partheaders .headers-table td.header {
 	overflow: hidden;
 	display: inline-block;
 	background: url(images/listicons.png?v=e9f1.12614) 0 -975px no-repeat;
+}
+
+.widescreen #messagelistheader .listmenu:focus {
+ 	background-color: rgba(101,22,5,0.55);
+ 	outline: none;
 }
 
 .widescreen #countcontrols {

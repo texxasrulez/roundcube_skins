@@ -88,6 +88,7 @@
 }
 
 #directorylist li.addressbook.selected > a {
+	color: #fbf7fc; /*Needed for Darker Contrasts*/
 	background-position: 6px -766px;
 }
 
@@ -191,7 +192,6 @@
 }
 
 #addresslist .boxtitle a.poplink {
-	color: #fdf6f3;
 	font-size: 14px;
 	line-height: 12px;
 	text-decoration: none;
@@ -232,7 +232,7 @@
 #contactpic {
 	width: 112px;
 	min-height: 112px;
-	background: white;
+	background: #fbf7fc;
 }
 
 #contactpic img {
@@ -311,14 +311,10 @@ form #contacthead {
 }
 
 .contactfieldgroup {
-	color: #fdf6f3;
+	color: #3f1a67;
 	border: 0;
-	border-radius: 5px;
-	background: #b2a3c2;
-	background: -moz-linear-gradient(top, #b2a3c2 0%, #eeddf1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2a3c2), color-stop(100%,#eeddf1)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #b2a3c2 0%, #eeddf1 100%); 
-	background: linear-gradient(to bottom, #b2a3c2 0%, #eeddf1 100%);
+	border-radius: 4px !important;
+	background: #eeddf1;
 	margin: 0 0 12px 0;
 	padding: 8px;
 }
@@ -332,16 +328,12 @@ form #contacthead {
 	text-shadow: none;
 	padding: 6px 8px 3px 8px;
 	background: #3f1a67;
-	background: -moz-linear-gradient(top, #3f1a67 0%, #9145e2 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f1a67), color-stop(100%,#9145e2)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #3f1a67 0%, #9145e2 100%); 
-	background: linear-gradient(to bottom, #3f1a67 0%, #9145e2 100%);
 	border-bottom: 1px solid #cfcfcf;
-	border-radius: 5px 5px 0 0;
+	border-radius: 0;
 }
 
 .contactfieldgroup .row {
-	color: #3f1a67;
+	text-decoration: none;
 	position: relative;
 	margin: 0.2em 0;
 }
@@ -354,16 +346,14 @@ form #contacthead {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #3f1a67;
 }
 
 .contactfieldgroup .contactfieldlabel select {
 	width: 100%;
-	color: #3f1a67;
+	background-color: #3f1a67;
 }
 
 .contactfieldgroup .contactfieldcontent {
-	color: #3f1a67;
 	padding-left: 120px;
 	min-height: 1em;
 	line-height: 1.3em;
@@ -415,4 +405,42 @@ a.deletebutton {
 #import-box p,
 #import-box .propform {
   max-width: 50em;
+}
+
+ul.toolbarmenu li span.qrcode {
+	background-position: 0 -2408px;
+}
+
+ul.toolbarmenu li span.assigngroup {
+	background-position: 0 -2358px;
+}
+
+ul.toolbarmenu li span.removegroup {
+	background-position: 0 -2384px;
+}
+
+#addressbook-selector li a,
+#contactgroup-selector li a {
+	padding-left: 2px;
+}
+
+#addressbook-selector li a span,
+#contactgroup-selector li a span {
+	background: url(images/listicons.png?v=4f40.10460) 4px 20px no-repeat;
+	display: block;
+	height: 17px;
+	min-height: 14px;
+	padding: 4px 4px 1px 28px;
+	overflow: hidden;
+	max-width: 120px;
+	text-overflow: ellipsis;
+}
+
+#addressbook-selector li a.addressbook span {
+	background-position: 4px -2222px;
+}
+
+#addressbook-selector li a.contactgroup span,
+#contactgroup-selector li a.contactgroup span {
+	background-position: 4px -2245px;
 }

@@ -599,10 +599,10 @@ TODO: more distinction between this file and common.css
 .fc-unthemed .fc-popover,
 .fc-unthemed .fc-list-view,
 .fc-unthemed .fc-list-heading td {
-  border-color: #ddd; }
+  border-color: #ad5c2a; }
 
 .fc-unthemed .fc-popover {
-  background-color: #fff; }
+  background-color: #fcfaf9; }
 
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-popover .fc-header,

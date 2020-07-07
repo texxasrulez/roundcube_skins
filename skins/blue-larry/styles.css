@@ -18,6 +18,81 @@ body {
 	margin: 0;
 }
 
+/* Customize Scoller */
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Button */
+::-webkit-scrollbar-button:single-button {
+  background-color: #152f40;
+  display: block;
+  border-style: solid;
+  border-color: #152f40;
+  height: 25px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background:
+        linear-gradient(120deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(240deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(0deg, #152f40 30%, rgba(85.1, 92.5, 95.7, 0) 31%);
+    background-color: #d9ecf4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(60deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(180deg, #152f40 30%, rgba(85.1, 92.5, 95.7, 0) 31%);
+    background-color: #d9ecf4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(330deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(90deg, #152f40 30%, rgba(85.1, 92.5, 95.7, 0) 31%);
+    background-color: #d9ecf4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(150deg, #152f40 40%, rgba(85.1, 92.5, 95.7, 0) 41%),
+        linear-gradient(270deg, #152f40 30%, rgba(85.1, 92.5, 95.7, 0) 31%);
+    background-color: #d9ecf4;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #d9ecf4;
+	box-shadow: inset 0 0 2px #5b6d79; 
+	border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #152f40;
+	background: -moz-linear-gradient(top, #265576 0%, #152f40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#152f40));
+	background: -ms-linear-gradient(top, #265576 0%, #152f40 100%);
+	background: linear-gradient(to bottom, #265576 0%, #152f40 100%);
+	border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #152f40;
+  	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576)); /* Chrome,Safari4+ */
+	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%); 
+	background: linear-gradient(to bottom, #152f40 0%, #265576 100%);
+    box-shadow: inset 0 0 1px #5b6d79; 
+}
+
 body.noscroll {
 	/* also avoids bounce effect in Chrome and Safari */
 	overflow: hidden;
@@ -29,11 +104,11 @@ body.noscroll {
 }
 
 a {
-	color: #0069a6;
+	color: none;
 }
 
 a:visited {
-	color: #0186ba;
+	color: none;
 }
 
 img {
@@ -151,7 +226,7 @@ button.mainaction:hover,
 button.mainaction:focus {
 	color: #f2f2f2;
 	border-color: #5b6d79;
-	box-shadow: 0 0 5px 2px rgba(71,135,177, 0.6), inset 0 1px 0 0 #152f40;
+	box-shadow: 0 0 5px #f2f2f2, inset 0 1px 0 0 #152f40;
 }
 
 .formbuttons button:active {
@@ -167,10 +242,10 @@ button.mainaction {
 	color: #f6fbfc;
 	border-color: #5b6d79;
 	background: #152f40;
-	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%); 
-	background: linear-gradient(to bottom, #152f40 0%, #265576 100%);
+	background: -moz-linear-gradient(top, #265576 0%, #152f40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#152f40));
+	background: -ms-linear-gradient(top, #265576 0%, #152f40 100%);
+	background: linear-gradient(to bottom, #265576 0%, #152f40 100%);
 	box-shadow: inset 0 1px 0 0 #777;
 }
 
@@ -181,6 +256,7 @@ button.mainaction:active {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576)); /* Chrome,Safari4+ */
 	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%); 
 	background: linear-gradient(to bottom, #152f40 0%, #265576 100%);
+	box-shadow: inset 0 1px 0 0 #fff;
 }
 
 button[disabled],
@@ -218,6 +294,7 @@ a.button,
 	background: linear-gradient(to bottom, #265576 0%, #152f40 100%);
 	box-shadow: 0 1px 1px 0 #517691;
 	text-decoration: none;
+	box-shadow: 0 1px 1px 0 #fff;
 }
 
 .buttongroup {
@@ -544,7 +621,7 @@ a.iconlink.upload {
 	padding: 6px 30px 6px 25px;
 	display: inline-block;
 	white-space: nowrap;
-	background: url(images/messages.png?v=6ff4.1430) 0 5px no-repeat;
+	background: url(images/messages.png?v=6ff4.1430) 0 5px no-repeat !important;
 	cursor: default;
 }
 
@@ -1124,12 +1201,12 @@ a.iconlink.upload {
 .uibox .boxtitle,
 .uibox .listing thead th,
 .uibox .listing thead td {
+	color: #f6fbfc;
 	background: #152f40;
 	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576));
 	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%);
 	background: linear-gradient(to bottom, #152f40 0%, #265576 100%);
-	color: #f6fbfc;
 	border-radius: 4px 4px 0 0;
 }
 
@@ -1177,7 +1254,7 @@ a.iconlink.upload {
 /* This padding-left minus the focused padding left should be half of the focused border-left */
 .listing thead tr td:first-child,
 .listing tbody tr td:first-child {
-	border-left: 2px solid transparent;
+	border-left: 1px solid transparent;
 	padding-left: 6px;
 }
 
@@ -1266,7 +1343,7 @@ ul.treelist li a:focus,
 ul.listing .listitem a:focus,
 ul.listing .listitem span:focus,
 ul.listing.focus .listitem.focused span {
-	color: #152f40 !important;
+	color: #f6fbfc !important;
 	background-color: #b3ccd7;
 	outline: none;
 }
@@ -1829,8 +1906,8 @@ ul.proplist li {
 
 #login-form button {
 	color: #e7eaeb;
-	background: #152f40;
 	border-color: #5b6d79;
+	background: #152f40;
 	background: -moz-linear-gradient(top, #152f40 0%, #265576 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#265576));
 	background: -ms-linear-gradient(top, #152f40 0%, #265576 100%);
@@ -1897,8 +1974,6 @@ ul.proplist li {
 #bottomline a {
 	color: #fff;
 }
-
-
 
 /*** quicksearch **/
 
@@ -2166,7 +2241,7 @@ a.menuselector {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#152f40));
 	background: -ms-linear-gradient(top, #265576 0%, #152f40 100%);
 	background: linear-gradient(to bottom, #265576 0%, #152f40 100%);
-	box-shadow: 0 1px 1px 0 #3b6683;
+	box-shadow: none;
 	text-decoration: none;
 	color: #e7eaeb;
 	cursor: pointer;
@@ -2557,7 +2632,7 @@ ul.toolbarmenu li span.copy {
 
 .hint {
 	margin: 4px 0;
-	color: #999;
+	color: #152f40;
 }
 
 .splitter {
@@ -2683,7 +2758,7 @@ ul.toolbarmenu li span.copy {
 
 .folderlist li.mailbox > a {
 	background-position: 6px -21px;
-}	
+}
 
 .folderlist li.mailbox > a:focus,
 .folderlist li.mailbox.selected > a {
@@ -3087,7 +3162,7 @@ ul.toolbarmenu li span.copy {
 
 .tabbed.ui-tabs {
 	padding: 0;
-	border: 0 !important;
+	border: 0;
 	background: none;
 }
 

@@ -18,6 +18,81 @@ body {
 	margin: 0;
 }
 
+/* Scrollbar Style */
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Button */
+::-webkit-scrollbar-button:single-button {
+  background-color: #354516;
+  display: block;
+  border-style: solid;
+  border-color: #354516;
+  height: 25px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background:
+        linear-gradient(120deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(240deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(0deg, #354516 30%, rgba(20.8, 27.1, 8.6, 0) 31%);
+    background-color: #f6fbfc;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(60deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(180deg, #354516 30%, rgba(20.8, 27.1, 8.6, 0) 31%);
+    background-color: #f6fbfc;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(330deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(90deg, #354516 30%, rgba(20.8, 27.1, 8.6, 0) 31%);
+    background-color: #f6fbfc;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(150deg, #354516 40%, rgba(20.8, 27.1, 8.6, 0) 41%),
+        linear-gradient(270deg, #354516 30%, rgba(20.8, 27.1, 8.6, 0) 31%);
+    background-color: #f6fbfc;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #eaf3d1;
+	box-shadow: inset 0 0 2px #5d702f; 
+	border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #354516;
+	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
+	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
+	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
+	border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #354516;
+  	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947)); /* Chrome,Safari4+ */
+	background: -ms-linear-gradient(top, #354516 0%, #829947 100%); 
+	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
+    box-shadow: inset 0 0 1px #5d702f; 
+}
+
 body.noscroll {
 	/* also avoids bounce effect in Chrome and Safari */
 	overflow: hidden;
@@ -29,11 +104,11 @@ body.noscroll {
 }
 
 a {
-	color: #0069a6;
+	color: none;
 }
 
 a:visited {
-	color: #0186ba;
+	color: none;
 }
 
 img {
@@ -68,10 +143,10 @@ input[type="text"],
 input[type="password"],
 textarea {
 	color: #354516;
-	background: #f7ffe3;
+	background-color: #f7ffe3;
 	margin: 0; /* Safari by default adds a margin */
 	padding: 4px;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	border-radius: 4px;
 	box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
 }
@@ -80,14 +155,14 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 button:focus,
 textarea:focus {
-	border-color: #86a54a;
+	border-color: #5d702f;
 	box-shadow: 0 0 5px 2px rgba(53,69,22, 0.9);
 	outline: none;
 }
 
 input[type="text"]:required,
 input[type="password"]:required {
-	border-color: #86a54a;
+	border-color: #5d702f;
 }
 
 input.placeholder,
@@ -119,7 +194,7 @@ button {
 	margin: 0 2px;
 	padding: 2px 5px;
 	color: #f6fbfc;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	border-radius: 4px;
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
@@ -135,7 +210,7 @@ button {
 	color: #f6fbfc;
 	font-size: 110%;
 	padding: 4px 12px;
-	border-color: #86a54a;
+	border-color: #5d702f;
 	border-radius: 5px;
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%); /* FF3.6+ */
@@ -149,9 +224,9 @@ button {
 .formbuttons button:focus,
 button.mainaction:hover,
 button.mainaction:focus {
-	color: #f2f2f2;
-	border-color: #86a54a;
-	box-shadow: 0 0 5px 2px rgba(53,69,22, 0.6), inset 0 1px 0 0 #888;
+	color: #f6fbfc;
+	border-color: #354516;
+	box-shadow: 0 0 5px #fff, inset 0 1px 0 0 #354516;
 }
 
 .formbuttons button:active {
@@ -161,26 +236,28 @@ button.mainaction:focus {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
 	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
+	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
 button.mainaction {
 	color: #f6fbfc;
-	border-color: #86a54a;
+	border-color: #354516;
 	background: #354516;
-	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #354516 0%, #829947 100%); 
-	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	box-shadow: inset 0 1px 0 0 #777;
+	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
+	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
+	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
+	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
 button.mainaction:active {
 	color: #f6fbfc;
 	background: #354516;
-	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947)); /* Chrome,Safari4+ */
-	background: -ms-linear-gradient(top, #354516 0%, #829947 100%); 
-	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
+	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
+	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
+	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
+	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
 button[disabled],
@@ -208,7 +285,7 @@ a.button,
 	display: inline-block;
 	margin: 0 2px;
 	padding: 2px 5px;
-	color: #eaece7;
+	color: #eaece7 !important;
 	border: 1px solid #354516;
 	border-radius: 4px;
 	background: #829947;
@@ -218,6 +295,7 @@ a.button,
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
 	box-shadow: 0 1px 1px 0 #9bad6b;
 	text-decoration: none;
+	box-shadow: inset 0 1px 0 0 #f6fbfc;
 }
 
 .buttongroup {
@@ -227,7 +305,7 @@ a.button,
 
 a.button:focus,
 button:focus {
-	border-color: #86a54a;
+	border-color: #5d702f;
 	box-shadow: 0 0 2px 1px rgba(53,69,22, 0.6);
 	outline: none;
 }
@@ -243,7 +321,7 @@ button[disabled],
 a.button.disabled:hover,
 button.disabled:hover,
 button[disabled]:hover {
-	border-color: #86a54a;
+	border-color: #5d702f;
 	box-shadow: 0 1px 1px 0 rgba(160, 160, 160, 0.4);
 }
 
@@ -294,10 +372,10 @@ button:active {
 
 .pagenav.dark a.button.pressed {
 	background: #354516;
-	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
-	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
-	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
+	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
+	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
+	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
 }
 
 .buttongroup a.button.selected,
@@ -308,8 +386,8 @@ button:active {
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
 	box-shadow: inset 0 1px 2px 0 #555;
-	border-right-color: #86a54a;
-	border-left-color: #86a54a;
+	border-right-color: #5d702f;
+	border-left-color: #5d702f;
 }
 
 .buttongroup a.button:focus,
@@ -586,7 +664,7 @@ a.iconlink.upload {
 	right: 0;
 	height: 27px;
 	padding-left: 8px;
-	border-top: 1px solid #86a54a;
+	border-top: 1px solid #5d702f;
 	border-radius: 0 0 4px 4px;
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
@@ -622,14 +700,14 @@ a.iconlink.upload {
 	font-size: 12px;
 	font-weight: bold;
 	border-radius: 4px;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	color: #ebebeb;
-	background: rgba(199,227,239.85);
-	background: -moz-linear-gradient(top, rgba(21,47,64,0.85) 0%, rgba(38,85,118,0.9) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(21,47,64,0.85)), color-stop(100%,rgba(38,85,118,0.9)));
-	background: -webkit-linear-gradient(top, rgba(21,47,64,0.85) 0%, rgba(38,85,118,0.85) 100%);
-	background: -ms-linear-gradient(top, rgba(21,47,64,0.85) 0%, rgba(38,85,118,0.85) 100%);
-	background: linear-gradient(to bottom, rgba(21,47,64,0.85) 0%, rgba(38,85,118,0.85) 100%);
+	background: rgba(53,69,22, 0.85);
+	background: -moz-linear-gradient(top, rgba(53,69,22,0.85) 0%, rgba(130,153,71,0.9) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,69,22,0.85)), color-stop(100%,rgba(130,153,71,0.9)));
+	background: -webkit-linear-gradient(top, rgba(53,69,22,0.85) 0%, rgba(130,153,71,0.85) 100%);
+	background: -ms-linear-gradient(top, rgba(53,69,22,0.85) 0%, rgba(130,153,71,0.85) 100%);
+	background: linear-gradient(to bottom, rgba(53,69,22,0.85) 0%, rgba(130,153,71,0.85) 100%);
 	box-shadow: 0 1px 4px 0 rgba(9,27,39,0.8), inset 0px 1px 0 0px #354516;
 }
 
@@ -722,7 +800,6 @@ a.iconlink.upload {
 	overflow-y: auto;
 }
 
-
 /*** basic page layout ***/
 
 #header {
@@ -731,8 +808,8 @@ a.iconlink.upload {
 
 #topline {
 	height: 18px;
-	background: url(images/linen_header.jpg?v=514a.580) repeat #666;
-	border-bottom: 1px solid #86a54a;
+	background: url(images/linen_header.jpg?v=514a.580) repeat #354516;
+	border-bottom: 1px solid #5d702f;
 	padding: 2px 0 2px 10px;
 	color: #aaa;
 	text-align: center;
@@ -892,7 +969,7 @@ a.iconlink.upload {
 	color: #eee;
 	font-weight: bold;
 	white-space: nowrap;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	box-shadow: 0 1px 5px 0 #354516;
 	z-index: 200;
 	white-space: nowrap;
@@ -905,7 +982,7 @@ a.iconlink.upload {
 	right: 15px;
 	border-style: solid;
 	border-width: 0 4px 4px;
-	border-color: #86a54a transparent;
+	border-color: #5d702f transparent;
 	/* reduce the damage in FF3.0 */
 	display: block;
 	width: 0;
@@ -1048,7 +1125,7 @@ a.iconlink.upload {
 }
 
 .uibox {
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	border-radius: 4px;
 	overflow: hidden;
 	box-shadow: 0 0 2px #999;
@@ -1111,7 +1188,7 @@ a.iconlink.upload {
 	padding: 7px 8px 6px 8px;
 	line-height: 20px;
 	margin: 0;
-	border-bottom: 1px solid #86a54a;
+	border-bottom: 1px solid #5d702f;
 	white-space: nowrap;
 }
 
@@ -1124,12 +1201,12 @@ a.iconlink.upload {
 .uibox .boxtitle,
 .uibox .listing thead th,
 .uibox .listing thead td {
+	color: #eaecdb;
 	background: #354516;
 	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	color: #f6fbfc;
 	border-radius: 4px 4px 0 0;
 }
 
@@ -1138,8 +1215,7 @@ a.iconlink.upload {
 .listing tbody td,
 .listing li {
 	display: block;
-	border-top: 1px solid #86a54a;
-	border-bottom: 1px solid #86a54a;
+	border-bottom: 1px solid #dee9c0;
 	cursor: default;
 	font-weight: normal;
 }
@@ -1188,7 +1264,7 @@ a.iconlink.upload {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .listing.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #86a54a;
+	border-left: 2px solid #5d702f;
 }
 
 .listbox .listitem.selected,
@@ -1219,7 +1295,7 @@ ul.listing li {
 }
 
 ul.listing li ul {
-	border-top: 1px solid #86a54a;
+	border-top: 1px solid #eaf3d1;
 }
 
 ul.listing li.droptarget,
@@ -1266,7 +1342,7 @@ ul.treelist li a:focus,
 ul.listing .listitem a:focus,
 ul.listing .listitem span:focus,
 ul.listing.focus .listitem.focused span {
-	color: #354516 !important;
+	color: #f6fbfc !important;
 	background-color: #c3de7c;
 	outline: none;
 }
@@ -1340,13 +1416,13 @@ ul.treelist li.selected > div.expanded {
 	left: 0;
 	width: 100%;
 	height: 42px;
-	border-top: 1px solid #86a54a;
+	border-top: 1px solid #354516;
 	background: #354516;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
 	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
-	box-shadow: inset 0 1px 0 0 #f6fbfc;
+	box-shadow: inset 0 1px 0 0 #354516;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -1359,7 +1435,6 @@ ul.treelist li.selected > div.expanded {
 	display: inline-block;
 	text-decoration: none;
 	width: 48px;
-	border-right: 1px solid #86a54a;
 	background: #354516;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
@@ -1491,7 +1566,7 @@ table.records-table {
 	width: 100%;
 	table-layout: fixed;
 	border-spacing: 0;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 }
 
 .boxlistcontent .records-table {
@@ -1508,8 +1583,8 @@ table.records-table {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947)); /* Chrome,Safari4+ */
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%); 
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	border-left: 1px solid #86a54a;
-	border-bottom: 1px solid #86a54a;
+	border-left: 1px solid #5d702f;
+	border-bottom: 1px solid #5d702f;
 	padding: 8px 7px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1542,8 +1617,8 @@ table.records-table {
 
 .records-table tbody td {
 	padding: 2px 7px;
-	border-bottom: 1px solid #86a54a;
-	border-left: 1px dotted #86a54a;
+	border-bottom: 1px solid #5d702f;
+	border-left: 1px dotted #5d702f;
 	white-space: nowrap;
 	cursor: default;
 	overflow: hidden;
@@ -1562,7 +1637,7 @@ table.records-table {
 
 /* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
 .records-table.focus tbody tr.focused > td:first-child {
-	border-left: 2px solid #86a54a;
+	border-left: 2px solid #5d702f;
 }
 
 .records-table tr.selected td {
@@ -1622,7 +1697,7 @@ body.iframe .boxtitle {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	border-bottom: 1px solid #86a54a;
+	border-bottom: 1px solid #5d702f;
 }
 
 body.iframe .boxtitle {
@@ -1645,7 +1720,7 @@ body.iframe .footerleft.floating,
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
 	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
 	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
-	border-bottom: 1px solid #86a54a;
+	border-bottom: 1px solid #5d702f;
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
@@ -1669,7 +1744,7 @@ body.iframe .footerleft.floating:before,
 	margin: 0 0 10px;
 	display: block;
 	color: #960;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	background: url(images/messages.png?v=6ff4.1430) #fef893 5px -85px no-repeat;
 	padding: 6px 12px 6px 30px;
 }
@@ -1710,7 +1785,7 @@ body.iframe .footerleft.floating:before,
 }
 
 .propform fieldset fieldset legend {
-	color: #666;
+	color: #354516;
 	font-size: 12px;
 }
 
@@ -1798,7 +1873,7 @@ ul.proplist li {
 	background: url(images/linen_login.jpg?v=0484.10363) top left no-repeat #5c5c5c;
 	margin: 0 50px;
 	padding: 10px 24px 24px 24px;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	border-radius: 5px;
 	box-shadow: inset 0 0 1px #ccc;
 }
@@ -1825,12 +1900,12 @@ ul.proplist li {
 #login-form input[type="text"],
 #login-form input[type="password"] {
 	width: 100%;
-	border-color: #86a54a;
+	border-color: #5d702f;
 }
 
 #login-form button {
 	color: #eaece7;
-	border-color: #86a54a;
+	border-color: #5d702f;
 	background: #354516;
 	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
@@ -1845,12 +1920,12 @@ ul.proplist li {
 }
 
 #login-form button:active {
-	color: #265576;
-	background: #152f40;
-	background: -moz-linear-gradient(top, #265576 0%, #152f40 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265576), color-stop(100%,#152f40));
-	background: -ms-linear-gradient(top, #265576 0%, #152f40 100%);
-	background: linear-gradient(to bottom, #265576 0%, #152f40 100%);
+	color: #829947;
+	background: #354516;
+	background: -moz-linear-gradient(top, #829947 0%, #354516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#829947), color-stop(100%,#354516));
+	background: -ms-linear-gradient(top, #829947 0%, #354516 100%);
+	background: linear-gradient(to bottom, #829947 0%, #354516 100%);
 }
 
 #login-form form table {
@@ -1889,17 +1964,15 @@ ul.proplist li {
 }
 
 #bottomline {
-	color: #fff;
+	color: #eaecdb;
 	font-size: 90%;
 	text-align: center;
 	margin-top: 2em;
 }
 
 #bottomline a {
-	color: #fff;
+	color: #eaecdb;
 }
-
-
 
 /*** quicksearch **/
 
@@ -1922,7 +1995,7 @@ ul.proplist li {
 	height: 18px;
 	color: #354516;
 	background: #eaf3d1;
-	border-color: #86a54a;
+	border-color: #5d702f;
 	font-weight: bold;
 	font-size: 11px;
 }
@@ -2256,7 +2329,7 @@ table.quota-info {
 table.quota-info td,
 table.quota-info th {
 	color: white;
-	border: 1px solid 86a54a;
+	border: 1px solid 5d702f;
 	padding: 2px 3px;
 	text-align: center;
 	min-width: 80px;
@@ -2284,7 +2357,7 @@ table.quota-info td.root {
 	overflow-y: auto;
 	color: #a7bd6b;
 	background: #354516;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	z-index: 240;
 	border-radius: 4px;
 	box-shadow: 0 2px 6px 0 #354516;
@@ -2296,7 +2369,7 @@ table.quota-info td.root {
 }
 
 .popupmenu > .buttons {
-	border-top: 1px solid #86a54a;
+	border-top: 1px solid #5d702f;
 	height: 25px;
 	padding-top: 5px;
 	text-align: center;
@@ -2317,8 +2390,8 @@ ul.toolbarmenu li,
 	white-space: nowrap;
 	min-width: 130px;
 	margin: 0;
-	border-top: 1px solid #86a54a;
-	border-bottom: 1px solid #86a54a;
+	border-top: 1px solid #5d702f;
+	border-bottom: 1px solid #5d702f;
 }
 
 .googie_list tr:first-child td,
@@ -2336,7 +2409,7 @@ select.decorated option:last-child {
 .googie_list td span,
 ul.toolbarmenu li a {
 	display: block;
-	color: #666;
+	color: #354516;
 	text-decoration: none;
 	min-height: 14px;
 	padding: 6px 16px 6px 10px;
@@ -2558,7 +2631,7 @@ ul.toolbarmenu li span.copy {
 
 .hint {
 	margin: 4px 0;
-	color: #999;
+	color: #354516;
 }
 
 .splitter {
@@ -2591,7 +2664,7 @@ ul.toolbarmenu li span.copy {
 	width: 260px;
 	padding: 6px 8px;
 	background: #829947;
-	border: 1px solid #86a54a;
+	border: 1px solid #5d702f;
 	border-radius: 4px;
 	box-shadow: 0 2px 6px 0 #354516;
 	z-index: 250;
@@ -2607,7 +2680,7 @@ ul.toolbarmenu li span.copy {
 	left: -6px;
 	border-style: solid;
 	border-width: 6px 6px 6px 0;
-	border-color: transparent #86a54a;
+	border-color: transparent #5d702f;
 	/* reduce the damage in FF3.0 */
 	display: block; 
 	width: 0;
@@ -2684,7 +2757,7 @@ ul.toolbarmenu li span.copy {
 
 .folderlist li.mailbox > a {
 	background-position: 6px -21px;
-}	
+}
 
 .folderlist li.mailbox > a:focus,
 .folderlist li.mailbox.selected > a {
@@ -2827,7 +2900,7 @@ ul.toolbarmenu li span.copy {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid #86a54a;
+	border-top: 1px solid #5d702f;
 }
 
 .folderlist li.mailbox ul li a {
@@ -3088,7 +3161,7 @@ ul.toolbarmenu li span.copy {
 
 .tabbed.ui-tabs {
 	padding: 0;
-	border: 0 !important;
+	border: 0;
 	background: none;
 }
 

@@ -593,8 +593,8 @@ table.messagelist.fixedcopy {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	border-top: 1px solid #dbebb0;
-	border-bottom: 1px solid #dbebb0;
+	border-top: 1px solid #5d702f;
+	border-bottom: 1px solid #5d702f;
 }
 
 #composeheaders {
@@ -605,7 +605,7 @@ table.messagelist.fixedcopy {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	border-bottom: 1px solid #dbebb0;
+	border-bottom: 1px solid #5d702f;
 }
 
 #mailview-right #messageheader {
@@ -717,7 +717,7 @@ h3.subject {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	border-right: 1px solid #dbebb0;
+	border-right: 1px solid #5d702f;
 	border-radius: 3px 0 0 0; /* for Opera */
 }
 
@@ -727,7 +727,7 @@ h3.subject {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
 	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
-	border-right: 1px solid #dbebb0;
+	border-right: 1px solid #5d702f;
 }
 
 .moreheaderstoggle .iconlink {
@@ -905,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #354516 !important;
+	border: 1px solid #354516;
+	background-color: #deeabd !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -1281,7 +1281,7 @@ div.message-partheaders .headers-table td.header {
 	display: none;
 	padding: 2px 0 0 8px;
 	white-space: normal;
-	border-top: 1px solid #dbebb0;
+	border-top: 1px solid #5d702f;
 }
 
 .composeoption {
@@ -1437,7 +1437,7 @@ div.message-partheaders .headers-table td.header {
 .widescreen #mailview-bottom {
 	left: 412px;
 	top:0;
-	border: 1px solid #dbebb0;
+	border: 1px solid #5d702f;
 }
 
 #messagelistheader,
@@ -1470,7 +1470,7 @@ div.message-partheaders .headers-table td.header {
 	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
 	border-radius: 4px 4px 0 0;
 	white-space: nowrap;
-	border-bottom: 1px solid #dbebb0;
+	border-bottom: 1px solid #5d702f;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1623,7 +1623,7 @@ div.message-partheaders .headers-table td.header {
     right: 0;
     position: relative;
     border-radius: 0;
-    border-bottom: 1px solid #dbebb0;
+    border-bottom: 1px solid #5d702f;
     background-color: #f9f9f9;
     padding: 5px;
   }

@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #9145e2;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -534,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #9145e2;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -875,7 +877,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #eeddf1;
+	background-color: #eeddf1;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -903,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #3f1a67 !important;
+	border: 1px solid #3f1a67;
+	background-color: #ddbbe4 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -920,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #9145e2 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -964,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #9145e2;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #9145e2;
 	width: 100%;
 }
 
@@ -1004,7 +1009,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #999;
+	color: #9145e2
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1104,6 +1109,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts .listsearchbox {
+	background-color: #fdf6f3;
 	display: block;
 }
 
@@ -1113,7 +1119,7 @@ div.message-partheaders .headers-table td.header {
 
 #compose-contacts .scroller {
 	top: 65px;
-	border-top: 1px solid #fdf6f3;
+	border-top: 1px solid #ddbbe4;
 }
 
 #contacts-table {
@@ -1130,7 +1136,7 @@ div.message-partheaders .headers-table td.header {
 
 #contacts-table td span.email {
 	display: inline;
-	color: inherit;
+	color: #ddbbe4;
 	font-style: italic;
 	margin-left: 0.5em;
 }
@@ -1249,7 +1255,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .compose-headers td.editfield a.iconlink {
-	color: #fdf6f3;
+	color: #ddbbe4;
 	margin-left: 0.5em;
 }
 
@@ -1280,7 +1286,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #fdf6f3;
+	color: #ddbbe4;
 	padding-right: 22px;
 	white-space: nowrap;
 }
@@ -1305,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #9145e2;
+	background-color: #ddbbe4;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1349,10 +1357,10 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments {
-	color: #efe7e6;
+	color: #9145e2;
 	position: absolute;
 	right: 0;
-	top: 1px;
+	top: 0;
 	bottom: 0;
 	width: 240px;
 	background: #ddbbe4;
@@ -1483,6 +1491,11 @@ div.message-partheaders .headers-table td.header {
 	background: url(images/listicons.png?v=e9f1.12614) 0 -975px no-repeat;
 }
 
+.widescreen #messagelistheader .listmenu:focus {
+ 	background-color: rgba(101,22,5,0.55);
+ 	outline: none;
+}
+
 .widescreen #countcontrols {
 	line-height: 24px;
 	display: inline;
@@ -1520,7 +1533,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td {
-	color: #3f1a67 !important;
+	color: #3f1a67;
 	background: #e1cce5;
 	border-left: 0;
 	vertical-align: top;

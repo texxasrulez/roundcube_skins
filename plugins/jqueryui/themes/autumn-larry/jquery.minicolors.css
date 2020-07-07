@@ -1,3 +1,5 @@
+/* Autumn-Larry */
+
 .minicolors {
     position: relative;
 }
@@ -44,7 +46,7 @@
     position: absolute;
     width: 173px;
     height: 152px;
-    background: white;
+    background: #fcfaf9;
     border: solid 1px #CCC;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     z-index: 99999;
@@ -127,7 +129,7 @@
     left: 152px;
     width: 20px;
     height: 150px;
-    background-color: white;
+    background-color: #fcfaf9;
     background-position: 0 0;
     cursor: row-resize;
 }
@@ -175,7 +177,7 @@
     width: 8px;
     height: 8px;
     border-radius: 8px;
-    border: solid 2px white;
+    border: solid 2px #fcfaf9;
     box-sizing: content-box;
 }
 
@@ -185,7 +187,7 @@
     left: 0;
     width: 18px;
     height: 2px;
-    background: white;
+    background: #fcfaf9;
     border: solid 1px black;
     margin-top: -2px;
     box-sizing: content-box;

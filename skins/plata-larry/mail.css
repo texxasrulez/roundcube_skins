@@ -72,7 +72,7 @@ html.ie #mailview-top {
 }
 
 #messagelistcontainer {
-	color: #515151;
+	color: #525252;
 	background: e3e3e3;
 	top: 0;
 	bottom: 30px;
@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #828282;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -273,6 +274,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
+	color: #828282;
 	width: 60px;
 	text-align: right;
 }
@@ -286,10 +288,12 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
+	color: #828282;
 	width: 200px;
 }
 
 .messagelist tr > .date {
+	color: #828282;
 	width: 155px;
 }
 
@@ -317,7 +321,7 @@ table.messagelist.fixedcopy {
 .messagelist tr.flagged th,
 .messagelist tr.flagged td,
 .messagelist tr.flagged td a {
-	color: #515151;
+	color: #525252;
 }
 
 .messagelist thead tr th.sortedASC a,
@@ -339,7 +343,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody td a {
-	color: #515151;
+	color: #525252;
 	text-decoration: none;
 	white-space: nowrap;
 	cursor: default;
@@ -531,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #828282;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -659,7 +664,7 @@ h3.subject {
 }
 
 .headers-table td.subject {
-	color: #515151;
+	color: #525252;
 	font-weight: bold;
 }
 
@@ -726,7 +731,7 @@ h3.subject {
 }
 
 .moreheaderstoggle .iconlink {
-	color: #515151;
+	color: #525252;
 	display: inline-block;
 	position: absolute;
 	top: 8px;
@@ -781,7 +786,7 @@ div.hide-headers {
 	padding: 3px 6px;
 	overflow: auto;
 	text-align: left;
-	color: #515151;
+	color: #525252;
 }
 
 #messageheader.previewheader #all-headers {
@@ -867,12 +872,12 @@ div.hide-headers {
 
 #messagecontent .rightcol,
 #messagepreview .rightcol {
-	color: #515151;
+	color: #525252;
 	position: absolute;
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #e3e3e3;
+	background-color: #e3e3e3;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -883,7 +888,7 @@ div.hide-headers {
 }
 
 #messagebody {
-	color: #515151;
+	color: #525252;
 	background: #e3e3e3;
 	position: relative;
 	margin: 8px;
@@ -900,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #696969;
-	background-color: #fef893;
+	color: #434343 !important;
+	border: 1px solid #434343;
+	background-color: #d5d5d5 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -917,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #828282 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #828282;
 }
@@ -934,7 +940,7 @@ div.message-part div.pre {
 }
 
 div.message-part span.sig {
-	color: #515151;
+	color: #525252;
 }
 
 div.message-part blockquote {
@@ -961,27 +967,29 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #828282;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #828282;
 	width: 100%;
 }
 
 div.message-partheaders .headers-table td.header a {
-	color: #515151;
+	color: #525252;
 }
 
 div.message-partheaders .headers-table td.header-title {
-	color: #515151;
+	color: #525252;
 	width: 1%;
 	padding-left: 0;
 	vertical-align: top;
 }
 
 div.message-partheaders .headers-table td.header {
-	color: #515151;
+	color: #525252;
 	width: 99%;
 }
 
@@ -1001,7 +1009,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #999;
+	color: #828282;
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1101,7 +1109,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts .listsearchbox {
-	background: #d5d5d5;
+	background-color: #d5d5d5;
 	display: block;
 }
 
@@ -1128,7 +1136,7 @@ div.message-partheaders .headers-table td.header {
 
 #contacts-table td span.email {
 	display: inline;
-	color: inherit;
+	color: 696969;
 	font-style: italic;
 	margin-left: 0.5em;
 }
@@ -1303,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #828282;
+	background-color: #e3e3e3;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1347,10 +1357,10 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments {
-	color: #515151;
+	color: #525252;
 	position: absolute;
 	right: 0;
-	top: 1px;
+	top: 0;
 	bottom: 0;
 	width: 240px;
 	background: #d5d5d5;
@@ -1379,11 +1389,11 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments .attachment-size {
-	color: #515151;
+	color: #525252;
 }
 
 #compose-attachments .hint {
-	color: #515151;
+	color: #525252;
 	margin: 0 0 8px;
 }
 
@@ -1442,7 +1452,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistcontainer {
-	background: #e3e3e3;
+	background-color: #e3e3e3;
 	top: 34px;
 	overflow-x: hidden;
 }
@@ -1523,7 +1533,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td {
-	color: #515151;
+	color: #525252;
 	background: #e5e5e5;
 	border-left: 0;
 	vertical-align: top;
@@ -1550,7 +1560,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen .messagelist td.subject span {
-	color: #515151;
+	color: #525252;
 	line-height: 20px;
 }
 
@@ -1558,7 +1568,7 @@ div.message-partheaders .headers-table td.header {
 	right: 2px;
 	top: 3px;
 	position: absolute;
-	color: #515151;
+	color: #525252;
 }
 
 .widescreen .messagelist td.subject span.fromto {
@@ -1567,7 +1577,7 @@ div.message-partheaders .headers-table td.header {
 	margin-right: 10em;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #515151;
+	color: #525252;
 }
 
 .widescreen .messagelist tr.flagged td.subject span.date,

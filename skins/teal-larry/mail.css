@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #0e4f55;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -534,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #0e4f55;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -875,7 +877,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #cdf7f1;
+	background-color: #cdf7f1;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -903,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #0e4f55 !important;
+	border: 1px solid #0e4f55;
+	background-color: #bef0e9 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -920,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #0e4f55 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -964,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #0e4f55 ;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #0e4f55 ;
 	width: 100%;
 }
 
@@ -1004,7 +1009,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #999;
+	color: #0e4f55 ;
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1104,6 +1109,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts .listsearchbox {
+	background-color: #fdf6f3;
 	display: block;
 }
 
@@ -1280,13 +1286,12 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #000;
+	color: #0e4f55;
 	padding-right: 22px;
 	white-space: nowrap;
 }
 
 #composeoptions .composeoption {
-	color: #e6edee;
 	display: inline-block;
 	padding: 4px 22px 4px 0;
 }
@@ -1306,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #0e4f55;
+	background-color: #cdf7f1;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1350,10 +1357,10 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments {
-	color: #efe7e6;
+	color: #0e4f55;
 	position: absolute;
 	right: 0;
-	top: 1px;
+	top: 0;
 	bottom: 0;
 	width: 240px;
 	background: #acf3e8;
@@ -1482,6 +1489,11 @@ div.message-partheaders .headers-table td.header {
 	overflow: hidden;
 	display: inline-block;
 	background: url(images/listicons.png?v=e9f1.12614) 0 -975px no-repeat;
+}
+
+.widescreen #messagelistheader .listmenu:focus {
+ 	background-color: rgba(14,79,85,0.55);
+ 	outline: none;
 }
 
 .widescreen #countcontrols {

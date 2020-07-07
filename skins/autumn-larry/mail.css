@@ -61,7 +61,7 @@ html.ie #mailview-top {
 
 #mailboxcontainer,
 #messagelistcontainer {
-	color: #fdf6f3;
+	color: #651605;
 	background: #fbe4d7;
 	position: absolute;
 	top: 0;
@@ -72,7 +72,7 @@ html.ie #mailview-top {
 }
 
 #messagelistcontainer {
-	color: #fdf6f3;
+	color: #561605;
 	background: #fbe4d7;
 	top: 0;
 	bottom: 30px;
@@ -86,14 +86,14 @@ html>/**/body #messagelist {
 }
 
 #messagelistfooter {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	height: 22px;
 	padding: 5px 6px 3px;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid #fcfaf9;
 	background: #ebebeb;
 	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#913e0a), color-stop(100%,#651605));
@@ -176,7 +176,7 @@ html.mozilla #mailboxlist > li:first-child {
 	background: linear-gradient(to bottom, #68381b 0%, #a3511f 100%);
 	box-shadow: inset 0 1px 1px 0 #536d72;
 	border-radius: 9px;
-	color: #fdf6f3;
+	color: #fcfaf9;
 	text-align: center;
 	font-weight: bold;
 	text-shadow: none;
@@ -192,12 +192,12 @@ html.mozilla #mailboxlist > li:first-child {
 }
 
 .folderlist li.mailbox.recent > a .unreadcount {
-	background: #017cb4;
-	background: -moz-linear-gradient(top, #017cb4 0%, #006ca4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#017cb4), color-stop(100%,#006ca4));
-	background: -ms-linear-gradient(top, #017cb4 0%, #006ca4 100%);
-	background: linear-gradient(to bottom, #017cb4 0%, #006ca4 100%);
-	box-shadow: inset 0 1px 1px 0 #005080;
+	background: #68381b;
+	background: -moz-linear-gradient(top, #68381b 0%, #a3511f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68381b), color-stop(100%,#a3511f));
+	background: -ms-linear-gradient(top, #68381b 0%, #a3511f 100%);
+	background: linear-gradient(to bottom, #68381b 0%, #a3511f 100%);
+	box-shadow: inset 0 1px 1px 0 #003645;
 }
 
 #searchfilter {
@@ -306,16 +306,16 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr.message {
-/*	background-color: #fdf6f3; */
+/*	background-color: #fcfaf9; */
 }
 
 .messagelist tr.thread.expanded td {
-	background-color: #fdf6f3;
+	background-color: #fcfaf9;
 }
 
 .messagelist tr.unread {
 	font-weight: bold;
-/*	background-color: #fdf6f3; */
+/*	background-color: #fcfaf9; */
 }
 
 .messagelist tr.flagged th,
@@ -326,7 +326,7 @@ table.messagelist.fixedcopy {
 
 .messagelist thead tr th.sortedASC a,
 .messagelist thead tr th.sortedDESC a {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	text-decoration: underline;
 	background-image: url(images/listicons.png?v=e9f1.12614);
 	background-repeat: no-repeat;
@@ -588,7 +588,7 @@ table.messagelist.fixedcopy {
 #messageheader {
 	position: relative;
 	padding: 3px 0;
-	background: #f9f9f9;
+	background: #651605;
 	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
 	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
@@ -600,7 +600,7 @@ table.messagelist.fixedcopy {
 #composeheaders {
 	position: relative;
 	padding: 3px 0;
-	background: #f9f9f9;
+	background: #651605;
 	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
 	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
@@ -639,7 +639,7 @@ h3.subject {
 }
 
 .headers-table td {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	padding: 1px 8px;
 }
 
@@ -654,7 +654,7 @@ h3.subject {
 
 .headers-table td.header a,
 .ui-dialog-content.popup span.adr a {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	text-decoration: none;
 }
 
@@ -674,7 +674,7 @@ h3.subject {
 }
 
 .headers-table td.header a.morelink {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	white-space: nowrap;
 	font-weight: normal;
 }
@@ -731,7 +731,7 @@ h3.subject {
 }
 
 .moreheaderstoggle .iconlink {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	display: inline-block;
 	position: absolute;
 	top: 8px;
@@ -772,7 +772,7 @@ div.hide-headers {
 	height: 180px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	background: #fdfdfd;
+	background: #fbe4d7;
 	box-shadow: inset 0 0 1px 1px rgba(101,22,5, 0.1);
 }
 
@@ -794,7 +794,7 @@ div.hide-headers {
 }
 
 #messageheader.previewheader {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	position: relative;
 	height: auto;
 	min-height: 52px;
@@ -813,7 +813,7 @@ div.hide-headers {
 	width: 32px;
 	height: 32px;
 	overflow: hidden;
-	background: url(images/contactpic_32px.png?v=6be9.274) center center no-repeat #fdf6f3;
+	background: url(images/contactpic_32px.png?v=6be9.274) center center no-repeat #fcfaf9;
 	border-radius: 3px;
 }
 
@@ -837,7 +837,7 @@ div.hide-headers {
 	overflow: hidden;
 	border-radius: 4px;
 	border: 1px solid #e6e6e6;
-	background: url(images/contactpic_48px.png?v=1bc4.353) center center no-repeat #fdf6f3;
+	background: url(images/contactpic_48px.png?v=1bc4.353) center center no-repeat #fcfaf9;
 }
 
 #messageheader #contactphoto img {
@@ -877,7 +877,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #fdf6f3;
+	background-color: #fcfaf9;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -905,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #651605 !important;
+	border: 1px solid #651605;
+	background-color: #f1d4c4 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -1009,7 +1009,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #999;
+	color: #651605;
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1109,6 +1109,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts .listsearchbox {
+	background-color: #fcfaf9;
 	display: block;
 }
 
@@ -1118,7 +1119,7 @@ div.message-partheaders .headers-table td.header {
 
 #compose-contacts .scroller {
 	top: 65px;
-	border-top: 1px solid #fdf6f3;
+	border-top: 1px solid #fcfaf9;
 }
 
 #contacts-table {
@@ -1254,7 +1255,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .compose-headers td.editfield a.iconlink {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	margin-left: 0.5em;
 }
 
@@ -1285,7 +1286,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .composeoption {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	padding-right: 22px;
 	white-space: nowrap;
 }
@@ -1310,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #651605;
+	background-color: #fbe4d7;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1354,15 +1357,15 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments {
-	color: #efe7e6;
+	color: #651605;
 	position: absolute;
 	right: 0;
-	top: 1px;
+	top: 0;
 	bottom: 0;
 	width: 240px;
-	background: #a3511f;
+	background: #f1d4c4;
 	border-style: solid;
-	border-color: #f0f0f0 #f0f0f0 #f0f0f0 #ddd;
+	border-color: #b5734b #b5734b #b5734b #ad5c2a;
 	border-width: 1px;
 	padding: 8px;
 	overflow: auto;
@@ -1381,7 +1384,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments.droptarget.hover {
-	background-color: #a3511f;
+	background-color: #edbea1;
 	box-shadow: 0 0 5px 2px rgba(101,22,5, 0.9);
 }
 
@@ -1390,7 +1393,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-attachments .hint {
-	color: #efe7e6;
+	color: #651605;
 	margin: 0 0 8px;
 }
 
@@ -1413,7 +1416,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebody_toolbargroup {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #fcfaf9;
 }
 
 #uploadform a.iconlink {
@@ -1455,7 +1458,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistheader {
-	color: #fdf6f3;
+	color: #fcfaf9;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -1624,7 +1627,7 @@ div.message-partheaders .headers-table td.header {
     position: relative;
     border-radius: 0;
     border-bottom: 1px solid #b5734b;
-    background-color: #f9f9f9;
+    background-color: #fbe4d7;
     padding: 5px;
   }
   ul.attachmentslist,

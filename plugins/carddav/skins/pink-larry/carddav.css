@@ -1,6 +1,19 @@
+/* Carddav CSS for Pink-Larry Skins */
+
 #sections-table #rcmrowcd_preferences td.section {
     background-position: 6px -791px;
 }
 #sections-table #rcmrowcd_preferences.selected td.section {
     background-position: 6px -766px;
+}
+
+.ui-tabs .ui-tabs-nav {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+	border-radius: 0px 4px 4px 4px !important;
 }

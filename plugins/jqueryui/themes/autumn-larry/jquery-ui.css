@@ -1,18 +1,16 @@
-/*! jQuery UI - v1.12.0 - 2016-08-01 Autumn Larry
-* http://jqueryui.com
-* Includes: draggable.css, core.css, resizable.css, selectable.css, sortable.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, progressbar.css, selectmenu.css, slider.css, spinner.css, tabs.css, tooltip.css, theme.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=base&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=aaaaaa&iconColorError=cc0000&fcError=5f3f3f&borderColorError=f1a899&bgTextureError=flat&bgColorError=fddfdf&iconColorHighlight=777620&fcHighlight=777620&borderColorHighlight=dad55e&bgTextureHighlight=flat&bgColorHighlight=fffa90&iconColorActive=ffffff&fcActive=ffffff&borderColorActive=003eff&bgTextureActive=flat&bgColorActive=007fff&iconColorHover=555555&fcHover=2b2b2b&borderColorHover=cccccc&bgTextureHover=flat&bgColorHover=ededed&iconColorDefault=777777&fcDefault=454545&borderColorDefault=c5c5c5&bgTextureDefault=flat&bgColorDefault=f6f6f6&iconColorContent=444444&fcContent=333333&borderColorContent=dddddd&bgTextureContent=flat&bgColorContent=ffffff&iconColorHeader=444444&fcHeader=333333&borderColorHeader=dddddd&bgTextureHeader=flat&bgColorHeader=e9e9e9&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
-* Copyright jQuery Foundation and other contributors; Licensed MIT */
+/* jQuery UI for Autumn Larry */
 
 .ui-draggable-handle {
 	-ms-touch-action: none;
 	touch-action: none;
 }
+
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden {
 	display: none;
 }
+
 .ui-helper-hidden-accessible {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -49,7 +47,6 @@
 	left: 0;
 	position: absolute;
 	opacity: 0;
-	filter:Alpha(Opacity=0); /* support: IE8 */
 }
 
 .ui-front {
@@ -62,8 +59,8 @@
 .ui-state-disabled {
 	cursor: default !important;
 	pointer-events: none;
-	background: #fafafa;
-	color: #333333;
+	background-color: #fcfaf9;
+	color: #320b03;
 }
 
 
@@ -205,10 +202,10 @@
 	margin: 0;
 	display: block;
 	outline: 0;
-	background: #444;
-	border: 1px solid #999;
+	background: #320b03;
+	border: 1px solid #ad5c2a;
 	border-radius: 4px !important;
-	box-shadow: 0 2px 6px 0 #333;
+	box-shadow: 0 2px 6px 0 #320b03;
 }
 .ui-menu .ui-menu {
 	position: absolute;
@@ -218,9 +215,9 @@
 	cursor: pointer;
 	/* support: IE10, see #8844 */
 	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
-	color: #fff;
+	color: #fcfaf9;
 	white-space: nowrap;
-	border-top: 1px solid #5a5a5a;
+	border-top: 1px solid #ad5c2a;
 }
 .ui-menu .ui-menu-item div,
 .ui-menu .ui-menu-item a {
@@ -228,10 +225,10 @@
 	line-height: 1.5;
 	padding: 6px 10px 4px;
 	text-shadow: none;
-	background-color: #444;
+	background-color: #320b03;
 	border: 0;
 	border-radius: 0;
-	color: #fff;
+	color: #fcfaf9;
 }
 .ui-menu .ui-menu-item:first-child {
 	border-top: 0;
@@ -255,11 +252,11 @@
 .ui-menu .ui-state-focus,
 .ui-menu .ui-state-active {
 	background: #651605;
-	background: -moz-linear-gradient(top, #651605 0%, #a27369 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#a27369));
-	background: -o-linear-gradient(top, #651605 0%, #a27369 100%);
-	background: -ms-linear-gradient(top, #651605 0%, #a27369 100%);
-	background: linear-gradient(top, #651605 0%, #a27369 100%);
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: linear-gradient(top, #651605 0%, #913e0a 100%);
 }
 
 /* icon support */
@@ -488,7 +485,7 @@ button.ui-button::-moz-focus-inner {
 	width: 45%;
 }
 .ui-datepicker table {
-	color: #fff; /* Gene */
+	color: #fcfaf9; /* Gene */
 	background: #651605; /* Gene */
 	width: 100%;
 	font-size: .9em;
@@ -616,7 +613,7 @@ button.ui-button::-moz-focus-inner {
 	left: 0;
 	outline: 0;
 	padding: 3px;
-	background: #fff;
+	background: #fbe4d7;
 	border-radius: 6px !important;
 	border: 0 !important;
 	box-shadow: 1px 1px 18px #651605;
@@ -667,19 +664,19 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-dialog .ui-dialog-content {
 	position: relative;
-	border: 0;
+	border: 0 !important;
 	padding: 1.5em 1em 0.5em 1em;
 	background: none;
-	overflow: auto;
+	overflow: hidden;
 }
 .ui-dialog .ui-widget-content {
-	border: 0;
+	border: 0 !important;
 }
 .ui-dialog .ui-dialog-buttonpane {
 	text-align: left;
 	border-width: 1px 0 0 0;
 	background-image: none;
-	border-color: #ddd;
+	border-color: #ad5c2a;
 	border-style: solid;
 	margin: 0;
 	padding: .3em 1em .5em .8em;
@@ -819,7 +816,6 @@ button.ui-button::-moz-focus-inner {
 	background: -o-linear-gradient(top, #019bc6 0%, #017cb4 100%);
 	background: -ms-linear-gradient(top, #019bc6 0%, #017cb4 100%);
 	background: linear-gradient(top, #019bc6 0%, #017cb4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#019bc6', endColorstr='#017cb4', GradientType=0);
 }
 
 /* support: IE8 - See #6727 */
@@ -912,7 +908,8 @@ button.ui-button::-moz-focus-inner {
 	padding: .2em;
 }
 .ui-tabs .ui-tabs-nav {
-	margin: 0; padding: 0;
+	margin: 0;
+	padding: 0;
 	border: 0;
 	background: transparent;
 	filter: none;
@@ -924,66 +921,84 @@ button.ui-button::-moz-focus-inner {
 	display: inline-block;
 	top: 0;
 	margin: 0;
-	border: 0 !important;
+	border: 0;
 	padding: 0 1px 0 0;
 	white-space: nowrap;
-	background: #d0b9b4;
-	background: -moz-linear-gradient(top, #d0b9b4 0%, #651605 50%, #d0b9b4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0b9b4), color-stop(50%,#651605), color-stop(100%,#d0b9b4));
-	background: -webkit-linear-gradient(top, #d0b9b4 0%, #651605 50%, #d0b9b4 100%);
-	background: -o-linear-gradient(top, #d0b9b4 0%, #651605 50%, #d0b9b4 100%);
-	background: -ms-linear-gradient(top, #d0b9b4 0%, #651605 50%, #d0b9b4 100%);
-	background: linear-gradient(top, #d0b9b4 0%, #651605 50%, #d0b9b4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0b9b4', endColorstr='#651605', GradientType=0);
+	background: #651605;
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -o-linear-gradient(top, #651605 0%, #e5e5e5 100%);
+	background: linear-gradient(to bottom, #651605 0%, #913e0a 100%);
+	border-bottom: 1px solid #651605;
+	border-radius: 8px 8px 0px 0px;
+}
+.ui-tabs .ui-tabs-nav li:first-child {
+	border-left: 1px solid #651605;
 }
 .ui-tabs .ui-tabs-nav li:last-child {
-	background: none;
+	background: transparent;
+	border-right: 1px solid #651605;
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	outline: none;
 	display: inline-block;
 	padding: 15px;
 	text-decoration: none;
 	font-size: 12px;
 	color: #651605;
-	background: #fbe4d7;
-	border-right: 1px solid #a27369;
+	font-weight: bold;
+	background: #fbebe2 !important;
+	border-top: 1px solid #651605;
+	border-right: 1px solid #651605;
+	border-radius: 8px 8px 0 0;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-	margin-bottom: -1px;
-	padding-bottom: 1px;
+	outline: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
-.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+
 .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	outline: none;
 	cursor: text;
 }
+
+.ui-tabs .ui-tabs-nav li.ui-state-hover .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
-	outline: none;
-	color: #651605;
-	background: #cf81b1;
-	background: -moz-linear-gradient(top, #cf81b1 0%, #651605 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#651605));
-	background: -o-linear-gradient(top, #cf81b1 0%, #651605 100%);
-	background: -ms-linear-gradient(top, #cf81b1 0%, #651605 100%);
-	background: linear-gradient(top, #cf81b1 0%, #651605 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf81b1', endColorstr='#651605', GradientType=0);
+	outline: none !important;
+	color: #fdf6f3 !important;
+	font-weight: bold !important;
+	background: #651605 !important;
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a)) !important;
+	background: -webkit-linear-gradient(top, #651605 0%, #913e0a 100%) !important;
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%) !important;
+	background: linear-gradient(to bottom, #651605 0%, #913e0a 100%) !important;
 }
+
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
 	cursor: pointer;
 }
+
 .ui-tabs .ui-tabs-panel {
 	display: block;
 	border-width: 0;
 	padding: 0.5em 1em;
 	margin-top: 0.2em;
-	background: #fff;
+	background: #fbe4d7;
+	border: 1px solid #651605 !important;
+	border-radius: 0px 4px 4px 4px;
 }
+
 .ui-tooltip {
 	padding: 8px;
 	position: absolute;
 	z-index: 9999;
 	max-width: 300px;
 }
+
 body .ui-tooltip {
 	border-width: 2px;
 }
@@ -1001,28 +1016,29 @@ body .ui-tooltip {
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
+	color: #651605;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 1em;
 }
 .ui-widget-content {
-	border: 1px solid #dddddd;
-	background: #fbe4d7;
+	border: 1px solid #ad5c2a;
+	background: #f7ddcf;
 	color: #651605;
 }
 .ui-widget-content a {
-	color: #0186ba;
+	color: #651605;
+	text-decoration: none;
 }
 .ui-widget-header {
-	border: 1px solid #dddddd;
-	color: #d0b9b4;
+	border: 1px solid #ad5c2a;
+	color: #fcfaf9;
 	font-weight: bold;
 	background: #651605;
-	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#913e0a), color-stop(100%,#651605));
-	background: -o-linear-gradient(top, #913e0a 0%, #651605 100%);
-	background: -ms-linear-gradient(top, #913e0a 0%, #651605 100%);
-	background: linear-gradient(top, #913e0a 0%, #651605 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#913e0a', endColorstr='#651605', GradientType=0);
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: linear-gradient(top, #651605 0%, #913e0a 100%);
 }
 .ui-widget-header a {
 	color: #d0b9b4;
@@ -1093,17 +1109,17 @@ a.ui-button:active,
 	border: 1px solid #003eff;
 	background: #651605;
 	font-weight: normal;
-	color: #fff;
+	color: #fcfaf9;
 }
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
 	border: #003eff;
-	background-color: #fff;
+	background-color: #fcfaf9;
 }
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	color: #fff;
+	color: #fcfaf9;
 	text-decoration: none;
 }
 
@@ -1395,7 +1411,6 @@ a.ui-button:active,
 .ui-widget-overlay {
 	background: #aaaaaa;
 	opacity: .3;
-	filter: Alpha(Opacity=30); /* support: IE8 */
 }
 .ui-widget-shadow {
 	-webkit-box-shadow: 0px 0px 5px #651605;
@@ -1408,15 +1423,16 @@ a.ui-button:active,
 	margin: 0 2px;
 	padding: 1px 2px;
 	text-shadow: none;
-	border: 1px solid #c6c6c6;
+	border: 1px solid #b5734b;
 	border-radius: 4px;
-	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
+	background: #651605;
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: linear-gradient(to bottom, #651605 0%, #913e0a 100%);
+	border-top: 1px solid #b5734b;
+	border-bottom: 1px solid #b5734b;
 	-webkit-box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.3);
 	   -moz-box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.3);
 	     -o-box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.3);
@@ -1428,14 +1444,13 @@ a.ui-button:active,
 .ui-button.mainaction {
 	color: #ededed;
 	text-shadow: none;
-	border-color: #1f262c;
-	background: #505050;
-	background: -moz-linear-gradient(top, #505050 0%, #2a2e31 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505050), color-stop(100%,#2a2e31));
-	background: -o-linear-gradient(top, #505050 0%, #2a2e31 100%);
-	background: -ms-linear-gradient(top, #505050 0%, #2a2e31 100%);
-	background: linear-gradient(top, #505050 0%, #2a2e31 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#505050', endColorstr='#2a2e31', GradientType=0);
+	border-color: #ad5c2a;
+	background: #651605;
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: linear-gradient(top, #651605 0%, #913e0a 100%);
 	-moz-box-shadow: inset 0 1px 0 0 #777;
 	-webkit-box-shadow: inset 0 1px 0 0 #777;
 	-o-box-shadow: inset 0 1px 0 0 #777;
@@ -1443,8 +1458,8 @@ a.ui-button:active,
 }
 
 .ui-button.ui-state-focus {
-	color: #525252;
-	border-color: #7b2a08;
+	color: #651605;
+	border-color: #ad5c2a;
 	-moz-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6);
 	-webkit-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6);
 	-o-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6);
@@ -1452,24 +1467,23 @@ a.ui-button:active,
 }
 
 .ui-button.ui-state-active {
-	color: #525252;
-	border-color: #aaa;
-	background: #e6e6e6;
-	background: -moz-linear-gradient(top, #e6e6e6 0%, #f9f9f9 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(100%,#f9f9f9));
-	background: -o-linear-gradient(top, #e6e6e6 0%, #f9f9f9 100%);
-	background: -ms-linear-gradient(top, #e6e6e6 0%, #f9f9f9 100%);
-	background: linear-gradient(top, #e6e6e6 0%, #f9f9f9 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#f9f9f9', GradientType=0);
+	color: #651605;
+	border-color: #ad5c2a;
+	background: #913e0a;
+	background: -moz-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#913e0a), color-stop(100%,#651605));
+	background: -o-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: -ms-linear-gradient(top, #913e0a 0%, #651605 100%);
+	background: linear-gradient(top, #913e0a 0%, #651605 100%);
 }
 
 .ui-button.ui-state-focus.mainaction,
 .ui-button.ui-state-hover.mainaction {
-	color: #fff;
+	color: #fcfaf9;
 }
 
 .ui-button.ui-state-focus.mainaction {
-	border-color: #1f262c;
+	border-color: #ad5c2a;
 	-moz-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6), inset 0 1px 0 0 #777;
 	-webkit-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6), inset 0 1px 0 0 #777;
 	-o-box-shadow: 0 0 2px 1px rgba(71,135,177, 0.6), inset 0 1px 0 0 #777;
@@ -1477,13 +1491,15 @@ a.ui-button:active,
 }
 
 .ui-button.ui-state-active.mainaction {
-	color: #fff;
-	background: #515151;
-	background: -moz-linear-gradient(top, #2a2e31 0%, #505050 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a2e31), color-stop(100%,#505050));
-	background: -o-linear-gradient(top, #2a2e31 0%, #505050 100%);
-	background: -ms-linear-gradient(top, #2a2e31 0%, #505050 100%);
-	background: linear-gradient(top, #2a2e31 0%, #505050 100%);
+	color: #fcfaf9;
+	background: #651605;
+	background: -moz-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#651605), color-stop(100%,#913e0a));
+	background: -o-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
+	background: linear-gradient(to bottom, #651605 0%, #913e0a 100%);
+	border-top: 1px solid #b5734b;
+	border-bottom: 1px solid #b5734b;
 }
 
 .ui-button[disabled],
@@ -1552,12 +1568,17 @@ a.ui-button:active,
 	background: -ms-linear-gradient(top, #651605 0%, #913e0a 100%);
 	background: linear-gradient(to bottom, #651605 0%, #913e0a 100%);
 	outline: none;
-	color: #d0b9b4;
-	background-color: #7b2a08;
+	color: #fcfaf9;
+	background-color: transparent;
 	font-weight: bold;
 	width: auto;
-	margin-right: 4px;
-	padding-right: 4px;
+	margin-right: 4px 4px 0 0;
+	padding-right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-month:focus,
+.ui-datepicker .ui-datepicker-year:focus {
+	background-color: #7b2a07 !important;
 }
 .ui-datepicker .ui-datepicker-title select::-ms-expand {
 	display: none;
@@ -1577,6 +1598,7 @@ a.ui-button:active,
 .ui-datepicker .ui-datepicker-year:focus {
 	outline: 1px solid #7b2a08;
 }
+
 .ui-datepicker table {
 	margin: 0;
 	border-spacing: 0;
@@ -1595,21 +1617,16 @@ a.ui-button:active,
 	text-shadow: none;
 }
 .ui-datepicker td a.ui-state-default {
-	border: 0px solid #fff;
+	border: 0px solid #fcfaf9;
 	border-top-width: 1px;
 	border-left-width: 1px;
-	background: #e6e6e6;
-	background: -moz-linear-gradient(top, #e6e6e6 0%, #d6d6d6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(100%,#d6d6d6));
-	background: -o-linear-gradient(top, #e6e6e6 0%, #d6d6d6 100%);
-	background: -ms-linear-gradient(top, #e6e6e6 0%, #d6d6d6 100%);
-	background: linear-gradient(top, #e6e6e6 0%, #d6d6d6 100%);
+	background: #c79b8a;
 }
 .ui-datepicker td a.ui-priority-secondary {
 	background: #eee;
 }
 .ui-datepicker td a.ui-state-active {
-	color: #fff;
+	color: #fcfaf9;
 	border-color: #651605 !important;
 	text-shadow: none;
 	background: #742d1d !important;
@@ -1623,7 +1640,7 @@ a.ui-button:active,
 	color: #0081c2;
 }
 .ui-datepicker td.ui-datepicker-days-cell-over a.ui-state-default {
-	color: #fff;
+	color: #fcfaf9;
 	border-color: rgba(73,180,210,0.7);
 	background: rgba(73,180,210,0.7);
 	text-shadow: none;

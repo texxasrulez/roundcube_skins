@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #828282;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -273,6 +274,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
+	color: #828282;
 	width: 60px;
 	text-align: right;
 }
@@ -286,10 +288,12 @@ table.messagelist.fixedcopy {
 .messagelist tr > .to,
 .messagelist tr > .cc,
 .messagelist tr > .replyto {
+	color: #828282;
 	width: 200px;
 }
 
 .messagelist tr > .date {
+	color: #828282;
 	width: 155px;
 }
 
@@ -531,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #828282;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -872,7 +877,7 @@ div.hide-headers {
 	right: 8px;
 	width: 230px;
 	min-height: 200px;
-	background: #d4d4d4;
+	background-color: #d4d4d4;
 	padding: 8px;
 	border-radius: 4px;
 	z-index: 1;
@@ -900,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #434343 !important;
+	border: 1px solid #434343;
+	background-color: #d4d4d4 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -917,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #828282 !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -961,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #828282;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #828282;
 	width: 100%;
 }
 
@@ -1101,7 +1109,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts .listsearchbox {
-	background: #a9a9a9;
+	background-color: #a9a9a9;
 	display: block;
 }
 
@@ -1303,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #828282;
+	background-color: #e3e3e3;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1350,7 +1360,7 @@ div.message-partheaders .headers-table td.header {
 	color: #434343;
 	position: absolute;
 	right: 0;
-	top: 1px;
+	top: 0;
 	bottom: 0;
 	width: 240px;
 	background: #a9a9a9;
@@ -1442,7 +1452,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 .widescreen #messagelistcontainer {
-	background: #d4d4d4;
+	background-color: #d4d4d4;
 	top: 34px;
 	overflow-x: hidden;
 }

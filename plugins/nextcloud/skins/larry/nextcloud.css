@@ -1,4 +1,6 @@
-﻿#taskbar a.button-nextcloud span.button-inner
+﻿/* CSS for NextCloud "Larry" Skin */
+
+#taskbar a.button-nextcloud span.button-inner
 {
   background: url(images/nextcloud_button.png) 3px 0px no-repeat;
   height: 18px;

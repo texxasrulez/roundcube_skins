@@ -259,6 +259,7 @@ table.messagelist.fixedcopy {
 .messagelist tr > .status,
 .messagelist tr > .flag,
 .messagelist tr > .priority {
+	color: #81580d;
 	width: 20px;
 	padding: 2px 3px !important;
 }
@@ -273,6 +274,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tr > .size {
+	color: #81580d;
 	width: 60px;
 	text-align: right;
 }
@@ -533,6 +535,7 @@ table.messagelist.fixedcopy {
 }
 
 .messagelist tbody tr td.subject a {
+	color: #81580d;
 	cursor: default;
 	vertical-align: middle; /* #1487091 */
 }
@@ -902,9 +905,9 @@ div.hide-headers {
 
 #message-objects div.notice {
 	display: block;
-	color: #960;
-	border: 1px solid #ffdf0e;
-	background-color: #fef893;
+	color: #81580d !important;
+	border: 1px solid #81570d;
+	background-color: #d8ca98 !important;
 	background-position: 5px -83px;
 	padding: 6px 12px 6px 30px;
 	white-space: normal;
@@ -919,6 +922,7 @@ div.hide-headers {
 div.message-part,
 div.message-htmlpart,
 div.message-partheaders {
+	color: #81580d !important;
 	padding: 10px 2px;
 	border-top: 1px solid #ccc;
 }
@@ -963,11 +967,13 @@ div.message-part blockquote blockquote blockquote {
 }
 
 div.message-partheaders {
+	color: #81580d;
 	margin-top: 8px;
 	padding: 8px 0;
 }
 
 div.message-partheaders .headers-table {
+	color: #81580d;
 	width: 100%;
 }
 
@@ -1003,7 +1009,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #messagebody legend.image-filename {
-	color: #999;
+	color: #81580d;
 	font-size: 0.9em;
 	margin: 0 1em;
 }
@@ -1103,6 +1109,7 @@ div.message-partheaders .headers-table td.header {
 }
 
 #compose-contacts .listsearchbox {
+	background-color: #eadfbc;
 	display: block;
 }
 
@@ -1304,6 +1311,8 @@ div.message-partheaders .headers-table td.header {
 }
 
 #composebodycontainer {
+	color: #81580d;
+	background-color: #eadfbc;
 	position: absolute;
 	top: 0;
 	left: 0;
