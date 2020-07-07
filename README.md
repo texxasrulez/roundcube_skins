@@ -1,5 +1,7 @@
 # Colorful Roundcube Skins based off Larry
 
+## Compatible with Roundcube 1.4.7	
+
 **Major Changes since 07/06/2020**
 
 Completely redesigned Tabs.

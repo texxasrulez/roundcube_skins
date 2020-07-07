@@ -329,7 +329,7 @@ form #contacthead {
 	padding: 6px 8px 3px 8px;
 	background: #81570d;
 	border-bottom: 1px solid #cfcfcf;
-	border-radius: 5px 5px 0 0;
+	border-radius: 0;
 }
 
 .contactfieldgroup .row {
