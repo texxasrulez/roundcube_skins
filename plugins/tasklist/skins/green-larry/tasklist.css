@@ -111,7 +111,7 @@ ul.toolbarmenu li span.icon.taskadd,
 
 #taskselector li a {
 	display: inline-block;
-	color: #354516;
+	color: #fff;
 	min-width: 3.5em;
 	padding: 0.2em 0.6em 0.2em 0.6em;
 	text-align: center;
@@ -452,7 +452,7 @@ ul.toolbarmenu li span.icon.taskadd,
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0,0,0, 0.2);
+	background: rgba(234,243,209, 0.95);
 	overflow: visible;
 }
 
@@ -476,13 +476,14 @@ ul.toolbarmenu li span.icon.taskadd,
 }
 
 #tasksview .buttonbar {
-	color: #777;
-	background: #eee;
-	background: -moz-linear-gradient(top, #eee 0%, #dfdfdf 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eee), color-stop(100%,#dfdfdf));
-	background: -o-linear-gradient(top, #eee 0%, #dfdfdf 100%);
-	background: -ms-linear-gradient(top, #eee 0%, #dfdfdf 100%);
-	background: linear-gradient(top, #eee 0%, #dfdfdf 100%);
+	color: #fff;
+	background: #354516;
+	background: -moz-linear-gradient(top, #354516 0%, #5c702f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#5c702f));
+	background: -webkit-linear-gradient(top, #354516 0%, #5c702f 100%);
+	background: -o-linear-gradient(top, #354516 0%, #5c702f 100%);
+	background: -ms-linear-gradient(top, #354516 0%, #5c702f 100%);
+	background: linear-gradient(to bottom, #354516 0%, #5c702f 100%);
 	border-bottom: 1px solid #ccc;
 	position: relative;
 	line-height: 13px;
@@ -519,7 +520,7 @@ ul.toolbarmenu li span.icon.taskadd,
 #listmessagebox {
 	display: none;
 	font-size: 14px;
-	color: #eaece7;
+	color: #354516;
 	margin: 1.5em;
 	text-align:center;
 }
@@ -1071,7 +1072,7 @@ label.block {
 }
 
 #taskedit .droptarget {
-	background-image: url(../../../../skins/larry/images/filedrop.png) !important;
+	background-image: url(../../../../skins/green-larry/images/filedrop.png) !important;
 	background-position: center bottom !important;
 	background-repeat: no-repeat !important;
 }

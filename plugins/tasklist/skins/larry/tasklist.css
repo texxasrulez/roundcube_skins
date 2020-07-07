@@ -1,5 +1,5 @@
 /**
- * Roundcube Taklist plugin styles for skin "Grey-Larry"
+ * Roundcube Taklist plugin styles for skin "Larry"
  *
  * Copyright (C) 2012, Kolab Systems AG <contact@kolabsys.com>
  * Screendesign by FLINT / Büro für Gestaltung, bueroflint.com
@@ -111,7 +111,7 @@ ul.toolbarmenu li span.icon.taskadd,
 
 #taskselector li a {
 	display: inline-block;
-	color: #fff;
+	color: #004458;
 	min-width: 3.5em;
 	padding: 0.2em 0.6em 0.2em 0.6em;
 	text-align: center;
@@ -145,17 +145,7 @@ ul.toolbarmenu li span.icon.taskadd,
 
 #taskselector li.selected a {
 	color: #fff;
-	background: #c2c2c2;
-	background: -moz-linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c2c2c2), color-stop(100%,#434343));
-	background: -o-linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	background: -ms-linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	background: linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	box-shadow: inset 0 1px 1px 0 #c2c2c2;
-	-o-box-shadow: inset 0 1px 1px 0 #c2c2c2;
-	-webkit-box-shadow: inset 0 1px 1px 0 #c2c2c2;
-	-moz-box-shadow: inset 0 1px 1px 0 #c2c2c2;
-	border-color: #434343;
+	background: #005d76;
 	border-radius: 10px;
 	text-shadow: none;
 }
@@ -167,13 +157,7 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 5px;
 	min-width: 1.8em;
 	padding: 2px 4px;
-	background: #434343;
-	background: -moz-linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c2c2c2), color-stop(100%,#434343));
-	background: -o-linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	background: -ms-linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	background: linear-gradient(top, #c2c2c2 0%, #434343 100%);
-	box-shadow: 0 1px 2px 0 rgba(67,67,67,0.6);
+	background: #004558;
 	color: #fff;
 	border-radius: 3px;
 	text-align: center;
@@ -190,7 +174,7 @@ ul.toolbarmenu li span.icon.taskadd,
 	margin-left: -5px;
 	border-style: solid;
 	border-width: 5px 5px 0;
-	border-color: #434343 transparent;
+	border-color: #004558 transparent;
 	/* reduce the damage in FF3.0 */
 	display: block; 
 	width: 0;
@@ -246,7 +230,7 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 40px;
 	cursor: default;
 	padding: 0px 30px 2px 2px;
-	color: #ececec;
+	color: #004458;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -276,15 +260,9 @@ ul.toolbarmenu li span.icon.taskadd,
 #tasklistsbox .treelist div:hover span.actions {
 	top: 1px;
 	right: 1px;
-	border: 1px solid #c6c6c6;
+	border: 1px solid #ababab;
 	border-radius: 4px;
-	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
+	background: #f1f1f1;
 }
 
 #tasklistsbox .treelist div a.remove,
@@ -451,7 +429,7 @@ ul.toolbarmenu li span.icon.taskadd,
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(212,212,212, 0.95);
+	background: rgba(255, 255, 255, 0.25);
 	overflow: visible;
 }
 
@@ -475,13 +453,8 @@ ul.toolbarmenu li span.icon.taskadd,
 }
 
 #tasksview .buttonbar {
-	color: #000;
-	background: #434343;
-	background: -moz-linear-gradient(top, #434343 0%, #606060 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#434343), color-stop(100%,#606060));
-	background: -webkit-linear-gradient(top, #434343 0%, #606060 100%);
-	background: -o-linear-gradient(top, #434343 0%, #606060 100%);
-	background: linear-gradient(top, #434343 0%, #606060 100%);
+	color: #777;
+	background: #eaeaea;
 	border-bottom: 1px solid #ccc;
 	position: relative;
 	line-height: 13px;
@@ -518,7 +491,7 @@ ul.toolbarmenu li span.icon.taskadd,
 #listmessagebox {
 	display: none;
 	font-size: 14px;
-	color: #434343;
+	color: #666;
 	margin: 1.5em;
 	text-align:center;
 }
@@ -568,9 +541,9 @@ ul.toolbarmenu li span.icon.taskadd,
 	border: 1px solid #fff;
 	border-radius: 5px;
 	background: #fff;
-	-webkit-box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.5);
-	-moz-box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.5);
-	box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.5);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.4);
+	box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.4);
 	padding-right: 26em;
 	white-space: nowrap;
 	overflow: hidden;
@@ -764,7 +737,7 @@ ul.toolbarmenu .sortcol.by-auto a {
 	color: #ccc;
 	opacity: 0.92;
 	filter: alpha(opacity=90);
-	text-shadow: none;
+	text-shadow: 0px 1px 1px #333;
 }
 
 #rootdroppable {
@@ -1070,7 +1043,7 @@ label.block {
 }
 
 #taskedit .droptarget {
-	background-image: url(../../../../skins/grey-larry/images/filedrop.png) !important;
+	background-image: url(../../../../skins/larry/images/filedrop.png) !important;
 	background-position: center bottom !important;
 	background-repeat: no-repeat !important;
 }
@@ -1388,7 +1361,7 @@ div.messagetasklinks a.messagetasklink {
 	color: #333;
 	font-weight: bold;
 	padding: 3px 0 2px 2px;
-	text-shadow: none;
+	text-shadow: 0px 1px 1px #fff;
 	text-decoration: none;
 	white-space: nowrap;
 	vertical-align: middle;

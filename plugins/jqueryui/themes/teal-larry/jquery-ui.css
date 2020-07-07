@@ -923,11 +923,11 @@ button.ui-button::-moz-focus-inner {
 	padding: 0 1px 0 0;
 	white-space: nowrap;
 	background: #0e4f55;
-	background: -moz-linear-gradient(top, #0e4f55 0%, #2a7674 50%, #0e4f55 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4f55), color-stop(50%,#2a7674), color-stop(100%,#0e4f55));
-	background: -webkit-linear-gradient(top, #0e4f55 0%, #2a7674 50%, #0e4f55 100%);
-	background: -o-linear-gradient(top, #0e4f55 0%, #2a7674 50%, #0e4f55 100%);
-	background: -ms-linear-gradient(top, #0e4f55 0%, #2a7674 50%, #0e4f55 100%);
+	background: -moz-linear-gradient(top, #0e4f55 0%, #2a7674 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4f55), color-stop(100%,#2a7674));
+	background: -webkit-linear-gradient(top, #0e4f55 0%, #2a7674 100%);
+	background: -o-linear-gradient(top, #0e4f55 0%, #2a7674 100%);
+	background: -ms-linear-gradient(top, #0e4f55 0%, #2a7674 100%);
 	border-bottom: 1px solid #0e4f55;
 	border-radius: 8px 8px 0px 0px;
 }
