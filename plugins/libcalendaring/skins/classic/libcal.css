@@ -1,5 +1,5 @@
 /**
- * Roundcube libcalendaring plugin styles for skin "Grey-Larry"
+ * Roundcube libcalendaring plugin styles for skin "Larry"
  *
  * Copyright (c) 2012-2014, Kolab Systems AG <contact@kolabsys.com>
  *
@@ -47,7 +47,7 @@ span.edit-alarm-set {
 }
 
 .ui-dialog.alarms .ui-dialog-title {
-	background-image: url(../../../../skins/grey-larry/images/messages.png);
+	background-image: url(../../../../skins/classic/images/messages.png);
 	background-repeat: no-repeat;
 	background-position: 0 -91px;
 	padding-left: 24px;

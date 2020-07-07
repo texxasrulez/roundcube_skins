@@ -47,7 +47,7 @@ span.edit-alarm-set {
 }
 
 .ui-dialog.alarms .ui-dialog-title {
-	background-image: url(../../../../skins/larry/images/messages.png);
+	background-image: url(../../../../skins/autumn-larry/images/messages.png);
 	background-repeat: no-repeat;
 	background-position: 0 -91px;
 	padding-left: 24px;
@@ -163,7 +163,7 @@ label.noreply-toggle + a.reply-comment-toggle {
 }
 
 .edit-attendees-table td.options a.button {
-	border: 0;
+	border: none;
 }
 
 .ui-widget-content a.button {
@@ -192,7 +192,7 @@ label.noreply-toggle + a.reply-comment-toggle {
 	text-align: center;
 	font-weight: bold;
 	font-size: 12px;
-	color: #fff;
+	color: #fcfaf9;
 	box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
