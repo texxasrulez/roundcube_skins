@@ -238,6 +238,9 @@
 #contactpic img {
     max-width: 112px;
     visibility: inherit;
+	border: 1px solid #0e4f55;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px 0 #0e4f55;
 }
 
 #contactpic.droptarget {

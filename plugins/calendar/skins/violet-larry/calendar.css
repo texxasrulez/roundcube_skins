@@ -140,7 +140,7 @@ div.sidebarclosed {
 	bottom: 5px;
 	right: 12px;
 	font-size: 0.85em;
-	color: #666;
+	color: #eeddf1;
 }
 
 #print {
@@ -203,8 +203,7 @@ pre {
 	height: 22px;
 }
 
-#calendars .treelist li a.calname,
-#calendars .treelist li.selected a.calname {
+#calendars .treelist li a.calname {
 	display: block;
 	padding: 0px 18px 2px 2px;
 	position: absolute;
@@ -216,6 +215,11 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	color: #3f1a67;
+	font-weight: bold;
+}
+
+#calendars .treelist li.selected a.calname {
 	color: #fff;
 }
 
@@ -265,25 +269,24 @@ pre {
 	display: inline-block;
 	position: absolute;
 	top: 2px;
-	right: 22px;
+	right: 25px;
 	padding: 5px 20px 0 6px;
-/*	min-width: 40px; */
+	min-width: 40px;
 	height: 19px;
 	text-align: right;
-	z-index: 4;
 }
 
 #calendars .treelist div:hover span.actions {
-	top: 1px;
-	right: 21px;
+	top: 2px;
+	right: 25px;
 	border: 1px solid #caa3d2;
 	border-radius: 4px;
 	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #9145e2 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#9145e2));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #9145e2 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #9145e2 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #9145e2 100%);
+	background: -moz-linear-gradient(top, #672fa3 0%, #3f1a67 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#672fa3), color-stop(100%,#3f1a67));
+	background: -o-linear-gradient(top, #672fa3 0%, #3f1a67 100%);
+	background: -ms-linear-gradient(top, #672fa3 0%, #3f1a67 100%);
+	background: linear-gradient(top, #672fa3 0%, #3f1a67 100%);
 }
 
 #calendars .treelist li a.subscribed {
@@ -319,7 +322,7 @@ pre {
 #calendars .treelist div a.quickview:focus,
 #calendars .treelist div a.subscribed:focus {
 	border-radius: 3px;
-	outline: 2px solid rgba(82,5,101, 0.5);
+	outline: 1px solid rgba(221,187,228, 0.95);
 }
 
 #calendars .treelist div a.remove,

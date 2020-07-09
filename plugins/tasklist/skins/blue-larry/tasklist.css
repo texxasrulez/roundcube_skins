@@ -230,11 +230,16 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 40px;
 	cursor: default;
 	padding: 0px 30px 2px 2px;
-	color: #e7eaeb;
+	color: #152f40;
+	font-weight: bold;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	background: url(images/sprites.png) right 20px no-repeat;
+}
+
+#tasklistsbox .treelist li.selected a.listname {
+	color: #fff;
 }
 
 .quickview-active #tasklistsbox .treelist li input,
@@ -262,7 +267,12 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 1px;
 	border: 1px solid #c6c6c6;
 	border-radius: 4px;
-	background: #f7f7f7;
+	background-color: #255475;
+	background-image: -moz-linear-gradient(top, #255475, #152f40);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#255475), to(#152f40));
+	background-image: -webkit-linear-gradient(top, #255475, #152f40);
+	background-image: -o-linear-gradient(top, #255475, #152f40);
+	background-image: linear-gradient(to bottom, #255475, #152f40);
 }
 
 #tasklistsbox .treelist div a.remove,
@@ -421,6 +431,13 @@ ul.toolbarmenu li span.icon.taskadd,
 	margin-left: 5px;
 	padding: 4px 10px;
 	font-weight: bold;
+	color: #fff;
+	background-color: #255475;
+	background-image: -moz-linear-gradient(top, #255475, #152f40);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#255475), to(#152f40));
+	background-image: -webkit-linear-gradient(top, #255475, #152f40);
+	background-image: -o-linear-gradient(top, #255475, #152f40);
+	background-image: linear-gradient(to bottom, #255475, #152f40);
 }
 
 #tasksview {

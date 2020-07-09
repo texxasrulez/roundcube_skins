@@ -140,7 +140,7 @@ div.sidebarclosed {
 	bottom: 5px;
 	right: 12px;
 	font-size: 0.85em;
-	color: #666;
+	color: #e6e6e6;
 }
 
 #print {
@@ -203,8 +203,7 @@ pre {
 	height: 22px;
 }
 
-#calendars .treelist li a.calname,
-#calendars .treelist li.selected a.calname {
+#calendars .treelist li a.calname {
 	display: block;
 	padding: 0px 18px 2px 2px;
 	position: absolute;
@@ -216,6 +215,11 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	color: #fff;
+	font-weight: bold;
+}
+
+#calendars .treelist li.selected a.calname {
 	color: #efe7e6;
 }
 
@@ -262,17 +266,16 @@ pre {
 	display: inline-block;
 	position: absolute;
 	top: 2px;
-	right: 22px;
+	right: 25px;
 	padding: 5px 20px 0 6px;
-/*	min-width: 40px; */
+	min-width: 40px;
 	height: 19px;
 	text-align: right;
-	z-index: 4;
 }
 
 #calendars .treelist div:hover span.actions {
-	top: 1px;
-	right: 21px;
+	top: 2px;
+	right: 25px;
 	border: 1px solid #52525b;
 	border-radius: 4px;
 	background: #474752;

@@ -246,11 +246,16 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 40px;
 	cursor: default;
 	padding: 0px 30px 2px 2px;
-	color: #f0e8ec;
+	color: #6d1f49;
+	font-weight: bold;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	background: url(images/sprites.png) right 20px no-repeat;
+}
+
+#tasklistsbox .treelist li.selected a.listname {
+	color: #fff;
 }
 
 .quickview-active #tasklistsbox .treelist li input,
@@ -278,13 +283,13 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 1px;
 	border: 1px solid #c6c6c6;
 	border-radius: 4px;
-	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
+	background-color: #c3629e;
+	background-image: -moz-linear-gradient(top, #c3629e, #6d1f49);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c3629e), to(#6d1f49));
+	background-image: -webkit-linear-gradient(top, #c3629e, #6d1f49);
+	background-image: -o-linear-gradient(top, #c3629e, #6d1f49);
+	background-image: linear-gradient(to bottom, #c3629e, #6d1f49);
+	box-shadow: 0 1px 1px 0 #d19cb7;
 }
 
 #tasklistsbox .treelist div a.remove,
@@ -443,6 +448,14 @@ ul.toolbarmenu li span.icon.taskadd,
 	margin-left: 5px;
 	padding: 4px 10px;
 	font-weight: bold;
+	color: #fff;
+	background-color: #c3629e;
+	background-image: -moz-linear-gradient(top, #c3629e, #6d1f49);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c3629e), to(#6d1f49));
+	background-image: -webkit-linear-gradient(top, #c3629e, #6d1f49);
+	background-image: -o-linear-gradient(top, #c3629e, #6d1f49);
+	background-image: linear-gradient(to bottom, #c3629e, #6d1f49);
+	box-shadow: 0 1px 1px 0 #d19cb7;
 }
 
 #tasksview {

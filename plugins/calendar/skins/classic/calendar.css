@@ -328,44 +328,21 @@ pre {
 	opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
 }
 
-#calendartoolbar a.buttonPas {
-	opacity: 0.35;
+#calendartoolbar a.button.addevent {
+	background-position: center 1px;
+	max-width: 70px;
 }
 
-#calendartoolbar a.addeventSel {
-	background-position: 0 -32px;
+#calendartoolbar a.button.export {
+	background-position: center -40px;
 }
 
-#calendartoolbar a.delete {
-  background-position: -32px 0;
+#calendartoolbar a.button.import {
+	background-position: center -440px;
 }
 
-#calendartoolbar a.deleteSel {
-  background-position: -32px -32px;
-}
-
-#calendartoolbar a.print {
-  background-position: -64px 0;
-}
-
-#calendartoolbar a.printSel {
-  background-position: -64px -32px;
-}
-
-#calendartoolbar a.import {
-	background-position: -168px 0;
-}
-
-#calendartoolbar a.importSel {
-	background-position: -168px -32px;
-}
-
-#calendartoolbar a.export {
-	background-position: -128px 0;
-}
-
-#calendartoolbar a.exportSel {
-	background-position: -128px -32px;
+#calendartoolbar a.button.print {
+	background-position: center -80px;
 }
 
 .calendarmain #quicksearchbar {

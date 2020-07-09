@@ -140,7 +140,7 @@ div.sidebarclosed {
 	bottom: 5px;
 	right: 12px;
 	font-size: 0.85em;
-	color: #666;
+	color: #d9ecf4;
 }
 
 #print {
@@ -203,8 +203,7 @@ pre {
 	height: 22px;
 }
 
-#calendars .treelist li a.calname,
-#calendars .treelist li.selected a.calname {
+#calendars .treelist li a.calname {
 	display: block;
 	padding: 0px 18px 2px 2px;
 	position: absolute;
@@ -216,6 +215,11 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	color: #152f40;
+	font-weight: bold;
+}
+
+#calendars .treelist li.selected a.calname {
 	color: #e7eaeb;
 }
 
@@ -264,18 +268,17 @@ pre {
 #calendars .treelist div span.actions {
 	display: inline-block;
 	position: absolute;
-	top: 2px;
-	right: 22px;
+	top: 1px;
+	right: 25px;
 	padding: 5px 20px 0 6px;
-/*	min-width: 40px; */
+	min-width: 40px;
 	height: 19px;
 	text-align: right;
-	z-index: 4;
 }
 
 #calendars .treelist div:hover span.actions {
 	top: 1px;
-	right: 21px;
+	right: 25px;
 	border: 1px solid #5b6d79;
 	border-radius: 4px;
 	background: #152f40;
@@ -1744,11 +1747,11 @@ a.dropdown-link:after {
 	text-shadow: none;
 	border: 1px solid #5b6d79;
 	background: #152f40;
-	background: -moz-linear-gradient(top, #152f40 0%, #255475 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#152f40), color-stop(100%,#255475));
-	background: -o-linear-gradient(top, #152f40 0%, #255475 100%);
-	background: -ms-linear-gradient(top, #152f40 0%, #255475 100%);
-	background: linear-gradient(top, #152f40 0%, #255475 100%);
+	background: -moz-linear-gradient(top, #255475 0%, #152f40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255475), color-stop(100%,#152f40));
+	background: -o-linear-gradient(top, #255475 0%, #152f40 100%);
+	background: -ms-linear-gradient(top, #255475 0%, #152f40 100%);
+	background: linear-gradient(top, #255475 0%, #152f40 100%);
 	box-shadow: 0 1px 1px 0 #fbe4d7;
 	-o-box-shadow: 0 1px 1px 0 #fbe4d7;
 	-webkit-box-shadow: 0 1px 1px 0 #fbe4d7;

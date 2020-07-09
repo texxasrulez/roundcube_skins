@@ -238,6 +238,9 @@
 #contactpic img {
 	max-width: 112px;
 	visibility: inherit;
+	border: 1px solid #354516;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px 0 #354516;
 }
 
 #contactpic.droptarget {
@@ -328,10 +331,6 @@ form #contacthead {
 	text-shadow: none;
 	padding: 6px 8px 3px 8px;
 	background: #354516;
-	background: -moz-linear-gradient(top, #354516 0%, #829947 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#354516), color-stop(100%,#829947));
-	background: -ms-linear-gradient(top, #354516 0%, #829947 100%);
-	background: linear-gradient(to bottom, #354516 0%, #829947 100%);
 	border-bottom: 1px solid #cfcfcf;
 	border-radius: 0;
 }

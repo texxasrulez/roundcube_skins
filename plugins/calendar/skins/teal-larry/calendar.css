@@ -11,7 +11,7 @@
  */
 
 body.calendarmain {
-	color: #53b0a3;
+	color: #fff;
 	overflow: hidden;
 }
 
@@ -83,7 +83,7 @@ body.calendarmain #mainscreen {
 }
 
 #datepicker .ui-datepicker-activerange a.ui-state-active {
-	color: #53b0a3;
+	color: #fff;
 	background: #00acd4;
 }
 
@@ -140,7 +140,7 @@ div.sidebarclosed {
 	bottom: 5px;
 	right: 12px;
 	font-size: 0.85em;
-	color: #666;
+	color: #cdf7f1;
 }
 
 #print {
@@ -203,8 +203,7 @@ pre {
 	height: 22px;
 }
 
-#calendars .treelist li a.calname,
-#calendars .treelist li.selected a.calname {
+#calendars .treelist li a.calname {
 	display: block;
 	padding: 0px 18px 2px 2px;
 	position: absolute;
@@ -216,6 +215,11 @@ pre {
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	color: #0e4f55;
+	font-weight: bold;
+}
+
+#calendars .treelist li.selected a.calname {
 	color: #fff;
 }
 
@@ -265,25 +269,24 @@ pre {
 	display: inline-block;
 	position: absolute;
 	top: 2px;
-	right: 22px;
+	right: 25px;
 	padding: 5px 20px 0 6px;
-/*	min-width: 40px; */
+	min-width: 40px;
 	height: 19px;
 	text-align: right;
-	z-index: 4;
 }
 
 #calendars .treelist div:hover span.actions {
-	top: 1px;
-	right: 21px;
+	top: 2px;
+	right: 25px;
 	border: 1px solid #f0fcfa;
 	border-radius: 4px;
-	background: #f7f7f7;
-	background: -moz-linear-gradient(top, #f9f9f9 0%, #0e4f55 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#0e4f55));
-	background: -o-linear-gradient(top, #f9f9f9 0%, #0e4f55 100%);
-	background: -ms-linear-gradient(top, #f9f9f9 0%, #0e4f55 100%);
-	background: linear-gradient(top, #f9f9f9 0%, #0e4f55 100%);
+	background: #0e4f55;
+	background: -moz-linear-gradient(top, #2a7674 0%, #0e4f55 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a7674), color-stop(100%,#0e4f55));
+	background: -o-linear-gradient(top, #2a7674 0%, #0e4f55 100%);
+	background: -ms-linear-gradient(top, #2a7674 0%, #0e4f55 100%);
+	background: linear-gradient(top, #2a7674 0%, #0e4f55 100%);
 }
 
 #calendars .treelist li a.subscribed {
@@ -1728,7 +1731,7 @@ a.dropdown-link:after {
 .calendarmain .fc-button.fc-state-default,
 .calendarmain .fc-button.fc-state-hover {
 	border: 1px solid #fcfaf9;
-	background: #0e4f55;
+	background: #fff;
 	background-image: -moz-linear-gradient(top, #53b0a3, #0e4f55);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#53b0a3), to(#0e4f55));
 	background-image: -webkit-linear-gradient(top, #53b0a3, #0e4f55);
@@ -1749,7 +1752,7 @@ a.dropdown-link:after {
 	margin-top: -2px;
 	height: 26px;
 	line-height: 26px;
-	color: #53b0a3;
+	color: #fff;
 	border: 1px solid #f0fcfa;
 	background: #53b0a3;
 	background: -moz-linear-gradient(top, #53b0a3 0%, #0e4f55 100%);
@@ -1818,11 +1821,11 @@ a.dropdown-link:after {
 	border-radius: 3px;
 }
 
-.calendarmain #calendar .fc-left .fc-button::-moz-focus-inner {
+.calendarmain #calendar .fc-header-left .fc-button::-moz-focus-inner {
 	border: 0;
 }
 
-.calendarmain #calendar .fc-left .fc-button.fc-state-active {
+.calendarmain #calendar .fc-header-left .fc-button.fc-state-active {
 	font-weight: bold;
 	color: #fff;
 	text-shadow: none;

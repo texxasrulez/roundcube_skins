@@ -145,7 +145,7 @@ ul.toolbarmenu li span.icon.taskadd,
 
 #taskselector li.selected a {
 	color: #fff;
-	background: #bdbdbd;
+	background: #828282;
 	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
 	background: -o-linear-gradient(top, #bdbdbd 0%, #828282 100%);
@@ -246,11 +246,16 @@ ul.toolbarmenu li span.icon.taskadd,
 	right: 40px;
 	cursor: default;
 	padding: 0px 30px 2px 2px;
-	color: #f2f2f2;
+	color: #000;
+	font-weight: bold;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	background: url(images/sprites.png) right 20px no-repeat;
+}
+
+#tasklistsbox .treelist li.selected a.listname {
+	color: #fff;
 }
 
 .quickview-active #tasklistsbox .treelist li input,
@@ -443,6 +448,13 @@ ul.toolbarmenu li span.icon.taskadd,
 	margin-left: 5px;
 	padding: 4px 10px;
 	font-weight: bold;
+	color: #fff;
+	background: #828282;
+	background: -moz-linear-gradient(top, #bdbdbd 0%, #828282 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(100%,#828282));
+	background: -o-linear-gradient(top, #bdbdbd 0%, #828282 100%);
+	background: -ms-linear-gradient(top, #bdbdbd 0%, #828282 100%);
+	background: linear-gradient(top, #bdbdbd 0%, #828282 100%);
 }
 
 #tasksview {
