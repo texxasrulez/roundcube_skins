@@ -5,8 +5,8 @@
     "homepage": "https://github.com/texxasrulez/roundcube_skins",
     "keywords": ["roundcube, theme, skin"],
 	"license": "Creative Commons Attribution-ShareAlike",
-	"license-url": "http://creativecommons.org/licenses/by-sa/3.0/"
-	"version": "1.4.7.2",
+	"license-url": "http://creativecommons.org/licenses/by-sa/3.0/",
+	"version": "1.4.7.2"
     "authors": [
         {
             "name": "Gene Hawkins",
