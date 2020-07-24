@@ -3,7 +3,6 @@
     "type": "roundcube-skin",
     "description": "Colorful skins based on Larry",
     "homepage": "https://github.com/texxasrulez/roundcube_skins",
-    "keywords": ["roundcube, theme, skin"],
 	"version": "1.4.7.2",
     "authors": [
         {
