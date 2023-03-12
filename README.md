@@ -1,6 +1,6 @@
 # Colorful Roundcube Skins based off Larry
 
-## Compatible with Roundcube 1.4.7	
+## Compatible with Roundcube 1.6	
 
 **Major Changes since 07/06/2020**
 
@@ -35,6 +35,7 @@ hide_blockquote\
 jqueryui\
 keyboard_shortcuts\
 libcalendaring\
+libkolab\
 managesieve\
 markasjunk\
 message_highlight\
@@ -56,6 +57,9 @@ Installation is easy. Upload plugins and skins folders to your Roundcube install
 Note: Current Commit should be a working version of my ongoing nitpicking of some small color changes and making transparent images when necessary. Download and use with confidence.
 
 Latest Update makes skins compatible with Roundcube 1.4 ...
+
+**Version info**
+You may see my versions skip numbers and the reason for that is I just make the version number of this repo to correspond with the latest version of Roundcube I have tested these on and not my actual released versions.
 
 
 Enjoy!
