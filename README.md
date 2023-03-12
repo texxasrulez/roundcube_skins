@@ -59,6 +59,7 @@ Note: Current Commit should be a working version of my ongoing nitpicking of som
 Latest Update makes skins compatible with Roundcube 1.4 ...
 
 **Version info**
+
 You may see my versions skip numbers and the reason for that is I just make the version number of this repo to correspond with the latest version of Roundcube I have tested these on and not my actual released versions.
 
 
