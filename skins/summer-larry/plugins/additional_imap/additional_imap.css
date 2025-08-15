@@ -1,0 +1,38 @@
+/***************************************************************************
+ * Summer-Larry Theme              
+ ***************************************************************************/
+
+select.deco {
+	height:18px;
+	font-size:12px;
+	font-weight: bold;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	color:#fdf6f3;
+	background:#302505;
+	border:1px solid #ccb159;	
+	}
+	
+	.remotehint {
+	height:15px;
+	z-index:1;
+	position:absolute;
+	top:1px;
+	margin-left:auto;
+	left:50%;
+	margin-left:-200px;
+	width:auto;
+	border-radius:5px;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	padding-left: 15px;
+	-moz-border-radius:5px;
+	border:1px solid #ccb159;
+	background:#593a04;
+	text-align:center;
+	color:#ffff00;
+	font-weight: bold;
+	display:inline;
+	}

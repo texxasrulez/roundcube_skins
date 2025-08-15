@@ -1,0 +1,311 @@
+/**
+ * SAUserPrefs plugin styles for "Summer-Larry"
+ */
+
+#address-rules-cont,
+#spam-langs-cont
+{
+  height: 200px;
+  overflow: auto;
+  width: 100%;
+}
+
+table.records-table
+{
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border: 0;
+  margin: 0px;
+}
+
+table.records-table thead th
+{
+  background: none;
+  background-color: #81570d;
+  font-weight: bold;
+  color: #f2eee6;
+}
+
+table.records-table thead th a
+{
+  color: #f2eee6;
+  padding: 0;
+}
+
+table.records-table thead th a:focus
+{
+  color: #81570d;
+  font-weight: normal;
+  background-color: transparent;
+  text-shadow: none;
+}
+
+table.spam-langs-table tr > .lang
+{
+  color: #81570d;
+  width: 90%;
+}
+
+table.spam-langs-table tr > .tick
+{
+  width: 10%;
+}
+
+table.spam-langs-table thead th.tick a
+{
+  padding-right: 24px;
+}
+
+table.sortable-table thead th.sortedASC a
+{
+  text-decoration: underline;
+  background: url(images/listicons.png) no-repeat right -298px;
+}
+
+table.sortable-table thead th.sortedDESC a
+{
+  text-decoration: underline;
+  background: url(images/listicons.png) no-repeat right -330px;
+}
+
+table.address-rules-table thead th.rule
+{
+  width: 180px;
+}
+
+table.address-rules-table thead th.control
+{
+  width: 40px;
+}
+
+table.spam-langs-table tr > .lang,
+table.address-rules-table tr > .rule
+{
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+  border-left: 0;
+  border-right: 0;
+}
+
+table.address-rules-table tr > .email
+{
+  color: #5b3b01;
+  text-align: left;
+  vertical-align: middle;
+  border-left: 0;
+  border-right: 0;
+}
+
+table.spam-langs-table tr > .tick,
+table.address-rules-table tr > .control
+{
+  text-align: right;
+  vertical-align: middle;
+  border-left: 0;
+  border-right: 0;
+}
+
+table.spam-langs-table tbody td.tick a,
+table.address-rules-table tbody td.control a
+{
+  display: block;
+  float: right;
+  width: 16px;
+  height: 16px;
+  background-image: url(images/icons.png);
+  cursor: pointer;
+}
+
+table.address-rules-table tr > .control a.delete
+{
+  background-position: 0 -1px;
+}
+
+table.spam-langs-table tr > .tick a.lang-enabled
+{
+  background-position: 0 -18px;
+}
+
+table.spam-langs-table tr > .tick a.lang-disabled
+{
+  background-position: 0 -36px;
+}
+
+.whitelist_from td.rule,
+.whitelist_to td.rule
+{
+  color: #008800;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.blacklist_from td.rule
+{
+  color: #BB0000;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#listcontrols
+{
+  font-size: 11px;
+  text-align: right;
+}
+
+#listcontrols a,
+#listcontrols a:active,
+#listcontrols a:visited
+{
+  color: #2D5986;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+#listcontrols a:hover
+{
+  text-decoration: underline;
+}
+
+table.addressprefstable td
+{
+  width: auto;
+}
+
+div.address-input {
+  margin-bottom: 10px;
+}
+
+div.address-input > input  {
+  margin-left: 10px;
+}
+
+table.addressprefstable tr > .ruletype
+{
+  width: 180px;
+}
+
+table.addressprefstable tr > .address
+{
+  width: 220px;
+}
+
+table.addressprefstable tr > .action
+{
+  width: 100px;
+  text-align: right;
+}
+
+table.propform tr > .scroller
+{
+  padding: 0;
+}
+
+table.propform tr > .bayesdelete
+{
+  background-color: transparent;
+  padding-top: 8px;
+  padding-left: 4px;
+}
+
+table.test-scores-table tr > td.title {
+  width: 75%;
+}
+
+span.helpicon
+{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: right;
+  background-image: url(images/icons.png);
+  background-position: 0 -55px;
+}
+
+input.error {
+  background-color: #f2eee6F88;
+}
+
+#sections-table #rcmrowtests td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -225px;
+}
+
+#sections-table #rcmrowtests.selected td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -199px;
+}
+
+#sections-table #rcmrowbayes td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -270px;
+}
+
+#sections-table #rcmrowbayes.selected td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -248px;
+}
+
+#sections-table #rcmrowheaders td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -124px;
+}
+
+#sections-table #rcmrowheaders.selected td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -99px;
+}
+
+#sections-table #rcmrowreport td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -174px;
+}
+
+#sections-table #rcmrowreport.selected td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 3px -150px;
+}
+
+#sections-table #rcmrowaddresses td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 2px -74px;
+}
+
+#sections-table #rcmrowaddresses.selected td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 2px -50px;
+}
+
+#sections-table #rcmrowscores td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 2px -366px;
+}
+
+#sections-table #rcmrowscores.selected td.section
+{
+  background-image: url(images/listicons.png);
+  background-position: 2px -343px;
+}
+
+#rcmfd_spamlevelchar
+{
+  width: 20px;
+}
+
+#rcmfd_spamsubject,
+#rcmfd_spamaddress
+{
+  width: 200px;
+}

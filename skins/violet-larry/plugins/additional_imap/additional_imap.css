@@ -1,0 +1,38 @@
+/***************************************************************************
+ * Violet-Larry Theme              
+ ***************************************************************************/
+
+select.deco {
+	height:18px;
+	font-size:12px;
+	font-weight: bold;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	color:#fdf9fe;
+	background:#28173b;
+	border:1px solid #644684;	
+	}
+	
+	.remotehint {
+	height:15px;
+	z-index:1;
+	position:absolute;
+	top:1px;
+	margin-left:auto;
+	left:50%;
+	margin-left:-200px;
+	width:auto;
+	border-radius:5px;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	padding-left: 15px;
+	-moz-border-radius:5px;
+	border:1px solid #b1dc83;
+	background:#4e237c;
+	text-align:center;
+	color:#ffff00;
+	font-weight: bold;
+	display:inline;
+	}
