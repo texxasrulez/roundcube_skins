@@ -1,0 +1,13 @@
+/* keep the row neat; don't disturb header icons */
+#ss-inline-schedule.ss-row{
+  margin:6px 0; padding:6px;
+  border:1px solid #d9d9d9; border-radius:6px;
+  display:inline-flex; flex-wrap:wrap; gap:8px; align-items:center; background:#fff;
+}
+#ss-inline-schedule .ss-label{ font-weight:bold; margin-right:6px; }
+
+/* Queue styles */
+.ssq-table{width:100%;border-collapse:collapse;margin-top:8px}
+.ssq-table th,.ssq-table td{border-bottom:1px solid #ddd;padding:6px 8px}
+.ssq-empty{opacity:.7;margin:12px 0}
+.button.ssq-bump10,.button.ssq-cancel{margin-right:6px}

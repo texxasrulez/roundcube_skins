@@ -1,7 +1,7 @@
 /**
- * Roundcube webmail styles for the Violet-Larry Settings section
+ * Roundcube webmail styles for Violet Larry Settings section
  *
- * Copyright (c) 2012, The Roundcube Dev Team
+ * Copyright (c) The Roundcube Dev Team
  * Screendesign by FLINT / Büro für Gestaltung, bueroflint.com
  *
  * The contents are subject to the Creative Commons Attribution-ShareAlike
@@ -11,7 +11,6 @@
  */
 
 #settings-sections {
-	color: #fdf6f3;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -70,7 +69,7 @@
 	font-size: 11px;
 	width: 20px;
 	height: 18px;
-	background: url(images/listicons.png?v=e9f1.12614) 0 -1157px no-repeat;
+	background: url('images/listicons.png') 0 -1157px no-repeat;
 	text-indent: -5000px;
 	overflow: hidden;
 }
@@ -79,12 +78,27 @@
 	background-position: -24px -1137px;
 }
 
+#preferences-details .identity-encryption-block {
+	background-color: #eee;
+	padding: 8px 10px;
+}
+
+#preferences-details .identity-encryption-block ul.keylist {
+	list-style: none;
+	margin: 8px 0 12px 0;
+}
+
+#preferences-details .identity-encryption-block ul.keylist {
+	display: block;
+	padding: 4px 10px 4px 0;
+}
+
 #sections-table tbody td,
 #sections-table .listitem span,
 #settings-sections .listitem a,
 #settings-sections .tablink a {
 	padding-left: 36px;
-	background-image: url(images/listicons.png?v=e9f1.12614);
+	background-image: url(images/listicons.png);
 	background-position: -100px 0;
 	background-repeat: no-repeat;
 }
@@ -92,124 +106,132 @@
 /* note: support span.tablink because this is used by plugins */
 #settings-sections .listitem a,
 #settings-sections .tablink a {
-	background-position: 6px -887px;
+	background-position: 6px -862px;
 }
 
 #settings-sections .selected a,
 #settings-sections .tablink.selected a {
-	background-position: 6px -862px;
+	background-position: 6px -887px;
 }
 
 #settings-sections .preferences a {
-	background-position: 6px -455px;
-}
-
-#settings-sections .preferences.selected a {
 	background-position: 6px -431px;
 }
 
-#settings-sections .folders a {
-	background-position: 6px -22px;
+#settings-sections .preferences.selected a {
+	background-position: 6px -455px;
 }
 
-#settings-sections .folders.selected a {
+#settings-sections .folders a {
 	background-position: 6px 2px;
 }
 
-#sections-table #rcmrowfolders .section {
-	background-position: 4px -22px;
+#settings-sections .folders.selected a {
+	background-position: 6px -22px;
 }
 
-#sections-table #rcmrowfolders.selected .section {
+#sections-table #rcmrowfolders .section {
 	background-position: 4px 2px;
 }
 
-#settings-sections .identities a {
-	background-position: 6px -502px;
+#sections-table #rcmrowfolders.selected .section {
+	background-position: 4px -22px;
 }
 
-#settings-sections .identities.selected a {
+#settings-sections .identities a {
 	background-position: 6px -478px;
 }
 
-#settings-sections .filter a {
-	background-position: 6px -1770px;
+#settings-sections .identities.selected a {
+	background-position: 6px -502px;
 }
 
-#settings-sections .filter.selected a {
+#settings-sections .filter a {
 	background-position: 6px -1746px;
 }
 
-#settings-sections .password a {
-	background-position: 6px -1819px;
+#settings-sections .filter.selected a {
+	background-position: 6px -1770px;
 }
 
-#settings-sections .password.selected a {
+#settings-sections .password a {
 	background-position: 6px -1795px;
 }
 
-#settings-sections .responses a {
-	background-position: 6px -1996px;
+#settings-sections .password.selected a {
+	background-position: 6px -1819px;
 }
 
-#settings-sections .responses.selected a {
+#settings-sections .responses a {
 	background-position: 6px -1972px;
 }
 
-#sections-table #rcmrowgeneral .section {
-	background-position: 4px -598px;
+#settings-sections .responses.selected a {
+	background-position: 6px -1996px;
 }
 
-#sections-table #rcmrowgeneral.selected .section {
+#sections-table #rcmrowgeneral .section {
 	background-position: 4px -573px;
 }
 
-#sections-table #rcmrowmailbox .section {
-	background-position: 4px -646px;
+#sections-table #rcmrowgeneral.selected .section {
+	background-position: 4px -598px;
 }
 
-#sections-table #rcmrowmailbox.selected .section {
+#sections-table #rcmrowmailbox .section {
 	background-position: 4px -621px;
 }
 
-#sections-table #rcmrowcompose .section {
-	background-position: 4px -695px;
+#sections-table #rcmrowmailbox.selected .section {
+	background-position: 4px -646px;
 }
 
-#sections-table #rcmrowcompose.selected .section {
+#sections-table #rcmrowcompose .section {
 	background-position: 4px -670px;
 }
 
-#sections-table #rcmrowmailview .section {
-	background-position: 4px -742px;
+#sections-table #rcmrowcompose.selected .section {
+	background-position: 4px -695px;
 }
 
-#sections-table #rcmrowmailview.selected .section {
+#sections-table #rcmrowmailview .section {
 	background-position: 4px -718px;
 }
 
-#sections-table #rcmrowaddressbook .section {
-	background-position: 4px -791px;
+#sections-table #rcmrowmailview.selected .section {
+	background-position: 4px -742px;
 }
 
-#sections-table #rcmrowaddressbook.selected .section {
+#sections-table #rcmrowaddressbook .section {
 	background-position: 4px -766px;
 }
 
-#sections-table #rcmrowserver .section {
-	background-position: 4px -838px;
+#sections-table #rcmrowaddressbook.selected .section {
+	background-position: 4px -791px;
 }
 
-#sections-table #rcmrowserver.selected .section {
+#sections-table #rcmrowserver .section {
 	background-position: 4px -814px;
 }
 
+#sections-table #rcmrowserver.selected .section {
+	background-position: 4px -838px;
+}
+
 #sections-table #rcmrowcalendar .section {
-	background-position: 4px -550px;
+	background-position: 4px -526px;
 }
 
 #sections-table #rcmrowcalendar.selected .section {
-	background-position: 4px -526px;
+	background-position: 4px -550px;
+}
+
+#sections-table #rcmrowencryption .section {
+	background-position: 7px -2437px;
+}
+
+#sections-table #rcmrowencryption.selected .section {
+	background-position: 7px -2461px;
 }
 
 #folderslist .boxtitle a.iconbutton.search {
@@ -313,7 +335,7 @@ img.skinthumbnail {
 	width: 64px;
 	height: 64px;
 	border: 1px solid #ccc;
-	background: #7854ba;
+	background: #fff;
 	border-radius: 4px;
 }
 

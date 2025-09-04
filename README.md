@@ -8,7 +8,12 @@ Completely redesigned Tabs.
 More detailed images.
 CSS Fixes and code cleanup.
 
-**Compatible with RC Version: 1.3.x and beyond**
+**Composer Install**
+```
+composer require "texxasrulez/roundcube-skins:~2.0"
+```
+
+**Compatible with RC Version: 1.4.x and beyond**
 
 I have taken the Larry skin and modified it so there are 10 themes to choose from so far. Larry Skin has the best layout of all other themes in my opinion, so why reinvent the wheel when all I want is a wider color choice.
 

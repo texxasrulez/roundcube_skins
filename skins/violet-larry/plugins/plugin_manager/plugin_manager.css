@@ -1,0 +1,190 @@
+/* === Plugin Manager: enforce custom icon in Settings menu === */
+
+/* Fallback selector in case class assignment varies across skins */
+a[href*="_action=plugin.plugin_manager"] .icon {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 22px 22px !important;
+}
+
+
+/* Larry skin family: apply bitmap to the settings tab link */
+#settings-sections a.plugin_manager,
+#settings-sections li.plugin_manager > a,
+a.listitem.plugin_manager,
+li.plugin_manager > a {
+  background-image: url('./images/plugin_manager.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 8px center !important;
+  background-size: 22px 22px !important;
+  padding-left: 36px; /* ensure text doesn't overlap the icon */
+}
+
+/* Active/hover/selected state */
+#settings-sections a.plugin_manager.selected,
+#settings-sections li.plugin_manager.selected > a,
+a.listitem.plugin_manager.selected,
+a.listitem.plugin_manager:focus,
+a.listitem.plugin_manager:hover,
+li.plugin_manager > a.selected,
+li.plugin_manager > a:focus,
+li.plugin_manager > a:hover {
+  background-image: url('./images/plugin_manager_act.png') !important;
+}
+
+/* Fallback: if the icon span exists, ensure it shows the bitmap */
+a.plugin_manager .icon,
+li.plugin_manager > a > .icon,
+.icon.plugin_manager {
+  background-image: url('./images/plugin_manager.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 22px 22px !important;
+}
+
+.records-table#pm-table td, .records-table#pm-table th { white-space: nowrap; }
+.records-table#pm-table td:nth-child(1) { white-space: normal; }
+
+.pm-scroll{max-height:calc(100vh - 260px);overflow:auto;}
+#pm-table{width:100%;}
+
+.pm-scroll{max-height:calc(100vh - 140px);overflow:auto;padding-bottom:24px;}
+
+#pm-table .hint{color:#666;font-size:11px;margin-left:4px;}
+
+.pm-update{font-weight:700; color:#b00020;}
+
+.pm-update{font-weight:700;color:#b00020;}
+
+.pm-update{font-weight:700;color:#b00020;}
+
+.pm-bundled{opacity:.9}
+
+/* === Plugin Manager: sticky table header (neutral colors; use skin defaults) === */
+.pm-scroll {
+  overflow-y: auto; /* scrolling is confined to the plugin list */
+}
+.pm-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3; /* stay above rows */
+}
+/* Allow first column (plugin name) to wrap if long */
+.records-table#pm-table td:nth-child(1) {
+  white-space: normal;
+}
+
+/* Respect Elastic dark-mode (and similar) without touching other skins */
+html.dark-mode .records-table#pm-table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+html.dark-mode .records-table#pm-table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+/* === Zebra striping for Plugin Manager rows (works across themes) === */
+.records-table#pm-table tbody tr:nth-child(odd) {
+  background-color: var(--color-zebra-odd, #f9f9f9);
+}
+.records-table#pm-table tbody tr:nth-child(even) {
+  background-color: var(--color-zebra-even, #ffffff);
+}
+html.dark-mode .records-table#pm-table tbody tr:nth-child(odd) {
+  background-color: rgba(255,255,255,0.08);
+}
+html.dark-mode .records-table#pm-table tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.02);
+}
+
+/* === Plugin Manager: robust, theme-aware zebra striping =====================
+   - Applies only to the Plugin Manager table (.records-table#pm-table)
+   - Works across light/dark themes (Elastic) and Larry skins
+   - Uses color-mix when available; otherwise falls back to rgba()
+   - Avoids fighting selection/hover states
+============================================================================= */
+
+/* Tunable intensity (kept very subtle by default) */
+:root {
+  --pm-row-alt-alpha-light: 0.06; /* ~6% tint on light */
+  --pm-row-alt-alpha-dark:  0.08; /* ~8% tint on dark (slightly stronger) */
+}
+
+/* Prefer cell backgrounds for maximal compatibility across skins */
+@supports (background-color: color-mix(in srgb, white 95%, black 5%)) {
+  /* Light mode: blend surface with text color a tiny bit */
+  html:not(.dark-mode) .records-table#pm-table tbody tr:nth-child(odd):not(.selected):not(.highlight):not(.focused) > td {
+    background-color: color-mix(in srgb, var(--color-surface, Canvas) calc(100% - (var(--pm-row-alt-alpha-light) * 100%)), var(--color-text, CurrentColor) calc(var(--pm-row-alt-alpha-light) * 100%)) !important;
+  }
+  /* Dark mode: similar idea, a hair stronger for visibility */
+  html.dark-mode .records-table#pm-table tbody tr:nth-child(odd):not(.selected):not(.highlight):not(.focused) > td {
+    background-color: color-mix(in srgb, var(--color-surface, Canvas) calc(100% - (var(--pm-row-alt-alpha-dark) * 100%)), var(--color-text, CurrentColor) calc(var(--pm-row-alt-alpha-dark) * 100%)) !important;
+  }
+  .records-table#pm-table tbody tr:nth-child(even) > td {
+    background-color: transparent !important;
+  }
+}
+
+/* Fallback when color-mix is not available */
+@supports not (background-color: color-mix(in srgb, white 95%, black 5%)) {
+  html:not(.dark-mode) .records-table#pm-table tbody tr:nth-child(odd):not(.selected):not(.highlight):not(.focused) > td {
+    background-color: rgba(0,0,0,0.06) !important;
+  }
+  html.dark-mode .records-table#pm-table tbody tr:nth-child(odd):not(.selected):not(.highlight):not(.focused) > td {
+    background-color: rgba(255,255,255,0.08) !important;
+  }
+  .records-table#pm-table tbody tr:nth-child(even) > td {
+    background-color: transparent !important;
+  }
+}
+
+/* Keep hover/selection visuals crisp (do not override them) */
+.records-table#pm-table tbody tr:hover > td {
+  /* Let skin decide hover; no override here */
+}
+.records-table#pm-table tbody tr.selected > td,
+.records-table#pm-table tbody tr.highlight > td,
+.records-table#pm-table tbody tr.focused > td {
+  /* Skin-provided selection styles take precedence; our striping skips these rows */
+}
+
+/* Remote Checkig off decoration */
+.remote-off {
+  display: inline-block;        /* shrink to fit text */
+  padding: 6px 10px;            /* spacing around text */
+  border: 2px solid #ff0000;    /* red outline */
+  background-color: #ffe2e2;    /* light red background */
+  color: #ff0000;               /* red text */
+  font-size: 10px;				/* font size */
+  font-weight: bold;            /* make text stand out */
+  border-radius: 10px;          /* slightly rounded corners */
+}
+
+/* Various colors */
+.pm-enabled {
+font-weight:bold;
+color:#03780b;
+}
+ 
+.pm-disabled {
+font-weight:bold;
+color:#ff0000;
+}
+
+.pm-sort {
+white-space:nowrap;
+}
+
+.pm-sorted-asc:after {
+content:" \25B2";
+}
+
+.pm-sorted-desc:after {
+content:" \25BC";
+}
+
+.pm-ok {
+font-weight:bold;
+color:#03780b;
+}

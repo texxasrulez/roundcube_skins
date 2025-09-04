@@ -1,9 +1,0 @@
-/* Advanced Search "Elastic" */
-
-.listing.iconized tr.advancedsearch>td.section:before {
-    content: "\f00e";
-}
-
-.menu a.advanced_search:before {
-    content: "\f00e";
-}

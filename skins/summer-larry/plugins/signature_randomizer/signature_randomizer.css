@@ -1,0 +1,71 @@
+/* Signature Randomizer — skin: summer-larry (inherits theme tokens) */
+/* Signature Randomizer: theme-neutral styles */
+#sr-manager{margin-top:12px;}
+#sr-manager .sr-controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0;}
+#sr-table{width:100%;}
+#sr-table .txt{width:100%;box-sizing:border-box;}
+#sr-table .sr-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
+#sr-table td,#sr-table th{vertical-align:middle;}
+.sr-editor-row .sr-html{ min-height:200px; height:200px; }
+.sr-html-label{font-size:.9em;opacity:.75;margin-bottom:2px;}
+
+/* Ensure import button matches theme contrast */
+#sr-import-now.button.mainaction{opacity:1;}
+
+/* Gradient skin support: relies on ambient colors from the skin; no hard-coded palette here. */
+
+
+/* ===== UI Tighten pass (2025-08) ===== */
+/* Compact header + row spacing */
+#sr-table th { text-align:left; padding: 4px 6px; }
+#sr-table td { padding: 4px 6px; }
+
+/* Column layout: [Include | Name | Weight | Actions] */
+#sr-table { table-layout: fixed; width: 100%; }
+#sr-table th:nth-child(1), #sr-table td:nth-child(1) { width: 56px; }
+#sr-table th:nth-child(2), #sr-table td:nth-child(2) { width: auto; }
+#sr-table th:nth-child(3), #sr-table td:nth-child(3) { width: 96px; }
+#sr-table th:nth-child(4), #sr-table td:nth-child(4) { width: 320px; }
+
+/* Weight input visibly wider so it can't be mistaken for a checkbox */
+#sr-table td:nth-child(3) input[type="text"],
+#sr-table td:nth-child(3) input[type="number"],
+#sr-table td:nth-child(3) input { width: 90px; max-width: 100%; box-sizing: border-box; }
+
+/* Keep label/title visually close to its control */
+#sr-table .txt { margin-top: 0; }
+
+/* Actions: consistent button sizing + alignment */
+#sr-table .sr-actions { display:flex; gap:8px; align-items:stretch; flex-wrap:wrap; justify-content:flex-end; }
+#sr-table .sr-actions .button,
+#sr-table .sr-actions button,
+#sr-manager .sr-controls .button,
+#sr-manager .sr-controls button { min-height: 28px; line-height: 28px; padding: 0 10px; box-sizing: border-box; }
+
+/* Prevent overly tall HTML editor cell from crowding */
+.sr-editor-row .sr-html { min-height: 200px; height: 200px; }
+
+/* Checkbox column centers the box but keeps the header left-aligned */
+#sr-table td:nth-child(1) { text-align:center; }
+#sr-table th:nth-child(1) { text-align:left; }
+
+/* === Signature Randomizer: toolbar icon === */
+#compose-toolbar a.button.sr-shuffle,
+.toolbar a.button.sr-shuffle {
+  background: transparent url('shuffle.png') 6px 50% no-repeat;
+  padding-left: 26px; /* space for icon */
+}
+
+
+/* === Signature Randomizer: toolbar icon vertical layout === */
+#compose-toolbar a.button.sr-shuffle,
+.compose-toolbar a.button.sr-shuffle,
+.toolbar a.button.sr-shuffle {
+  background: transparent url('shuffle.png') center 6px no-repeat !important;
+  background-size: 22px 22px;
+  padding-left: 0 !important;
+  padding-top: 32px !important; /* space for icon above text */
+  min-width: 58px;               /* look like other toolbar buttons */
+  text-align: center;
+}
+

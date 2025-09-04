@@ -1,9 +1,9 @@
 /* Main settings pane */
 #settings-sections .cd_preferences a {
-    background-position: 6px -791px;
+    background-position: 6px -766px;
 }
 #settings-sections .cd_preferences.selected a {
-    background-position: 6px -766px;
+    background-position: 6px -791px;
 }
 
 /* CardDAV addressbook list pane */

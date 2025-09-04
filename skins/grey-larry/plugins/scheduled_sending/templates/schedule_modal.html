@@ -1,0 +1,13 @@
+
+<div id="scheduled-sending-modal" style="display:none">
+  <div class="ss-card">
+    <h3><?php echo rcube::get_instance()->gettext('sendlater','scheduled_sending'); ?></h3>
+    <label><?php echo rcube::get_instance()->gettext('datetime','scheduled_sending'); ?></label>
+    <input type="datetime-local" name="_schedule_at" />
+    <div class="ss-actions">
+      <input type="button" class="button mainaction" id="scheduled-sending-confirm" value="<?php echo rcube::get_instance()->gettext('schedule','scheduled_sending'); ?>">
+      <input type="button" class="button" id="scheduled-sending-cancel" value="<?php echo rcube::get_instance()->gettext('cancel','scheduled_sending'); ?>">
+    </div>
+    <div class="hint" style="margin-top:6px;opacity:.7;"><?php echo rcube::get_instance()->gettext('hotkeyhint','scheduled_sending'); ?></div>
+  </div>
+</div>

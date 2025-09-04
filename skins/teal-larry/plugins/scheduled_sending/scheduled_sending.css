@@ -1,0 +1,11 @@
+
+/* Larry skin styles */
+.button-sendlater:before { content: "⏰"; margin-right: .3em; }
+#scheduled-sending-modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.35);display:none;z-index:10000;align-items:center;justify-content:center}
+#scheduled-sending-modal .ss-card{background:#fff;padding:14px;border-radius:6px;min-width:300px;border:1px solid #c9c9c9}
+#scheduled-sending-modal .ss-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}
+#scheduled-sending-modal input[type="datetime-local"]{width:100%;padding:6px;border:1px solid #c9c9c9}
+
+.button-sendlater .icon{margin-right:.3em}
+
+#ss-fab{position:fixed;right:16px;bottom:16px;z-index:10020}

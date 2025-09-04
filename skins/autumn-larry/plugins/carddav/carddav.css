@@ -1,9 +1,9 @@
 /* Main settings pane */
 #settings-sections .cd_preferences a {
-    background-position: 6px -791px;
+    background-position: 6px -766px;
 }
 #settings-sections .cd_preferences.selected a {
-    background-position: 6px -766px;
+    background-position: 6px -791px;
 }
 
 /* CardDAV addressbook list pane */
@@ -88,11 +88,11 @@
 
 #addressbooks-table li.addressbook a {
     padding-left: 52px;  /* 36 + 1 x 16 */
-    background-position: 22px -766px;  /* 6 + 1 x 16 */
+    background-position: 22px -791px;  /* 6 + 1 x 16 */
 }
 #addressbooks-table li.addressbook > a:focus,
 #addressbooks-table li.addressbook.selected > a {
-    background-position: 22px -791px;
+    background-position: 22px -766px;
 }
 #addressbooks-table li.addressbook div.treetoggle {
     left: 33px;
