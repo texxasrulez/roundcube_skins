@@ -5,7 +5,6 @@
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/texxasrulez/roundcube_skins",
 	"version": "2.0",
-    "type": "roundcube-skin",
     "require": {
         "roundcube/plugin-installer": ">=0.3.0"
     }
