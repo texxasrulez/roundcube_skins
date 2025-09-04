@@ -5,26 +5,8 @@
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/texxasrulez/roundcube_skins",
 	"version": "2.0",
-    "authors": [
-        {
-            "name": "Gene Hawkins",
-            "email": "texxasrulez@yahoo.com",
-            "role": "Lead"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://plugins.roundcube.net"
-        }
-    ],
+    "type": "roundcube-skin",
     "require": {
-        "php": ">=5.4.0",
-        "roundcube/plugin-installer": ">=0.1.3"
-    },
-    "extra": {
-        "roundcube": {
-            "min-version": "1.5"
-        }
+        "roundcube/plugin-installer": ">=0.3.0"
     }
 }
