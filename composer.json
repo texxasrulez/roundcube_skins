@@ -2,8 +2,8 @@
     "name": "texxasrulez/roundcube_skins",
     "type": "roundcube-skin",
     "description": "Colorful skins based on Larry",
-    "homepage": "https://github.com/texxasrulez/roundcube_skins",
     "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/texxasrulez/roundcube_skins",
 	"version": "2.0",
     "authors": [
         {
