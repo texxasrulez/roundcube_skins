@@ -10,7 +10,7 @@ CSS Fixes and code cleanup.
 
 **Composer Install**
 ```
-composer require "texxasrulez/roundcube_skins": "~2.0"
+composer require "texxasrulez/roundcube_skins:~2.0"
 ```
 
 **Compatible with RC Version: 1.4.x and beyond**
